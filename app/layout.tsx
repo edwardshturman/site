@@ -15,6 +15,9 @@ const GeistMono = localFont({
 export const metadata: Metadata = {
   title: 'Edward Shturman',
   description: 'Web developer, interface designer, and community builder based in San Francisco',
+  openGraph: {
+    images: '/assets/pfp-bitmap.png'
+  }
 }
 
 export default function RootLayout({
