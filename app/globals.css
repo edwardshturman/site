@@ -19,10 +19,16 @@ a {
 
 body {
   margin: 40px auto;
-  max-width: 50vw;
+  max-width: 650px;
   line-height: 1.6;
   font-size: 18px;
   font-family: var(--font-sans);
+}
+
+@media (max-width: 700px) {
+  body {
+    margin: 40px 40px;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
