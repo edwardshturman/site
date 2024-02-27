@@ -6,7 +6,7 @@ export default function Home () {
     <>
       <Image
         unoptimized
-        src="/assets/pfp-bitmap.png"
+        src="/assets/pfp-bitmap-transparent.png"
         alt="Vercel Logo"
         width={200}
         height={200}
