@@ -64,6 +64,11 @@ const iAWriterMono = localFont({
   variable: '--font-ia-writer-mono'
 })
 
+const MonaspaceNeon = localFont({
+  src: '../public/fonts/MonaspaceNeonVarVF[wght,wdth,slnt].woff2',
+  variable: '--font-monaspace-neon'
+})
+
 let metadataBase: URL
 if (process.env.VERCEL_URL)
   metadataBase = new URL('https://edwardshturman.com')
@@ -85,7 +90,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${Geist.variable} ${GeistMono.variable} ${iAWriterQuattro.variable} ${iAWriterMono.variable}`}>
+    <html lang="en" className={`${Geist.variable} ${GeistMono.variable} ${iAWriterQuattro.variable} ${iAWriterMono.variable} ${MonaspaceNeon.variable}`}>
       <body>{children}</body>
     </html>
   )
