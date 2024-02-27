@@ -12,6 +12,58 @@ const GeistMono = localFont({
   variable: '--font-geist-mono'
 })
 
+const iAWriterQuattro = localFont({
+  src: [
+    {
+      path: '../public/fonts/iAWriterQuattroS-Regular.woff2',
+      weight: '400',
+      style: 'normal'
+    },
+    {
+      path: '../public/fonts/iAWriterQuattroS-Italic.woff2',
+      weight: '400',
+      style: 'italic'
+    },
+    {
+      path: '../public/fonts/iAWriterQuattroS-Bold.woff2',
+      weight: '600',
+      style: 'normal'
+    },
+    {
+      path: '../public/fonts/iAWriterQuattroS-BoldItalic.woff2',
+      weight: '600',
+      style: 'italic'
+    }
+  ],
+  variable: '--font-ia-writer-quattro'
+})
+
+const iAWriterMono = localFont({
+  src: [
+    {
+      path: '../public/fonts/iAWriterMonoS-Regular.woff2',
+      weight: '400',
+      style: 'normal'
+    },
+    {
+      path: '../public/fonts/iAWriterMonoS-Italic.woff2',
+      weight: '400',
+      style: 'italic'
+    },
+    {
+      path: '../public/fonts/iAWriterMonoS-Bold.woff2',
+      weight: '600',
+      style: 'normal'
+    },
+    {
+      path: '../public/fonts/iAWriterMonoS-BoldItalic.woff2',
+      weight: '600',
+      style: 'italic'
+    }
+  ],
+  variable: '--font-ia-writer-mono'
+})
+
 let metadataBase: URL
 if (process.env.VERCEL_URL)
   metadataBase = new URL('https://edwardshturman.com')
@@ -33,7 +85,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${Geist.variable} ${GeistMono.variable}`}>
+    <html lang="en" className={`${Geist.variable} ${GeistMono.variable} ${iAWriterQuattro.variable} ${iAWriterMono.variable}`}>
       <body>{children}</body>
     </html>
   )
