@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { Route } from 'next'
 
 export default function Home () {
   return (
@@ -7,8 +8,8 @@ export default function Home () {
       <p>Web developer, interface designer, and community builder based in San Francisco</p>
       <br />
       <nav>
-        <p>/ <Link href='/todos'>Todos</Link></p>
-        <p>/ <Link href='/notes'>Notes</Link></p>
+        <p>/ <Link href={'/todos' as Route}>Todos</Link></p>
+        <p>/ <Link href={'/notes' as Route}>Notes</Link></p>
       </nav>
       <br />
       <p>Note: I&apos;m in the process of moving content from <Link href="https://mmm.page/edday/edward">my old site</Link>, you can visit it if you&apos;d like to check out my work in the meantime.</p>
