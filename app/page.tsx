@@ -7,7 +7,7 @@ export default function Home () {
       <Image
         unoptimized
         src="/assets/pfp-bitmap-transparent.png"
-        alt="Vercel Logo"
+        alt="A bitmapped image of Edward Shturman"
         width={200}
         height={200}
       />
