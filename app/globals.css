@@ -17,6 +17,13 @@ a {
   text-decoration: none;
 }
 
+nav {
+  font-size: 14px;
+  color: hsl(0, 0%, 60%);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
 body {
   margin: 40px auto;
   max-width: 650px;
