@@ -1,11 +1,16 @@
 import styles from './Comment.module.css'
 
-export function Comment ({ type, children }: {
-  type: 'block' | 'inline',
+export function Comment({
+  type,
+  children
+}: {
+  type: 'block' | 'inline'
   children: React.ReactNode
 }) {
   return (
     <>
+      {/* I refuse to have my ternaries bastardized */}
+      {/* @prettier-ignore */}
       {
         type === 'block'
           ? <p className={`${styles.comment} ${styles['block-comment']}`}>{children}</p>

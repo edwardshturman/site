@@ -72,27 +72,29 @@ const MonaspaceNeon = localFont({
 })
 
 let metadataBase: URL
-if (process.env.VERCEL_URL)
-  metadataBase = new URL('https://edwardshturman.com')
-else
-  metadataBase = new URL(`http://localhost:${process.env.PORT || 3000}`)
+if (process.env.VERCEL_URL) metadataBase = new URL('https://edwardshturman.com')
+else metadataBase = new URL(`http://localhost:${process.env.PORT || 3000}`)
 
 export const metadata: Metadata = {
   metadataBase,
   title: 'Edward Shturman',
-  description: 'Web developer, interface designer, and community builder based in San Francisco',
+  description:
+    'Web developer, interface designer, and community builder based in San Francisco',
   openGraph: {
     images: '/assets/pfp-bitmap.png'
   }
 }
 
 export default function RootLayout({
-  children,
+  children
 }: Readonly<{
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${Geist.variable} ${GeistMono.variable} ${iAWriterQuattro.variable} ${iAWriterMono.variable} ${MonaspaceNeon.variable}`}>
+    <html
+      lang="en"
+      className={`${Geist.variable} ${GeistMono.variable} ${iAWriterQuattro.variable} ${iAWriterMono.variable} ${MonaspaceNeon.variable}`}
+    >
       <body>
         <Image
           unoptimized
@@ -102,9 +104,7 @@ export default function RootLayout({
           height={200}
         />
         <Breadcrumb />
-        <main>
-          {children}
-        </main>
+        <main>{children}</main>
       </body>
     </html>
   )

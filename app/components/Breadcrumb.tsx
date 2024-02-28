@@ -5,7 +5,7 @@ import Link from 'next/link'
 import type { Route } from 'next'
 import styles from './Breadcrumb.module.css'
 
-export function Breadcrumb () {
+export function Breadcrumb() {
   const path = usePathname()
   if (path === '/') return null
   const parts = path.split('/').filter(Boolean)
@@ -14,15 +14,18 @@ export function Breadcrumb () {
   for (let i = 0; i < parts.length - 1; i++) {
     const part = parts[i]
     const href = '/' + parts.slice(0, i + 1).join('/')
-    breadcrumbs.push(<Link key={i} href={`${href}` as Route}>{part}</Link>)
+    breadcrumbs.push(
+      <Link key={i} href={`${href}` as Route}>
+        {part}
+      </Link>
+    )
 
-    if (i < parts.length - 1)
-      breadcrumbs.push(' / ')
+    if (i < parts.length - 1) breadcrumbs.push(' / ')
   }
 
   return (
     <p id={styles.breadcrumb}>
-      <Link href='/'>Edward Shturman</Link> / {breadcrumbs}
+      <Link href="/">Edward Shturman</Link> / {breadcrumbs}
     </p>
   )
 }
