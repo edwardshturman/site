@@ -12,7 +12,7 @@ export default function Home () {
         <p>/ <Link href={'/notes' as Route}>Notes</Link></p>
       </nav>
       <br />
-      <p>Note: I&apos;m in the process of moving content from <Link href="https://mmm.page/edday/edward">my old site</Link>, you can visit it if you&apos;d like to check out my work in the meantime.</p>
+      <p className='comment block-comment'>Site under construction</p>
       <h2>Now</h2>
       <p>Focused on running <Link href="https://github.com/compsigh">compsigh</Link>, my CS club at the University of San Francisco</p>
       <h2>Connect</h2>
