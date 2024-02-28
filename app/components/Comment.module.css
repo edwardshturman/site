@@ -1,0 +1,22 @@
+.comment {
+  font-size: 14px;
+  color: hsl(0, 0%, 60%);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+span.inline-comment {
+  margin-left: 20px;
+}
+
+span.inline-comment::before {
+  content: '// ';
+}
+
+p.block-comment::before {
+  content: '\002F* ';
+}
+
+p.block-comment::after {
+  content: ' *\002F';
+}

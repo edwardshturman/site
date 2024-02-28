@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { Route } from 'next'
+import { Comment } from './components/Comment'
 
 export default function Home () {
   return (
@@ -12,7 +13,7 @@ export default function Home () {
         <p>/ <Link href={'/notes' as Route}>Notes</Link></p>
       </nav>
       <br />
-      <p className='comment block-comment'>Site under construction</p>
+      <Comment type="block">Site under construction</Comment>
       <h2>Now</h2>
       <p>Focused on running <Link href="https://github.com/compsigh">compsigh</Link>, my CS club at the University of San Francisco</p>
       <h2>Connect</h2>
