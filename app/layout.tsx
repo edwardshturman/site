@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
+import Image from 'next/image'
+import { Breadcrumb } from '@/app/components/Breadcrumb'
 import './globals.css'
 
 const Geist = localFont({
@@ -91,7 +93,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${Geist.variable} ${GeistMono.variable} ${iAWriterQuattro.variable} ${iAWriterMono.variable} ${MonaspaceNeon.variable}`}>
-      <body>{children}</body>
+      <body>
+        <Image
+          unoptimized
+          src="/assets/pfp-bitmap-transparent.png"
+          alt="A bitmapped image of Edward Shturman"
+          width={200}
+          height={200}
+        />
+        <Breadcrumb />
+        <main>
+          {children}
+        </main>
+      </body>
     </html>
   )
 }
