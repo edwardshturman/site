@@ -7,6 +7,7 @@ import styles from './Breadcrumb.module.css'
 
 export function Breadcrumb () {
   const path = usePathname()
+  if (path === '/') return null
   const parts = path.split('/').filter(Boolean)
 
   let breadcrumbs = []
