@@ -24,7 +24,7 @@ export async function generateMetadata(
   const { data } = matter(note)
 
   return {
-    title: data.title,
+    title: `${data.title} — Edward Shturman`,
     description: data.description
   }
 }
