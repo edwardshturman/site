@@ -3,6 +3,9 @@ import path from 'node:path'
 import matter from 'gray-matter'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import rehypePrettyCode from 'rehype-pretty-code'
+import rehypeKatex from 'rehype-katex'
+import remarkMath from 'remark-math'
+import '@/app/katex.min.css'
 import rehypeSlug from 'rehype-slug'
 import remarkGfm from 'remark-gfm'
 import { Suspense, cache } from 'react'
@@ -53,10 +56,14 @@ export default async function Note(
           source={content}
           options={{
             mdxOptions: {
-              remarkPlugins: [remarkGfm],
+              remarkPlugins: [
+                remarkGfm,
+                remarkMath
+              ],
               rehypePlugins: [
                 [rehypePrettyCode as any, options],
-                rehypeSlug
+                rehypeSlug,
+                rehypeKatex as any
               ]
             }
           }}
