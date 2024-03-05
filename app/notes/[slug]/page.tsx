@@ -60,7 +60,17 @@ export async function generateMetadata(
   const { frontmatter } = await readNote(params.slug)
   return {
     title: `${frontmatter.title} — Edward Shturman`,
-    description: frontmatter.description
+    description: frontmatter.description,
+    openGraph: {
+      images: [
+        {
+          url: `api/og?title=${frontmatter.title}`,
+          width: 1200,
+          height: 630,
+          alt: ''
+        }
+      ]
+    }
   }
 }
 
