@@ -10,7 +10,7 @@ export async function GET(request: Request) {
     : 'Edward Shturman'
 
   const imageData = await fetch(
-    new URL('../../../public/assets/HORIZON-bitmap-30-patterndither.png', import.meta.url))
+    new URL('@/public/assets/HORIZON-bitmap-30-patterndither.png', import.meta.url))
     .then((res) => res.arrayBuffer())
 
   const iAWriterQuattroRegular = await fetch(
