@@ -36,7 +36,7 @@ const readNote = cache(async (slug: string) => {
         parseFrontmatter: true,
         mdxOptions: {
           remarkPlugins: [
-            remarkGfm,
+            // remarkGfm,
             remarkMath
           ],
           rehypePlugins: [
@@ -49,6 +49,7 @@ const readNote = cache(async (slug: string) => {
     })
     return { content, frontmatter }
   } catch (error) {
+    console.error(error)
     notFound()
   }
 })
