@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import Image from 'next/image'
-import { Breadcrumb } from '@/app/components/Breadcrumb'
+import { Breadcrumbs } from '@/app/components/Breadcrumbs'
 import './globals.css'
 
 const Geist = localFont({
@@ -103,7 +103,7 @@ export default function RootLayout({
           width={200}
           height={200}
         />
-        <Breadcrumb />
+        <Breadcrumbs />
         <main>{children}</main>
       </body>
     </html>

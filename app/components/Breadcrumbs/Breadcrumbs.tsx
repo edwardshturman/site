@@ -3,9 +3,9 @@
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import type { Route } from 'next'
-import styles from './Breadcrumb.module.css'
+import styles from './Breadcrumbs.module.css'
 
-export function Breadcrumb() {
+export function Breadcrumbs() {
   const path = usePathname()
   if (path === '/') return null
   const parts = path.split('/').filter(Boolean)
@@ -24,7 +24,7 @@ export function Breadcrumb() {
   }
 
   return (
-    <p id={styles.breadcrumb}>
+    <p id={styles.breadcrumbs}>
       <Link href="/">Edward Shturman</Link> / {breadcrumbs}
     </p>
   )
