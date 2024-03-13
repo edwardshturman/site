@@ -55,7 +55,7 @@ export async function generateMetadata(
 ): Promise<Metadata> {
   const { frontmatter } = await readNote(params.slug)
   return {
-    title: `${frontmatter.title} — Edward Shturman`,
+    title: `${frontmatter.title}`,
     description: frontmatter.description,
     openGraph: {
       images: [
@@ -63,9 +63,10 @@ export async function generateMetadata(
           url: `api/og?title=${frontmatter.title}`,
           width: 1200,
           height: 630,
-          alt: ''
+          alt: `A bitmapped version of an AI-generated image of a city in space. The words "${frontmatter.title}, a note by Edward Shturman" overlay the image.`
         }
-      ]
+      ],
+      siteName: "Edward Shturman's personal website"
     }
   }
 }
