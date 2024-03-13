@@ -10,6 +10,7 @@ import { Suspense, cache } from 'react'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import type { Options } from 'rehype-pretty-code'
+import { Comment } from '@/app/components/Comment'
 
 const readNote = cache(async (slug: string) => {
   try {
@@ -81,6 +82,14 @@ export default async function NotePage(
   return (
     <>
       <Suspense fallback={<h1>{frontmatter.title}</h1>}>
+        { !frontmatter.published &&
+          <>
+            <br />
+            <Comment type='block'>
+              Hey there, you&apos;ve found an unpublished note. Feel free to poke around, but keep in mind the thoughts here are a bit more in-progress than usual. :)
+            </Comment>
+          </>
+        }
         <Note content={content} />
       </Suspense>
     </>
