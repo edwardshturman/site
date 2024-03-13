@@ -14,7 +14,7 @@ import type { Options } from 'rehype-pretty-code'
 const readNote = cache(async (slug: string) => {
   try {
     const vercelTheme = await import('@/app/vercel-theme.json')
-    const options: Options = {
+    const rehypePrettyCodeOptions: Options = {
       theme: vercelTheme as any,
       defaultLang: 'plaintext'
     }
@@ -31,7 +31,7 @@ const readNote = cache(async (slug: string) => {
         options.remarkPlugins = [...(options.remarkPlugins ?? []), remarkMath]
         options.rehypePlugins = [
           ...(options.rehypePlugins ?? []),
-          [rehypePrettyCode, options],
+          [rehypePrettyCode, rehypePrettyCodeOptions],
           rehypeSlug,
           rehypeKatex
         ]
