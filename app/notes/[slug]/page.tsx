@@ -22,6 +22,7 @@ const readNote = cache(async (slug: string) => {
     type Frontmatter = {
       title: string
       description: string
+      published: boolean
     }
 
     const result = await bundleMDX<Frontmatter>({
