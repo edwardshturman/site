@@ -1,6 +1,6 @@
 import path from 'node:path'
 import { bundleMDX } from 'mdx-bundler'
-import { Note } from '@/app/components/Note'
+import { PageContent } from '@/app/components/PageContent'
 import rehypePrettyCode from 'rehype-pretty-code'
 import rehypeKatex from 'rehype-katex'
 import remarkMath from 'remark-math'
@@ -12,7 +12,9 @@ import type { Metadata } from 'next'
 import type { Options } from 'rehype-pretty-code'
 import { Comment } from '@/app/components/Comment'
 
-const readNote = cache(async (slug: string) => {
+const readPage = cache(async (
+  slug: string | string[]
+) => {
   try {
     const vercelTheme = await import('@/app/vercel-theme.json')
     const rehypePrettyCodeOptions: Options = {
@@ -26,9 +28,12 @@ const readNote = cache(async (slug: string) => {
       published: boolean
     }
 
+    if (Array.isArray(slug))
+      slug = slug.join('/')
+
     const result = await bundleMDX<Frontmatter>({
       cwd: process.cwd(),
-      file: path.join(process.cwd(), 'app/notes', `${slug}.mdx`),
+      file: path.join(process.cwd(), 'app', `${slug}.mdx`),
       mdxOptions(options) {
         options.remarkPlugins = [...(options.remarkPlugins ?? []), remarkMath]
         options.rehypePlugins = [
@@ -46,38 +51,39 @@ const readNote = cache(async (slug: string) => {
       frontmatter: result.frontmatter
     }
   } catch (error) {
-    console.log(error)
     notFound()
   }
 })
 
 export async function generateMetadata(
   { params }:
-  { params: { slug: string } }
+  { params: { slug: string | string[] }}
 ): Promise<Metadata> {
-  const { frontmatter } = await readNote(params.slug)
-  return {
+  const { frontmatter } = await readPage(params.slug)
+  const metadata: Metadata = {
     title: `${frontmatter.title}`,
     description: frontmatter.description,
     openGraph: {
-      images: [
-        {
-          url: `api/og?title=${frontmatter.title}`,
-          width: 1200,
-          height: 630,
-          alt: `A bitmapped version of an AI-generated image of a city in space. The words "${frontmatter.title}, a note by Edward Shturman" overlay the image.`
-        }
-      ],
-      siteName: "Edward Shturman's personal website"
+      siteName: "Edward Shturman's personal website",
     }
   }
+
+  if (params.slug.includes('notes'))
+    metadata.openGraph!.images = [{
+      url: `api/og?title=${frontmatter.title}`,
+      width: 1200,
+      height: 630,
+      alt: `A bitmapped version of an AI-generated image of a city in space. The words "${frontmatter.title}, a note by Edward Shturman" overlay the image.`
+    }]
+
+  return metadata
 }
 
-export default async function NotePage(
+export default async function Page(
   { params }:
-  { params: { slug: string } }
+  { params: { slug: string | string[] }}
 ) {
-  const { content, frontmatter } = await readNote(params.slug)
+  const { content, frontmatter } = await readPage(params.slug)
 
   return (
     <>
@@ -86,11 +92,11 @@ export default async function NotePage(
           <>
             <br />
             <Comment type='block'>
-              Hey there, you&apos;ve found an unpublished note. Feel free to poke around, but keep in mind the thoughts here are a bit more in-progress than usual. :)
+              Hey there, you&apos;ve found an unpublished page. Feel free to poke around, but keep in mind the thoughts here are a bit more in-progress than usual. :)
             </Comment>
           </>
         }
-        <Note content={content} />
+        <PageContent content={content} />
       </Suspense>
     </>
   )
