@@ -46,7 +46,7 @@ const readNote = cache(async (slug: string) => {
       frontmatter: result.frontmatter
     }
   } catch (error) {
-    console.error(error)
+    console.log(error)
     notFound()
   }
 })
