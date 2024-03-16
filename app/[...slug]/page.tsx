@@ -1,6 +1,6 @@
+import fs from 'node:fs/promises'
 import path from 'node:path'
-import { bundleMDX } from 'mdx-bundler'
-import { PageContent } from '@/app/components/PageContent'
+import { compileMDX } from 'next-mdx-remote/rsc'
 import rehypePrettyCode from 'rehype-pretty-code'
 import rehypeKatex from 'rehype-katex'
 import remarkMath from 'remark-math'
@@ -16,6 +16,11 @@ const readPage = cache(async (
   slug: string | string[]
 ) => {
   try {
+    if (Array.isArray(slug))
+      slug = slug.join('/')
+    const filePath = path.join(process.cwd(), 'app', `${slug}.mdx`)
+    const page = await fs.readFile(filePath, 'utf8')
+
     const vercelTheme = await import('@/app/vercel-theme.json')
     const rehypePrettyCodeOptions: Options = {
       theme: vercelTheme as any,
@@ -28,28 +33,22 @@ const readPage = cache(async (
       published: boolean
     }
 
-    if (Array.isArray(slug))
-      slug = slug.join('/')
-
-    const result = await bundleMDX<Frontmatter>({
-      cwd: process.cwd(),
-      file: path.join(process.cwd(), 'app', `${slug}.mdx`),
-      mdxOptions(options) {
-        options.remarkPlugins = [...(options.remarkPlugins ?? []), remarkMath]
-        options.rehypePlugins = [
-          ...(options.rehypePlugins ?? []),
-          [rehypePrettyCode, rehypePrettyCodeOptions],
-          rehypeSlug,
-          rehypeKatex
-        ]
-        return options
+    const { content, frontmatter } = await compileMDX<Frontmatter>({
+      source: page,
+      components: { Comment },
+      options: {
+        parseFrontmatter: true,
+        mdxOptions: {
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [
+            [rehypePrettyCode as any, rehypePrettyCodeOptions],
+            rehypeSlug,
+            rehypeKatex as any,
+          ]
+        }
       }
     })
-
-    return {
-      content: result.code,
-      frontmatter: result.frontmatter
-    }
+    return { content, frontmatter }
   } catch (error) {
     notFound()
   }
@@ -96,7 +95,7 @@ export default async function Page(
             </Comment>
           </>
         }
-        <PageContent content={content} />
+        {content}
       </Suspense>
     </>
   )
