@@ -12,13 +12,9 @@ import type { Metadata } from 'next'
 import type { Options } from 'rehype-pretty-code'
 import { Comment } from '@/app/components/Comment'
 
-const readPage = cache(async (
-  slug: string | string[]
-) => {
+const readPage = cache(async (slug: string[]) => {
   try {
-    if (Array.isArray(slug))
-      slug = slug.join('/')
-    const filePath = path.join(process.cwd(), 'app', `${slug}.mdx`)
+    const filePath = path.join(process.cwd(), 'app', ...slug) + '.mdx'
     const page = await fs.readFile(filePath, 'utf8')
 
     const vercelTheme = await import('@/app/vercel-theme.json')
@@ -56,8 +52,8 @@ const readPage = cache(async (
 
 export async function generateMetadata(
   { params }:
-  { params: { slug: string | string[] }}
-): Promise<Metadata> {
+  { params: { slug: string[] } }
+) {
   const { frontmatter } = await readPage(params.slug)
   const metadata: Metadata = {
     title: `${frontmatter.title}`,
@@ -80,7 +76,7 @@ export async function generateMetadata(
 
 export default async function Page(
   { params }:
-  { params: { slug: string | string[] }}
+  { params: { slug: string[] } }
 ) {
   const { content, frontmatter } = await readPage(params.slug)
 
