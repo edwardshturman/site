@@ -20,13 +20,13 @@ export default function Notes() {
         </li>
       </ul>
       <br />
-      <Comment type="block">In progress</Comment>
+      <Comment type="block">Writing</Comment>
       <ul>
         <li>
-          <p>VS Code: an Artist&apos;s Canvas</p>
+          <p>Setting up MDX on Next.js 14</p>
         </li>
         <li>
-          <p>MDX &amp; Metadata in Next.js</p>
+          <p>VS Code: an Artist&apos;s Canvas</p>
         </li>
       </ul>
     </>
