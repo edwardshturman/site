@@ -60,6 +60,26 @@ li {
   margin: 0.25em 0;
 }
 
+li::before,
+li::marker {
+  color: hsl(0deg, 0%, 40%);
+}
+
+ul > li {
+  list-style-type: none;
+}
+
+ul > li::before {
+  position: absolute;
+  margin-left: -22px;
+  margin-top: -1px;
+  content: '-';
+}
+
+ul ul > li {
+  margin-left: 1em;
+}
+
 code {
   font-family: var(--font-mono);
   counter-reset: line;

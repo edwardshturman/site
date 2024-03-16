@@ -22,12 +22,8 @@ export default function Notes() {
       <br />
       <Comment type="block">Writing</Comment>
       <ul>
-        <li>
-          <p>Setting up MDX on Next.js 14</p>
-        </li>
-        <li>
-          <p>VS Code: an Artist&apos;s Canvas</p>
-        </li>
+        <li>Setting up MDX on Next.js 14</li>
+        <li>VS Code: an Artist&apos;s Canvas</li>
       </ul>
     </>
   )
