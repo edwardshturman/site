@@ -19,8 +19,7 @@ const readPage = cache(async (slug: string[]) => {
 
     const vercelTheme = await import('@/app/vercel-theme.json')
     const rehypePrettyCodeOptions: Options = {
-      theme: vercelTheme as any,
-      defaultLang: 'plaintext'
+      theme: vercelTheme as any
     }
 
     type Frontmatter = {
