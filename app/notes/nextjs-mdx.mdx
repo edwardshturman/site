@@ -4,3 +4,15 @@ description: "It's comically nontrivial to set up an ergonomic, performant MDX N
 published: false
 ---
 
+# Setting up MDX on Next.js 14
+
+It's comically nontrivial to set up an ergonomic, performant MDX Next.js app, with all the bells & whistles like parsing YAML frontmatter. Here's how I did it.
+
+## Requirements
+
+I set out to check a few boxes:
+
+1. **A superb authoring experience**: it should feel natural enough to edit as actual Markdown, such as in editors like Obsidian.
+2. **As little dependencies and acrobatics as possible**: many of the solutions in guides I read while trying to build this used `gray-matter`, `next-mdx-remote` — often both `compileMDX()` and `<MDXRemote />` — or a hacked-together amalgam of Node.js I/O APIs. It should be elegant (enough :)).
+3. **Flexibility**: I don't want to be confined to something like a `/blog` route to use MDX. I want to be able to use what I want interchangeably based on my needs.
+
