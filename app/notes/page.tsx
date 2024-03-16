@@ -1,10 +1,13 @@
-import { Metadata } from 'next'
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Comment } from '@/app/components/Comment'
 
 export const metadata: Metadata = {
-  title: 'Notes — Edward Shturman',
-  description: "Edward Shturman's notes"
+  title: 'Notes',
+  description: "Thoughts on programming, learning, and life",
+  openGraph: {
+    siteName: "Edward Shturman's personal website",
+  }
 }
 
 export default function Notes() {
