@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { Route } from 'next'
 import { Comment } from './components/Comment'
 
 export default function Home() {
@@ -13,10 +12,10 @@ export default function Home() {
       <br />
       <nav>
         <p>
-          / <Link href={'/todos' as Route}>Todos</Link>
+          / <Link href={'/notes'}>Notes</Link>
         </p>
         <p>
-          / <Link href={'/notes' as Route}>Notes</Link>
+          / <Link href={'/roadmap'}>Roadmap</Link>
         </p>
       </nav>
       <br />
