@@ -74,6 +74,35 @@ export async function generateMetadata(
   return metadata
 }
 
+export const dynamicParams = false
+export async function generateStaticParams() {
+  function getMdxSlugs(folder: string, paths: string[] = []) {
+    const slugs = paths
+      .filter((file) => file.endsWith('.mdx'))
+      .map((file) => file.replace(/\.mdx$/, ''))
+      .map((slug) => path.join(folder, slug))
+      .map((slug) => slug.split('/'))
+      .map((slug) => ({ slug }))
+    return slugs
+  }
+
+  const app = path.join(process.cwd(), 'app')
+  const files = await fs.readdir(app, { withFileTypes: true })
+  const folders = files.filter((file) => file.isDirectory())
+  let slugs = await Promise.all(
+    folders.map(async (folder) => {
+      const pathsInFolder = await fs.readdir(path.join(app, folder.name))
+      return getMdxSlugs(folder.name, pathsInFolder)
+    })
+  )
+  .then((slugs) => slugs.flat())
+
+  const pathsInAppFolder = files.map((file) => file.name)
+  const slugsFromAppFolder = getMdxSlugs('', pathsInAppFolder)
+  slugs = slugs.concat(slugsFromAppFolder)
+  return slugs
+}
+
 export default async function Page(
   { params }:
   { params: { slug: string[] } }
