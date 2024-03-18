@@ -114,7 +114,7 @@ export default async function Page(
         { !frontmatter.published &&
           <>
             <br />
-            <Comment type='block'>
+            <Comment type="block">
               Hey there, you&apos;ve found an unpublished page. Feel free to poke around, but keep in mind the thoughts here are a bit more in-progress than usual. :)
             </Comment>
           </>
