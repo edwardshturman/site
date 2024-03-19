@@ -83,6 +83,12 @@ code {
   counter-reset: line;
 }
 
+:not(pre) > code {
+  box-shadow: 0 0 0 1px hsla(0deg, 0%, 100%, 0.1);
+  padding: 0.2em 0.4em;
+  border-radius: 0.4em;
+}
+
 pre {
   overflow-x: auto;
   padding: 1rem 0;
