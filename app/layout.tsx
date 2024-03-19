@@ -4,16 +4,6 @@ import Image from 'next/image'
 import { Breadcrumbs } from '@/app/components/Breadcrumbs'
 import './globals.css'
 
-const Geist = localFont({
-  src: '../public/fonts/GeistVariableVF.woff2',
-  variable: '--font-geist'
-})
-
-const GeistMono = localFont({
-  src: '../public/fonts/GeistMonoVariableVF.woff2',
-  variable: '--font-geist-mono'
-})
-
 const iAWriterQuattro = localFont({
   src: [
     {
@@ -66,11 +56,6 @@ const iAWriterMono = localFont({
   variable: '--font-ia-writer-mono'
 })
 
-const MonaspaceNeon = localFont({
-  src: '../public/fonts/MonaspaceNeonVarVF[wght,wdth,slnt].woff2',
-  variable: '--font-monaspace-neon'
-})
-
 let metadataBase: URL
 if (process.env.VERCEL_URL) metadataBase = new URL('https://edwardshturman.com')
 else metadataBase = new URL(`http://localhost:${process.env.PORT || 3000}`)
@@ -93,7 +78,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${Geist.variable} ${GeistMono.variable} ${iAWriterQuattro.variable} ${iAWriterMono.variable} ${MonaspaceNeon.variable}`}
+      className={`${iAWriterQuattro.variable} ${iAWriterMono.variable}`}
     >
       <body>
         <Image
