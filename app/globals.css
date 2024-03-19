@@ -27,10 +27,21 @@ body {
 }
 
 nav {
-  font-size: 14px;
+  font-size: 0.875rem;
   color: hsl(0, 0%, 60%);
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+nav > ul > li {
+  margin-left: 1rem;
+}
+
+nav > ul > li::before {
+  content: '/';
+  margin-left: -1rem;
+  margin-top: unset;
+  color: unset;
 }
 
 h1,

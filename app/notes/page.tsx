@@ -13,14 +13,16 @@ export default function Notes() {
   return (
     <>
       <h1>Notes</h1>
-      <ul>
-        <li>
-          <Link href="/notes/easy">&quot;It&apos;s easy&quot;</Link>
-        </li>
-        <li>
-          <Link href="/notes/mandarin">Mandarin learning log</Link>
-        </li>
-      </ul>
+      <nav>
+        <ul>
+          <li>
+            <Link href="/notes/easy">&quot;It&apos;s easy&quot;</Link>
+          </li>
+          <li>
+            <Link href="/notes/mandarin">Mandarin learning log</Link>
+          </li>
+        </ul>
+      </nav>
     </>
   )
 }

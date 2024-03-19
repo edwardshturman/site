@@ -1,30 +1,30 @@
 import Link from 'next/link'
 import { Comment } from './components/Comment'
+import { Spacer } from './components/Spacer'
 
 export default function Home() {
   return (
     <>
       <h1>Edward Shturman</h1>
       <p>
-        Web developer, interface designer, and community builder based in San
-        Francisco
+        Web developer, interface designer, <br /> and community builder based in San Francisco
       </p>
-      <br />
-      <nav>
-        <p>
-          / <Link href={'/notes'}>Notes</Link>
-        </p>
-        <p>
-          / <Link href={'/roadmap'}>Roadmap</Link>
-        </p>
-      </nav>
-      <br />
+      <Spacer size={4} />
       <Comment type="block">Site under construction</Comment>
+      <Spacer size={4} />
+      <nav>
+        <ul>
+          <li>
+            <Link href={"/notes"}>Notes</Link>
+          </li>
+          <li>
+            <Link href={"/roadmap"}>Roadmap</Link>
+          </li>
+        </ul>
+      </nav>
       <h2>Now</h2>
       <p>
-        Focused on running{' '}
-        <Link href="https://github.com/compsigh">compsigh</Link>, my CS club at
-        the University of San Francisco
+        Focused on running <Link href="https://github.com/compsigh">compsigh</Link>, my CS club at the University of San Francisco
       </p>
       <h2>Connect</h2>
       <p>
