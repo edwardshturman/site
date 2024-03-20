@@ -14,7 +14,7 @@ import { Comment } from '@/app/components/Comment'
 
 const readPage = cache(async (slug: string[]) => {
   try {
-    const filePath = path.join(process.cwd(), 'app', ...slug) + '.mdx'
+    const filePath = path.join(process.cwd(), 'app', ...slug) + '.md'
     const page = await fs.readFile(filePath, 'utf8')
 
     const vercelTheme = await import('@/app/vercel-theme.json')
@@ -75,10 +75,10 @@ export async function generateMetadata(
 
 export const dynamicParams = false
 export async function generateStaticParams() {
-  function getMdxSlugs(folder: string, paths: string[] = []) {
+  function getMdSlugs(folder: string, paths: string[] = []) {
     const slugs = paths
-      .filter((file) => file.endsWith('.mdx'))
-      .map((file) => file.replace(/\.mdx$/, ''))
+      .filter((file) => file.endsWith('.md'))
+      .map((file) => file.replace(/\.md$/, ''))
       .map((slug) => path.join(folder, slug))
       .map((slug) => slug.split('/'))
       .map((slug) => ({ slug }))
@@ -91,13 +91,13 @@ export async function generateStaticParams() {
   let slugs = await Promise.all(
     folders.map(async (folder) => {
       const pathsInFolder = await fs.readdir(path.join(app, folder.name))
-      return getMdxSlugs(folder.name, pathsInFolder)
+      return getMdSlugs(folder.name, pathsInFolder)
     })
   )
   .then((slugs) => slugs.flat())
 
   const pathsInAppFolder = files.map((file) => file.name)
-  const slugsFromAppFolder = getMdxSlugs('', pathsInAppFolder)
+  const slugsFromAppFolder = getMdSlugs('', pathsInAppFolder)
   slugs = slugs.concat(slugsFromAppFolder)
   return slugs
 }

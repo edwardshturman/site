@@ -20,6 +20,6 @@ I set out to check a few boxes:
 
 - Josh Comeau's (the 🐐) [post on how he built his blog](https://www.joshwcomeau.com/blog/how-i-built-my-blog/)
 - The fantastic plugins I'm using:
-    - [`rehype-pretty-code`](https://rehype-pretty-code.netlify.app/)
-    - [`rehype-slug`](https://github.com/rehypejs/rehype-slug)
-    - [`remark-math` with `rehype-katex`](https://github.com/remarkjs/remark-math)
+  - [`rehype-pretty-code`](https://rehype-pretty-code.netlify.app/)
+  - [`rehype-slug`](https://github.com/rehypejs/rehype-slug)
+  - [`remark-math` with `rehype-katex`](https://github.com/remarkjs/remark-math)
