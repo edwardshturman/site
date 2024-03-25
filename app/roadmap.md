@@ -18,9 +18,9 @@ published: true
   <Comment type="inline">Shipped 2024-03-04</Comment>
 - [x] Static route generation
   <Comment type="inline">Shipped 2024-03-15</Comment>
+- [x] Projects page
 - [ ] Images
 - [ ] Convert `<a>` and `<img>` to `<Link>` and `<Image>`
-- [ ] Craft page, à la [Rauno](https://rauno.me/craft)
 - [ ] Custom 404
 - [ ] Image pinboard component
 - [ ] Toolbox, à la [traf](https://tr.af/stack)
