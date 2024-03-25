@@ -15,6 +15,9 @@ export default function Home() {
       <nav>
         <ul>
           <li>
+            <Link href={"/projects"}>Projects</Link>
+          </li>
+          <li>
             <Link href={"/notes"}>Notes</Link>
           </li>
           <li>
@@ -28,7 +31,7 @@ export default function Home() {
       </p>
       <h2>Connect</h2>
       <p>
-        <Link href="https://twitter.com/edwardshturman">𝕏</Link>
+        <Link href="https://twitter.com/edwardshturman">X</Link>
       </p>
       <p>
         <Link href="https://github.com/edwardshturman">GitHub</Link>
