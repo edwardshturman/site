@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Notes',
-  description: "Thoughts on programming, learning, and life",
+  description: 'Thoughts on design, engineering, learning, and life',
   openGraph: {
     siteName: "Edward Shturman's personal website",
   }
