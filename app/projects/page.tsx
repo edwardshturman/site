@@ -14,6 +14,13 @@ export default function Projects() {
   return (
     <>
       <h1>Projects</h1>
+      <nav>
+        <ul>
+          <li>
+            <Link href="/projects/compsigh">compsigh</Link>
+          </li>
+        </ul>
+      </nav>
       <Comment type="block">
         More coming soon. In the meantime, check out <Link href="https://read.cv/edwardshturman">my read.cv</Link>.
       </Comment>
