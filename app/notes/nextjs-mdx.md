@@ -8,13 +8,19 @@ published: false
 
 It's comically nontrivial to set up an ergonomic, performant MDX Next.js app, with all the bells & whistles like parsing YAML frontmatter. Here's how I did it.
 
-## Requirements
+## My criteria
 
 I set out to check a few boxes:
 
 1. **A natural authoring experience**: it should feel intuitive enough to edit as actual Markdown, such as in editors like Obsidian.
 2. **As little dependencies and acrobatics as possible**: many of the solutions in guides I read while trying to build this used `gray-matter{:.entity.name.type.module}`, `next-mdx-remote{:.entity.name.type.module}` — often both `compileMDX{:.entity.name.function}` and `MDXRemote{:.entity.name.function}` — or a hacked-together amalgam of Node.js I/O APIs. It should be elegant (enough :)).
 3. **Flexibility**: I don't want to be confined to something like a `/blog` route to use MDX. I want to be able to use what I want interchangeably based on my needs.
+
+I'm happy to say I managed to check all of the above, with some bells & whistles:
+
+- YAML frontmatter support
+- Dynamic metadata & OG image generation
+- Static generation of MDX pages at build time
 
 ## Resources
 
