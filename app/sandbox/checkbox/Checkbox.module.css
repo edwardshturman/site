@@ -1,0 +1,12 @@
+input[type="checkbox"].checkbox {
+  margin: 0 .2em .25em -1.4em;
+  vertical-align: middle;
+  color: hsla(41deg, 98%, 59%, 0.9);
+  border-radius: 50px;
+  border: 1px solid hsla(41deg, 98%, 59%, 0.9);
+  background-color: hsla(41deg, 98%, 59%, 0.9);
+}
+
+li.task-list-item::marker {
+  color: hsla(41deg, 98%, 59%, 0.0);
+}

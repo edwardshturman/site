@@ -7,6 +7,7 @@ export default function Sandbox() {
       <p>Raw experiments and thoughts</p>
       <ul>
         <li><Link href="/sandbox/imagewrapper"><code>ImageWrapper</code> component</Link></li>
+        <li><Link href="/sandbox/checkbox">Checkbox experiment</Link></li>
       </ul>
     </>
   )
