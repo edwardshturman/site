@@ -19,6 +19,7 @@ published: true
 - [x] Static route generation
   <Comment type="inline">Shipped 2024-03-15</Comment>
 - [x] Projects page
+  <Comment type="inline">Shipped 2024-03-24</Comment>
 - [ ] Images
 - [ ] Convert `<a>` and `<img>` to `<Link>` and `<Image>`
 - [ ] Custom 404
@@ -32,3 +33,5 @@ published: true
 - [ ] Timeline view for how a note has changed over time
 - [ ] Book reviews, à la [Ali Abdaal](https://aliabdaal.com/book-notes/)
 - [ ] Spotify
+- [ ] Bitmap emoji reactions
+- [ ] kepano's [rating system](https://stephango.com/vault#rating-system)
