@@ -22,6 +22,24 @@ I'm happy to say I managed to check all of the above, with some bells & whistles
 - Dynamic metadata & OG image generation
 - Static generation of MDX pages at build time
 
+## Ecosystem
+
+### `@next/mdx{:.entity.name.type.module}`
+
+While very fast server-rendered, `@next/mdx{:.entity.name.type.module}` is not very flexible: you can't name the pages anything other than `<slug>/page.mdx`, and this does not get prettier over time. Also, YAML frontmatter is not natively supported.
+
+### `gray-matter{:.entity.name.type.module}`
+
+If the `@next/mdx{:.entity.name.type.module}` tradeoffs don't bother you, `gray-matter{:.entity.name.type.module}` is a great package for parsing frontmatter. It supports JSON and TOML in addition to YAML as well.
+
+### `mdx-bundler{:.entity.name.type.module}`
+
+`mdx-bundler{:.entity.name.type.module}` is nice for apps with a lot of components used sparsely in different places, as well as for non-Next.js apps, but it does come with a developer experience tradeoff in my opinion.
+
+### `next-mdx-remote{:.entity.name.type.module}`
+
+This is it. `next-mdx-remote{:.entity.name.type.module}` allows you to write full-fat Markdown — you don't even need to use an `.mdx` extension — and just *use* your components, no import required. Yes, that does mean you have to bundle *all of them* in *every* page. But, since I don't have a lot of them right now, and since my pages are statically generated anyway, this isn't a concern for me personally.
+
 ## Resources
 
 - Josh Comeau's (the 🐐) [post on how he built his blog](https://www.joshwcomeau.com/blog/how-i-built-my-blog/)
