@@ -8,6 +8,9 @@ published: false
 
 It's comically nontrivial to set up an ergonomic, performant MDX Next.js app, with all the bells & whistles like parsing YAML frontmatter. Here's how I did it.
 
+- [My criteria](#my-criteria)
+- [Ecosystem](#ecosystem)
+
 ## My criteria
 
 I set out to check a few boxes:
