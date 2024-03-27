@@ -5,6 +5,9 @@ export default function Sandbox() {
     <>
       <h1>Sandbox</h1>
       <p>Raw experiments and thoughts</p>
+      <ul>
+        <li><Link href="/sandbox/imagewrapper"><code>ImageWrapper</code> component</Link></li>
+      </ul>
     </>
   )
 }
