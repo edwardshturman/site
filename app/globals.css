@@ -2,8 +2,17 @@
   --font-sans: var(--font-ia-writer-quattro), sans-serif;
   --font-mono: var(--font-ia-writer-mono), 'Courier Prime', 'Courier New', ui-monospace, monospace;
 
-  color: white;
-  background-color: black;
+  --color-white:                   hsl(0deg, 0%, 100%);
+  --color-black:                   hsl(0deg, 0%, 0%);
+  --color-dark-gray:               hsl(0deg, 0%, 40%);
+  --color-light-gray:              hsl(0deg, 0%, 60%);
+  --color-compsigh:                hsl(41deg, 98%, 59%);
+  --color-compsigh-translucent:    hsla(41deg, 98%, 59%, 0.2);
+  --color-diff-add-translucent:    hsla(120deg, 100%, 25%, 0.2);
+  --color-diff-remove-translucent: hsla(0deg, 100%, 50%, 0.2);
+
+  color: var(--color-white);
+  background-color: var(--color-black);
 }
 
 * {
@@ -28,7 +37,7 @@ body {
 
 nav {
   font-size: 0.875rem;
-  color: hsl(0, 0%, 60%);
+  color: var(--color-light-gray);
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -55,7 +64,7 @@ h6 {
 }
 
 a {
-  color: hsl(41deg, 98%, 59%);
+  color: var(--color-compsigh);
   text-decoration: none;
 }
 
@@ -71,7 +80,7 @@ li {
 
 li::before,
 li::marker {
-  color: hsl(0deg, 0%, 40%);
+  color: var(--color-dark-gray);
 }
 
 ul > li {
@@ -95,8 +104,8 @@ code {
 }
 
 :not(pre) > code {
-  box-shadow: 0 0 0 1px hsla(0deg, 0%, 100%, 0.1);
-  padding: 0.2em 0.4em;
+  box-shadow: 0 0 0 1px var(--color-dark-gray);
+  padding: 0.1em 0.4em;
   border-radius: 0.4em;
 }
 
@@ -117,13 +126,13 @@ pre > code[data-line-numbers] > [data-line]::before {
   width: 2em;
   margin-right: 2em;
   text-align: right;
-  color: hsla(0deg, 0%, 100%, 0.5);
+  color: var(--color-dark-gray);
   user-select: none;
   font-variant-numeric: tabular-nums;
 }
 
 pre > code[data-line-numbers] > [data-line]:hover::before {
-  color: hsla(0deg, 0%, 100%, 0.75);
+  color: var(--color-light-gray);
 }
 
 pre
@@ -139,13 +148,13 @@ pre
 }
 
 span[data-highlighted-line] {
-  background-color: hsla(41deg, 98%, 59%, 0.2);
+  background-color: var(--color-compsigh-translucent);
 }
 
 span[data-highlighted-line-id='add'] {
-  background-color: hsla(120deg, 100%, 25%, 0.2);
+  background-color: var(--color-diff-add-translucent);
 }
 
 span[data-highlighted-line-id='remove'] {
-  background-color: hsla(0deg, 100%, 50%, 0.2);
+  background-color: var(--color-diff-remove-translucent);
 }
