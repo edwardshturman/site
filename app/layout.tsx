@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import Image from 'next/image'
-import { Breadcrumbs } from '@/app/components/Breadcrumbs'
+import { Breadcrumbs } from '@/components/Breadcrumbs'
 import './globals.css'
 
 const iAWriterQuattro = localFont({

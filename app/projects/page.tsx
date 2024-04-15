@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { Comment } from '@/app/components/Comment'
+import { Comment } from '@/components/Comment'
 
 export const metadata: Metadata = {
   title: 'Projects',

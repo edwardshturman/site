@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { ImageWrapper } from '@/app/components/ImageWrapper'
+import { ImageWrapper } from '@/components/ImageWrapper'
 
 export default function ImageWrapperExperiment() {
   return (

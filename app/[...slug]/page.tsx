@@ -10,7 +10,7 @@ import { Suspense, cache } from 'react'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import type { Options } from 'rehype-pretty-code'
-import { Comment } from '@/app/components/Comment'
+import { Comment } from '@/components/Comment'
 
 const readPage = cache(async (slug: string[]) => {
   try {

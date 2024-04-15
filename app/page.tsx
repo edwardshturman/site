@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import { Comment } from './components/Comment'
-import { Spacer } from './components/Spacer'
+import { Comment } from '@/components/Comment'
+import { Spacer } from '@/components/Spacer'
 
 export default function Home() {
   return (
