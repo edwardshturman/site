@@ -1,0 +1,26 @@
+div.image-card {
+  border: 0.4rem solid #0C0C0C;
+  border-radius: 0.4rem;
+  width: fit-content;
+  background-color: #0C0C0C;
+}
+
+div.image-card img {
+  vertical-align: middle;
+  border-radius: 0.2rem;
+}
+
+div.image-card figcaption,
+div.image-card p {
+  padding-left: 0.4rem;
+}
+
+div.image-card figcaption {
+  padding-top: 1rem;
+  padding-bottom: 0.8rem;
+}
+
+div.image-card p {
+  color: var(--color-light-gray);
+  margin: 0;
+}

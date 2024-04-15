@@ -20,7 +20,9 @@ published: true
   <Comment type="inline">Shipped 2024-03-15</Comment>
 - [x] Projects page
   <Comment type="inline">Shipped 2024-03-24</Comment>
-- [ ] Images
+- [x] `GalleryCard` component
+  <Comment type="inline">Shipped 2024-04-14</Comment>
+- [ ] Images in Markdown
 - [ ] Convert `<a>` and `<img>` to `<Link>` and `<Image>`
 - [ ] Custom 404
 - [ ] Image pinboard component
@@ -35,3 +37,4 @@ published: true
 - [ ] Spotify
 - [ ] Bitmap emoji reactions
 - [ ] kepano's [rating system](https://stephango.com/vault#rating-system)
+- [ ] Browse notes by tag (`#` nav link list style)
