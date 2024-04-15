@@ -1,6 +1,6 @@
 import styles from './Checkbox.module.css'
 
-export default function CheckboxExperiment() {
+export function Checkbox() {
   return (
     <>
       <h1>Checkbox experiment</h1>
