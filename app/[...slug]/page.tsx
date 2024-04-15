@@ -1,15 +1,17 @@
-import fs from 'node:fs/promises'
 import path from 'node:path'
-import { compileMDX } from 'next-mdx-remote/rsc'
-import rehypePrettyCode from 'rehype-pretty-code'
-import rehypeKatex from 'rehype-katex'
-import remarkMath from 'remark-math'
-import '@/app/katex.min.css'
-import rehypeSlug from 'rehype-slug'
+import fs from 'node:fs/promises'
+import type { Metadata } from 'next'
 import { Suspense, cache } from 'react'
 import { notFound } from 'next/navigation'
-import type { Metadata } from 'next'
+import { compileMDX } from 'next-mdx-remote/rsc'
+
+import '@/app/katex.min.css'
+import remarkMath from 'remark-math'
+import rehypeSlug from 'rehype-slug'
+import rehypeKatex from 'rehype-katex'
+import rehypePrettyCode from 'rehype-pretty-code'
 import type { Options } from 'rehype-pretty-code'
+
 import { Comment } from '@/components/Comment'
 
 const readPage = cache(async (slug: string[]) => {
