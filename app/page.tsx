@@ -15,13 +15,16 @@ export default function Home() {
       <nav>
         <ul>
           <li>
-            <Link href={"/projects"}>Projects</Link>
+            <Link href={"/craft"}>Craft</Link>
           </li>
           <li>
             <Link href={"/notes"}>Notes</Link>
           </li>
           <li>
             <Link href={"/roadmap"}>Roadmap</Link>
+          </li>
+          <li>
+            <Link href={"/projects"}>Projects</Link>
           </li>
         </ul>
       </nav>

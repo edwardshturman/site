@@ -22,6 +22,8 @@ published: true
   <Comment type="inline">Shipped 2024-03-24</Comment>
 - [x] `GalleryCard` component
   <Comment type="inline">Shipped 2024-04-14</Comment>
+- [x] Craft page, à la [Rauno](https://rauno.me/craft)
+  <Comment type="inline">Shipped 2024-04-14</Comment>
 - [ ] Images in Markdown
 - [ ] Convert `<a>` and `<img>` to `<Link>` and `<Image>`
 - [ ] Custom 404
