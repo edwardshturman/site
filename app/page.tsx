@@ -27,7 +27,7 @@ export default function Home() {
       </nav>
       <h2>Now</h2>
       <p>
-        Focused on running <Link href="https://github.com/compsigh">compsigh</Link>, my CS club at the University of San Francisco
+        Focused on running <Link href="/projects/compsigh">compsigh</Link>, my CS club at the University of San Francisco
       </p>
       <h2>Connect</h2>
       <p>
