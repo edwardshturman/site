@@ -63,8 +63,7 @@ else metadataBase = new URL(`http://localhost:${process.env.PORT || 3000}`)
 export const metadata: Metadata = {
   metadataBase,
   title: 'Edward Shturman',
-  description:
-    'Web developer, interface designer, and community builder based in San Francisco',
+  description: 'Web developer, interface designer, and community builder based in San Francisco',
   openGraph: {
     images: '/assets/og-image.png'
   }
