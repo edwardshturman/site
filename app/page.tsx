@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { Comment } from '@/components/Comment'
 import { Spacer } from '@/components/Spacer'
 
 export default function Home() {
@@ -9,8 +8,6 @@ export default function Home() {
       <p>
         Web developer, interface designer, <br /> and community builder based in San Francisco
       </p>
-      <Spacer size={4} />
-      <Comment type="block">Site under construction</Comment>
       <Spacer size={4} />
       <nav>
         <ul>
