@@ -25,7 +25,7 @@ export default function Craft() {
         title="Intention"
         description={
           <>
-            <p>A concept of an app I&apos;m working on for one of my classes.</p>
+            <p>A concept of an app I&apos;m working on for one of my classes</p>
             <Spacer size={10} />
             <p><Link href="https://intention-demo.vercel.app">View demo</Link></p>
           </>
@@ -56,6 +56,25 @@ export default function Craft() {
           alt="A gif of the compsigh cascade UI"
           width={1920/4}
           height={1080/4}
+        />
+      </GalleryCard>
+      <Spacer size={32} />
+      <GalleryCard
+        title="Arc boosts"
+        description={
+          <>
+            <p>Style popular websites based on your <Link href="https://arc.net/gift/6a6a1565">Arc</Link> theme</p>
+            <Spacer size={10} />
+            <p><Link href="https://github.com/edwardshturman/arc-boosts">View source</Link></p>
+          </>
+        }
+      >
+        <Image
+          unoptimized
+          src="/assets/Arc-boosts.png"
+          alt="A thumbnail of two Arc boosts made by Edward Shturman"
+          width={1280/3}
+          height={640/3}
         />
       </GalleryCard>
     </>
