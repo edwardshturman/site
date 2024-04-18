@@ -22,6 +22,25 @@ export default function Craft() {
         More coming soon. In the meantime, check out <Link href="https://read.cv/edwardshturman">my read.cv</Link>.
       </Comment>
       <GalleryCard
+        title="Intention"
+        description={
+          <>
+            <p>A concept of an app I&apos;m working on for one of my classes.</p>
+            <Spacer size={10} />
+            <p><Link href="https://intention-demo.vercel.app">View demo</Link></p>
+          </>
+        }
+      >
+        <Image
+          unoptimized
+          src="/assets/Intention-landing-page-mockup.png"
+          alt="A screenshot of Intention, a concept of an app I'm working on for one of my classes."
+          width={1920/4}
+          height={1440/4}
+        />
+      </GalleryCard>
+      <Spacer size={32} />
+      <GalleryCard
         title="compsigh cascade"
         description={
           <>
