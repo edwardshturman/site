@@ -53,6 +53,10 @@ nav > ul > li::before {
   color: unset;
 }
 
+nav.table-of-contents > ul > li::before {
+  content: '#';
+}
+
 h1,
 h2,
 h3,
