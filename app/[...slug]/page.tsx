@@ -12,7 +12,9 @@ import rehypeKatex from 'rehype-katex'
 import rehypePrettyCode from 'rehype-pretty-code'
 import type { Options } from 'rehype-pretty-code'
 
+import Link from 'next/link'
 import { Comment } from '@/components/Comment'
+import { GalleryCard } from '@/components/GalleryCard'
 
 const readPage = cache(async (slug: string[]) => {
   try {
@@ -32,7 +34,7 @@ const readPage = cache(async (slug: string[]) => {
 
     const { content, frontmatter } = await compileMDX<Frontmatter>({
       source: page,
-      components: { Comment },
+      components: { Comment, GalleryCard, Link },
       options: {
         parseFrontmatter: true,
         mdxOptions: {
