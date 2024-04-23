@@ -1,7 +1,8 @@
 import Link from 'next/link'
 import { Route } from 'next'
-import type { LinkProps } from 'next/link'
-import type { RouteType } from 'next/dist/lib/load-custom-routes'
+import Image from 'next/image'
+
+import { Spacer } from '@/components/Spacer'
 
 import styles from './GalleryCard.module.css'
 
@@ -10,32 +11,43 @@ export function GalleryCard(
     title,
     description,
     link,
-    children
+    cta,
+    src,
+    alt
   }:
   {
     title: string,
     description?: React.ReactElement,
     link?: Route,
-    children: React.ReactElement
+    cta?: string,
+    src?: string,
+    alt?: string
   }
 ) {
   return (
     <>
       <div className={styles["image-card"]}>
-        <LinkWrapper href={link as Route}>
-          <figure>
-            <>{children}</>
-            <figcaption>{title}</figcaption>
-            { description && <div style={{maxWidth: children.props.width}}>{description}</div> }
-          </figure>
-        </LinkWrapper>
+        <figure>
+        {
+          src &&
+            <Image
+              unoptimized
+              src={src}
+              alt={alt || title}
+              fill={true}
+            />
+        }
+          <figcaption>{title}</figcaption>
+          { description && <div>{description}</div> }
+          {
+            link &&
+              <>
+                <Spacer size={10} />
+                <Link href={link}>{cta}</Link>
+              </>
+            }
+        </figure>
       </div>
     </>
   )
-}
-
-function LinkWrapper({href, children}: LinkProps<RouteType>) {
-  if (!href)
-    return <>{children}</>
-  return <Link href={href}>{children}</Link>
 }

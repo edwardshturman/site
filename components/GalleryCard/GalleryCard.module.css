@@ -1,18 +1,9 @@
-div.image-card {
-  border: 0.4rem solid #0C0C0C;
-  border-radius: 0.4rem;
-  width: fit-content;
-  background-color: #0C0C0C;
-}
-
 div.image-card img {
+  position: relative !important; /* Override `next/image` */
+  width: 650px;
+  height: auto;
   vertical-align: middle;
   border-radius: 0.2rem;
-}
-
-div.image-card figcaption,
-div.image-card p {
-  padding-left: 0.4rem;
 }
 
 div.image-card figcaption {
