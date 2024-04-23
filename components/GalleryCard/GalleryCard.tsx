@@ -16,7 +16,7 @@ export function GalleryCard(
     alt
   }:
   {
-    title: string,
+    title?: string,
     description?: React.ReactElement,
     link?: Route,
     cta?: string,
@@ -33,11 +33,11 @@ export function GalleryCard(
             <Image
               unoptimized
               src={src}
-              alt={alt || title}
+              alt={alt || title || ''}
               fill={true}
             />
         }
-          <figcaption>{title}</figcaption>
+          { title && <figcaption>{title}</figcaption> }
           { description && <div>{description}</div> }
           {
             link &&
