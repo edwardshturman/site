@@ -2,6 +2,7 @@
 title: "DEPLOY/23"
 description: "The first hackathon hosted by my computer science club compsigh, and our biggest event of the Fall 2023 semester. An entirely student-bootstrapped, three-day event, bringing together the best minds in CS, design, and engineering to hack on a project for a weekend."
 published: true
+og_image: "/assets/deploy-og.png"
 ---
 
 # DEPLOY/23

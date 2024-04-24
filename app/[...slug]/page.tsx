@@ -31,6 +31,7 @@ const readPage = cache(async (slug: string[]) => {
       title: string
       description: string
       published: boolean
+      og_image?: string
     }
 
     const { content, frontmatter } = await compileMDX<Frontmatter>({
@@ -66,6 +67,14 @@ export async function generateMetadata(
       siteName: "Edward Shturman's personal website",
     }
   }
+
+  if (frontmatter.og_image)
+    metadata.openGraph!.images = [{
+      url: frontmatter.og_image,
+      width: 1200,
+      height: 630,
+      alt: ''
+    }]
 
   if (params.slug.includes('notes'))
     metadata.openGraph!.images = [{
