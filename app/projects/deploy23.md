@@ -45,15 +45,16 @@ For a hackathon with a cyberpunk vibe, I felt it'd be appropriate to make an eve
 
 We drew inspiration from games, aesthetics, and stories we'd all grown up with. Those included:
 
-- [Watch Dogs 2](https://www.ubisoft.com/en-us/game/watch-dogs/watch-dogs-2)
-- [Rust](https://rust.facepunch.com/) (shoutout to OST artist Alex Rehberg for the track Wastes, used in the trailer)
-- Cybernetics
-- Orwellian dystopia stories
-- [Ghost in the Shell](https://en.wikipedia.org/wiki/Ghost_in_the_Shell_(1995_film))
-- [The Matrix](https://en.wikipedia.org/wiki/The_Matrix)
 - [VALORANT Protocol 781-A trailer](https://www.youtube.com/watch?v=h6i8lM3egvI)
 - [Revenant from Apex Legends](https://www.youtube.com/watch?v=75szF5i41Bw)
+- Orwellian dystopia stories
+- [Ghost in the Shell](https://en.wikipedia.org/wiki/Ghost_in_the_Shell_(1995_film))
 - [Winter Soldier](https://www.youtube.com/watch?v=2bWWBjKEiZA)
+- [Watch Dogs 2](https://www.ubisoft.com/en-us/game/watch-dogs/watch-dogs-2)
+- Cybernetics
+- [The Matrix](https://en.wikipedia.org/wiki/The_Matrix)
+- [Rust](https://rust.facepunch.com/)
+  - Shoutout to OST artist [Alex Rehberg](https://alexrehberg.com/) for the track Wastes, used in the trailer
 
 I used [Midjourney](https://midjourney.com) to create each shot as a static image. Then, I used [Runway](https://runwayml.com/) to give it life. Finally, I upscaled all outputs using [Topaz Labs](https://topazlabs.com).
 
