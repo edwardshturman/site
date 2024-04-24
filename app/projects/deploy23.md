@@ -1,12 +1,12 @@
 ---
 title: "DEPLOY/23"
-description: "DEPLOY/23 — the first hackathon hosted by my computer science club compsigh, and our biggest event of the Fall 2023 semester. An entirely student-bootstrapped, three-day event, bringing together the best minds in CS, design, and engineering to hack on a project for a weekend."
-published: false
+description: "The first hackathon hosted by my computer science club compsigh, and our biggest event of the Fall 2023 semester. An entirely student-bootstrapped, three-day event, bringing together the best minds in CS, design, and engineering to hack on a project for a weekend."
+published: true
 ---
 
 # DEPLOY/23
 
-DEPLOY/23 — the first hackathon hosted by [my computer science club compsigh](/projects/compsigh), and our biggest event of the Fall 2023 semester. An entirely student-bootstrapped, three-day event, bringing together the best minds in CS, design, and engineering to hack on a project for a weekend.
+The first hackathon hosted by [my computer science club compsigh](/projects/compsigh), and our biggest event of the Fall 2023 semester. An entirely student-bootstrapped, three-day event, bringing together the best minds in CS, design, and engineering to hack on a project for a weekend.
 
 <nav class="table-of-contents">
   <ul>
@@ -63,15 +63,32 @@ I used [Midjourney](https://midjourney.com) to create each shot as a static imag
 
 If we're going to up the quality, Devpost and Google Forms won't cut it. I set out to design-engineer a custom platform for participant registration, team formation, and project submission. We also needed it to accommodate our logistics and workflow for the event, which was in Notion.
 
+Here's the result, written in React & Next.js, auth via NextAuth, forms via Tally, and logistics via Notion API:
+
 <GalleryCard
-  title="Landing page & platform"
-  description={
-    <>
-      <p>A platform I design-engineered for participant registration, team formation, and project submission. Written in React &amp; Next.js, auth via NextAuth, forms via Tally, and logistics via Notion API.</p>
-    </>
-  }
   src="/assets/deploy-platform.gif"
   alt="A gif of the DEPLOY/23 landing page"
-  link="https://github.com/compsigh/deploy"
-  cta="View source"
+/>
+
+<Spacer size={10} />
+
+<GalleryCard
+  src="/assets/deploy-platform-console.png"
+  alt="A screenshot of the DEPLOY/23 Console, where participants can register, form their teams, and submit their projects"
+/>
+
+<Spacer size={10} />
+
+<GalleryCard
+  src="/assets/deploy-platform-submission.png"
+  alt="A screenshot of the DEPLOY/23 project submission form"
+/>
+
+You can [read the technical breakdown](https://github.com/compsigh/deploy) on our GitHub repo.
+
+All in all, it was exhilerating putting this event on, and I look forward to DEPLOY/24.
+
+<GalleryCard
+  src="/assets/deploy-presenters.jpeg"
+  alt="A picture of the DEPLOY/23 presenters on stage"
 />

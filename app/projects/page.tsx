@@ -31,6 +31,18 @@ export default function Projects() {
         link={"/projects/compsigh" as Route}
         cta="View project"
       />
+      <GalleryCard
+        title="DEPLOY/23"
+        description={
+          <>
+            <p>The first hackathon hosted by <Link href="/projects/compsigh">my computer science club compsigh</Link>, and our biggest event of the Fall 2023 semester. An entirely student-bootstrapped, three-day event, bringing together the best minds in CS, design, and engineering to hack on a project for a weekend.</p>
+          </>
+        }
+        src="/assets/deploy-grid-banner.png"
+        alt="DEPLOY/23 banner"
+        link={"/projects/deploy23" as Route}
+        cta="View project"
+      />
     </>
   )
 }
