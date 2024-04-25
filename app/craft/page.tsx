@@ -65,6 +65,17 @@ export default function Craft() {
       />
       <Spacer size={32} />
       <GalleryCard
+        title="compsigh icons"
+        description={
+          <>
+            <p>A set of vector icons I generated with <Link href="https://recraft.ai">Recraft</Link> for <Link href="/projects/compsigh">my computer science club compsigh</Link></p>
+          </>
+        }
+        src="/assets/compsigh-icons.png"
+        alt="A set of AI-generated vector icons for compsigh, a computer science club at the University of San Francisco"
+      />
+      <Spacer size={32} />
+      <GalleryCard
         title="Realm thread queue"
         description={
           <>
