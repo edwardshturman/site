@@ -27,8 +27,8 @@ export default function Craft() {
             <p>A concept of an app I&apos;m working on for one of my classes</p>
           </>
         }
-        src="/assets/Intention-landing-page-mockup.png"
-        alt="A screenshot of Intention, a concept of an app I'm working on for one of my classes."
+        src="/assets/intention.gif"
+        alt="A gif of Intention, a concept of an app I'm working on for one of my classes."
         link="https://intention-demo.vercel.app"
         cta="View demo"
       />
