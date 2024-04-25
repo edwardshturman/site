@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata, Route } from 'next'
 
+import { Spacer } from '@/components/Spacer'
 import { Comment } from '@/components/Comment'
 import { GalleryCard } from '@/components/GalleryCard'
 
@@ -31,6 +32,7 @@ export default function Projects() {
         link={"/projects/compsigh" as Route}
         cta="View project"
       />
+      <Spacer size={32} />
       <GalleryCard
         title="DEPLOY/23"
         description={
