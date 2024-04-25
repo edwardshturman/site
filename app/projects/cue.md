@@ -60,7 +60,6 @@ Around this time, I was also getting into UI design, so I really wanted to push 
   title="Cue icon set"
   description={<p>I may or may not have spent 50% of our hackathon time in Figma.</p>}
   src="/assets/cue-icons.png"
-  alt="A graphic of the Cue icon set."
 />
 
 The vibes were immaculate:
@@ -69,7 +68,6 @@ The vibes were immaculate:
   title="compsigh teams at Dons Hack 2023"
   description={<p>Even though we were all competing, we knew a win for any team from <Link href="/projects/compsigh">my computer science club compsigh</Link> was a win for all of us. So, we'd work together in one room and would help each other out.</p>}
   src="/assets/cue-donshack-compsigh-teams.JPG"
-  alt="compsigh teams at Dons Hack 2023 working together."
 />
 
 <Spacer size={32} />
@@ -86,4 +84,24 @@ Oh, and we won, too. :)
 <GalleryCard
   src="/assets/cue-donshack-certificate.JPG"
   alt="A certificate congratulating me for winning Best App at Dons Hack 2023."
+/>
+
+## Features
+
+I suppose I should get to it: what does Cue actually do?
+
+Its primary function is to take your study notes, and return the most relevant questions to quiz yourself on.
+
+<GalleryCard
+  title="Cue beta demo from May 2023, not long after the hackathon"
+  description={<p>Please ignore the jank CSS :)</p>}
+  src="/assets/cue-may2023-beta-demo.gif"
+/>
+
+That's pretty much what it looked like when we went up on stage at Dons Hack, but I'm proud to say we continued working on it after the event, and shipped some pretty cool additional features.
+
+<GalleryCard
+  title="Invites"
+  description={<p>From <code>v0.1.0</code>, we made the app open to all USF students for free, but we wanted an invite system for our friends & family elsewhere. Here we hooked up Typeform to an API that would generate an invite code like <code>gaius-julius-caesar</code> (I was really into the European history class).</p>}
+  src="/assets/cue-invite-demo.gif"
 />
