@@ -42,3 +42,48 @@ The timing for an AI-powered study app was just right:
 - The theme for the hackathon was ed-tech: build a solution that solves a problem in education
 
 So, what's our problem we're solving? After all, there are plenty of flashcard apps out there. The thing is, they assume you already know what to study. My friend & teammate Sanjana and I thought to leverage what we know about active recall — one of the most efficient, science-backed study methods — to create a tool that **helps students ask the right questions**.
+
+## Hackathon
+
+I had about three months' worth of web dev experience at this point, and had to learn a lot, fast. That's one of the great things about hackathons — win or lose, you'll likely walk away knowing a hell of a lot more than you did coming in. And learn I did. Cue was my first production project writing:
+
+- [React](https://react.dev) & [Next.js](https://nextjs.org)
+- [Vercel Postgres](https://vercel.com/docs/storage/vercel-postgres)
+- OpenAI API
+- [Vercel KV](https://vercel.com/docs/storage/vercel-kv)
+- [NextAuth](https://github.com/nextauthjs/next-auth)
+- [Sass](https://sass-lang.com)
+
+Around this time, I was also getting into UI design, so I really wanted to push myself and have it stand out from the crowd.
+
+<GalleryCard
+  title="Cue icon set"
+  description={<p>I may or may not have spent 50% of our hackathon time in Figma.</p>}
+  src="/assets/cue-icons.png"
+  alt="A graphic of the Cue icon set."
+/>
+
+The vibes were immaculate:
+
+<GalleryCard
+  title="compsigh teams at Dons Hack 2023"
+  description={<p>Even though we were all competing, we knew a win for any team from <Link href="/projects/compsigh">my computer science club compsigh</Link> was a win for all of us. So, we'd work together in one room and would help each other out.</p>}
+  src="/assets/cue-donshack-compsigh-teams.JPG"
+  alt="compsigh teams at Dons Hack 2023 working together."
+/>
+
+<Spacer size={32} />
+
+<GalleryCard
+  title="Saturday night desk setup"
+  description={<p>It was time to lock in.</p>}
+  src="/assets/cue-donshack-latenight.JPG"
+  alt="My desk setup on Saturday night. Pictured is my dual-monitor setup (code on one, API docs and live preview on the other) and a cup of tea."
+/>
+
+Oh, and we won, too. :)
+
+<GalleryCard
+  src="/assets/cue-donshack-certificate.JPG"
+  alt="A certificate congratulating me for winning Best App at Dons Hack 2023."
+/>
