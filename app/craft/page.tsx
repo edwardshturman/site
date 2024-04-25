@@ -76,7 +76,7 @@ export default function Craft() {
       />
       <Spacer size={32} />
       <GalleryCard
-        title="Realm thread queue"
+        title="Realm Thread Queue"
         description={
           <>
             <p>Thread Queue for Realm, a Discord bot I&apos;m building. Lets you pluck individual messages from a channel into a thread. Great for separating multiple conversations going on in the same channel.</p>
@@ -89,7 +89,7 @@ export default function Craft() {
       />
       <Spacer size={32} />
       <GalleryCard
-        title="Arc boosts"
+        title="Arc Boosts"
         description={
           <>
             <p>Style popular websites based on your <Link href="https://arc.net/gift/6a6a1565">Arc</Link> theme</p>
