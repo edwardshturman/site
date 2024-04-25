@@ -47,6 +47,24 @@ export default function Craft() {
       />
       <Spacer size={32} />
       <GalleryCard
+        title="GitHub Contrib Emojis"
+        description={
+          <>
+            <p>A set of 10 high-quality icons modeled after the GitHub contribution chart you can upload to your Slack workspace or Discord server as emojis!</p>
+            <ul style={{color: 'var(--color-light-gray)'}}>
+              <li>Light mode &amp; dark mode ready</li>
+              <li>Padding built in, so they&apos;ll look great alongside each other</li>
+              <li>Recreated using GitHub Light Default / GitHub Dark Default themes</li>
+            </ul>
+          </>
+        }
+        src="/assets/github-contrib-emojis.png"
+        alt="A banner of the GitHub Contrib Emojis by Edward Shturman, showing all 10 emojis in the set"
+        link="https://goodies.edward.so/l/github-contrib-emojis"
+        cta="Grab them for free"
+      />
+      <Spacer size={32} />
+      <GalleryCard
         title="Realm thread queue"
         description={
           <>
