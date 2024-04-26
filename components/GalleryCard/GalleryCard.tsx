@@ -20,23 +20,20 @@ export function GalleryCard(
     description?: React.ReactElement,
     link?: Route,
     cta?: string,
-    src?: string,
     alt?: string
+    src: string,
   }
 ) {
   return (
     <>
       <div className={styles["image-card"]}>
         <figure>
-        {
-          src &&
-            <Image
-              unoptimized
-              src={src}
-              alt={alt || title || ''}
-              fill={true}
-            />
-        }
+          <Image
+            unoptimized
+            src={src}
+            alt={alt || title || ''}
+            fill={true}
+          />
           { title && <figcaption>{title}</figcaption> }
           { description && <div>{description}</div> }
           {
