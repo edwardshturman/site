@@ -1,7 +1,5 @@
 div.image-card img {
   position: relative !important; /* Override `next/image` */
-  width: 650px;
-  height: auto;
   vertical-align: middle;
   border-radius: 0.2rem;
 }

@@ -13,20 +13,25 @@ export function GalleryCard(
     link,
     cta,
     src,
-    alt
+    alt,
+    maxWidth
   }:
   {
     title?: string,
     description?: React.ReactElement,
     link?: Route,
     cta?: string,
-    alt?: string
     src: string,
+    alt?: string,
+    maxWidth?: number,
   }
 ) {
   return (
     <>
-      <div className={styles["image-card"]}>
+      <div
+        className={styles["image-card"]}
+        style={{ maxWidth: maxWidth || '650px' }}
+      >
         <figure>
           <Image
             unoptimized
