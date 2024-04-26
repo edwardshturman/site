@@ -100,8 +100,25 @@ Its primary function is to take your study notes, and return the most relevant q
 
 That's pretty much what it looked like when we went up on stage at Dons Hack, but I'm proud to say we continued working on it after the event, and shipped some pretty cool additional features.
 
+### Invite system
+
 <GalleryCard
-  title="Invites"
+  title="In-app invites"
   description={<p>From <code>v0.1.0</code>, we made the app open to all USF students for free, but we wanted an invite system for our friends & family elsewhere. Here we hooked up Typeform to an API that would generate an invite code like <code>gaius-julius-caesar</code> (I was really into the European history class).</p>}
   src="/assets/cue-invite-demo.gif"
 />
+
+<Spacer size={32} />
+
+<Grid columns={2} columnSizeDistribution={["1fr", "3fr"]}>
+  <GalleryCard
+    src="/assets/cue-invite-cards.gif"
+    alt="A demo of physical Cue invite cards with unique QR codes on the back"
+  />
+  <div>
+    <p>We really liked the idea of invites, and we went all out, because why not?</p>
+    <p>We produced a set of 50 <em>physical</em> invite cards, each with their own unique invite linked via QR code.</p>
+    <p>Invites had conditions like <code>no-invite</code> (invited students can&apos;t also +1) to help us scale reasonably.</p>
+    <p>We also gave these out to incoming freshmen at USF&apos;s Spring Involvement Fair.</p>
+  </div>
+</Grid>
