@@ -94,7 +94,6 @@ Its primary function is to take your study notes, and return the most relevant q
 
 <GalleryCard
   title="Cue beta demo from May 2023, not long after the hackathon"
-  description={<p>Please ignore the jank CSS :)</p>}
   src="/assets/cue-may2023-beta-demo.gif"
 />
 
@@ -104,7 +103,7 @@ That's pretty much what it looked like when we went up on stage at Dons Hack, bu
 
 <GalleryCard
   title="In-app invites"
-  description={<p>From <code>v0.1.0</code>, we made the app open to all USF students for free, but we wanted an invite system for our friends & family elsewhere. Here we hooked up Typeform to an API that would generate an invite code like <code>gaius-julius-caesar</code> (I was really into the European history class).</p>}
+  description={<p>From day one, we made the app open to all USF students for free, but we wanted an invite system for our friends & family elsewhere. Here we hooked up Typeform to an API that would generate an invite code like <code>gaius-julius-caesar</code> (I was really into the European history class).</p>}
   src="/assets/cue-invite-demo.gif"
 />
 
