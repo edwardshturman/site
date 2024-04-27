@@ -45,6 +45,19 @@ export default function Projects() {
         link={"/projects/deploy23" as Route}
         cta="View project"
       />
+      <Spacer size={32} />
+      <GalleryCard
+        title="Cue"
+        description={
+          <>
+            <p>A minimalist active recall study app focused on helping students ask the right questions. Transform your notes into actionable study cards for easy pasting back into Google Docs or Notion, or export to Anki.</p>
+          </>
+        }
+        src="/assets/cue-og.png"
+        alt="Cue banner"
+        link={"/projects/cue" as Route}
+        cta="View project"
+      />
     </>
   )
 }

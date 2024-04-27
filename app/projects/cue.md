@@ -1,7 +1,7 @@
 ---
 title: "Cue"
 description: "A minimalist active recall study app focused on helping students ask the right questions. Transform your notes into actionable study cards for easy pasting back into Google Docs or Notion, or export to Anki."
-published: false
+published: true
 og_image: "/assets/cue-og.png"
 ---
 
@@ -86,6 +86,8 @@ Oh, and we won, too. :)
   alt="A certificate congratulating me for winning Best App at Dons Hack 2023."
 />
 
+We [open-sourced Cue](https://github.com/compsigh/cue) on launch day as well.
+
 ## Features
 
 I suppose I should get to it: what does Cue actually do?
@@ -121,3 +123,18 @@ That's pretty much what it looked like when we went up on stage at Dons Hack, bu
     <p>We also gave these out to incoming freshmen at USF&apos;s Spring Involvement Fair.</p>
   </div>
 </Grid>
+
+### Waitlist
+
+I [posted about Cue on X](https://x.com/edwardshturman/status/1662181707955486722) and we got a decent amount of students signing up for the beta. In August, we sent out the invites.
+
+<GalleryCard
+  title="Waitlist invite email"
+  src="/assets/cue-waitlist-email.gif"
+/>
+
+## Future
+
+In Spring 2024, Sanjana and I presented at a Gen AI talk at USF. We talked about all things prompt engineering and AI for education.
+
+On the roadmap are Google Docs and Notion integrations, and many more exciting features to ship. For the time being, though, we're putting the project on pause, looking forward to a clearer semester. Maybe we'll have some notes to transform. :)

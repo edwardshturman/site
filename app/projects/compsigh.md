@@ -18,6 +18,6 @@ Today, compsigh is comprised of **over 50% of the major**. Leading a leadership 
 
 I'm working on a place where you can learn about all of these in depth. In the meantime, here are my favorite highlights:
 
-- Check out [DEPLOY/23](https://deploy23.com), our flagship annual hackathon from last Fall
-- Check out [Cue](https://cue.study), a compsigh team project that won Best App at a different hackathon hosted at USF
+- Check out [DEPLOY/23](/projects/deploy23), our flagship annual hackathon from last Fall
+- Check out [Cue](/projects/cue), a compsigh team project that won Best App at a different hackathon hosted at USF
 - Check out [U Can UI](https://www.youtube.com/watch?v=fLlz6CMZDoo), a distilled version of a compsigh workshop I led on why programmers should learn design
