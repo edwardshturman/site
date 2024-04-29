@@ -47,6 +47,17 @@ export default function Craft() {
       />
       <Spacer size={32} />
       <GalleryCard
+        title="Hive logo"
+        description={
+          <>
+            <p>A logo for the <Link href="https://www.usfca.edu/arts-sciences/research/facilities-labs/innovation-hive">Innovation Hive</Link> maker space at the University of San Francisco</p>
+          </>
+        }
+        src="/assets/hive.png"
+        alt="A logo for the Innovation Hive maker space at the University of San Francisco"
+      />
+      <Spacer size={32} />
+      <GalleryCard
         title="GitHub Contrib Emojis"
         description={
           <>
