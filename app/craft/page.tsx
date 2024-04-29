@@ -87,6 +87,19 @@ export default function Craft() {
       />
       <Spacer size={32} />
       <GalleryCard
+        title="U Can UI"
+        description={
+          <>
+            <p>A distilled version of a workshop I ran for <Link href="/projects/compsigh">compsigh</Link>, my computer science club, on why engineers should design, and how to start</p>
+          </>
+        }
+        src="/assets/u-can-ui.png"
+        alt="A thumbnail for U Can UI, a workshop on why engineers should design, and how to start"
+        link="https://www.youtube.com/watch?v=fLlz6CMZDoo"
+        cta="Watch video on YouTube"
+      />
+      <Spacer size={32} />
+      <GalleryCard
         title="Realm Thread Queue"
         description={
           <>
