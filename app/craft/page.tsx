@@ -65,6 +65,17 @@ export default function Craft() {
       />
       <Spacer size={32} />
       <GalleryCard
+        title="compsigh leadership avatars"
+        description={
+          <>
+            <p>A set of avatars I generated with <Link href="https://midjourney.com">Midjourney</Link> for the Fall 2023 leadership cohort of <Link href="/projects/compsigh">compsigh</Link>, my computer science club</p>
+          </>
+        }
+        src="/assets/compsigh-ai-pfps.png"
+        alt="A set of AI-generated avatars for the leadership team of compsigh, a computer science club at the University of San Francisco"
+      />
+      <Spacer size={32} />
+      <GalleryCard
         title="compsigh icons"
         description={
           <>
