@@ -25,15 +25,12 @@ Cue is a minimalist active recall study app focused on helping students ask the 
     <li>
       <Link href="#features">Features</Link>
     </li>
-    <li>
-      <Link href="#future">Future</Link>
-    </li>
   </ul>
 </nav>
 
 ## Inspiration
 
-Cue was born at Dons Hack 2023 — a hackathon hosted by our friends at the Association for Computing Machinery × Women in Tech at the University of San Francisco.
+Cue was born at Dons Hack 2023 — an annual Spring hackathon, hosted by our friends at the Association for Computing Machinery × Women in Tech, at the University of San Francisco.
 
 The timing for an AI-powered study app was just right:
 
@@ -58,11 +55,11 @@ Around this time, I was also getting into UI design, so I really wanted to push 
 
 <GalleryCard
   title="Cue icon set"
-  description={<p>I may or may not have spent 50% of our hackathon time in Figma.</p>}
+  description={<p>I may or may not have spent 50% of our hackathon time in Figma. :p</p>}
   src="/assets/cue-icons.png"
 />
 
-The vibes were immaculate:
+The vibes were great:
 
 <GalleryCard
   title="compsigh teams at Dons Hack 2023"
@@ -86,11 +83,9 @@ Oh, and we won, too. :)
   alt="A certificate congratulating me for winning Best App at Dons Hack 2023."
 />
 
-We [open-sourced Cue](https://github.com/compsigh/cue) on launch day as well.
-
 ## Features
 
-I suppose I should get to it: what does Cue actually do?
+So, what does Cue actually do?
 
 Its primary function is to take your study notes, and return the most relevant questions to quiz yourself on.
 
@@ -99,13 +94,13 @@ Its primary function is to take your study notes, and return the most relevant q
   src="/assets/cue-may2023-beta-demo.gif"
 />
 
-That's pretty much what it looked like when we went up on stage at Dons Hack, but I'm proud to say we continued working on it after the event, and shipped some pretty cool additional features.
+I'm happy to say we continued working on Cue after Dons Hack, and shipped some pretty cool features.
 
 ### Invite system
 
 <GalleryCard
   title="In-app invites"
-  description={<p>From day one, we made the app open to all USF students for free, but we wanted an invite system for our friends & family elsewhere. Here we hooked up Typeform to an API that would generate an invite code like <code>gaius-julius-caesar</code> (I was really into the European history class).</p>}
+  description={<p>From day one, we made the app open to all USF students for free, but we wanted an invite system for our friends &amp; family elsewhere. Here we hooked up Typeform to an API that would generate an invite code like <code>gaius-julius-caesar</code> (I was really into that European history class).</p>}
   src="/assets/cue-invite-demo.gif"
 />
 
@@ -126,15 +121,13 @@ That's pretty much what it looked like when we went up on stage at Dons Hack, bu
 
 ### Waitlist
 
-I [posted about Cue on X](https://x.com/edwardshturman/status/1662181707955486722) and we got a decent amount of students signing up for the beta. In August, we sent out the invites.
+I [posted about Cue on X](https://x.com/edwardshturman/status/1662181707955486722) and we got a decent amount of students signing up for the beta. In August 2023, we sent out the invites.
 
 <GalleryCard
   title="Waitlist invite email"
   src="/assets/cue-waitlist-email.gif"
 />
 
-## Future
+Since then, we've put development on pause as we push through a heavy junior year in computer science. We hope to return shortly thereafter!
 
-In Spring 2024, Sanjana and I presented at a Gen AI talk at USF. We talked about all things prompt engineering and AI for education.
-
-On the roadmap are Google Docs and Notion integrations, and many more exciting features to ship. For the time being, though, we're putting the project on pause, looking forward to a clearer semester. Maybe we'll have some notes to transform. :)
+In the meantime, you can check out Cue's [landing page](https://cue.study), [documentation](https://docs.cue.study), and [source code](https://github.com/compsigh/cue).
