@@ -137,6 +137,17 @@ export default function Craft() {
       />
       <Spacer size={32} />
       <GalleryCard
+        title="Nature Morte"
+        description={
+          <>
+            <p>Generated with <Link href="https://midjourney.com">Midjourney</Link></p>
+          </>
+        }
+        src="/assets/nature-morte.png"
+        alt="An AI-generated image of a skull in the middle of a spread of fruits, wine bottles, and other objects befitting a still life painting"
+      />
+      <Spacer size={32} />
+      <GalleryCard
         title="Новий Світ — New World"
         description={
           <>
