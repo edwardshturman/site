@@ -137,6 +137,17 @@ export default function Craft() {
       />
       <Spacer size={32} />
       <GalleryCard
+        title="Trainyard"
+        description={
+          <>
+            <p>Generated with <Link href="https://midjourney.com">Midjourney</Link></p>
+          </>
+        }
+        src="/assets/trainyard.png"
+        alt="An AI-generated image of an abandoned trainyard, dimly lit in the misty night"
+      />
+      <Spacer size={32} />
+      <GalleryCard
         title="Arc Boosts"
         description={
           <>
