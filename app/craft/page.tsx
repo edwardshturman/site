@@ -137,6 +137,17 @@ export default function Craft() {
       />
       <Spacer size={32} />
       <GalleryCard
+        title="Новий Світ — New World"
+        description={
+          <>
+            <p>Fictitious fashion collection exploring traditional Ukrainian vyshyvanka, modernized. Generated with <Link href="https://midjourney.com">Midjourney</Link>.</p>
+          </>
+        }
+        src="/assets/new-world.png"
+        alt="A carousel of AI-generated fashion designs inspired by traditional Ukrainian vyshyvanka"
+      />
+      <Spacer size={32} />
+      <GalleryCard
         title="Trainyard"
         description={
           <>
