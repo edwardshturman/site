@@ -47,6 +47,19 @@ export default function Craft() {
       />
       <Spacer size={32} />
       <GalleryCard
+        title="2033"
+        description={
+          <>
+            <p>A set of 4K AI-generated wallpapers from <Link href="/projects/deploy23">DEPLOY/23</Link>, a hackathon hosted by <Link href="/projects/compsigh">compsigh</Link>, my computer science club</p>
+          </>
+        }
+        src="/assets/2033.png"
+        alt="A logo for the Innovation Hive maker space at the University of San Francisco"
+        link="https://goodies.edward.so/l/2033"
+        cta="Grab them on Gumroad"
+      />
+      <Spacer size={32} />
+      <GalleryCard
         title="Hive logo"
         description={
           <>
@@ -90,7 +103,7 @@ export default function Craft() {
         title="compsigh icons"
         description={
           <>
-            <p>A set of vector icons I generated with <Link href="https://recraft.ai">Recraft</Link> for <Link href="/projects/compsigh">my computer science club compsigh</Link></p>
+            <p>A set of vector icons I generated with <Link href="https://recraft.ai">Recraft</Link> for <Link href="/projects/compsigh">compsigh</Link>, my computer science club</p>
           </>
         }
         src="/assets/compsigh-icons.png"
