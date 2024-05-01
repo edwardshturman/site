@@ -30,6 +30,16 @@ export default function Craft() {
       />
       <Spacer size={32} />
       <GalleryCard
+        title="compsigh flyer"
+        description={
+          <>
+            <p>A flyer for {<Link href={"/projects/compsigh"}>compsigh</Link>}, my computer science club. We handed these out to incoming freshmen at our university&apos;s Spring Involvement Fair.</p>
+          </>
+        }
+        src="/assets/compsigh-flyer.png"
+      />
+      <Spacer size={32} />
+      <GalleryCard
         title="compsigh cascade"
         description={
           <>
