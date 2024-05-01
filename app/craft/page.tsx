@@ -2,7 +2,6 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 import { Spacer } from '@/components/Spacer'
-import { Comment } from '@/components/Comment'
 import { GalleryCard } from '@/components/GalleryCard'
 
 export const metadata: Metadata = {
@@ -17,9 +16,6 @@ export default function Craft() {
   return (
     <>
       <h1>Craft</h1>
-      <Comment type="block">
-        More coming soon. In the meantime, check out <Link href="https://read.cv/edwardshturman">my read.cv</Link>.
-      </Comment>
       <GalleryCard
         title="Intention"
         description={
