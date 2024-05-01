@@ -7,26 +7,31 @@ published: true
 # Roadmap
 
 - [x] Syntax highlighting
-  <Comment type="inline">Shipped 2024-02-27</Comment>
+  <Comment type="inline">2024-02-27</Comment>
 - [x] Comments
-  <Comment type="inline">Shipped 2024-02-28</Comment>
+  <Comment type="inline">2024-02-28</Comment>
 - [x] Metadata for MDX files
-  <Comment type="inline">Shipped 2024-03-01</Comment>
+  <Comment type="inline">2024-03-01</Comment>
 - [x] KaTeX
-  <Comment type="inline">Shipped 2024-03-02</Comment>
+  <Comment type="inline">2024-03-02</Comment>
 - [x] OG images for notes
-  <Comment type="inline">Shipped 2024-03-04</Comment>
+  <Comment type="inline">2024-03-04</Comment>
 - [x] Static route generation
-  <Comment type="inline">Shipped 2024-03-15</Comment>
+  <Comment type="inline">2024-03-15</Comment>
 - [x] Projects page
-  <Comment type="inline">Shipped 2024-03-24</Comment>
+  <Comment type="inline">2024-03-24</Comment>
 - [x] `GalleryCard` component
-  <Comment type="inline">Shipped 2024-04-14</Comment>
+  <Comment type="inline">2024-04-14</Comment>
 - [x] Craft page, à la [Rauno](https://rauno.me/craft)
-  <Comment type="inline">Shipped 2024-04-14</Comment>
+  <Comment type="inline">2024-04-14</Comment>
 - [x] `GalleryCard` component for project listings & images
-  <Comment type="inline">Shipped 2024-04-23</Comment>
-- [ ] Custom 404
+  <Comment type="inline">2024-04-23</Comment>
+- [x] `Grid` component
+  <Comment type="inline">2024-04-25</Comment>
+- [x] `Author` component
+  <Comment type="inline">2024-04-26</Comment>
+- [x] Custom 404
+  <Comment type="inline">2024-05-01</Comment>
 - [ ] Toolbox, à la [traf](https://tr.af/stack)
 - [ ] Treasure trove / artifacts, my favorite finds
 - [ ] Setups page (Obsidian, VS Code, etc.)
@@ -37,5 +42,4 @@ published: true
 - [ ] Book reviews, à la [Ali Abdaal](https://aliabdaal.com/book-notes/)
 - [ ] Spotify
 - [ ] Bitmap emoji reactions
-- [ ] kepano's [rating system](https://stephango.com/vault#rating-system)
 - [ ] Browse notes by tag (`#` nav link list style)
