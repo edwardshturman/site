@@ -53,6 +53,17 @@ export default function Craft() {
       />
       <Spacer size={32} />
       <GalleryCard
+        title="Repost"
+        description={
+          <>
+            <p>Mockups of a PWA I made with friends at Dons Hack 2024, an annual hackathon hosted at the University of San Francisco by Association of Computing Machinery × Women in Tech</p>
+          </>
+        }
+        src="/assets/repost-mockups.png"
+        alt="Mockups of a PWA I made with friends at Dons Hack 2024, an annual hackathon hosted at the University of San Francisco by Association of Computing Machinery × Women in Tech"
+      />
+      <Spacer size={32} />
+      <GalleryCard
         title="2033"
         description={
           <>
