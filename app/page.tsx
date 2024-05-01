@@ -1,7 +1,7 @@
 import Link from 'next/link'
-import Image from 'next/image'
 
 import { Spacer } from '@/components/Spacer'
+import { Navbar } from '@/components/Navbar'
 import { GalleryCard } from '@/components/GalleryCard'
 
 export default function Home() {
@@ -12,22 +12,7 @@ export default function Home() {
         Web developer, interface designer, <br /> and community builder based in San Francisco
       </p>
       <Spacer size={4} />
-      <nav>
-        <ul>
-          <li>
-            <Link href={"/craft"}>Craft</Link>
-          </li>
-          <li>
-            <Link href={"/notes"}>Notes</Link>
-          </li>
-          <li>
-            <Link href={"/roadmap"}>Roadmap</Link>
-          </li>
-          <li>
-            <Link href={"/projects"}>Projects</Link>
-          </li>
-        </ul>
-      </nav>
+      <Navbar />
       <h2>Latest</h2>
       <GalleryCard
         title="compsigh cascade"
