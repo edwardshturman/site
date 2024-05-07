@@ -1,7 +1,10 @@
+import Image from 'next/image'
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
-import Image from 'next/image'
+
+import { Spacer } from '@/components/Spacer'
 import { Breadcrumbs } from '@/components/Breadcrumbs'
+
 import './globals.css'
 
 const iAWriterQuattro = localFont({
@@ -89,6 +92,7 @@ export default function RootLayout({
         />
         <Breadcrumbs />
         <main>{children}</main>
+        <Spacer size={`20vh`} />
       </body>
     </html>
   )
