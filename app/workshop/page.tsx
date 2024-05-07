@@ -3,19 +3,22 @@ import type { Metadata } from 'next'
 
 import { Spacer } from '@/components/Spacer'
 import { GalleryCard } from '@/components/GalleryCard'
+import { Comment } from '@/components/Comment'
 
 export const metadata: Metadata = {
-  title: 'Craft',
-  description: 'Pixels & prose',
+  title: 'Workshop',
+  description: 'Everything from design experiments to side projects',
   openGraph: {
     siteName: "Edward Shturman's personal website",
   }
 }
 
-export default function Craft() {
+export default function Workshop() {
   return (
     <>
-      <h1>Craft</h1>
+      <h1>Workshop</h1>
+      <Comment type="block">Everything from design experiments to side projects</Comment>
+      <Spacer size={32} />
       <GalleryCard
         title="Intention"
         description={

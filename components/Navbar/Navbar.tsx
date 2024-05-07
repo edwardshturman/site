@@ -6,9 +6,6 @@ export function Navbar() {
       <nav>
         <ul>
           <li>
-            <Link href={"/craft"}>Craft</Link>
-          </li>
-          <li>
             <Link href={"/notes"}>Notes</Link>
           </li>
           <li>
@@ -16,6 +13,9 @@ export function Navbar() {
           </li>
           <li>
             <Link href={"/projects"}>Projects</Link>
+          </li>
+          <li>
+            <Link href={"/workshop"}>Workshop</Link>
           </li>
         </ul>
       </nav>
