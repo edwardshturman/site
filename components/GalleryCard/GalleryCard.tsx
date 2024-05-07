@@ -26,6 +26,15 @@ export function GalleryCard(
     maxWidth?: number,
   }
 ) {
+  const image = (
+    <Image
+      unoptimized
+      src={src}
+      alt={alt || title || ''}
+      fill={true}
+    />
+  )
+
   return (
     <>
       <div
@@ -33,12 +42,7 @@ export function GalleryCard(
         style={{ maxWidth: maxWidth || '650px' }}
       >
         <figure>
-          <Image
-            unoptimized
-            src={src}
-            alt={alt || title || ''}
-            fill={true}
-          />
+          {link ? <Link href={link}>{image}</Link> : image}
           { title && <figcaption>{title}</figcaption> }
           { description && <div>{description}</div> }
           {

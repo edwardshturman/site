@@ -1,3 +1,8 @@
+div.image-card figure,
+div.image-card figure a {
+  position: relative;
+}
+
 div.image-card img {
   position: relative !important; /* Override `next/image` */
   vertical-align: middle;
