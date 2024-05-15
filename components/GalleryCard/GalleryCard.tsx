@@ -6,25 +6,19 @@ import { Spacer } from '@/components/Spacer'
 
 import styles from './GalleryCard.module.css'
 
+export type GalleryCardProps = {
+  title?: string,
+  description?: React.ReactElement,
+  link?: Route,
+  cta?: string,
+  src: string,
+  alt?: string,
+  maxWidth?: number,
+}
+
 export function GalleryCard(
-  {
-    title,
-    description,
-    link,
-    cta,
-    src,
-    alt,
-    maxWidth
-  }:
-  {
-    title?: string,
-    description?: React.ReactElement,
-    link?: Route,
-    cta?: string,
-    src: string,
-    alt?: string,
-    maxWidth?: number,
-  }
+  { title, description, link, cta, src, alt, maxWidth }:
+  GalleryCardProps
 ) {
   const image = (
     <Image

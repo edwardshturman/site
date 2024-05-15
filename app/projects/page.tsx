@@ -20,6 +20,7 @@ export default function Projects() {
       <Comment type="block">
         More coming soon. In the meantime, check out <Link href="https://read.cv/edwardshturman">my read.cv</Link>.
       </Comment>
+      <Spacer size={48} />
       <GalleryCard
         title="compsigh"
         description={
@@ -32,7 +33,7 @@ export default function Projects() {
         link={"/projects/compsigh" as Route}
         cta="View project"
       />
-      <Spacer size={32} />
+      <Spacer size={48} />
       <GalleryCard
         title="DEPLOY/23"
         description={
@@ -45,7 +46,7 @@ export default function Projects() {
         link={"/projects/deploy23" as Route}
         cta="View project"
       />
-      <Spacer size={32} />
+      <Spacer size={48} />
       <GalleryCard
         title="Cue"
         description={
