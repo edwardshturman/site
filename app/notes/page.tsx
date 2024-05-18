@@ -18,6 +18,9 @@ export default function Notes() {
           <li>
             <Link href="/notes/easy">&quot;It&apos;s easy&quot;</Link>
           </li>
+          <li>
+            <Link href="/notes/vs-code">VS Code: an Artist&apos;s Canvas</Link>
+          </li>
         </ul>
       </nav>
     </>
