@@ -1,7 +1,6 @@
 import path from 'node:path'
 import fs from 'node:fs/promises'
 import type { Metadata } from 'next'
-import { Suspense, cache } from 'react'
 import { notFound } from 'next/navigation'
 import { compileMDX } from 'next-mdx-remote/rsc'
 
@@ -18,7 +17,7 @@ import { Spacer } from '@/components/Spacer'
 import { Comment } from '@/components/Comment'
 import { GalleryCard } from '@/components/GalleryCard'
 
-const readPage = cache(async (slug: string[]) => {
+async function readPage(slug: string[]) {
   try {
     const filePath = path.join(process.cwd(), 'app', ...slug) + '.md'
     const page = await fs.readFile(filePath, 'utf8')
@@ -54,7 +53,7 @@ const readPage = cache(async (slug: string[]) => {
   } catch (error) {
     notFound()
   }
-})
+}
 
 export async function generateMetadata(
   { params }:
@@ -125,17 +124,15 @@ export default async function Page(
 
   return (
     <>
-      <Suspense fallback={<h1>{frontmatter.title}</h1>}>
-        { !frontmatter.published &&
-          <>
-            <br />
-            <Comment type="block">
-              Hey there, you&apos;ve found an unpublished page. Feel free to poke around, but keep in mind the thoughts here are a bit more in-progress than usual. :)
-            </Comment>
-          </>
-        }
-        {content}
-      </Suspense>
+      { !frontmatter.published &&
+        <>
+          <br />
+          <Comment type="block">
+            Hey there, you&apos;ve found an unpublished page. Feel free to poke around, but keep in mind the thoughts here are a bit more in-progress than usual. :)
+          </Comment>
+        </>
+      }
+      {content}
     </>
   )
 }
