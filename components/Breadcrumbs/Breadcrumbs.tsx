@@ -1,8 +1,9 @@
 'use client'
 
-import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import type { Route } from 'next'
+import { usePathname } from 'next/navigation'
+
 import styles from './Breadcrumbs.module.css'
 
 export function Breadcrumbs() {
