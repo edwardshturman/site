@@ -8,13 +8,16 @@ published: false
 
 It's comically nontrivial to set up an ergonomic, performant MDX Next.js app, with all the bells & whistles like parsing YAML frontmatter. Here's how I did it.
 
-<nav class="table-of-contents">
+<nav className="table-of-contents">
   <ul>
     <li>
       <Link href="#my-criteria">My criteria</Link>
     </li>
     <li>
       <Link href="#ecosystem">Ecosystem</Link>
+    </li>
+    <li>
+      <Link href="#setup">Setup</Link>
     </li>
   </ul>
 </nav>
@@ -50,6 +53,14 @@ If the `@next/mdx` tradeoffs don't bother you, [`gray-matter`](https://github.co
 ### `next-mdx-remote`
 
 This is it. [`next-mdx-remote`](https://github.com/hashicorp/next-mdx-remote) allows you to write full-fat Markdown — you don't even need to use an `.mdx` extension — and just *use* your components, no import required. That does mean you have to package all of them for every page. But, since I use just a few small ones I wrote for convenience — in almost all my pages anyway — this isn't a concern for me personally.
+
+## Setup
+
+Let's start with a clean install of Next.js:
+
+```shell
+npx create-next-app@latest
+```
 
 ## Resources
 
