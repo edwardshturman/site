@@ -56,7 +56,7 @@ This is it. [`next-mdx-remote`](https://github.com/hashicorp/next-mdx-remote) al
 
 ## Setup
 
-In this guide, I'll walk you through creating an MVP for serving MDX content on your Next.js app. I've scaffolded a [complete template repository](https://github.com/edwardshturman/next-mdx) you can use to follow along.
+In this guide, I'll walk you through creating an MVP for serving MDX content on your Next.js app. I've scaffolded a [complete template repository](https://github.com/edwardshturman/mdx-nextjs-14) you can use to follow along.
 
 If you'd prefer to start from scratch, let's get going with a clean install of Next.js:
 
