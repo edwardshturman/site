@@ -56,11 +56,111 @@ This is it. [`next-mdx-remote`](https://github.com/hashicorp/next-mdx-remote) al
 
 ## Setup
 
-Let's start with a clean install of Next.js:
+In this guide, I'll walk you through creating an MVP for serving MDX content on your Next.js app. I've scaffolded a [complete template repository](https://github.com/edwardshturman/next-mdx) you can use to follow along.
+
+If you'd prefer to start from scratch, let's get going with a clean install of Next.js:
 
 ```shell
 npx create-next-app@latest
 ```
+
+For the reasons outlined above, let's roll with `next-mdx-remote`:
+
+```shell
+npm install next-mdx-remote
+```
+
+At this point, you get to decide the scope of rendering Markdown for your app. For my personal site, I've chosen the root route, meaning any `.md` file in the `app/` directory will be rendered. If this is what you're looking for, go ahead and create a new file `app/[...slug]/page.tsx`.
+
+There are, broadly, three steps we need to implement for this route:
+
+1. Fetching all `.md` files
+2. Reading their contents
+3. Compiling Markdown into HTML
+
+Let's tackle these one at a time.
+
+### Fetching files
+
+Let's write a function to return all the "slugs" — filenames that represent routes we'll render — for our app:
+
+```typescript
+function getMdSlugs(folder: string, paths: string[] = []) {
+  const slugs = paths
+    .filter((file) => file.endsWith('.md'))
+    .map((file) => file.replace(/\.md$/, ''))
+    .map((slug) => path.join(folder, slug))
+    .map((slug) => slug.split('/'))
+    .map((slug) => ({ slug }))
+  return slugs
+}
+```
+
+<Spacer size={32} />
+
+<Comment type="block">An aside on <code>generateStaticParams()</code></Comment>
+
+You might be wondering why we're returning an array of *objects*. That's because to [statically generate a catch-all dynamic segment](https://nextjs.org/docs/app/api-reference/functions/generate-static-params#catch-all-dynamic-segment):
+
+- Next.js expects an array of objects,
+- Where the value of each key is an array,
+- And each element in that array maps to a segment in the route to be rendered.
+
+For example:
+
+```typescript
+export function generateStaticParams() {
+  return [
+    { slug: ['a', '1'] },
+    { slug: ['b', '2'] },
+    { slug: ['c', '3'] }
+  ]
+}
+```
+
+Three routes will be statically generated:
+
+- `/a/1`
+- `/b/2`
+- `/c/3`
+
+<Comment type="block">End aside</Comment>
+
+<Spacer size={32} />
+
+Let's set up the logic for traversing each folder:
+
+```typescript
+const app = path.join(process.cwd(), 'app')
+const files = await fs.readdir(app, { withFileTypes: true })
+const folders = files.filter((file) => file.isDirectory())
+let slugs = await Promise.all(
+  folders.map(async (folder) => {
+    const pathsInFolder = await fs.readdir(path.join(app, folder.name))
+    return getMdSlugs(folder.name, pathsInFolder)
+  })
+)
+.then((slugs) => slugs.flat())
+
+const pathsInAppFolder = files.map((file) => file.name)
+const slugsFromAppFolder = getMdSlugs('', pathsInAppFolder)
+slugs = slugs.concat(slugsFromAppFolder)
+```
+
+Great! In order to generate each route at build time, let's wrap all of this in `generateStaticParams()`:
+
+```typescript
+export const dynamicParams = false
+export async function generateStaticParams() {
+  // function getMdSlugs(...)
+
+  // Traversal logic above...
+
+  return slugs
+}
+```
+
+Awesome. We're done with the first step. Let's move on to reading page contents.
 
 ## Resources
 
