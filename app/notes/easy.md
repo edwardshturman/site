@@ -12,7 +12,7 @@ In my experience,
 
 - Working out & self-improvement is hard
 - Becoming a good design-engineer is hard
-- [Learning Mandarin](/notes/mandarin) is hard
+- Learning Mandarin is hard
 
 If these things were easy, everyone would be doing them.
 
