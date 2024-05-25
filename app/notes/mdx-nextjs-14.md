@@ -2,6 +2,7 @@
 title: "Setting up MDX on Next.js 14"
 description: "It's comically nontrivial to set up an ergonomic, performant MDX Next.js app, with all the bells & whistles like parsing YAML frontmatter. Here's how I did it."
 published: true
+og_image: "/og/mdx-nextjs-14.png"
 ---
 
 # Setting up MDX on Next.js 14
