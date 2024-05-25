@@ -244,6 +244,38 @@ Now, let's implement a couple ✨ additions ✨:
 
 The [complete template repository](https://github.com/edwardshturman/mdx-nextjs-14) has way more, including syntax highlighting, the `<Breadcrumbs />` component you see here on my site, and some styles to get you started.
 
+### Dynamic metadata
+
+Having rich metadata for sharing across the web greatly contributes to SEO, and it just looks good too. Let's dynamically generate metadata to go along with each route. The best part? It stays in sync with each Markdown file, thanks to your frontmatter.
+
+```typescript
+export async function generateMetadata(
+  { params }:
+  { params: { slug: string[] } }
+) {
+  const { frontmatter } = await readPage(params.slug)
+  const metadata: Metadata = {
+    title: frontmatter.title,
+    description: frontmatter.description,
+    openGraph: {
+      siteName: 'MDX on Next.js 14'
+    }
+  }
+
+  if (frontmatter.og_image)
+    metadata.openGraph!.images = [{
+      url: frontmatter.og_image,
+      width: 1200,
+      height: 630,
+      alt: ''
+    }]
+
+  return metadata
+}
+```
+
+We can take it even a step further, though, and generate a new OG image on the fly if you don't have a static one linked in your frontmatter.
+
 ## Resources
 
 - Josh Comeau's (the 🐐) [post on how he built his blog](https://www.joshwcomeau.com/blog/how-i-built-my-blog/)
