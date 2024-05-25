@@ -68,7 +68,7 @@ export const metadata: Metadata = {
   title: 'Edward Shturman',
   description: 'Web developer, interface designer, and community builder based in San Francisco',
   openGraph: {
-    images: '/assets/og-image.png'
+    images: '/og/root.png'
   }
 }
 

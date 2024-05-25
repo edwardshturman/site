@@ -41,7 +41,7 @@ export default function Projects() {
             <p>The first hackathon hosted by <Link href="/projects/compsigh">my computer science club compsigh</Link>, and our biggest event of the Fall 2023 semester. An entirely student-bootstrapped, three-day event, bringing together the best minds in CS, design, and engineering to hack on a project for a weekend.</p>
           </>
         }
-        src="/assets/deploy-grid-banner.png"
+        src="/og/deploy23.png"
         alt="DEPLOY/23 banner"
         link={"/projects/deploy23" as Route}
         cta="View project"
@@ -54,7 +54,7 @@ export default function Projects() {
             <p>A minimalist active recall study app focused on helping students ask the right questions. Transform your notes into actionable study cards for easy pasting back into Google Docs or Notion, or export to Anki.</p>
           </>
         }
-        src="/assets/cue-og.png"
+        src="/og/cue.png"
         alt="Cue banner"
         link={"/projects/cue" as Route}
         cta="View project"

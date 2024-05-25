@@ -2,7 +2,7 @@
 title: "Cue"
 description: "A minimalist active recall study app focused on helping students ask the right questions. Transform your notes into actionable study cards for easy pasting back into Google Docs or Notion, or export to Anki."
 published: true
-og_image: "/assets/cue-og.png"
+og_image: "/og/cue.png"
 ---
 
 # Cue
@@ -10,7 +10,7 @@ og_image: "/assets/cue-og.png"
 Cue is a minimalist active recall study app focused on helping students ask the right questions. Transform your notes into actionable study cards for easy pasting back into Google Docs or Notion, or export to Anki.
 
 <GalleryCard
-  src="/assets/cue-og.png"
+  src="/og/cue.png"
   alt="Cue wordmark banner"
 />
 
