@@ -61,12 +61,19 @@ export async function generateMetadata(
 ) {
   const { frontmatter } = await readPage(params.slug)
   const metadata: Metadata = {
-    title: `${frontmatter.title}`,
+    title: frontmatter.title,
     description: frontmatter.description,
     openGraph: {
       siteName: "Edward Shturman's personal website",
     }
   }
+
+  metadata.openGraph!.images = [{
+    url: `api/og?title=${frontmatter.title}`,
+    width: 1200,
+    height: 630,
+    alt: ''
+  }]
 
   if (frontmatter.og_image)
     metadata.openGraph!.images = [{
@@ -74,14 +81,6 @@ export async function generateMetadata(
       width: 1200,
       height: 630,
       alt: ''
-    }]
-
-  if (params.slug.includes('notes'))
-    metadata.openGraph!.images = [{
-      url: `api/og?title=${frontmatter.title}`,
-      width: 1200,
-      height: 630,
-      alt: `A bitmapped version of an AI-generated image of a city in space. The words "${frontmatter.title}, a note by Edward Shturman" overlay the image.`
     }]
 
   return metadata
