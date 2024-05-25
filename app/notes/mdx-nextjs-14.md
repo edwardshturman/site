@@ -1,7 +1,7 @@
 ---
 title: "Setting up MDX on Next.js 14"
 description: "It's comically nontrivial to set up an ergonomic, performant MDX Next.js app, with all the bells & whistles like parsing YAML frontmatter. Here's how I did it."
-published: false
+published: true
 ---
 
 # Setting up MDX on Next.js 14
@@ -274,12 +274,111 @@ export async function generateMetadata(
 }
 ```
 
-We can take it even a step further, though, and generate a new OG image on the fly if you don't have a static one linked in your frontmatter.
+We can take it a step further, and generate a new OG image on the fly if you don't have a static one linked in your frontmatter.
+
+### OG image generation
+
+Next.js has a library for generating dynamic images using JSX and CSS: `next/og`.
+
+Create a new file `app/api/og/route.tsx`:
+
+```typescript
+export const runtime = 'edge'
+
+export async function GET(request: Request) {
+  const { searchParams } = new URL(request.url)
+  const hasTitle = searchParams.has('title')
+  const title = hasTitle
+    ? searchParams.get('title')
+    : 'MDX on Next.js 14'
+
+  // Example of loading an image
+  const imageData = await fetch(
+    new URL('../../../public/og-background.png', import.meta.url))
+    .then((res) => res.arrayBuffer())
+
+  // Example of loading a font
+  const Geist = await fetch(
+    new URL('../../../public/fonts/Geist-Regular.otf', import.meta.url))
+    .then((res) => res.arrayBuffer())
+
+  return new ImageResponse(
+    (
+      // JSX
+      // You can include anything from text to images to flexboxxed divs
+      // You can style it, though there are limits — see the next/og docs
+      // For example:
+      <div
+        style={{
+          color: 'black',
+          fontSize: 30,
+          fontFamily: '"Geist Regular"'
+        }}
+      >
+        {title}
+      </div>
+    ),
+    {
+      width: 1200,
+      height: 630,
+      fonts: [
+        {
+          name: 'Geist Regular',
+          data: Geist,
+          style: 'normal'
+        }
+      ]
+    }
+  )
+}
+```
+
+I'll admit, the syntax isn't that pretty, and the library has its limitations, but in both concept and practice this is very cool.
+
+Back in `app/[...slug]/page.tsx`:
+
+```typescript {14-19}#add
+export async function generateMetadata(
+  { params }:
+  { params: { slug: string[] } }
+) {
+  const { frontmatter } = await readPage(params.slug)
+  const metadata: Metadata = {
+    title: frontmatter.title,
+    description: frontmatter.description,
+    openGraph: {
+      siteName: 'MDX on Next.js 14'
+    }
+  }
+
+  metadata.openGraph!.images = [{
+    url: `api/og?title=${frontmatter.title}`,
+    width: 1200,
+    height: 630,
+    alt: ''
+  }]
+
+  if (frontmatter.og_image)
+    metadata.openGraph!.images = [{
+      url: frontmatter.og_image,
+      width: 1200,
+      height: 630,
+      alt: ''
+    }]
+
+  return metadata
+}
+```
+
+And that's it! This was my first technical post; if you liked it, please [let me know](https://x.com/edwardshturman)! I learned a lot building my site, and I hope this guide helped you soar off the runway in building your awesome Next.js app with MDX.
 
 ## Resources
 
+- The [complete template repository](https://github.com/edwardshturman/mdx-nextjs-14) fit with this setup and more
 - Josh Comeau's (the 🐐) [post on how he built his blog](https://www.joshwcomeau.com/blog/how-i-built-my-blog/)
 - The fantastic plugins I'm using:
   - [`rehype-pretty-code`](https://rehype-pretty-code.netlify.app/)
   - [`rehype-slug`](https://github.com/rehypejs/rehype-slug)
   - [`remark-math` with `rehype-katex`](https://github.com/remarkjs/remark-math)
+- The [`generateStaticParams()` docs](https://nextjs.org/docs/app/api-reference/functions/generate-static-params)
+- The [Vercel OG Playground](https://og-playground.vercel.app/)

@@ -21,6 +21,9 @@ export default function Notes() {
           <li>
             <Link href="/notes/vs-code">VS Code: an Artist&apos;s Canvas</Link>
           </li>
+          <li>
+            <Link href="/notes/mdx-nextjs-14">Setting up MDX on Next.js 14</Link>
+          </li>
         </ul>
       </nav>
     </>
