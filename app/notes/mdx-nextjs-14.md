@@ -160,7 +160,62 @@ export async function generateStaticParams() {
 }
 ```
 
-Awesome. We're done with the first step. Let's move on to reading page contents.
+### Reading page content
+
+We're prerendering all Markdown pages at build time. Great! What we need to do now is have each slug route render its respective content and frontmatter (metadata about the page). `next-mdx-remote` even allows you to type your frontmatter.
+
+For frontmatter, you can add anything that might be useful for you and/or your users, such as `date_published`, `tags`, and so on. For now, let's keep it simple:
+
+```typescript
+type Frontmatter = {
+  title: string
+  description: string
+  og_image?: string
+}
+```
+
+Let's now compile the Markdown content of each page using `next-mdx-remote`'s `compileMDX()`:
+
+```typescript
+async function readPage(slug: string[]) {
+  try {
+    const filePath = path.join(process.cwd(), 'app', ...slug) + '.md'
+    const page = await fs.readFile(filePath, 'utf8')
+
+    const { content, frontmatter } = await compileMDX<Frontmatter>({
+      source: page,
+      options: { parseFrontmatter: true }
+    })
+
+    return { content, frontmatter }
+  }
+
+  catch (error) {
+    notFound()
+  }
+}
+```
+
+### Rendering generated routes
+
+We can define the page as such:
+
+```typescript
+export default async function Page(
+  { params }:
+  { params: { slug: string[] } }
+) {
+  const { content, frontmatter } = await readPage(params.slug)
+
+  return (
+    <>
+      {content}
+    </>
+  )
+}
+```
+
+And that's it — we've just implemented a basic MDX on Next.js 14 app. Of course, there remain the promised bells & whistles.
 
 ## Resources
 
