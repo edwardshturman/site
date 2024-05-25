@@ -19,6 +19,9 @@ It's comically nontrivial to set up an ergonomic, performant MDX Next.js app, wi
     <li>
       <Link href="#setup">Setup</Link>
     </li>
+    <li>
+      <Link href="#bells--whistles">Bells &amp; whistles</Link>
+    </li>
   </ul>
 </nav>
 
@@ -215,7 +218,31 @@ export default async function Page(
 }
 ```
 
-And that's it — we've just implemented a basic MDX on Next.js 14 app. Of course, there remain the promised bells & whistles.
+There we have it — we've just implemented a basic MDX on Next.js 14 app. But we're not done just yet.
+
+## Bells & whistles
+
+Before we go any further, now's a good time to get an example running. Create `app/hello-world.md`:
+
+```markdown
+---
+title: "Hello World"
+description: "MDX on Next.js 14: An ergonomic, performant MDX setup for your Next.js 14 app, fit with YAML frontmatter parsing, dynamic metadata & OG image generation, and static site generation"
+---
+
+# Hello World
+
+MDX on Next.js 14: An ergonomic, performant MDX setup for your Next.js 14 app, fit with YAML frontmatter parsing, dynamic metadata & OG image generation, and static site generation
+```
+
+You can verify that it works by going to `localhost:3000/hello-world`.
+
+Now, let's implement a couple ✨ additions ✨:
+
+- Dynamic metadata
+- OG image generation
+
+The [complete template repository](https://github.com/edwardshturman/mdx-nextjs-14) has way more, including syntax highlighting, the `<Breadcrumbs />` component you see here on my site, and some styles to get you started.
 
 ## Resources
 
