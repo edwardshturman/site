@@ -28,7 +28,7 @@ I set out to check a few boxes:
 
 1. **A natural authoring experience**: it should feel intuitive enough to edit as actual Markdown, such as in editors like Obsidian.
 2. **As little dependencies & acrobatics as possible**: many of the solutions in guides I read while trying to build this used either multiple packages (like `gray-matter` + `next-mdx-remote`) or unmaintained ones like Contentlayer. It should be elegant — enough ;).
-3. **Flexibility**: I don't want to be confined to something like a `/blog` route to use MDX. I want to be able to use what I want, where I want, based on my needs.
+3. **Flexibility**: I don't want to be confined to something like a `/blog` route to use MDX. I want to be able to use what I want, where I want it, based on my needs.
 
 I'm happy to say I managed to check all of the above, with some bells & whistles, including:
 
@@ -40,7 +40,7 @@ I'm happy to say I managed to check all of the above, with some bells & whistles
 
 ### `@next/mdx`
 
-While very fast server-rendered, [`@next/mdx`](https://www.npmjs.com/package/@next/mdx) is not very flexible: you can't name files anything other than `<slug>/page.mdx`, which does not get prettier over time. Also, YAML frontmatter is not natively supported.
+While very fast when using SSR, [`@next/mdx`](https://www.npmjs.com/package/@next/mdx) is not very flexible: you can't name files anything other than `<slug>/page.mdx`, which does not get prettier over time. Also, YAML frontmatter is not natively supported.
 
 ### `gray-matter`
 
@@ -52,7 +52,7 @@ If the `@next/mdx` tradeoffs don't bother you, [`gray-matter`](https://github.co
 
 ### `next-mdx-remote`
 
-This is it. [`next-mdx-remote`](https://github.com/hashicorp/next-mdx-remote) allows you to write full-fat Markdown — you don't even need to use an `.mdx` extension — and just *use* your components, no import required. That does mean you have to package all of them for every page. But, since I use just a few small ones I wrote for convenience — in almost all my pages anyway — this isn't a concern for me personally.
+This is it. [`next-mdx-remote`](https://github.com/hashicorp/next-mdx-remote) allows you to write full-fat Markdown — you don't even need to use an `.mdx` extension — and just *use* your components, no import required. That does mean you have to package all of them for every page. But, since I use just a few small ones I wrote for convenience — in almost all of my pages anyway — this isn't a concern for me personally.
 
 ## Setup
 
@@ -70,19 +70,19 @@ For the reasons outlined above, let's roll with `next-mdx-remote`:
 npm install next-mdx-remote
 ```
 
-At this point, you get to decide the scope of rendering Markdown for your app. For my personal site, I've chosen the root route, meaning any `.md` file in the `app/` directory will be rendered. If this is what you're looking for, go ahead and create a new file `app/[...slug]/page.tsx`.
+At this point, you get to decide the scope of rendering Markdown for your app. For this site, any `.md` file in the `app/` directory will be rendered. If this is what you're looking for, go ahead and create a new file: `app/[...slug]/page.tsx`.
 
-There are, broadly, three steps we need to implement for this route:
+Our implementation can be boiled down into five steps:
 
-1. Fetching all `.md` files
-2. Reading their contents
-3. Compiling Markdown into HTML
+1. Fetch all `.md` files
+2. Statically generate routes for each file
+3. Read each file's content
+4. Compile Markdown → HTML
+5. Render the generated page
 
-Let's tackle these one at a time.
+### Fetching files & generating routes
 
-### Fetching files
-
-Let's write a function to return all the "slugs" — filenames that represent routes we'll render — for our app:
+A "slug" is an identifier for a file we want to make available as a route. For example, to generate the route `/notes/mdx-nextjs-14`, we want to have a file `mdx-nextjs-14.md` in the `app/notes/` directory. Let's write a function to return all the slugs for our app:
 
 ```typescript
 function getMdSlugs(folder: string, paths: string[] = []) {
@@ -104,25 +104,25 @@ You might be wondering why we're returning an array of *objects*. That's because
 
 - Next.js expects an array of objects,
 - Where the value of each key is an array,
-- And each element in that array maps to a segment in the route to be rendered.
+- And each element in that array maps to a segment in the route to be generated.
 
 For example:
 
 ```typescript
 export function generateStaticParams() {
   return [
-    { slug: ['a', '1'] },
-    { slug: ['b', '2'] },
-    { slug: ['c', '3'] }
+    { slug: ['roadmap'] },
+    { slug: ['notes', 'mdx-nextjs-14'] },
+    { slug: ['notes', 'vs-code'] }
   ]
 }
 ```
 
 Three routes will be statically generated:
 
-- `/a/1`
-- `/b/2`
-- `/c/3`
+- `/roadmap`
+- `/notes/mdx-nextjs-14`
+- `/notes/vs-code`
 
 <Comment type="block">End aside</Comment>
 
@@ -152,17 +152,17 @@ Great! In order to generate each route at build time, let's wrap all of this in 
 ```typescript
 export const dynamicParams = false
 export async function generateStaticParams() {
-  // function getMdSlugs(...)
+  // function getMdSlugs(...) {...}
 
-  // Traversal logic above...
+  // Traversal logic from above...
 
   return slugs
 }
 ```
 
-### Reading page content
+### Reading files & compiling content
 
-We're prerendering all Markdown pages at build time. Great! What we need to do now is have each slug route render its respective content and frontmatter (metadata about the page). `next-mdx-remote` even allows you to type your frontmatter.
+Great, we're generating all Markdown files as routes at build time! But, there's no page content to generate yet. Now, we need each route to render its respective page's content and frontmatter (metadata about the page).
 
 For frontmatter, you can add anything that might be useful for you and/or your users, such as `date_published`, `tags`, and so on. For now, let's keep it simple:
 
