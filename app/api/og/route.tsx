@@ -10,7 +10,7 @@ export async function GET(request: Request) {
     : 'Edward Shturman'
 
   const imageData = await fetch(
-    new URL('../../../public/assets/HORIZON-BITMAP-30-patterndither.png', import.meta.url))
+    new URL('../../../public/assets/pfp-bitmap.png', import.meta.url))
     .then((res) => res.arrayBuffer())
 
   const iAWriterQuattroRegular = await fetch(
@@ -29,55 +29,44 @@ export async function GET(request: Request) {
           backgroundColor: 'black',
           width: '100%',
           height: '100%',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center'
+          alignItems: 'center',
+          padding: 50
         }}
       >
         { /* eslint-disable-next-line @next/next/no-img-element */ }
         <img
-          width={1200}
-          height={630}
-          style={{
-            opacity: 0.5,
-            boxShadow: '0 0 20px 20px black inset'
-          }}
+          width={300}
+          height={300}
           src={imageData as any}
           alt=""
         />
         <div
           style={{
-            position: 'absolute',
-            top: '45%',
-            left: '50%',
-            transform: 'translate(-50%, -50%)',
-            color: 'white',
-            fontSize: 60,
-            lineHeight: 1.6,
-            textAlign: 'center',
-            justifyContent: 'center',
-            alignItems: 'center',
-            fontFamily: '"iA Writer Quattro Bold"',
+            display: 'flex',
+            flexDirection: 'column',
+            paddingLeft: 30
           }}
         >
-          {title}
-      </div>
-      <div
-          style={{
-            position: 'absolute',
-            top: '55%',
-            left: '50%',
-            transform: 'translate(-50%, -50%)',
-            color: 'white',
-            fontSize: 30,
-            lineHeight: 1.6,
-            textAlign: 'center',
-            justifyContent: 'center',
-            alignItems: 'center',
-            fontFamily: '"iA Writer Quattro Regular"',
-          }}
-        >
-          A note by Edward Shturman
+          <div
+            style={{
+              fontFamily: '"iA Writer Quattro Bold"',
+              fontSize: 50,
+              lineHeight: 1.6,
+              color: 'white'
+            }}
+          >
+            {title}
+        </div>
+        <div
+            style={{
+              fontFamily: '"iA Writer Quattro Regular"',
+              fontSize: 30,
+              lineHeight: 1.6,
+              color: 'white'
+            }}
+          >
+            Edward Shturman
+        </div>
       </div>
     </div>
     ),
