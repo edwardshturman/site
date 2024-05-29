@@ -9,24 +9,38 @@ import styles from './Breadcrumbs.module.css'
 export function Breadcrumbs() {
   const path = usePathname()
   if (path === '/') return null
-  const parts = path.split('/').filter(Boolean)
-
-  let breadcrumbs = []
-  for (let i = 0; i < parts.length - 1; i++) {
-    const part = parts[i]
-    const href = '/' + parts.slice(0, i + 1).join('/')
-    breadcrumbs.push(
-      <Link key={i} href={`${href}` as Route}>
-        {part}
-      </Link>
-    )
-
-    if (i < parts.length - 1) breadcrumbs.push(' / ')
-  }
+  const crumbs = path.split('/').filter(Boolean)
+  crumbs.pop()
 
   return (
-    <p id={styles.breadcrumbs}>
-      <Link href="/">Edward Shturman</Link> / {breadcrumbs}
-    </p>
+    <nav
+      id={styles.breadcrumbs}
+      aria-label="Breadcrumb"
+    >
+      <ol>
+        <Crumb key="/" href="/">Edward Shturman</Crumb>
+        {crumbs.map((text, i) => (
+          <Crumb
+            key={i}
+            href={`/${crumbs.slice(0, i + 1).join('/')}`}
+          >
+            {text}
+          </Crumb>
+        ))}
+      </ol>
+    </nav>
+  )
+}
+
+function Crumb(
+  { href, children }:
+  { href: string, children: React.ReactNode }
+) {
+  return (
+    <li>
+      <Link href={href as Route}>
+        {children}
+      </Link>
+    </li>
   )
 }
