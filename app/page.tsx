@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import type { Route } from 'next'
 
 import { Spacer } from '@/components/Spacer'
 import { Navbar } from '@/components/Navbar'
@@ -15,16 +16,15 @@ export default function Home() {
       <Navbar />
       <h2>Latest</h2>
       <GalleryCard
-        title="compsigh cascade"
+        title="Setting up MDX on Next.js 14"
         description={
           <>
-            <p>A platform I design-engineered to host a coding riddle competition for {<Link href={"/projects/compsigh"}>compsigh</Link>}, my computer science club. Fit with auth via NextAuth, event flags via Vercel Edge Config, teams, invites, and leaderboard via Vercel Postgres, and input validation.</p>
+            <p>It&apos;s comically nontrivial to set up an ergonomic, performant MDX Next.js app, with all the bells & whistles like parsing YAML frontmatter. Here&apos;s how I did it.</p>
           </>
         }
-        src="/assets/cascade-ui.gif"
-        alt="A gif of the compsigh cascade UI"
-        link="https://github.com/compsigh/cascade"
-        cta="View source"
+        src="/og/mdx-nextjs-14.png"
+        link={`/notes/mdx-nextjs-14` as Route}
+        cta="Read note"
       />
       <h2>Now</h2>
       <p>

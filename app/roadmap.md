@@ -40,6 +40,5 @@ published: true
 - [ ] Guestbook, à la [leerob](https://leerob.io/guestbook)
 - [ ] Timeline view for how a note has changed over time
 - [ ] Book reviews, à la [Ali Abdaal](https://aliabdaal.com/book-notes/)
-- [ ] Spotify
 - [ ] Bitmap emoji reactions
 - [ ] Browse notes by tag (`#` nav link list style)
