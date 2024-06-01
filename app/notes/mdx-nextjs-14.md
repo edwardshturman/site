@@ -371,7 +371,7 @@ export async function generateMetadata(
 }
 ```
 
-And that's it! This was my first technical post; if you liked it, please [let me know](https://x.com/edwardshturman)! I learned a lot building my site, and I hope this guide helped you soar off the runway in building your awesome Next.js app with MDX.
+And that's it! This was my first technical post; if you liked it, please [let me know](https://x.com/edwardshturman/status/1797016250830524447)! I learned a lot building my site, and I hope this guide helped you soar off the runway in building your awesome Next.js app with MDX.
 
 ## Resources
 
