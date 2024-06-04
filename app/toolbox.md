@@ -1,14 +1,14 @@
 ---
 title: "Toolbox"
-description: "My daily drivers for getting work done"
+description: "My daily drivers for getting things done"
 published: true
 ---
 
 # Toolbox
 
-My daily drivers for getting work done.
+<Comment type="block">My daily drivers for getting things done</Comment>
 
-Keep in mind, the work is what counts. :)
+<Comment type="block">Remember — the work is what counts :)</Comment>
 
 ## Productivity
 

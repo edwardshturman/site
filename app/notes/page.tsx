@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 
+import { Comment } from '@/components/Comment'
+
 export const metadata: Metadata = {
   title: 'Notes',
   description: 'Thoughts on design, engineering, learning, and life',
@@ -13,6 +15,7 @@ export default function Notes() {
   return (
     <>
       <h1>Notes</h1>
+      <Comment type="block">Thoughts on design, engineering, learning, and life</Comment>
       <nav>
         <ul>
           <li>

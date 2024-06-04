@@ -6,6 +6,8 @@ published: true
 
 # Roadmap
 
+<Comment type="block">The roadmap for my personal website</Comment>
+
 - [x] Syntax highlighting
   <Comment type="inline">2024-02-27</Comment>
 - [x] Comments

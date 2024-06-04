@@ -18,7 +18,7 @@ export default function Projects() {
     <>
       <h1>Projects</h1>
       <Comment type="block">
-        More coming soon. In the meantime, check out <Link href="https://read.cv/edwardshturman">my read.cv</Link>.
+        More coming soon; in the meantime, check out <Link href="https://read.cv/edwardshturman">my read.cv</Link>
       </Comment>
       <Spacer size={48} />
       <GalleryCard

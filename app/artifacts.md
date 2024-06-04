@@ -1,12 +1,12 @@
 ---
 title: "Artifacts"
-description: "Wisdom that resonates with me from across the Internet and literature"
+description: "Wisdom that resonates with me from the Internet & literature"
 published: true
 ---
 
 # Artifacts
 
-Wisdom that resonates with me from across the Internet and literature.
+<Comment type="block">Wisdom that resonates with me from the Internet & literature</Comment>
 
 ## Ideas
 
