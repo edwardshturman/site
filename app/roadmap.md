@@ -32,9 +32,9 @@ published: true
   <Comment type="inline">2024-04-26</Comment>
 - [x] Custom 404
   <Comment type="inline">2024-05-01</Comment>
-- [ ] Toolbox, à la [traf](https://tr.af/stack)
+- [x] Toolbox, à la [traf](https://tr.af/stack)
+  <Comment type="inline">2024-06-03</Comment>
 - [ ] Treasure trove / artifacts, my favorite finds
-- [ ] Setups page (Obsidian, VS Code, etc.)
 - [ ] People I look up to & want to meet IRL, à la [Rafa](https://rafa.design/)
 - [ ] Friends page, à la [Perry Wang](https://www.perryw.ca/info)
 - [ ] Guestbook, à la [leerob](https://leerob.io/guestbook)
