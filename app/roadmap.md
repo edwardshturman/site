@@ -38,10 +38,6 @@ published: true
   <Comment type="inline">2024-06-03</Comment>
 - [x] Artifacts page of wisdom that resonates with me
   <Comment type="inline">2024-06-03</Comment>
-- [ ] People I look up to & want to meet IRL, à la [Rafa](https://rafa.design/)
-- [ ] Friends page, à la [Perry Wang](https://www.perryw.ca/info)
-- [ ] Guestbook, à la [leerob](https://leerob.io/guestbook)
-- [ ] Timeline view for how a note has changed over time
-- [ ] Book reviews, à la [Ali Abdaal](https://aliabdaal.com/book-notes/)
-- [ ] Bitmap emoji reactions
-- [ ] Browse notes by tag (`#` nav link list style)
+- [ ] People I look up to & want to meet IRL, à la [Rafa](https://rafa.design)
+- [ ] Timeline, à la [Linus Rogge](https://linusrogge.com/timeline)
+- [ ] Site page with this roadmap, inspirations, and link to source code
