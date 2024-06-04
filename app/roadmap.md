@@ -34,7 +34,8 @@ published: true
   <Comment type="inline">2024-05-01</Comment>
 - [x] Toolbox, à la [traf](https://tr.af/stack)
   <Comment type="inline">2024-06-03</Comment>
-- [ ] Treasure trove / artifacts, my favorite finds
+- [x] Artifacts page of wisdom that resonates with me
+  <Comment type="inline">2024-06-03</Comment>
 - [ ] People I look up to & want to meet IRL, à la [Rafa](https://rafa.design/)
 - [ ] Friends page, à la [Perry Wang](https://www.perryw.ca/info)
 - [ ] Guestbook, à la [leerob](https://leerob.io/guestbook)

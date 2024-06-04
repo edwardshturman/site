@@ -20,6 +20,9 @@ export function Navbar() {
           <li>
             <Link href={"/workshop"}>Workshop</Link>
           </li>
+          <li>
+            <Link href={"/artifacts"}>Artifacts</Link>
+          </li>
         </ul>
       </nav>
     </>
