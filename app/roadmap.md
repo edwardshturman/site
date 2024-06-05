@@ -38,6 +38,6 @@ published: true
   <Comment type="inline">2024-06-03</Comment>
 - [x] Artifacts page of wisdom that resonates with me
   <Comment type="inline">2024-06-03</Comment>
-- [ ] People I look up to & want to meet IRL, à la [Rafa](https://rafa.design)
+- [x] People I admire and want to meet IRL, à la [Rafa](https://rafa.design)
 - [ ] Timeline, à la [Linus Rogge](https://linusrogge.com/timeline)
 - [ ] Site page with this roadmap, inspirations, and link to source code

@@ -9,6 +9,9 @@ export function Navbar() {
             <Link href={"/notes"}>Notes</Link>
           </li>
           <li>
+            <Link href={"/people"}>People</Link>
+          </li>
+          <li>
             <Link href={"/toolbox"}>Toolbox</Link>
           </li>
           <li>
