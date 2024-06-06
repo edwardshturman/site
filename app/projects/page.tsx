@@ -22,6 +22,18 @@ export default function Projects() {
       </Comment>
       <Spacer size={48} />
       <GalleryCard
+        title="My personal website"
+        description={
+          <>
+            <p>Crafting &amp; curating my new identity on the Web</p>
+          </>
+        }
+        src="/og/root.png"
+        link={"/projects/site" as Route}
+        cta="View project"
+      />
+      <Spacer size={48} />
+      <GalleryCard
         title="compsigh"
         description={
           <>

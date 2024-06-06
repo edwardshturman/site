@@ -15,9 +15,6 @@ export function Navbar() {
             <Link href={"/toolbox"}>Toolbox</Link>
           </li>
           <li>
-            <Link href={"/roadmap"}>Roadmap</Link>
-          </li>
-          <li>
             <Link href={"/projects"}>Projects</Link>
           </li>
           <li>
