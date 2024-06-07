@@ -7,9 +7,15 @@ import { GalleryCard } from '@/components/GalleryCard'
 
 export const metadata: Metadata = {
   title: 'Projects',
-  description: "Notable work I've done and am doing",
+  description: "Larger endeavors that have changed my life & work in some meaningful way",
   openGraph: {
     siteName: "Edward Shturman's personal website",
+    images: [{
+      url: 'api/og?title=Projects',
+      width: 1200,
+      height: 630,
+      alt: ''
+    }]
   }
 }
 

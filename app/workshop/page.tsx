@@ -11,6 +11,12 @@ export const metadata: Metadata = {
   description: 'Everything from design experiments to side projects',
   openGraph: {
     siteName: "Edward Shturman's personal website",
+    images: [{
+      url: 'api/og?title=Workshop',
+      width: 1200,
+      height: 630,
+      alt: ''
+    }]
   }
 }
 

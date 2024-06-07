@@ -8,6 +8,12 @@ export const metadata: Metadata = {
   description: 'Thoughts on design, engineering, learning, and life',
   openGraph: {
     siteName: "Edward Shturman's personal website",
+    images: [{
+      url: 'api/og?title=Notes',
+      width: 1200,
+      height: 630,
+      alt: ''
+    }]
   }
 }
 
