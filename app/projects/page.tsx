@@ -40,7 +40,7 @@ export default function Projects() {
             <p>My computer science club at the University of San Francisco</p>
           </>
         }
-        src="/assets/compsigh-banner.png"
+        src="/og/compsigh.png"
         alt="compsigh banner"
         link={"/projects/compsigh" as Route}
         cta="View project"

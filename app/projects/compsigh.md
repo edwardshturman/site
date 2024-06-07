@@ -2,6 +2,7 @@
 title: "compsigh"
 description: "\"Meet cool people, build cool things.\" Here's the story of compsigh, the computer science club I founded at the University of San Francisco."
 published: true
+og_image: "/og/compsigh.png"
 ---
 
 # compsigh
