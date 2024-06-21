@@ -18,19 +18,20 @@ export function Author(
 ) {
   return (
     <>
-      <span className={styles.container}>
-        <Link href={link as Route}>
-          <span className={styles.author}>
-            <Image
-              src={avatar}
-              alt={name}
-              width={20}
-              height={20}
-            />
+      <Link href={link as Route}>
+        <span className={styles.container}>
+          <Image
+            id={styles.avatar}
+            src={avatar}
+            alt={name}
+            width={20}
+            height={20}
+          />
+          <span className={styles.name}>
             {name}
           </span>
-        </Link>
-      </span>
+        </span>
+      </Link>
     </>
   )
 }

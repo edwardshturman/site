@@ -1,21 +1,21 @@
 span.container {
   display: inline-block;
-  vertical-align: middle;
+  padding: 3px 6px;
+  border-radius: 6px;
 }
 
-span.author {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 0.2rem 0.4rem;
-  border-radius: 0.4rem;
+span.name {
   color: var(--color-light-gray);
 }
 
-span.author:hover {
+span.container:hover {
   background-color: hsla(0deg, 0%, 60%, 0.2);
 }
 
-span.author img {
-  border-radius: 0.2rem;
+span.container img#avatar {
+  margin-right: 10px;
+  border-radius: 3px;
+  vertical-align: text-bottom;
+  pointer-events: none;
+  user-select: none;
 }
