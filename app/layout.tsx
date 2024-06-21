@@ -85,7 +85,7 @@ export default function RootLayout({
       <body>
         <Image
           unoptimized
-          src="/assets/pfp-bitmap-transparent.png"
+          src="/avatars/edward.png"
           alt="A bitmapped image of Edward Shturman"
           width={200}
           height={200}
