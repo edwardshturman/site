@@ -25,6 +25,7 @@ published: true
 - [Organic Software](https://pketh.org/organic-software.html) by Pirijan
 - [Building a Belief System](https://notboring.software/words/building-a-belief-system) by Andy Allen
 - Andy Matuschak on [academ-ish writing](https://twitter.com/andy_matuschak/status/1764523623191318834)
+- [How to build a culture of shipping](https://buttondown.email/blog/shipped-at) by Buttondown
 - [How to Learn Stuff Quickly](https://joshwcomeau.com/blog/how-to-learn-stuff-quickly) by Josh Comeau
 - [Style is consistent constraint](https://stephango.com/style) by Steph Ango
 - Jordan Peterson's [guide to writing an essay](https://essay.app/guide)
@@ -50,6 +51,7 @@ published: true
 - [Alex Hormozi on Deep Dive](https://youtube.com/watch?v=sdd4BST87ks)
 - [Cliff Weitzman on Deep Dive](https://youtube.com/watch?v=yfALZJcurZw)
 - [Grace Beverley on Deep Dive](https://youtube.com/watch?v=7_hNRR6K6z4)
+- [Ali Abdaal on High Performance](https://youtube.com/watch?v=vHX130xs5M4)
 - [Josh Miller on Lenny's Podcast](https://youtube.com/watch?v=AZpo5785v8A)
 - [Bryan Chesky on Lenny's Podcast](https://youtube.com/watch?v=4ef0juAMqoE)
 - [Ali Abdaal on the Colin & Samir Show](https://youtube.com/watch?v=NcYt79DjNwY)
