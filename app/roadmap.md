@@ -42,3 +42,5 @@ published: true
   <Comment type="inline">2024-06-04</Comment>
 - [x] Project page for this site
   <Comment type="inline">2024-06-05</Comment>
+- [ ] Fix layout shift for images
+- [ ] Investigate mobile code styles
