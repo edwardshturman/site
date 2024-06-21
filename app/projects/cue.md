@@ -115,7 +115,7 @@ I'm happy to say we continued working on Cue after Dons Hack, and shipped some p
     <p>We really liked the idea of invites, and we went all out, because why not?</p>
     <p>We produced a set of 50 <em>physical</em> invite cards, each with their own unique invite linked via QR code.</p>
     <p>Invites had conditions like <code>no-invite</code> (invited students can&apos;t also +1) to help us scale reasonably.</p>
-    <p>We also gave these out to incoming freshmen at USF&apos;s Spring Involvement Fair.</p>
+    <p>We also gave these out at USF&apos;s annual Spring event for incoming freshmen.</p>
   </div>
 </Grid>
 

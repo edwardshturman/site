@@ -32,7 +32,7 @@ export default function Workshop() {
     },
     {
       title: 'compsigh flyer',
-      description: <p>A flyer for <Link href="/projects/compsigh">compsigh</Link>, my computer science club. We handed these out to incoming freshmen at our university&apos;s Spring Involvement Fair.</p>,
+      description: <p>A flyer for <Link href="/projects/compsigh">compsigh</Link>, my computer science club. We handed these out at our university&apos;s annual Spring event for incoming freshmen.</p>,
       src: '/assets/compsigh-flyer.png'
     },
     {
