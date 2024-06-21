@@ -25,10 +25,10 @@ published: true
 - [Organic Software](https://pketh.org/organic-software.html) by Pirijan
 - [Building a Belief System](https://notboring.software/words/building-a-belief-system) by Andy Allen
 - Andy Matuschak on [academ-ish writing](https://twitter.com/andy_matuschak/status/1764523623191318834)
-- [How to build a culture of shipping](https://buttondown.email/blog/shipped-at) by Buttondown
 - [How to Learn Stuff Quickly](https://joshwcomeau.com/blog/how-to-learn-stuff-quickly) by Josh Comeau
 - [Style is consistent constraint](https://stephango.com/style) by Steph Ango
 - Jordan Peterson's [guide to writing an essay](https://essay.app/guide)
+- [How to build a culture of shipping](https://buttondown.email/blog/shipped-at) by Buttondown
 - [What I Wish Someone Had Told Me](https://blog.samaltman.com/what-i-wish-someone-had-told-me) by Sam Altman
 
 ### Community
