@@ -14,6 +14,7 @@ import type { Options } from 'rehype-pretty-code'
 import Link from 'next/link'
 import { Grid } from '@/components/Grid'
 import { Spacer } from '@/components/Spacer'
+import { Author } from '@/components/Author'
 import { Comment } from '@/components/Comment'
 import { GalleryCard } from '@/components/GalleryCard'
 
@@ -36,7 +37,7 @@ async function readPage(slug: string[]) {
 
     const { content, frontmatter } = await compileMDX<Frontmatter>({
       source: page,
-      components: { Comment, GalleryCard, Grid, Link, Spacer },
+      components: { Author, Comment, GalleryCard, Grid, Link, Spacer },
       options: {
         parseFrontmatter: true,
         mdxOptions: {
