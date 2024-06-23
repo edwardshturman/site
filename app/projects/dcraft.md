@@ -47,7 +47,7 @@ Until January 2018, we occupied a warehouse in Millbrae we lovingly called the "
 
 Four times a school year, we'd have Intersession: a two-week break from regular classes to deep dive into guest-led workshops (e.g. productivity & happiness), skills (e.g. Korean martial arts), or self-directed projects.
 
-From May 2019, my incredibly talented friend <Author name="Joss Ettrick" avatar="/avatars/joss.jpg" link="https://jossettrick.com" /> and I would lead Intersession cohorts with our friends and build the school, block by block (pun intended).
+From May 2019, my incredibly talented friend <Mention name="Joss Ettrick" avatar="/avatars/joss.jpg" link="https://jossettrick.com" /> and I would lead Intersession cohorts with our friends and build the school, block by block (pun intended).
 
 ## The first Intersession
 

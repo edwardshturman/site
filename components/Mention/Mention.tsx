@@ -1,9 +1,9 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
-import styles from './Author.module.css'
+import styles from './Mention.module.css'
 
-export function Author(
+export function Mention(
 {
   name,
   avatar,

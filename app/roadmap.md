@@ -30,7 +30,7 @@ published: true
   <Comment type="inline">2024-04-23</Comment>
 - [x] `Grid` component
   <Comment type="inline">2024-04-25</Comment>
-- [x] `Author` component
+- [x] `Mention` component
   <Comment type="inline">2024-04-26</Comment>
 - [x] Custom 404
   <Comment type="inline">2024-05-01</Comment>
