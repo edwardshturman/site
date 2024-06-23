@@ -23,14 +23,19 @@ Here's the story of how we brought d.craft to life — a virtual recreation of t
 <nav className="table-of-contents">
   <ul>
     <li>
-      <Link href="#spark">Spark</Link>
+      <Link href="#the-design-tech-culture">The Design Tech culture</Link>
+    </li>
+    <li>
+      <Link href="#the-first-intersession">The first Intersession</Link>
     </li>
   </ul>
 </nav>
 
-## Spark
+<Spacer size={16} />
 
-### Design Tech High School
+## The Design Tech culture
+
+### What makes it special?
 
 I'm very fortunate to have fond memories from my time at [Design Tech High School](https://designtechhighschool.org) ("d.tech" for short). I can only describe d.tech as if it were the brainchild of the [Stanford d.school](https://dschool.stanford.edu) (Hasso Plattner Institute of Design), [IDEO](https://ideo.com), and modern startups.
 
@@ -42,14 +47,48 @@ Until January 2018, we occupied a warehouse in Millbrae we lovingly called the "
 
 Four times a school year, we'd have Intersession: a two-week break from regular classes to deep dive into guest-led workshops (e.g. productivity & happiness), skills (e.g. Korean martial arts), or self-directed projects.
 
-From May 2019, my incredibly talented friend <Author name="Joss Ettrick" avatar="/avatars/joss.jpg" link="https://jossettrick.com" /> and I would lead Intersession cohorts with our friends and build the school, block by block (pun intended). I took care of server administration — managing plugins, permissions, etc. — as well as branding, marketing, and communicating with the school. Joss was our chief builder.
+From May 2019, my incredibly talented friend <Author name="Joss Ettrick" avatar="/avatars/joss.jpg" link="https://jossettrick.com" /> and I would lead Intersession cohorts with our friends and build the school, block by block (pun intended).
 
-## Scaffold
+## The first Intersession
 
-### May–June 2019
+To be honest, we didn't start out looking to make d.craft as big as it was. It was mainly a joke in our friend group: we'd leave school and come right back, virtually.
 
-Our goal during this Intersession was to have a functional replica of the school.
+In the first week of the May–June 2019 Intersession, we held interviews with students and staff, and quickly realized this could be something bigger.
 
+<GalleryCard
+  title="The team goes over considerations for building a safe online community with a d.tech staff member"
+  src="/assets/dcraft-whiteboard-julie.JPG"
+/>
+
+There were a few things on our minds:
+
+- Being able to identify players as students, and know who's who
+- Making sure *only* d.tech community members could access the server
+- Safety vs. self-expression: where do we draw the line on interactions?
+
+<Spacer size={16} />
+
+<GalleryCard
+  src="/assets/dcraft-whiteboard.JPG"
+  alt="The whiteboard at the end of one of our interviews with d.tech staff, discussing the considerations mentioned above"
+/>
+
+<Spacer size={16} />
+
+Laptops in hand, half the team set out walking into different rooms to build them to-scale, while the other half of us devised implementations for the community. This latter task would take us quite some time and iteration to get right.
+
+We knew we wouldn't be able to do a full launch, so our goal for these two weeks was to complete a first build of at least the school itself.
+
+We were successful.
+
+<GalleryCard
+  src="/assets/dcraft-may-june-2019-screenshot.png"
+  alt="A screenshot of d.craft, facing the school entrance, from June 2019"
+  title="d.craft June 2019 trailer"
+  description={<p>My apologies in advance for the jittering — this is before I knew how to screen record properly</p>}
+  link="https://youtu.be/fZks2CTUXDw"
+  cta="Watch on YouTube"
+/>
 
 ## January 2020
 
