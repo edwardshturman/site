@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import type { Route } from 'next'
 
 import styles from './Author.module.css'
 
@@ -18,7 +17,7 @@ export function Author(
 ) {
   return (
     <>
-      <Link href={link as Route}>
+      <Link href={link}>
         <span className={styles.container}>
           <Image
             id={styles.avatar}

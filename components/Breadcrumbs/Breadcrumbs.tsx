@@ -1,7 +1,6 @@
 'use client'
 
 import Link from 'next/link'
-import type { Route } from 'next'
 import { usePathname } from 'next/navigation'
 
 import styles from './Breadcrumbs.module.css'
@@ -38,7 +37,7 @@ function Crumb(
 ) {
   return (
     <li>
-      <Link href={href as Route}>
+      <Link href={href}>
         {children}
       </Link>
     </li>

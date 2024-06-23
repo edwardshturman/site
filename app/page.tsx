@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import type { Route } from 'next'
 
 import { Spacer } from '@/components/Spacer'
 import { Navbar } from '@/components/Navbar'
@@ -23,7 +22,7 @@ export default function Home() {
           </>
         }
         src="/og/mdx-nextjs-14.png"
-        link={`/notes/mdx-nextjs-14` as Route}
+        link={`/notes/mdx-nextjs-14`}
         cta="Read note"
       />
       <h2>Now</h2>

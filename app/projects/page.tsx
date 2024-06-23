@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import type { Metadata, Route } from 'next'
+import type { Metadata } from 'next'
 
 import { Spacer } from '@/components/Spacer'
 import { Comment } from '@/components/Comment'
@@ -35,7 +35,7 @@ export default function Projects() {
           </>
         }
         src="/og/root.png"
-        link={"/projects/site" as Route}
+        link={"/projects/site"}
         cta="View project"
       />
       <Spacer size={48} />
@@ -48,7 +48,7 @@ export default function Projects() {
         }
         src="/og/compsigh.png"
         alt="compsigh banner"
-        link={"/projects/compsigh" as Route}
+        link={"/projects/compsigh"}
         cta="View project"
       />
       <Spacer size={48} />
@@ -61,7 +61,7 @@ export default function Projects() {
         }
         src="/og/deploy23.png"
         alt="DEPLOY/23 banner"
-        link={"/projects/deploy23" as Route}
+        link={"/projects/deploy23"}
         cta="View project"
       />
       <Spacer size={48} />
@@ -74,7 +74,7 @@ export default function Projects() {
         }
         src="/og/cue.png"
         alt="Cue banner"
-        link={"/projects/cue" as Route}
+        link={"/projects/cue"}
         cta="View project"
       />
     </>
