@@ -23,7 +23,8 @@ Here's the story of how we brought d.craft to life — a virtual recreation of t
 <TableOfContents
   entries={[
     "The Design Tech Culture",
-    "The first Intersession"
+    "The first Intersession",
+    "The launch"
   ]}
 />
 
@@ -86,11 +87,50 @@ We were successful.
   cta="Watch on YouTube"
 />
 
-## January 2020
+<Spacer size={16} />
 
-## Community trailer March 2020
+In the months that followed, the team worked on:
 
-- knew I wanted to build stuff people love
+- Building out the surrounding area, such as Oracle's Redwood Shores campus
+- Storyboarding and building custom minigames and gamemodes
+- Preparing for a school-wide launch
+
+<Spacer size={16} />
+
+<Grid columns={3}>
+  <GalleryCard
+    src="/assets/dcraft-bedwars.png"
+    alt="A screenshot of a custom-made Bedwars map on d.craft"
+  />
+  <GalleryCard
+    src="/assets/dcraft-ctf.png"
+    alt="A screenshot of a custom-made capture the flag map on d.craft"
+  />
+  <GalleryCard
+    src="/assets/dcraft-factions-spawn.png"
+    alt="A screenshot of a custom-made Factions map on d.craft"
+  />
+</Grid>
+
+<Spacer size={16} />
+
+We were ready.
+
+## The launch
+
+The timing is rather poetic: we launched d.craft exactly a week before our school would close its doors due to the COVID-19 pandemic.
+
+We presented our announcement trailer at our weekly community meeting. I will never forget the sense of awe and pride from everyone in the room to be a d.tech student. I'm pretty sure I teared up after the standing ovation. :)
+
+<GalleryCard
+  src="/assets/dcraft-march-2020-screenshot.png"
+  alt="A screenshot from March 2020 taken on d.craft of the school from above"
+  title="d.craft March 2020 trailer"
+  link="https://youtu.be/cG9HXfy7Gq8"
+  cta="Watch on YouTube"
+/>
+
+<Spacer size={16} />
 
 ## Spring–Summer 2020 update
 
