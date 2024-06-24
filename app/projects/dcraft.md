@@ -46,7 +46,7 @@ Until January 2018, we occupied a warehouse in Millbrae we lovingly called the "
 
 Four times a year, we'd have Intersession: a two-week break from regular classes to deep dive into guest-led workshops (e.g. productivity & happiness), skills (e.g. Korean martial arts), or self-directed projects.
 
-From May 2019, my incredibly talented friend <Mention name="Joss Ettrick" avatar="/avatars/joss.jpg" link="https://jossettrick.com" /> and I would lead Intersession cohorts with our friends and build the school, block by block (pun intended).
+From May 2019, my incredibly talented friend <Mention name="Joss" avatar="/avatars/joss.jpg" link="https://jossettrick.com" /> and I would lead Intersession cohorts with our friends and build the school, block by block (pun intended).
 
 To be honest, we didn't start out looking to make d.craft as big as it was. It was mainly a joke in our friend group: we'd leave school and come right back, virtually.
 
@@ -76,7 +76,7 @@ Laptops in hand, half the team set out walking into different rooms to build the
 
 We knew we wouldn't be able to do a full launch, so our goal for these two weeks was to complete a first build of at least the school itself.
 
-We were successful.
+Thanks to <Mention name="Jordan" avatar="/avatars/jordan.jpeg" link="https://linkedin.com/in/jordan-cen" />, <Mention name="Rohan" avatar="/avatars/rohan.jpeg" link="https://linkedin.com/in/therohankumar" />, <Mention name="Ian" avatar="/avatars/ian.jpg" link="https://iankwuan.com" />, Darius, Aidan C., John, and Luke, we were successful.
 
 <GalleryCard
   src="/assets/dcraft-may-june-2019-screenshot.png"
@@ -131,6 +131,8 @@ We presented our announcement trailer at our weekly community meeting. I will ne
 />
 
 <Spacer size={16} />
+
+Props to Joss, Rohan, Elan, Ryan, David, Logan Y., and Carson for getting us there.
 
 ## Graduation
 
