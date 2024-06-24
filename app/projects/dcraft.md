@@ -99,12 +99,12 @@ In the months that followed, the team worked on:
 
 <Grid columns={3}>
   <GalleryCard
-    src="/assets/dcraft-bedwars.png"
-    alt="A screenshot of a custom-made Bedwars map on d.craft"
+    src="/assets/dcraft-oracle-parkway.png"
+    alt="A screenshot of Oracle Parkway on d.craft"
   />
   <GalleryCard
-    src="/assets/dcraft-ctf.png"
-    alt="A screenshot of a custom-made capture the flag map on d.craft"
+    src="/assets/dcraft-bedwars.png"
+    alt="A screenshot of a custom-made Bedwars map on d.craft"
   />
   <GalleryCard
     src="/assets/dcraft-factions-spawn.png"
