@@ -136,6 +136,37 @@ Props to Joss, Rohan, <Mention name="Ryan" avatar="/avatars/ryan.jpeg" link="htt
 
 ## Graduation
 
+d.tech continued to run Intersessions through the pandemic months, and the team kept at it. Our first major project after launch was a virtual graduation for the class of 2020. We knew it wasn't what they wanted, but we sought out to make it as special as we could.
+
+We wrote out, programmed (using Minecraft's "datapacks" format), and built three unique events for a night of celebration and reminiscence:
+
+- An escape room aboard a spaceship version of the school
+- A capture-the-flag tournament on a post-apocalyptic map
+- A scavenger hunt for relics from our previous campus
+
+<Spacer size={16} />
+
+<Grid columns={3}>
+  <GalleryCard
+    src="/assets/dcraft-grad-event-1.gif"
+    alt="A gif of the escape room event"
+  />
+  <GalleryCard
+    src="/assets/dcraft-grad-event-2.gif"
+    alt="A gif of the capture-the-flag event"
+  />
+  <GalleryCard
+    src="/assets/dcraft-grad-event-3.gif"
+    alt="A gif of the scavenger hunt event"
+  />
+</Grid>
+
+<Spacer size={16} />
+
+We got staff to write speeches, and [streamed the event on YouTube](https://youtube.com/live/6h_YXoyp6d0).
+
+Huge shoutout to Joss, Jordan, Ian, Ryan, Elan, <Mention name="Aidan H." avatar="/avatars/aidan.jpg" link="https://linkedin.com/in/aidan-hsiao-9b18a223a" />, <Mention name="Logan J." avatar="/avatars/logan.jpeg" link="https://linkedin.com/in/logan-john-a2a969228" />, Andrew, Paul, Jett, and Zackie for making this happen.
+
 ## Winter
 
 ## Sunset
