@@ -4,10 +4,6 @@ span.container {
   border-radius: 6px;
 }
 
-span.name {
-  color: var(--color-light-gray);
-}
-
 span.container:hover {
   background-color: hsla(0deg, 0%, 60%, 0.2);
 }
