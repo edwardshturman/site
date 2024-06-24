@@ -22,17 +22,19 @@ Here's the story of how we brought d.craft to life — a virtual recreation of t
 
 <TableOfContents
   entries={[
-    "The Design Tech Culture",
-    "The first Intersession",
-    "The launch"
+    "Culture",
+    "Intersession",
+    "Launch",
+    "Graduation",
+    "Winter",
+    "Sunset",
+    "Lessons"
   ]}
 />
 
 <Spacer size={16} />
 
-## The Design Tech culture
-
-### What makes it special?
+## Culture
 
 I'm very fortunate to have fond memories from my time at [Design Tech High School](https://designtechhighschool.org) ("d.tech" for short). I can only describe d.tech as if it were the brainchild of the [Stanford d.school](https://dschool.stanford.edu) (Hasso Plattner Institute of Design), [IDEO](https://ideo.com), and modern startups.
 
@@ -40,13 +42,11 @@ Well, that's sort of exactly what it is: our founders worked directly with them 
 
 Until January 2018, we occupied a warehouse in Millbrae we lovingly called the "Hangar" (fittingly, it looked like an airplane hangar). "Classrooms" were really sections of the large space separated by makeshift walls made out of wood we cut out. We then moved into Oracle's campus in Redwood Shores, where d.tech now stands.
 
-### Intersession
+## Intersession
 
-Four times a school year, we'd have Intersession: a two-week break from regular classes to deep dive into guest-led workshops (e.g. productivity & happiness), skills (e.g. Korean martial arts), or self-directed projects.
+Four times a year, we'd have Intersession: a two-week break from regular classes to deep dive into guest-led workshops (e.g. productivity & happiness), skills (e.g. Korean martial arts), or self-directed projects.
 
 From May 2019, my incredibly talented friend <Mention name="Joss Ettrick" avatar="/avatars/joss.jpg" link="https://jossettrick.com" /> and I would lead Intersession cohorts with our friends and build the school, block by block (pun intended).
-
-## The first Intersession
 
 To be honest, we didn't start out looking to make d.craft as big as it was. It was mainly a joke in our friend group: we'd leave school and come right back, virtually.
 
@@ -116,7 +116,7 @@ In the months that followed, the team worked on:
 
 We were ready.
 
-## The launch
+## Launch
 
 The timing is rather poetic: we launched d.craft exactly a week before our school would close its doors due to the COVID-19 pandemic.
 
@@ -132,20 +132,14 @@ We presented our announcement trailer at our weekly community meeting. I will ne
 
 <Spacer size={16} />
 
-## Spring–Summer 2020 update
+## Graduation
 
-- lessons learned from building a community
+## Winter
 
-## Grad night 2020 / June 2020 d.lab
+## Sunset
 
-## Winter update 2020–2021
+## Lessons
 
-## Official sunset in 2022
-
-## Biggest mistakes I made
-
-### Censorship
-
-### Launching before ready
-
-### Announcing without a date
+1. Respect momentum (don't kill free hype)
+2. Set a ship date (don't launch before you're ready)
+3. Don't announce things without a date
