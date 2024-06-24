@@ -44,3 +44,4 @@ published: true
   <Comment type="inline">2024-06-05</Comment>
 - [ ] Fix layout shift for images
 - [ ] Investigate mobile code styles
+- [ ] `GalleryCard` spacing (I don't like having to use `Spacer` everywhere)
