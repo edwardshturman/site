@@ -20,16 +20,12 @@ Here's the story of how we brought d.craft to life — a virtual recreation of t
 
 <Spacer size={16} />
 
-<nav className="table-of-contents">
-  <ul>
-    <li>
-      <Link href="#the-design-tech-culture">The Design Tech culture</Link>
-    </li>
-    <li>
-      <Link href="#the-first-intersession">The first Intersession</Link>
-    </li>
-  </ul>
-</nav>
+<TableOfContents
+  entries={[
+    "The Design Tech Culture",
+    "The first Intersession"
+  ]}
+/>
 
 <Spacer size={16} />
 

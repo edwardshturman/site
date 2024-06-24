@@ -9,19 +9,13 @@ og_image: "/og/deploy23.png"
 
 The first hackathon hosted by [my computer science club compsigh](/projects/compsigh), and our biggest event of the Fall 2023 semester. An entirely student-bootstrapped, three-day event, bringing together the best minds in CS, design, and engineering to hack on a project for a weekend.
 
-<nav className="table-of-contents">
-  <ul>
-    <li>
-      <Link href="#story">Story</Link>
-    </li>
-    <li>
-      <Link href="#trailer">Trailer</Link>
-    </li>
-    <li>
-      <Link href="#platform">Platform</Link>
-    </li>
-  </ul>
-</nav>
+<TableOfContents
+  entries={[
+    "Story",
+    "Trailer",
+    "Platform"
+  ]}
+/>
 
 <GalleryCard
   src="/assets/deploy-intro.gif"

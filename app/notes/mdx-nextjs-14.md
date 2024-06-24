@@ -9,22 +9,14 @@ og_image: "/og/mdx-nextjs-14.png"
 
 It's comically nontrivial to set up an ergonomic, performant MDX Next.js app, with all the bells & whistles like parsing YAML frontmatter. Here's how I did it.
 
-<nav className="table-of-contents">
-  <ul>
-    <li>
-      <Link href="#my-criteria">My criteria</Link>
-    </li>
-    <li>
-      <Link href="#ecosystem">Ecosystem</Link>
-    </li>
-    <li>
-      <Link href="#setup">Setup</Link>
-    </li>
-    <li>
-      <Link href="#bells--whistles">Bells &amp; whistles</Link>
-    </li>
-  </ul>
-</nav>
+<TableOfContents
+  entries={[
+    "My criteria",
+    "Ecosystem",
+    "Setup",
+    "Bells & whistles"
+  ]}
+/>
 
 ## My criteria
 

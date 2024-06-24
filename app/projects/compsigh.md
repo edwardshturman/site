@@ -9,19 +9,13 @@ og_image: "/og/compsigh.png"
 
 "Meet cool people, build cool things." Here's the story of compsigh, the computer science club I founded at the University of San Francisco.
 
-<nav className="table-of-contents">
-  <ul>
-    <li>
-      <Link href="#the-default-path">The default path</Link>
-    </li>
-    <li>
-      <Link href="#the-alternate-path">The alternate path</Link>
-    </li>
-    <li>
-      <Link href="#a-club-for-the-rest-of-us">A club for the rest of us</Link>
-    </li>
-  </ul>
-</nav>
+<TableOfContents
+  entries={[
+    "The default path",
+    "The alternate path",
+    "A club for the rest of us"
+  ]}
+/>
 
 <Spacer size={16} />
 

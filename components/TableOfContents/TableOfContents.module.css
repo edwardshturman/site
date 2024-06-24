@@ -1,0 +1,3 @@
+nav.table-of-contents > ul > li::before {
+  content: '#';
+}

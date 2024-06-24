@@ -14,19 +14,13 @@ Cue is a minimalist active recall study app focused on helping students ask the 
   alt="Cue wordmark banner"
 />
 
-<nav className="table-of-contents">
-  <ul>
-    <li>
-      <Link href="#inspiration">Inspiration</Link>
-    </li>
-    <li>
-      <Link href="#hackathon">Hackathon</Link>
-    </li>
-    <li>
-      <Link href="#features">Features</Link>
-    </li>
-  </ul>
-</nav>
+<TableOfContents
+  entries={[
+    "Inspiration",
+    "Hackathon",
+    "Features"
+  ]}
+/>
 
 ## Inspiration
 

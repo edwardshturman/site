@@ -17,6 +17,7 @@ import { Spacer } from '@/components/Spacer'
 import { Comment } from '@/components/Comment'
 import { Mention } from '@/components/Mention'
 import { GalleryCard } from '@/components/GalleryCard'
+import { TableOfContents } from '@/components/TableOfContents'
 
 async function readPage(slug: string[]) {
   try {
@@ -37,7 +38,7 @@ async function readPage(slug: string[]) {
 
     const { content, frontmatter } = await compileMDX<Frontmatter>({
       source: page,
-      components: { Comment, GalleryCard, Grid, Link, Mention, Spacer },
+      components: { Comment, GalleryCard, Grid, Link, Mention, Spacer, TableOfContents },
       options: {
         parseFrontmatter: true,
         mdxOptions: {
