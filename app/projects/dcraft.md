@@ -7,7 +7,7 @@ og_image: "/og/dcraft.png"
 
 # d.craft
 
-To those unfamiliar — certainly to the parents of players — d.craft may seem like just a Minecraft server. But in the midst of a pandemic, it was an extension of the community at Design Tech High School. A place where students could be themselves and make friends, at a time when both were very difficult. In its time, d.craft became imbued in our school's culture. It was my first foray into bringing both teams and communities together. And by the end of it, I realized, this is what I wanted to do: ship projects people love, and bring people together around them.
+To those unfamiliar — certainly to the parents of players — d.craft may seem like just a Minecraft server. But in the midst of a pandemic, it was an extension of the community at [Design Tech High School](https://designtechhighschool.org) ("d.tech" for short). A place where students could be themselves and make friends, at a time when both were very difficult. It was my first foray into bringing both teams and communities together. And by the end of it, I realized, this is what I wanted to do: ship projects people love, and bring people together around them.
 
 Here's the story of how we brought d.craft to life — a virtual recreation of the Design Tech High School campus in Minecraft.
 
@@ -34,11 +34,11 @@ Here's the story of how we brought d.craft to life — a virtual recreation of t
 
 ## Culture
 
-I'm very fortunate to have fond memories from my time at [Design Tech High School](https://designtechhighschool.org) ("d.tech" for short). I can only describe d.tech as if it were the brainchild of the [Stanford d.school](https://dschool.stanford.edu) (Hasso Plattner Institute of Design), [IDEO](https://ideo.com), and modern startups.
+I'm very fortunate to have fond memories from my time at d.tech. I can only describe the place as if it were the brainchild of the [Stanford d.school](https://dschool.stanford.edu) (Hasso Plattner Institute of Design), [IDEO](https://ideo.com), and modern startups.
 
-Well, that's sort of exactly what it is: our founders worked directly with them to figure out what education should look like. The curriculum puts heavy emphasis on design thinking and other soft skills that are becoming more and more tangible today. There is a palpable air of experimentation, prototyping, and self-direction. Put simply, if you're anything like me, it is a *dream* of a high school. I loved it very much.
+Well, that's sort of exactly what it is: our founders worked directly with them to figure out what education should look like. The curriculum puts heavy emphasis on design thinking and other soft skills that are becoming more and more tangible today. There is a palpable air of experimentation, prototyping, and self-direction.
 
-Until January 2018, we occupied a warehouse in Millbrae we lovingly called the "Hangar" (fittingly, it looked like an airplane hangar). Classrooms were really just the space sectioned by makeshift walls, composed of floating whiteboards and wood from our makerspace. We then moved into Oracle's campus in Redwood Shores, where d.tech now stands.
+Until January 2018, we occupied a warehouse in Millbrae we lovingly called the "Hangar". Classrooms were really just the space sectioned by makeshift walls, composed of floating whiteboards and wood from our makerspace. We then moved into Oracle's campus in Redwood Shores.
 
 ## Intersession
 
@@ -46,9 +46,7 @@ Four times a year, we'd have Intersession: a two-week break from regular classes
 
 From May 2019, my incredibly talented friend <Mention name="Joss" avatar="/avatars/joss.jpg" link="https://jossettrick.com" /> and I would lead Intersession cohorts with our friends and build the school, block by block (pun intended).
 
-To be honest, we didn't start out looking to make d.craft as big as it was. It was mainly a joke in our friend group: we'd leave school and come right back, virtually.
-
-In the first week of the May–June 2019 Intersession, we held interviews with students and staff, and quickly realized this could be something bigger.
+d.craft started out as an inside joke of a project: we'd leave school and "come right back", virtually. But in the first week of the May–June 2019 Intersession, we held interviews with students and staff, and quickly realized this could be something bigger.
 
 <Spacer size={16} />
 
@@ -72,11 +70,11 @@ There were a few things on our minds:
 
 <Spacer size={16} />
 
-Laptops in hand, half the team set out walking into different rooms to build them to-scale, while the other half of us devised implementations for the community. This latter task would take us quite some time and iteration to get right.
+Laptops in hand, half the team set out walking around the school to build it to-scale, while the other half of us devised implementations for the community. This latter task would take us quite some time and iteration to get right.
 
-It was building [d.verify](https://youtu.be/irHC1w0K2G4) — a tool that linked students' school Google accounts with their Discord accounts in our community server — that convinced me to study computer science in university. The feeling of solving a problem no one else had solved yet, and the solution being intuitive, familiar, and fun to people, was incredibly empowering.
+It was building [d.verify](https://youtu.be/irHC1w0K2G4) — a tool that linked students' Google accounts with their profiles on our Discord server — that convinced me to study computer science in university. The feeling of solving a problem no one else had solved yet, and the solution being intuitive, familiar, and fun to people, was incredibly empowering.
 
-We knew we wouldn't be able to do a full launch, so our goal for these two weeks was to complete a first build of at least the school itself.
+We knew we wouldn't be able to do a full launch just yet, so our goal for these two weeks was to complete a first build of the school.
 
 Thanks to <Mention name="Jordan" avatar="/avatars/jordan.jpeg" link="https://linkedin.com/in/jordan-cen" />, <Mention name="Rohan" avatar="/avatars/rohan.jpeg" link="https://linkedin.com/in/therohankumar" />, <Mention name="Ian" avatar="/avatars/ian.jpg" link="https://iankwuan.com" />, <Mention name="Aidan C." avatar="/avatars/aidan-c.jpeg" link="https://linkedin.com/in/aidan-n-chen" />, Darius, John, and Luke, we got it done.
 
@@ -93,9 +91,9 @@ Thanks to <Mention name="Jordan" avatar="/avatars/jordan.jpeg" link="https://lin
 
 In the months that followed, the team worked on:
 
-- Building out the surrounding area, such as Oracle's Redwood Shores campus
-- Storyboarding and building custom minigames and gamemodes
-- Preparing for a school-wide launch
+- Building out the Oracle campus and surrounding area
+- Storyboarding and building custom minigames
+- Preparing for the school-wide launch
 
 <Spacer size={16} />
 
@@ -120,7 +118,7 @@ In the months that followed, the team worked on:
 
 The timing is almost poetic: we launched d.craft exactly a week before our school would close its doors due to the COVID-19 pandemic.
 
-We presented our announcement trailer at our weekly community meeting. I will never forget the sense of awe and pride from everyone in the room to be a d.tech student. I'm pretty sure I teared up after the standing ovation. :)
+We presented d.craft at our weekly community meeting. I will never forget the awe, cheer, and d.tech pride from everyone in the room. I'm pretty sure I teared up after the standing ovation. :)
 
 <GalleryCard
   src="/assets/dcraft-march-2020-screenshot.png"
@@ -138,11 +136,11 @@ Props to Joss, Rohan, <Mention name="Ryan" avatar="/avatars/ryan.jpeg" link="htt
 
 d.tech continued to run Intersessions through the pandemic months, and the team kept at it. Our first major project after launch was a virtual graduation for the class of 2020. We knew it wasn't what they wanted, but we sought out to make it as special as we could.
 
-We wrote out, programmed (using Minecraft's "datapacks" format), and built three unique events for a night of celebration and reminiscence:
+We storyboarded, programmed (using Minecraft's "datapacks" language), and built three unique events for a night of celebration and reminiscence:
 
 - An escape room aboard a spaceship version of the school
 - A capture-the-flag tournament on a post-apocalyptic map
-- A scavenger hunt for relics from our previous campus
+- A scavenger hunt for relics from the Hangar
 
 <Spacer size={16} />
 
@@ -163,30 +161,40 @@ We wrote out, programmed (using Minecraft's "datapacks" format), and built three
 
 <Spacer size={16} />
 
-We got staff to write speeches, and [streamed the event on YouTube](https://youtube.com/live/6h_YXoyp6d0).
+We asked staff to write speeches, and streamed [the event on YouTube](https://youtube.com/live/6h_YXoyp6d0).
 
-Huge shoutout to Joss, Jordan, Ian, Ryan, Elan, <Mention name="Aidan H." avatar="/avatars/aidan-h.jpg" link="https://linkedin.com/in/aidan-hsiao-9b18a223a" />, <Mention name="Logan J." avatar="/avatars/logan.jpeg" link="https://linkedin.com/in/logan-john-a2a969228" />, Andrew, Paul, Jett, and Zackie for making this happen.
+Shoutout to Joss, Jordan, Ian, Ryan, Elan, <Mention name="Aidan H." avatar="/avatars/aidan-h.jpg" link="https://linkedin.com/in/aidan-hsiao-9b18a223a" />, <Mention name="Logan J." avatar="/avatars/logan.jpeg" link="https://linkedin.com/in/logan-john-a2a969228" />, Andrew, Paul, Jett, and Zackie for making this happen.
 
 ## Winter
 
-In the Summer 2020 months and into Fall, we struggled with getting returning players online. Fortunately, a new wave of freshmen meant new players. And they were particularly excited to play seeing as they couldn't go visit the campus in person.
+In the Summer 2020 months and into Fall, we struggled with getting returning players online. Fortunately, a new wave of freshmen meant new players, eager to play since they couldn't go visit the campus in person.
 
-Unfortunately, we were no longer able to host d.craft Intersession cohorts regularly, due to a change in how d.tech ran them.
+Unfortunately, we were no longer able to host Intersession cohorts, due to a change in how d.tech ran them.
 
-We continued to maintain the server in our free time, and even held some one-off events, like our Winter map.
+We continued to maintain the server in our free time, and even held some one-off events, like our Winter celebration.
 
 <Spacer size={16} />
 
-<GalleryCard
-  src="/assets/dcraft-winter.png"
-  alt="A screenshot of the Winter map on d.craft"
-/>
+<Grid columns={3}>
+  <GalleryCard
+    src="/assets/dcraft-winter-exterior.png"
+    alt="A screenshot of the Winter map (exterior) on d.craft"
+  />
+  <GalleryCard
+    src="/assets/dcraft-winter-interior.png"
+    alt="A screenshot of the Winter map (interior) on d.craft"
+  />
+  <GalleryCard
+    src="/assets/dcraft-winter-dragon.png"
+    alt="A screenshot of the Winter map (dragon) on d.craft"
+  />
+</Grid>
 
 <Spacer size={16} />
 
 ## Sunset
 
-Being in our senior year of high school, Joss and I had to switch gears to finding successors. Unfortunately, though, with a lack of new content coming out, player numbers dwindled, and we eventually had to make the tough call to archive the project by the time we graduated in May 2021.
+Being in our senior year of high school, Joss and I had to switch gears to finding successors. Unfortunately, though, with a lack of new content coming out, player numbers dwindled. We eventually had to make the tough call to archive the project by the time we graduated in May 2021.
 
 ## Lessons
 
