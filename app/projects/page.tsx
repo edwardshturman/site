@@ -23,9 +23,6 @@ export default function Projects() {
   return (
     <>
       <h1>Projects</h1>
-      <Comment type="block">
-        More coming soon; in the meantime, check out <Link href="https://read.cv/edwardshturman">my read.cv</Link>
-      </Comment>
       <Spacer size={48} />
       <GalleryCard
         title="My personal website"
@@ -75,6 +72,19 @@ export default function Projects() {
         src="/og/cue.png"
         alt="Cue banner"
         link={"/projects/cue"}
+        cta="View project"
+      />
+      <Spacer size={48} />
+      <GalleryCard
+        title="d.craft"
+        description={
+          <>
+            <p>A virtual recreation of the Design Tech High School campus in Minecraft, bringing students together in distanced times</p>
+          </>
+        }
+        src="/og/dcraft.png"
+        alt="d.craft banner"
+        link={"/projects/dcraft"}
         cta="View project"
       />
     </>

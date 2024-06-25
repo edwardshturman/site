@@ -1,7 +1,7 @@
 ---
 title: "d.craft"
-description: "A virtual recreation of the Design Tech High School campus in Minecraft, bringing students together in distanced times."
-published: false
+description: "A virtual recreation of the Design Tech High School campus in Minecraft, bringing students together in distanced times"
+published: true
 og_image: "/og/dcraft.png"
 ---
 
