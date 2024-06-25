@@ -38,9 +38,9 @@ Here's the story of how we brought d.craft to life — a virtual recreation of t
 
 I'm very fortunate to have fond memories from my time at [Design Tech High School](https://designtechhighschool.org) ("d.tech" for short). I can only describe d.tech as if it were the brainchild of the [Stanford d.school](https://dschool.stanford.edu) (Hasso Plattner Institute of Design), [IDEO](https://ideo.com), and modern startups.
 
-Well, that's sort of exactly what it is: our founders worked directly with them to figure out what education should look like. The curriculum put heavy emphasis on design thinking and other soft skills that are becoming more and more tangible today. There is a palpable air of experimentation, prototyping, and self-direction. Put simply, if you're anything like me, it is a *dream* of a high school. I loved it very much.
+Well, that's sort of exactly what it is: our founders worked directly with them to figure out what education should look like. The curriculum puts heavy emphasis on design thinking and other soft skills that are becoming more and more tangible today. There is a palpable air of experimentation, prototyping, and self-direction. Put simply, if you're anything like me, it is a *dream* of a high school. I loved it very much.
 
-Until January 2018, we occupied a warehouse in Millbrae we lovingly called the "Hangar" (fittingly, it looked like an airplane hangar). "Classrooms" were really sections of the large space separated by makeshift walls made out of wood we cut out. We then moved into Oracle's campus in Redwood Shores, where d.tech now stands.
+Until January 2018, we occupied a warehouse in Millbrae we lovingly called the "Hangar" (fittingly, it looked like an airplane hangar). Classrooms were really just the space sectioned by makeshift walls, composed of floating whiteboards and wood from our makerspace. We then moved into Oracle's campus in Redwood Shores, where d.tech now stands.
 
 ## Intersession
 
@@ -114,11 +114,9 @@ In the months that followed, the team worked on:
 
 <Spacer size={16} />
 
-We were ready.
-
 ## Launch
 
-The timing is rather poetic: we launched d.craft exactly a week before our school would close its doors due to the COVID-19 pandemic.
+The timing is almost poetic: we launched d.craft exactly a week before our school would close its doors due to the COVID-19 pandemic.
 
 We presented our announcement trailer at our weekly community meeting. I will never forget the sense of awe and pride from everyone in the room to be a d.tech student. I'm pretty sure I teared up after the standing ovation. :)
 
@@ -165,7 +163,7 @@ We wrote out, programmed (using Minecraft's "datapacks" format), and built three
 
 We got staff to write speeches, and [streamed the event on YouTube](https://youtube.com/live/6h_YXoyp6d0).
 
-Huge shoutout to Joss, Jordan, Ian, Ryan, Elan, <Mention name="Aidan H." avatar="/avatars/aidan.jpg" link="https://linkedin.com/in/aidan-hsiao-9b18a223a" />, <Mention name="Logan J." avatar="/avatars/logan.jpeg" link="https://linkedin.com/in/logan-john-a2a969228" />, Andrew, Paul, Jett, and Zackie for making this happen.
+Huge shoutout to Joss, Jordan, Ian, Ryan, Elan, <Mention name="Aidan H." avatar="/avatars/aidan-h.jpg" link="https://linkedin.com/in/aidan-hsiao-9b18a223a" />, <Mention name="Logan J." avatar="/avatars/logan.jpeg" link="https://linkedin.com/in/logan-john-a2a969228" />, Andrew, Paul, Jett, and Zackie for making this happen.
 
 ## Winter
 
