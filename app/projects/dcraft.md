@@ -32,8 +32,6 @@ Here's the story of how we brought d.craft to life — a virtual recreation of t
   ]}
 />
 
-<Spacer size={16} />
-
 ## Culture
 
 I'm very fortunate to have fond memories from my time at [Design Tech High School](https://designtechhighschool.org) ("d.tech" for short). I can only describe d.tech as if it were the brainchild of the [Stanford d.school](https://dschool.stanford.edu) (Hasso Plattner Institute of Design), [IDEO](https://ideo.com), and modern startups.
@@ -51,6 +49,8 @@ From May 2019, my incredibly talented friend <Mention name="Joss" avatar="/avata
 To be honest, we didn't start out looking to make d.craft as big as it was. It was mainly a joke in our friend group: we'd leave school and come right back, virtually.
 
 In the first week of the May–June 2019 Intersession, we held interviews with students and staff, and quickly realized this could be something bigger.
+
+<Spacer size={16} />
 
 <GalleryCard
   title="The team goes over considerations for building a safe online community with a d.tech staff member"
@@ -169,10 +169,40 @@ Huge shoutout to Joss, Jordan, Ian, Ryan, Elan, <Mention name="Aidan H." avatar=
 
 ## Winter
 
+In the Summer 2020 months and into Fall, we struggled with getting returning players online. Fortunately, a new wave of freshmen meant new players. And they were particularly excited to play seeing as they couldn't go visit the campus in person.
+
+Unfortunately, we were no longer able to host d.craft Intersession cohorts regularly, due to a change in how d.tech ran them.
+
+We continued to maintain the server in our free time, and even held some one-off events, like our Winter map.
+
+<Spacer size={16} />
+
+<GalleryCard
+  src="/assets/dcraft-winter.png"
+  alt="A screenshot of the Winter map on d.craft"
+/>
+
+<Spacer size={16} />
+
 ## Sunset
+
+Being in our senior year of high school, Joss and I had to switch gears to finding successors. Unfortunately, though, with a lack of new content coming out, player numbers dwindled, and we eventually had to make the tough call to archive the project by the time we graduated in May 2021.
 
 ## Lessons
 
-1. Respect momentum (don't kill free hype)
-2. Set a ship date (don't launch before you're ready)
-3. Don't announce things without a date
+Running d.craft taught me a lot about leading a team, branding & marketing, and what I wanted to do for at least the next four years of my life. Naturally, I made mistakes along the way. Here's what I would advise in avoiding them:
+
+- Take more pictures.
+- (1) Set a ship date, (2) tell people about it, and (3) stick to it.
+- Respect momentum. Know when you've got a good thing going. Early enthusiasm goes a long way. Don't curb it.
+
+<Spacer size={16} />
+
+There is a world in which d.craft lives on. And, when that happens, I'll be there to support it. Until then, it's me and the team, hitting *Return to Main Menu.*
+
+<Spacer size={16} />
+
+<GalleryCard
+  src="/assets/dcraft-team.png"
+  alt="A screenshot of the d.craft team in-game"
+/>
