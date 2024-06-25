@@ -74,6 +74,8 @@ There were a few things on our minds:
 
 Laptops in hand, half the team set out walking into different rooms to build them to-scale, while the other half of us devised implementations for the community. This latter task would take us quite some time and iteration to get right.
 
+It was building [d.verify](https://youtu.be/irHC1w0K2G4) — a tool that linked students' school Google accounts with their Discord accounts in our community server — that convinced me to study computer science in university. The feeling of solving a problem no one else had solved yet, and the solution being intuitive, familiar, and fun to people, was incredibly empowering.
+
 We knew we wouldn't be able to do a full launch, so our goal for these two weeks was to complete a first build of at least the school itself.
 
 Thanks to <Mention name="Jordan" avatar="/avatars/jordan.jpeg" link="https://linkedin.com/in/jordan-cen" />, <Mention name="Rohan" avatar="/avatars/rohan.jpeg" link="https://linkedin.com/in/therohankumar" />, <Mention name="Ian" avatar="/avatars/ian.jpg" link="https://iankwuan.com" />, <Mention name="Aidan C." avatar="/avatars/aidan-c.jpeg" link="https://linkedin.com/in/aidan-n-chen" />, Darius, John, and Luke, we got it done.
