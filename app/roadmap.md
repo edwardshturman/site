@@ -45,3 +45,6 @@ published: true
 - [ ] Fix layout shift for images
 - [ ] Investigate mobile code styles
 - [ ] `GalleryCard` spacing (I don't like having to use `Spacer` everywhere)
+- [ ] Move projects, artifacts, notes to new respective `.ts` files
+- [ ] `Tag` component for filtering artifacts and notes
+- [ ] Version the site

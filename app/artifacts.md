@@ -61,3 +61,4 @@ published: true
 
 - Patrick Winston: [How to Speak](https://youtube.com/watch?v=Unzc731iCUY)
 - Kevin Kelly: [The future will be shaped by optimists](https://ted.com/talks/kevin_kelly_the_future_will_be_shaped_by_optimists)
+- [Why This Is The Perfect Time To Start A Startup](https://youtube.com/watch?v=0TNTlMZFTWw) by YC
