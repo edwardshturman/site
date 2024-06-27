@@ -2,6 +2,7 @@ import Link from 'next/link'
 
 import { Spacer } from '@/components/Spacer'
 import { Navbar } from '@/components/Navbar'
+import { Comment } from '@/components/Comment'
 import { GalleryCard } from '@/components/GalleryCard'
 
 export default function Home() {
@@ -15,21 +16,21 @@ export default function Home() {
       <Navbar />
       <h2>Latest</h2>
       <GalleryCard
-        title="Setting up MDX on Next.js 14"
+        title="d.craft"
         description={
           <>
-            <p>It&apos;s comically nontrivial to set up an ergonomic, performant MDX Next.js app, with all the bells & whistles like parsing YAML frontmatter. Here&apos;s how I did it.</p>
+            <p>A retrospective on how my friends and I built d.craft: a virtual recreation of the Design Tech High School campus in Minecraft, bringing students together in distanced times</p>
           </>
         }
-        src="/og/mdx-nextjs-14.png"
-        link={`/notes/mdx-nextjs-14`}
-        cta="Read note"
+        src="/og/dcraft.png"
+        link={`/projects/dcraft`}
+        cta="View project"
       />
       <h2>Now</h2>
       <ul>
-        <li>Reading <em>The Practice</em> by Seth Godin</li>
         <li>Taking Josh Comeau&apos;s <Link href={`https://css-for-js.dev/`}>CSS for JS Devs</Link> course</li>
         <li>Planning Fall for <Link href="/projects/compsigh">compsigh</Link>, my CS club at the University of San Francisco</li>
+        <li><s>Reading <em>The Practice</em> by Seth Godin</s><Comment type="inline">Great read! Writing a note on it</Comment></li>
       </ul>
       <h2>Connect</h2>
       <ul>
