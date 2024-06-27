@@ -12,6 +12,7 @@ import rehypePrettyCode from 'rehype-pretty-code'
 import type { Options } from 'rehype-pretty-code'
 
 import Link from 'next/link'
+import { Tag } from '@/components/Tag'
 import { Grid } from '@/components/Grid'
 import { Spacer } from '@/components/Spacer'
 import { Comment } from '@/components/Comment'
@@ -38,7 +39,7 @@ async function readPage(slug: string[]) {
 
     const { content, frontmatter } = await compileMDX<Frontmatter>({
       source: page,
-      components: { Comment, GalleryCard, Grid, Link, Mention, Spacer, TableOfContents },
+      components: { Comment, GalleryCard, Grid, Link, Mention, Spacer, TableOfContents, Tag },
       options: {
         parseFrontmatter: true,
         mdxOptions: {

@@ -5,7 +5,7 @@ span.container {
 }
 
 span.container:hover {
-  background-color: hsla(0deg, 0%, 60%, 0.2);
+  background-color: var(--color-light-gray-translucent);
 }
 
 span.container img#avatar {
