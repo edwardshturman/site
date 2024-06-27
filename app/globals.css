@@ -50,9 +50,9 @@ nav > ul > li {
 
 nav > ul > li::before {
   content: '/';
+  font-size: 0.9em;
   margin-left: -1rem;
   margin-top: unset;
-  color: unset;
 }
 
 h1,

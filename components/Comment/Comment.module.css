@@ -1,6 +1,6 @@
 .comment {
-  font-size: 14px;
-  color: hsl(0, 0%, 60%);
+  font-size: 0.875rem;
+  color: var(--color-light-gray);
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -11,6 +11,8 @@ span.inline-comment {
 
 span.inline-comment::before {
   content: '// ';
+  font-size: 0.9em;
+  vertical-align: top;
 }
 
 p.block-comment::before {
