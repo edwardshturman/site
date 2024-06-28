@@ -5,17 +5,10 @@ import { usePathname } from 'next/navigation'
 
 import styles from './Tag.module.css'
 
-export function Tag(
-{
-  text,
-  selected
-}:
-{
-  text: string,
-  selected: boolean
-}
-) {
+export function Tag({ text }: { text: string }) {
   const pathname = usePathname()
+  const routes = pathname.split('/').filter(Boolean)
+  const selected = routes.includes(text)
 
   function Contents() {
     return (

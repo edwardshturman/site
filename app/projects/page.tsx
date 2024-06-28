@@ -2,7 +2,6 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 import { Spacer } from '@/components/Spacer'
-import { Comment } from '@/components/Comment'
 import { GalleryCard } from '@/components/GalleryCard'
 
 export const metadata: Metadata = {

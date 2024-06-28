@@ -12,10 +12,6 @@ span.tag::before {
 }
 
 span.tag.selected {
-  /* background-color: var(--color-compsigh-translucent);
-  color: var(--color-compsigh);
-  border: 1px solid var(--color-compsigh); */
-
   border: 1px solid var(--color-light-gray);
   color: var(--color-light-gray);
   background-color: var(--color-light-gray-translucent);
