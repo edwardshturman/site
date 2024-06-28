@@ -5,7 +5,7 @@ import { usePathname, useSearchParams } from 'next/navigation'
 
 import styles from './Tag.module.css'
 
-interface TagProps extends React.HTMLAttributes<HTMLSpanElement> {
+export interface TagProps extends React.HTMLAttributes<HTMLSpanElement> {
   text: string
 }
 
