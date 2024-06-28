@@ -1,9 +1,11 @@
 a.tag {
   display: inline-block;
   padding: 0 8px;
-  border-radius: 10px;
-  border: 1px solid var(--color-dark-gray);
-  color: var(--color-dark-gray);
+  border: 1px dashed var(--color-compsigh);
+  color: var(--color-compsigh);
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 1px;
 }
 
 a.tag::before {
@@ -11,8 +13,17 @@ a.tag::before {
   margin-right: 4px;
 }
 
+a.tag:hover {
+  background-color: var(--color-compsigh-20);
+}
+
 a.tag.selected {
-  border: 1px solid var(--color-light-gray);
-  color: var(--color-light-gray);
-  background-color: var(--color-light-gray-translucent);
+  border: 1px solid var(--color-compsigh);
+  color: var(--color-black);
+  background-color: var(--color-compsigh);
+}
+
+a.tag.selected::before {
+  content: '×';
+  margin-right: 4px;
 }
