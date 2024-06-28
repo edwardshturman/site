@@ -25,7 +25,7 @@ export function Tag({ text, ...props }: TagProps) {
 
   return (
     <span {...props}>
-      <Link href={destination} className={`${styles.tag} ${selected ? styles.selected : ''}`}>
+      <Link href={destination} scroll={false} className={`${styles.tag} ${selected ? styles.selected : ''}`}>
         {text}
       </Link>
     </span>
