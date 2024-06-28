@@ -2,16 +2,16 @@
   --font-sans: var(--font-ia-writer-quattro), sans-serif;
   --font-mono: var(--font-ia-writer-mono), 'Courier Prime', 'Courier New', ui-monospace, monospace;
 
-  --color-white:                   hsl(0deg, 0%, 100%);
-  --color-black:                   hsl(0deg, 0%, 0%);
-  --color-dark-gray:               hsl(0deg, 0%, 40%);
-  --color-dark-gray-translucent:   hsla(0deg, 0%, 40%, 0.2);
-  --color-light-gray:              hsl(0deg, 0%, 60%);
-  --color-light-gray-translucent:  hsla(0deg, 0%, 60%, 0.2);
-  --color-compsigh:                hsl(41deg, 98%, 59%);
-  --color-compsigh-translucent:    hsla(41deg, 98%, 59%, 0.2);
-  --color-diff-add-translucent:    hsla(120deg, 100%, 25%, 0.2);
-  --color-diff-remove-translucent: hsla(0deg, 100%, 50%, 0.2);
+  --color-white:                   hsla(038deg, 100%, 090%, 1.0);
+  --color-black:                   hsla(038deg, 010%, 002%, 1.0);
+  --color-dark-gray:               hsla(038deg, 010%, 040%, 1.0);
+  --color-dark-gray-translucent:   hsla(038deg, 010%, 040%, 0.2);
+  --color-light-gray:              hsla(038deg, 020%, 060%, 1.0);
+  --color-light-gray-translucent:  hsla(038deg, 020%, 060%, 0.2);
+  --color-compsigh:                hsla(038deg, 100%, 050%, 1.0);
+  --color-compsigh-translucent:    hsla(038deg, 100%, 050%, 0.2);
+  --color-diff-add-translucent:    hsla(120deg, 100%, 025%, 0.2);
+  --color-diff-remove-translucent: hsla(360deg, 100%, 050%, 0.2);
 
   color: var(--color-white);
   background-color: var(--color-black);

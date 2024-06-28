@@ -26,7 +26,7 @@ export async function GET(request: Request) {
       <div
         style={{
           display: 'flex',
-          backgroundColor: 'black',
+          backgroundColor: 'hsla(038deg, 010%, 002%, 1.0)',
           width: '100%',
           height: '100%',
           alignItems: 'center',
@@ -52,7 +52,7 @@ export async function GET(request: Request) {
               fontFamily: '"iA Writer Quattro Bold"',
               fontSize: 50,
               lineHeight: 1.6,
-              color: 'white'
+              color: 'hsla(038deg, 100%, 090%, 1.0)'
             }}
           >
             {title}
@@ -62,7 +62,7 @@ export async function GET(request: Request) {
               fontFamily: '"iA Writer Quattro Regular"',
               fontSize: 30,
               lineHeight: 1.6,
-              color: 'white'
+              color: 'hsla(038deg, 100%, 090%, 1.0)'
             }}
           >
             Edward Shturman
