@@ -5,30 +5,23 @@ import { usePathname } from 'next/navigation'
 
 import styles from './Tag.module.css'
 
-export function Tag({ text }: { text: string }) {
+interface TagProps extends React.HTMLAttributes<HTMLSpanElement> {
+  text: string
+}
+
+export function Tag({ text, ...props }: TagProps) {
   const pathname = usePathname()
   const routes = pathname.split('/').filter(Boolean)
   const selected = routes.includes(text)
-
-  function Contents() {
-    return (
-      <>
-        <span className={`${styles.tag} ${selected ? styles.selected : ''}`}>
-          {text}
-        </span>
-      </>
-    )
-  }
-
   let destination = `${pathname}/${text}`
   if (selected)
     destination = routes.filter((route) => route !== text).join('/')
 
   return (
-    <>
-      <Link href={destination}>
-        <Contents />
+    <span {...props}>
+      <Link href={destination} className={`${styles.tag} ${selected ? styles.selected : ''}`}>
+        {text}
       </Link>
-    </>
+    </span>
   )
 }
