@@ -20,10 +20,13 @@ export function Tag({ text }: { text: string }) {
     )
   }
 
-  if (selected) return <Contents />
+  let destination = `${pathname}/${text}`
+  if (selected)
+    destination = routes.filter((route) => route !== text).join('/')
+
   return (
     <>
-      <Link href={`${pathname}/${text}`}>
+      <Link href={destination}>
         <Contents />
       </Link>
     </>
