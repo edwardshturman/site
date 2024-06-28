@@ -1,6 +1,8 @@
 import path from 'node:path'
+import Link from 'next/link'
+import { Suspense } from 'react'
 import fs from 'node:fs/promises'
-import type { Metadata } from 'next'
+import { type Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { compileMDX } from 'next-mdx-remote/rsc'
 
@@ -8,10 +10,8 @@ import '@/app/katex.min.css'
 import remarkMath from 'remark-math'
 import rehypeSlug from 'rehype-slug'
 import rehypeKatex from 'rehype-katex'
-import rehypePrettyCode from 'rehype-pretty-code'
-import type { Options } from 'rehype-pretty-code'
+import rehypePrettyCode, { type Options } from 'rehype-pretty-code'
 
-import Link from 'next/link'
 import { Tag } from '@/components/Tag'
 import { Grid } from '@/components/Grid'
 import { Spacer } from '@/components/Spacer'
@@ -127,7 +127,7 @@ export default async function Page(
   const { content, frontmatter } = await readPage(params.slug)
 
   return (
-    <>
+    <Suspense>
       { !frontmatter.published &&
         <>
           <br />
@@ -137,6 +137,6 @@ export default async function Page(
         </>
       }
       {content}
-    </>
+    </Suspense>
   )
 }
