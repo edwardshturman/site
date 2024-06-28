@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
+import { usePathname, useSearchParams } from 'next/navigation'
 
 import styles from './Tag.module.css'
 
@@ -11,11 +11,15 @@ interface TagProps extends React.HTMLAttributes<HTMLSpanElement> {
 
 export function Tag({ text, ...props }: TagProps) {
   const pathname = usePathname()
-  const routes = pathname.split('/').filter(Boolean)
-  const selected = routes.includes(text)
-  let destination = `${pathname}/${text}`
+  const searchParams = useSearchParams()
+  const tagsParam = searchParams.get('tags') || ''
+  const tags = tagsParam.split(',').filter(Boolean)
+  const selected = tags.includes(text)
+  let destination = tags.length > 0
+    ? `${pathname}?tags=${searchParams.get('tags')},${text}`
+    : `${pathname}?tags=${text}`
   if (selected)
-    destination = routes.filter((route) => route !== text).join('/')
+    destination = `${pathname}?tags=${tags.filter(tag => tag !== text).join(',')}`
 
   return (
     <span {...props}>
