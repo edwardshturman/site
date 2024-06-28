@@ -20,6 +20,8 @@ export function Tag({ text, ...props }: TagProps) {
     : `${pathname}?tags=${text}`
   if (selected)
     destination = `${pathname}?tags=${tags.filter(tag => tag !== text).join(',')}`
+  if (selected && tags.length === 1)
+    destination = pathname
 
   return (
     <span {...props}>
