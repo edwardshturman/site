@@ -83,10 +83,7 @@ Enter: tags!
 
 <Spacer size={16} />
 
-Two things I like about this implementation:
-
-- The `TagGroup` above automatically reorders tags that are selected.
-- The tags are in sync with the URL in the form of query parameters. This means that if you have a filter you like, like `tweets` on `life`, you can save and share it! This avoids any React state acrobatics.
+The tags are in sync with the URL in the form of query parameters. This means that if you have a filter you like, like `tweets` on `life`, you can save and share it! This avoids any React state acrobatics.
 
 I'm also happy with how the design turned out. It really plays to the technical vibe of the site in my opinion.
 
