@@ -1,7 +1,13 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 
+import { Spacer } from '@/components/Spacer'
 import { Comment } from '@/components/Comment'
+import { TagGroup } from '@/components/TagGroup'
+
+import { notes } from './notes'
+
+import styles from './Notes.module.css'
 
 export const metadata: Metadata = {
   title: 'Notes',
@@ -17,24 +23,49 @@ export const metadata: Metadata = {
   }
 }
 
-export default function Notes() {
+export default function Notes({
+  searchParams
+}: {
+  searchParams: { [key: string]: string | string[] | undefined }
+}) {
+  const tagString = searchParams.tags as string
+  const tags = tagString?.split(',') || []
+  let filteredNotes = notes
+  if (tagString)
+    filteredNotes = notes.filter(note => (tags.every(tag => note.tags.includes(tag))))
+
   return (
     <>
       <h1>Notes</h1>
       <Comment type="block">Thoughts on design, engineering, learning, and life</Comment>
+      <Spacer size={8} />
+      <TagGroup
+        tags={
+          Array.from(new Set(notes.flatMap(note => note.tags))).map(tag => ({ text: tag }))
+        }
+      />
+      <Spacer size={8} />
       <nav>
         <ul>
-          <li>
-            <Link href="/notes/easy">&quot;It&apos;s easy&quot;</Link>
-          </li>
-          <li>
-            <Link href="/notes/vs-code">VS Code: an Artist&apos;s Canvas</Link>
-          </li>
-          <li>
-            <Link href="/notes/mdx-nextjs-14">Setting up MDX on Next.js 14</Link>
-          </li>
+          {filteredNotes.map((note, index) => (
+            <li key={index}>
+              <Link className={styles.link} href={`/notes/${note.slug}`}>
+                {note.text}
+                <NoteIcon style={{ scale: 0.8, marginLeft: '4px', verticalAlign: '-6px' }} />
+              </Link>
+            </li>
+          ))}
         </ul>
       </nav>
     </>
   )
 }
+
+function NoteIcon(props: JSX.IntrinsicElements['svg']) {
+  return (
+    <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+      <path d="M8.75 14H13.25M8.75 10H15.25M4.75 20.25H19.25C19.8023 20.25 20.25 19.8023 20.25 19.25V4.75C20.25 4.19772 19.8023 3.75 19.25 3.75H4.75C4.19772 3.75 3.75 4.19772 3.75 4.75V19.25C3.75 19.8023 4.19772 20.25 4.75 20.25Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+    </svg>
+  )
+}
+
