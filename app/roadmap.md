@@ -42,9 +42,12 @@ published: true
   <Comment type="inline">2024-06-04</Comment>
 - [x] Project page for this site
   <Comment type="inline">2024-06-05</Comment>
+- [x] Move artifacts and notes to new respective `.ts` files
+  <Comment type="inline">2024-06-28</Comment>
+- [x] `Tag` component for filtering artifacts and notes
+  <Comment type="inline">2024-06-28</Comment>
+- [ ] Version the site
 - [ ] Fix layout shift for images
 - [ ] Investigate mobile code styles
 - [ ] `GalleryCard` spacing (I don't like having to use `Spacer` everywhere)
-- [ ] Move projects, artifacts, notes to new respective `.ts` files
-- [ ] `Tag` component for filtering artifacts and notes
-- [ ] Version the site
+- [ ] Convert margin/padding/etc. values from relative to absolute

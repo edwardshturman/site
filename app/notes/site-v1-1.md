@@ -1,7 +1,7 @@
 ---
 title: "Site v1.1: Tags"
-description: "The first devlog for my site, where I push updates on styles, introduce new components, and refactor the Notes and Artifacts pages"
-published: false
+description: "The first devlog for my site, where I push updates to styles, introduce new components, and refactor the Notes and Artifacts pages"
+published: true
 ---
 
 # Site `v1.1`: Tags

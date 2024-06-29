@@ -132,7 +132,6 @@ export default function Workshop() {
       link: 'https://github.com/edwardshturman/arc-boosts',
       cta: 'View source'
     }
-
   ]
 
   return (
