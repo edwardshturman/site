@@ -76,7 +76,7 @@ It was building [d.verify](https://youtu.be/irHC1w0K2G4) — a tool that linked 
 
 We knew we wouldn't be able to do a full launch just yet, so our goal for these two weeks was to complete a first build of the school.
 
-Thanks to <Mention name="Jordan" avatar="/avatars/jordan.jpeg" link="https://linkedin.com/in/jordan-cen" />, <Mention name="Rohan" avatar="/avatars/rohan.jpeg" link="https://linkedin.com/in/therohankumar" />, <Mention name="Ian" avatar="/avatars/ian.jpg" link="https://iankwuan.com" />, <Mention name="Aidan C." avatar="/avatars/aidan-c.jpeg" link="https://linkedin.com/in/aidan-n-chen" />, Darius, John, and Luke, we got it done.
+Thanks to <Mention name="Jordan" avatar="/avatars/jordan.jpeg" link="https://linkedin.com/in/jordan-cen" />, <Mention name="Rohan" avatar="/avatars/rohan.jpeg" link="https://linkedin.com/in/therohankumar" />, <Mention name="Ian" avatar="/avatars/ian.jpg" link="https://ian-kwuan.super.site" />, <Mention name="Aidan C." avatar="/avatars/aidan-c.jpeg" link="https://linkedin.com/in/aidan-n-chen" />, Darius, John, and Luke, we got it done.
 
 <GalleryCard
   src="/assets/dcraft-may-june-2019-screenshot.png"
