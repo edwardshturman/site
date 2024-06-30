@@ -32,7 +32,7 @@ The timing for an AI-powered study app was just right:
 - That semester, I was taking European history, a note-heavy course
 - The theme for the hackathon was ed-tech: build a solution that solves a problem in education
 
-So, what's our problem we're solving? After all, there are plenty of flashcard apps out there. The thing is, they assume you already know what to study. My friend & teammate Sanjana and I thought to leverage what we know about active recall — one of the most efficient, science-backed study methods — to create a tool that **helps students ask the right questions**.
+So, what's the problem we're solving? There are plenty of flashcard apps out there. The thing is, they assume you already know what to study. My friend & teammate <Mention name="Sanjana" avatar="/avatars/sanjana.jpeg" link="https://github.com/sanjanarattan" /> and I thought to leverage what we know about active recall — one of the most efficient, science-backed study methods — to create a tool that **helps students ask the right questions**.
 
 ## Hackathon
 
