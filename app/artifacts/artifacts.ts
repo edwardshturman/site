@@ -29,6 +29,11 @@ export const artifacts: Artifact[] = [
     tags: ['podcast', 'life', 'productivity', 'business']
   },
   {
+    text: 'Nicolas Cole on Deep Dive',
+    link: 'https://youtube.com/watch?v=JIfEgvpEufU',
+    tags: ['podcast', 'writing']
+  },
+  {
     text: '100 Simple Truths by traf',
     link: 'https://tr.af/100',
     tags: ['listicle', 'life', 'creative-work', 'growth']
