@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
+import { Analytics } from '@vercel/analytics/react'
 
 import { Spacer } from '@/components/Spacer'
 import { Breadcrumbs } from '@/components/Breadcrumbs'
@@ -93,6 +94,7 @@ export default function RootLayout({
         <Breadcrumbs />
         <main>{children}</main>
         <Spacer size={`20vh`} />
+        <Analytics />
       </body>
     </html>
   )
