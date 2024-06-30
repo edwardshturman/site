@@ -41,7 +41,7 @@ I wanted to take an alternate path. One in which I take ownership as a problem s
 
 ## The alternate path
 
-Computer science is the fastest-growing major at the University of San Francisco. It was to my surprise, then, that when I joined USF in 2021, *there was no general CS club on campus*. There was no culture around doing anything social — let alone learning & building together.
+Computer science is the fastest-growing major at the University of San Francisco. It was to my surprise, then, that when I joined USF in 2021, *there was no general CS club on campus*. Despite the friendly, small department where you can get to know some really great people — not least of which our professors — there was no culture around learning & building together, or doing anything social.
 
 As Matthew Stanciu of Purdue Hackers — an organization I deeply admire — poignantly notes in his essay, [Galactic Empire](https://blog.purduehackers.com/posts/galactic-empire), the majority of collegiate computer science orgs are structured for the default path.
 
@@ -113,6 +113,10 @@ There are two things that capture the essence of compsigh:
   description={<p>Check out how it was built in the <a href="/workshop">Workshop</a>!</p>}
   src="/assets/compsigh-cascade.JPG"
 />
+
+<Spacer size={16} />
+
+*Much love to the leadership team that helps put these on: <Mention name="Jet" avatar="/avatars/jet.jpg" link="https://jetpham.com" />, Quinn, Gursh, Ani, and Andrew.*
 
 <Spacer size={32} />
 
