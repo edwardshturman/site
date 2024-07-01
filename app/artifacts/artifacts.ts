@@ -13,7 +13,7 @@ export const artifacts: Artifact[] = [
   {
     text: 'Learn In Public by swyx',
     link: 'https://swyx.io/learn-in-public',
-    tags: ['post', 'learning']
+    tags: ['post', 'learning', 'creative-work']
   },
   {
     text: 'The Practice by Seth Godin',
@@ -155,6 +155,11 @@ export const artifacts: Artifact[] = [
     text: 'What I Wish Someone Had Told Me by Sam Altman',
     link: 'https://blog.samaltman.com/what-i-wish-someone-had-told-me',
     tags: ['post', 'business']
+  },
+  {
+    text: 'Work with the garage door up by Andy Matuschak',
+    link: 'https://notes.andymatuschak.org/Work_with_the_garage_door_up',
+    tags: ['post', 'creative-work']
   },
   {
     text: 'Kevin Kelly: The future will be shaped by optimists',
