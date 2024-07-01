@@ -11,6 +11,11 @@ export const notes: NoteProps[] = [
     tags: ['life']
   },
   {
+    text: 'How I write',
+    slug: 'how-i-write',
+    tags: ['writing']
+  },
+  {
     text: 'Site v1.1: Tags',
     slug: 'site-v1-1',
     tags: ['devlog', 'engineering']
