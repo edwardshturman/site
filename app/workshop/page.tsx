@@ -23,6 +23,14 @@ export const metadata: Metadata = {
 export default function Workshop() {
   const cards: GalleryCardProps[] = [
     {
+      title: 'compsigh landing page',
+      description: <p>Work in progress on a new landing page for <Link href="/projects/compsigh">compsigh</Link>, my computer science club, as part of our Fall 2024 rebrand</p>,
+      src: '/assets/compsigh-landing-page.gif',
+      alt: 'A gif of the compsigh landing page',
+      link: 'https://compsigh.club',
+      cta: 'View live demo'
+    },
+    {
       title: 'Intention',
       description: <p>A proof-of-concept app I made for one of my classes to promote Deep Work: One thing at a time. Most important thing first. Start now.</p>,
       src: '/assets/intention.gif',
