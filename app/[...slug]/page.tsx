@@ -27,7 +27,7 @@ async function readPage(slug: string[]) {
     const filePath = path.join(process.cwd(), 'app', ...slug) + '.md'
     const page = await fs.readFile(filePath, 'utf8')
 
-    const vercelTheme = await import('@/app/vercel-theme.json')
+    const vercelTheme = await import('./vercel-theme.json')
     const rehypePrettyCodeOptions: Options = {
       theme: vercelTheme as any
     }
