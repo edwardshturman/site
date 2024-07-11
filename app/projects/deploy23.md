@@ -82,7 +82,7 @@ Here's the result, written in React & Next.js, auth via NextAuth, forms via Tall
 
 You can [read the technical breakdown](https://github.com/compsigh/deploy) on our GitHub repo.
 
-Shoutout to <Mention name="Jet" avatar="/avatars/jet.jpg" link="https://jetpham.com" />, Quinn, Calvin, and Ani for helping organize this event and keep things running throughout the weekend. All in all, it was exhilerating putting it on, and I look forward to DEPLOY/24.
+Shoutout to <Mention name="Jet" avatar="/avatars/jet.jpeg" link="https://jetpham.com" />, Quinn, Calvin, and Ani for helping organize this event and keep things running throughout the weekend. All in all, it was exhilerating putting it on, and I look forward to DEPLOY/24.
 
 <GalleryCard
   src="/assets/deploy-presenters.jpeg"

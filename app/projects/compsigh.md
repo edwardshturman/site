@@ -116,7 +116,7 @@ There are two things that capture the essence of compsigh:
 
 <Spacer size={16} />
 
-*Much love to the leadership team that helps put these on: <Mention name="Jet" avatar="/avatars/jet.jpg" link="https://jetpham.com" />, Quinn, Gursh, Ani, and Andrew.*
+*Much love to the leadership team that helps put these on: <Mention name="Jet" avatar="/avatars/jet.jpeg" link="https://jetpham.com" />, <Mention name="Gursh" avatar="/avatars/gursh.png" link="https://gursh.dev" />, Quinn, Ani, and Andrew.*
 
 <Spacer size={32} />
 
