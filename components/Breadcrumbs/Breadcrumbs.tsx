@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation'
 
 import styles from './Breadcrumbs.module.css'
 
-export function Breadcrumbs({ isWindows }: { isWindows?: boolean }) {
+export function Breadcrumbs() {
   const path = usePathname()
   if (path === '/') return null
   const crumbs = path.split('/').filter(Boolean)
@@ -15,8 +15,8 @@ export function Breadcrumbs({ isWindows }: { isWindows?: boolean }) {
     <nav
       id={styles.breadcrumbs}
       aria-label="Breadcrumb"
-      className={`${styles.breadcrumbs} ${isWindows ? styles.windows : ''}`}
-    >
+      className={`${navigator.userAgent.includes('Win') ? styles.windows : ''}`}
+      >
       <ol>
         <Crumb key="/" href="/">Edward Shturman</Crumb>
         {crumbs.map((text, i) => (
