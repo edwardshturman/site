@@ -1,20 +1,21 @@
-div.image-card figure,
-div.image-card figure a {
+div.card figure,
+div.card figure a {
   position: relative;
 }
 
-div.image-card img {
+div.card img,
+div.card video {
   position: relative !important; /* Override `next/image` */
   vertical-align: middle;
   border-radius: 0.2rem;
 }
 
-div.image-card figcaption {
+div.card figcaption {
   padding-top: 1rem;
   padding-bottom: 0.8rem;
 }
 
-div.image-card p {
+div.card p {
   color: var(--color-light-gray);
   margin: 0;
 }

@@ -21,24 +21,47 @@ export function GalleryCard(
   GalleryCardProps
 ) {
   const image = (
-    <Image
-      unoptimized
-      src={src}
-      alt={alt || title || ''}
-      fill={true}
-    />
+    <>
+      {
+        !src.endsWith('.mp4') &&
+        <Image
+          unoptimized
+          src={src}
+          alt={alt || title || ''}
+          fill={true}
+        />
+      }
+    </>
+  )
+
+  const video = (
+    <>
+      {
+        src.endsWith('.mp4') &&
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          width={maxWidth || 650}
+        >
+          <source src={src} type="video/mp4" />
+        </video>
+      }
+    </>
   )
 
   return (
     <>
       <div
-        className={styles["image-card"]}
+        className={styles.card}
         style={{ maxWidth: maxWidth || '650px' }}
       >
         <figure>
           {link ? <Link href={link}>{image}</Link> : image}
-          { title && <figcaption>{title}</figcaption> }
-          { description && <div>{description}</div> }
+          {link ? <Link href={link}>{video}</Link> : video}
+          {title && <figcaption>{title}</figcaption>}
+          {description && <div>{description}</div>}
           {
             link &&
               <>
