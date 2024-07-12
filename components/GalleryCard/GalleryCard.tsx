@@ -1,65 +1,69 @@
 import Link from 'next/link'
-import { Route } from 'next'
-import Image from 'next/image'
+import { type Route } from 'next'
+import fs from 'node:fs/promises'
+import { getPlaiceholder } from 'plaiceholder'
+import Image, { type ImageProps } from 'next/image'
 
 import { Spacer } from '@/components/Spacer'
 
 import styles from './GalleryCard.module.css'
 
-export type GalleryCardProps = {
-  title?: string,
-  description?: React.ReactElement,
-  link?: Route,
-  cta?: string,
-  src: string,
-  alt?: string,
-  maxWidth?: number,
+export interface GalleryCardProps extends Omit<ImageProps, 'alt'> {
+  title?: string
+  description?: React.ReactElement
+  link?: Route
+  cta?: string
+  alt?: string
+  video?: boolean
 }
 
-export function GalleryCard(
-  { title, description, link, cta, src, alt, maxWidth }:
+export async function GalleryCard(
+  { title, description, link, cta, alt, video, ...props }:
   GalleryCardProps
 ) {
-  const image = (
+  const file = await fs.readFile(`public/${props.src}`)
+  const { base64, metadata } = await getPlaiceholder(file)
+  const isGif = props.src.toString().endsWith('.gif')
+
+  const ImageWrapper = (
     <>
-      {
-        !src.endsWith('.mp4') &&
+      { !video &&
         <Image
-          unoptimized
-          src={src}
+          unoptimized={isGif}
           alt={alt || title || ''}
-          fill={true}
+          placeholder={`${isGif ? 'empty' : 'blur'}`}
+          blurDataURL={base64}
+          sizes='(max-width: 700px) 100vw - 80px, 650px'
+          width={metadata.width}
+          height={metadata.height}
+          {...props}
         />
       }
     </>
   )
 
-  const video = (
+  const VideoWrapper = (
     <>
       {
-        src.endsWith('.mp4') &&
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          width={maxWidth || 650}
-        >
-          <source src={src} type="video/mp4" />
-        </video>
+        video &&
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+          >
+            <source src={props.src as string} type="video/mp4" />
+          </video>
       }
     </>
   )
 
   return (
     <>
-      <div
-        className={styles.card}
-        style={{ maxWidth: maxWidth || '650px' }}
-      >
+      <div className={styles.card}>
         <figure>
-          {link ? <Link href={link}>{image}</Link> : image}
-          {link ? <Link href={link}>{video}</Link> : video}
+          {link ? <Link href={link}>{ImageWrapper}</Link> : ImageWrapper}
+          {link ? <Link href={link}>{VideoWrapper}</Link> : VideoWrapper}
           {title && <figcaption>{title}</figcaption>}
           {description && <div>{description}</div>}
           {

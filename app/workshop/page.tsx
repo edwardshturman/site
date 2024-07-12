@@ -34,7 +34,7 @@ export default function Workshop() {
       title: 'Intention',
       description: <p>A proof-of-concept app I made for one of my classes to promote Deep Work: One thing at a time. Most important thing first. Start now.</p>,
       src: '/assets/intention.gif',
-      alt: "A gif of Intention, a proof-of-concept app I made for one of my classes to promote Deep Work: One thing at a time. Most important thing first. Start now.",
+      alt: 'A gif of Intention, a proof-of-concept app I made for one of my classes to promote Deep Work: One thing at a time. Most important thing first. Start now.',
       link: 'https://intention.edward.so',
       cta: 'View demo'
     },

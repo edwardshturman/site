@@ -1,11 +1,7 @@
-div.card figure,
-div.card figure a {
-  position: relative;
-}
-
 div.card img,
 div.card video {
-  position: relative !important; /* Override `next/image` */
+  width: 100%;
+  height: auto;
   vertical-align: middle;
   border-radius: 0.2rem;
 }

@@ -46,8 +46,12 @@ published: true
   <Comment type="inline">2024-06-28</Comment>
 - [x] `Tag` component for filtering artifacts and notes
   <Comment type="inline">2024-06-28</Comment>
-- [ ] Version the site
-- [ ] Fix layout shift for images
-- [ ] Investigate mobile code styles
+- [x] Video support for `GalleryCard`
+  <Comment type="inline">2024-07-11</Comment>
+- [x] Fix layout shift for images
+  <Comment type="inline">2024-07-11</Comment>
+- [ ] Replace large gifs with videos
 - [ ] `GalleryCard` spacing (I don't like having to use `Spacer` everywhere)
+- [ ] Version the site
+- [ ] Investigate mobile code styles
 - [ ] Convert margin/padding/etc. values from relative to absolute
