@@ -84,13 +84,13 @@ There are two things that capture the essence of compsigh:
     <Spacer size={16} />
     <GalleryCard
       title="Impromptu study session"
-      src="/assets/compsigh-impromptu-study-sesh.jpeg"
+      src="/assets/compsigh-impromptu-study-sesh.jpg"
     />
   </div>
   <div>
     <GalleryCard
       title="study night"
-      src="/assets/compsigh-study-night.jpeg"
+      src="/assets/compsigh-study-night.JPG"
     />
     <Spacer size={16} />
     <GalleryCard
