@@ -7,7 +7,7 @@ import styles from './Navbar.module.css'
 export function Navbar() {
   return (
     <>
-      <nav id={styles.navbar} className={`${navigator?.userAgent.includes('Win') ? styles.windows : ''}`}>
+      <nav id={styles.navbar} className={`${navigator.userAgent.includes('Win') ? styles.windows : ''}`}>
         <ul>
           <li>
             <Link href={"/notes"}>Notes</Link>

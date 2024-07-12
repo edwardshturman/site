@@ -1,5 +1,7 @@
 import Link from 'next/link'
-import { Navbar } from '@/components/Navbar'
+import dynamic from 'next/dynamic'
+
+const Navbar = dynamic(() => import('@/components/Navbar').then((mod) => mod.Navbar), { ssr: false })
 
 export default function NotFound() {
   return (

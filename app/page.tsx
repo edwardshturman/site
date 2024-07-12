@@ -1,9 +1,10 @@
 import Link from 'next/link'
+import dynamic from 'next/dynamic'
 
 import { Spacer } from '@/components/Spacer'
-import { Navbar } from '@/components/Navbar'
 import { Comment } from '@/components/Comment'
 import { GalleryCard } from '@/components/GalleryCard'
+const Navbar = dynamic(() => import('@/components/Navbar').then((mod) => mod.Navbar), { ssr: false })
 
 export default function Home() {
   return (
