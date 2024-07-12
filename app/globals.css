@@ -1,6 +1,6 @@
 :root {
   --font-sans: var(--font-ia-writer-quattro), sans-serif;
-  --font-mono: var(--font-ia-writer-mono), 'Courier Prime', 'Courier New', ui-monospace, monospace;
+  --font-mono: var(--font-ia-writer-mono), "Courier Prime", "Courier New", ui-monospace, monospace;
 
   --color-white:         hsla(038deg, 100%, 090%, 1.0);
   --color-black:         hsla(038deg, 010%, 002%, 1.0);
@@ -36,24 +36,6 @@ body {
   body {
     margin: 40px 40px;
   }
-}
-
-nav {
-  font-size: 0.875rem;
-  color: var(--color-light-gray);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-nav > ul > li {
-  margin-left: 1rem;
-}
-
-nav > ul > li::before {
-  content: '/';
-  font-size: 0.9em;
-  margin-left: -1rem;
-  margin-top: unset;
 }
 
 h1,
@@ -94,7 +76,7 @@ ul > li::before {
   position: absolute;
   margin-left: -22px;
   margin-top: -1px;
-  content: '-';
+  content: "-";
 }
 
 ul ul > li {
@@ -139,13 +121,13 @@ pre > code[data-line-numbers] > [data-line]:hover::before {
 }
 
 pre
-  > code[data-line-numbers][data-line-numbers-max-digits='2']
+  > code[data-line-numbers][data-line-numbers-max-digits="2"]
   > [data-line]::before {
   width: 2em;
 }
 
 pre
-  > code[data-line-numbers][data-line-numbers-max-digits='3']
+  > code[data-line-numbers][data-line-numbers-max-digits="3"]
   > [data-line]::before {
   width: 3em;
 }
@@ -154,10 +136,10 @@ span[data-highlighted-line] {
   background-color: var(--color-compsigh-20);
 }
 
-span[data-highlighted-line-id='add'] {
+span[data-highlighted-line-id="add"] {
   background-color: var(--color-diff-add);
 }
 
-span[data-highlighted-line-id='remove'] {
+span[data-highlighted-line-id="remove"] {
   background-color: var(--color-diff-remove);
 }

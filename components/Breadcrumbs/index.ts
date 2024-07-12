@@ -1,1 +1,1 @@
-export { Breadcrumbs } from './Breadcrumbs'
+export { BreadcrumbsWrapper as Breadcrumbs } from './BreadcrumbsWrapper'

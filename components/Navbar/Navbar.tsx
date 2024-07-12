@@ -1,9 +1,13 @@
 import Link from 'next/link'
+import { headers } from 'next/headers'
+
+import styles from './Navbar.module.css'
 
 export function Navbar() {
+  const platform = headers().get('Sec-Ch-Ua-Platform')
   return (
     <>
-      <nav>
+      <nav id={styles.navbar} className={`${platform === 'Windows' ? styles.windows : ''}`}>
         <ul>
           <li>
             <Link href={"/notes"}>Notes</Link>

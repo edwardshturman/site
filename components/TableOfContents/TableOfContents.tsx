@@ -5,7 +5,7 @@ import styles from './TableOfContents.module.css'
 export function TableOfContents({ entries }: { entries: string[] }) {
   return (
     <>
-      <nav className={styles["table-of-contents"]}>
+      <nav id={styles["table-of-contents"]}>
         <ul>
           {entries.map((entry, index) => (
             <li key={index}>

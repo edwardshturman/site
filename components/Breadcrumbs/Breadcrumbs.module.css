@@ -1,6 +1,5 @@
 nav#breadcrumbs {
-  font-size: 14px;
-  color: var(--color-light-gray);
+  font-size: 0.875rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-top: 40px;
@@ -24,4 +23,9 @@ nav#breadcrumbs ol li:last-child {
 nav#breadcrumbs ol li::after {
   content: "/";
   margin-left: 8px;
+  color: var(--color-dark-gray);
+}
+
+nav#breadcrumbs.windows ol li::after {
+  content: "\\";
 }

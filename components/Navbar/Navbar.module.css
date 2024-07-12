@@ -1,17 +1,20 @@
-nav#table-of-contents {
+nav#navbar {
   font-size: 0.875rem;
-  color: var(--color-light-gray);
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-nav#table-of-contents > ul > li {
+nav#navbar > ul > li {
   margin-left: 1rem;
 }
 
-nav#table-of-contents > ul > li::before {
-  content: "#";
+nav#navbar > ul > li::before {
+  content: "/";
   font-size: 0.9em;
   margin-left: -1rem;
   margin-top: unset;
+}
+
+nav#navbar.windows > ul > li::before {
+  content: "\\";
 }
