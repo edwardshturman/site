@@ -27,7 +27,7 @@ export async function GalleryCard(
     return { base64, metadata }
   }
   let imageData
-  if (!video) imageData = await processImage(`public/${props.src}`)
+  if (!video) imageData = await processImage(`public${props.src}`)
   const isGif = props.src.toString().endsWith('.gif')
 
   const ImageWrapper = (
