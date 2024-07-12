@@ -1,11 +1,10 @@
 import Image from 'next/image'
-import dynamic from 'next/dynamic'
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import { Analytics } from '@vercel/analytics/react'
 
 import { Spacer } from '@/components/Spacer'
-const Breadcrumbs = dynamic(() => import('@/components/Breadcrumbs').then((mod) => mod.Breadcrumbs), { ssr: false })
+import { Breadcrumbs } from '@/components/Breadcrumbs'
 
 import './globals.css'
 

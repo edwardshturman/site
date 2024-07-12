@@ -15,7 +15,7 @@ export function Breadcrumbs() {
     <nav
       id={styles.breadcrumbs}
       aria-label="Breadcrumb"
-      className={`${navigator.userAgent.includes('Win') ? styles.windows : ''}`}
+      className={`${navigator?.userAgent.includes('Win') ? styles.windows : ''}`}
       >
       <ol>
         <Crumb key="/" href="/">Edward Shturman</Crumb>
