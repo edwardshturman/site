@@ -21,8 +21,13 @@ export async function GalleryCard(
   { title, description, link, cta, alt, video, ...props }:
   GalleryCardProps
 ) {
-  const file = await fs.readFile(`public/${props.src}`)
-  const { base64, metadata } = await getPlaiceholder(file)
+  async function processImage(src: string) {
+    const file = await fs.readFile(src)
+    const { base64, metadata } = await getPlaiceholder(file)
+    return { base64, metadata }
+  }
+  let imageData
+  if (!video) imageData = await processImage(`public/${props.src}`)
   const isGif = props.src.toString().endsWith('.gif')
 
   const ImageWrapper = (
@@ -32,10 +37,10 @@ export async function GalleryCard(
           unoptimized={isGif}
           alt={alt || title || ''}
           placeholder={`${isGif ? 'empty' : 'blur'}`}
-          blurDataURL={base64}
+          blurDataURL={imageData?.base64}
           sizes='(max-width: 700px) 100vw - 80px, 650px'
-          width={metadata.width}
-          height={metadata.height}
+          width={imageData?.metadata.width}
+          height={imageData?.metadata.height}
           {...props}
         />
       }

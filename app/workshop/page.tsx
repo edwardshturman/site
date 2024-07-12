@@ -23,6 +23,11 @@ export const metadata: Metadata = {
 export default function Workshop() {
   const cards: GalleryCardProps[] = [
     {
+      title: 'Difference blend mode cursor',
+      video: true,
+      src: '/assets/difference-blend-mode-cursor.mp4'
+    },
+    {
       title: 'compsigh landing page',
       description: <p>Work in progress on a new landing page for <Link href="/projects/compsigh">compsigh</Link>, my computer science club, as part of our Fall 2024 rebrand</p>,
       src: '/assets/compsigh-landing-page.gif',

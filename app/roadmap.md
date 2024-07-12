@@ -51,6 +51,8 @@ published: true
 - [x] Fix layout shift for images
   <Comment type="inline">2024-07-11</Comment>
 - [ ] Replace large gifs with videos
+- [ ] Higher quality low-res placeholders
+- [ ] Easter egg: detect OS; on Windows use backslashes for `nav`
 - [ ] `GalleryCard` spacing (I don't like having to use `Spacer` everywhere)
 - [ ] Version the site
 - [ ] Investigate mobile code styles
