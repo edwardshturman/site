@@ -62,8 +62,8 @@ If we're going to up the quality, Devpost and Google Forms won't cut it. I set o
 Here's the result, written in React & Next.js, auth via NextAuth, forms via Tally, and logistics via Notion API:
 
 <GalleryCard
-  src="/assets/deploy-platform.gif"
-  alt="A gif of the DEPLOY/23 landing page"
+  video={true}
+  src="/assets/deploy-platform.mp4"
 />
 
 <Spacer size={10} />

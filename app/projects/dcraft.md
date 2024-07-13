@@ -79,7 +79,7 @@ We knew we wouldn't be able to do a full launch just yet, so our goal for these 
 Thanks to <Mention name="Jordan" avatar="/avatars/jordan.jpeg" link="https://linkedin.com/in/jordan-cen" />, <Mention name="Rohan" avatar="/avatars/rohan.jpeg" link="https://linkedin.com/in/therohankumar" />, <Mention name="Ian" avatar="/avatars/ian.jpg" link="https://ian-kwuan.super.site" />, <Mention name="Aidan C." avatar="/avatars/aidan-c.jpeg" link="https://linkedin.com/in/aidan-n-chen" />, Darius, John, and Luke, we got it done.
 
 <GalleryCard
-  src="/assets/dcraft-may-june-2019-screenshot.png"
+  src="/assets/dcraft-may-june-2019-screenshot.jpeg"
   alt="A screenshot of d.craft, facing the school entrance, from June 2019"
   title="d.craft June 2019 trailer"
   description={<p>My apologies in advance for the jittering — this is before I knew how to screen record properly</p>}
@@ -146,16 +146,16 @@ We storyboarded, programmed (using Minecraft's "datapacks" language), and built 
 
 <Grid columns={3}>
   <GalleryCard
-    src="/assets/dcraft-grad-event-1.gif"
-    alt="A gif of the escape room event"
+    video={true}
+    src="/assets/dcraft-grad-event-1.mp4"
   />
   <GalleryCard
-    src="/assets/dcraft-grad-event-2.gif"
-    alt="A gif of the capture-the-flag event"
+    video={true}
+    src="/assets/dcraft-grad-event-2.mp4"
   />
   <GalleryCard
-    src="/assets/dcraft-grad-event-3.gif"
-    alt="A gif of the scavenger hunt event"
+    video={true}
+    src="/assets/dcraft-grad-event-3.mp4"
   />
 </Grid>
 

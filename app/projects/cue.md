@@ -85,7 +85,8 @@ Its primary function is to take your study notes, and return the most relevant q
 
 <GalleryCard
   title="Cue beta demo from May 2023, not long after the hackathon"
-  src="/assets/cue-may2023-beta-demo.gif"
+  video={true}
+  src="/assets/cue-may2023-beta-demo.mp4"
 />
 
 I'm happy to say we continued working on Cue after Dons Hack, and shipped some pretty cool features.
@@ -95,15 +96,16 @@ I'm happy to say we continued working on Cue after Dons Hack, and shipped some p
 <GalleryCard
   title="In-app invites"
   description={<p>From day one, we made the app open to all USF students for free, but we wanted an invite system for our friends &amp; family elsewhere. Here we hooked up Typeform to an API that would generate an invite code like <code>gaius-julius-caesar</code> (I was really into that European history class).</p>}
-  src="/assets/cue-invite-demo.gif"
+  video={true}
+  src="/assets/cue-invite-demo.mp4"
 />
 
 <Spacer size={32} />
 
 <Grid columns={2} columnSizeDistribution={["1fr", "3fr"]}>
   <GalleryCard
-    src="/assets/cue-invite-cards.gif"
-    alt="A demo of physical Cue invite cards with unique QR codes on the back"
+    video={true}
+    src="/assets/cue-invite-cards.mp4"
   />
   <div>
     <p>We really liked the idea of invites, and we went all out, because why not?</p>
@@ -119,7 +121,8 @@ I [posted about Cue on X](https://x.com/edwardshturman/status/166218170795548672
 
 <GalleryCard
   title="Waitlist invite email"
-  src="/assets/cue-waitlist-email.gif"
+  video={true}
+  src="/assets/cue-waitlist-email.mp4"
 />
 
 Since then, we've put development on pause as we push through a heavy junior year in computer science. We hope to return shortly thereafter!

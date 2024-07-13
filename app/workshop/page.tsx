@@ -30,8 +30,8 @@ export default function Workshop() {
     {
       title: 'compsigh landing page',
       description: <p>Work in progress on a new landing page for <Link href="/projects/compsigh">compsigh</Link>, my computer science club, as part of our Fall 2024 rebrand</p>,
-      src: '/assets/compsigh-landing-page.gif',
-      alt: 'A gif of the compsigh landing page',
+      video: true,
+      src: '/assets/compsigh-landing-page.mp4',
       link: 'https://compsigh.club',
       cta: 'View live demo'
     },
@@ -114,8 +114,8 @@ export default function Workshop() {
     {
       title: 'Realm Thread Queue',
       description: <p>Thread Queue for Realm, a Discord bot I&apos;m building. Lets you pluck individual messages from a channel into a thread. Great for separating multiple conversations going on in the same channel.</p>,
-      src: '/assets/Realm-thread-queue-demo.gif',
-      alt: "A gif of Thread Queue, a feature for Realm, a Discord bot I'm building",
+      video: true,
+      src: '/assets/realm-thread-queue-demo.mp4',
       link: 'https://github.com/compsigh/realm',
       cta: 'View source'
     },

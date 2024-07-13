@@ -13,8 +13,9 @@ published: true
 ## To do
 
 - Fix mobile code styles
-- Add tagging to Workshop
-- Replace large gifs with videos
+- Add tag filters to Workshop page
+- Atomic notes for ideas in [20 from 20](/notes/20-from-20)
+- Note on Site `v1.2` with challenge and workaround
 - Increase the quality of low-res image placeholders
 - Accessibility audit: relative vs. absolute units for margin/padding/etc.
 - Tweak `GalleryCard` spacing so as to not have to use `Spacer` everywhere
@@ -25,6 +26,7 @@ published: true
 
 - Added this Changelog page
 - Optimized image load times
+- Replaced large gifs with videos
 - Resolved layout shift for images
 - Added support for video in `GalleryCard`
 - Added an Easter egg for users on Windows :)
