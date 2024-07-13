@@ -6,6 +6,11 @@ type NoteProps = {
 
 export const notes: NoteProps[] = [
   {
+    text: 'Changelog',
+    slug: 'changelog',
+    tags: ['devlog']
+  },
+  {
     text: '20 from 20',
     slug: '20-from-20',
     tags: ['life']
