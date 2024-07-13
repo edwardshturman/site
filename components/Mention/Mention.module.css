@@ -9,6 +9,8 @@ span.container:hover {
 }
 
 span.container img#avatar {
+  width: 20px;
+  height: 20px;
   margin-right: 10px;
   border-radius: 4px;
   vertical-align: text-bottom;

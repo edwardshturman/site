@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 
 import { Spacer } from '@/components/Spacer'
 import { Comment } from '@/components/Comment'
+import { Mention } from '@/components/Mention'
 import { GalleryCard } from '@/components/GalleryCard'
 import type { GalleryCardProps } from '@/components/GalleryCard'
 
@@ -50,7 +51,7 @@ export default function Workshop() {
     },
     {
       title: 'compsigh cascade',
-      description: <p>A platform I design-engineered to host a coding riddle competition for <Link href="/projects/compsigh">compsigh</Link>, my computer science club. Fit with auth via NextAuth, event flags via Vercel Edge Config, teams, invites, and leaderboard via Vercel Postgres, and input validation.</p>,
+      description: <p>A platform I design-engineered with <Mention name="Gursh" avatar="/avatars/gursh.png" link="https://gursh.dev" /> to host a coding riddle competition for <Link href="/projects/compsigh">compsigh</Link>, my computer science club. Fit with auth via NextAuth, event flags via Vercel Edge Config, and teams + invites + leaderboard via Vercel Postgres.</p>,
       src: '/assets/cascade-ui.gif',
       alt: 'A gif of the compsigh cascade UI',
       link: 'https://github.com/compsigh/cascade',
