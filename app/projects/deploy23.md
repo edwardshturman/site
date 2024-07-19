@@ -1,13 +1,13 @@
 ---
 title: "DEPLOY/23"
-description: "The first hackathon hosted by my computer science club compsigh, and our biggest event of the Fall 2023 semester. An entirely student-bootstrapped, three-day event, bringing together the best minds in CS, design, and engineering to hack on a project for a weekend."
+description: "The first hackathon hosted by compsigh — the computer science club at the University of San Francisco — and our biggest event of the Fall 2023 semester. An entirely student-bootstrapped, three-day event, bringing together the best minds in CS, design, and engineering to hack on a project for a weekend."
 published: true
 og_image: "/og/deploy23.png"
 ---
 
 # DEPLOY/23
 
-The first hackathon hosted by [my computer science club compsigh](/projects/compsigh), and our biggest event of the Fall 2023 semester. An entirely student-bootstrapped, three-day event, bringing together the best minds in CS, design, and engineering to hack on a project for a weekend.
+The first hackathon hosted by [compsigh](/projects/compsigh) — the computer science club at the University of San Francisco — and our biggest event of the Fall 2023 semester. An entirely student-bootstrapped, three-day event, bringing together the best minds in CS, design, and engineering to hack on a project for a weekend.
 
 <TableOfContents
   entries={[

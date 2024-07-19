@@ -46,12 +46,12 @@ export default function Workshop() {
     },
     {
       title: 'compsigh flyer',
-      description: <p>A flyer for <Link href="/projects/compsigh">compsigh</Link>, my computer science club. We handed these out at our university&apos;s annual Spring event for incoming freshmen.</p>,
+      description: <p>A flyer for <Link href="/projects/compsigh">compsigh</Link>, the computer science club at the University of San Francisco. We handed these out at our university&apos;s annual Spring event for incoming freshmen.</p>,
       src: '/assets/compsigh-flyer.png'
     },
     {
       title: 'compsigh cascade',
-      description: <p>A platform I design-engineered with <Mention name="Gursh" avatar="/avatars/gursh.png" link="https://gursh.dev" /> to host a coding riddle competition for <Link href="/projects/compsigh">compsigh</Link>, my computer science club. Fit with auth via NextAuth, event flags via Vercel Edge Config, and teams + invites + leaderboard via Vercel Postgres.</p>,
+      description: <p>A platform I design-engineered with <Mention name="Gursh" avatar="/avatars/gursh.png" link="https://gursh.dev" /> to host a coding riddle competition for <Link href="/projects/compsigh">compsigh</Link>, the computer science club at the University of San Francisco. Fit with auth via NextAuth, event flags via Vercel Edge Config, and teams + invites + leaderboard via Vercel Postgres.</p>,
       src: '/assets/cascade-ui.gif',
       alt: 'A gif of the compsigh cascade UI',
       link: 'https://github.com/compsigh/cascade',
@@ -65,7 +65,7 @@ export default function Workshop() {
     },
     {
       title: '2033',
-      description: <p>A set of 4K AI-generated wallpapers from <Link href="/projects/deploy23">DEPLOY/23</Link>, a hackathon hosted by <Link href="/projects/compsigh">compsigh</Link>, my computer science club</p>,
+      description: <p>A set of 4K AI-generated wallpapers from <Link href="/projects/deploy23">DEPLOY/23</Link>, a hackathon hosted by <Link href="/projects/compsigh">compsigh</Link>, the computer science club at the University of San Francisco</p>,
       src: '/assets/2033.png',
       link: 'https://goodies.edward.so/l/2033',
       cta: 'Grab them on Gumroad'
@@ -94,19 +94,19 @@ export default function Workshop() {
     },
     {
       title: 'compsigh leadership avatars',
-      description: <p>A set of avatars I generated with <Link href="https://midjourney.com">Midjourney</Link> for the Fall 2023 leadership cohort of <Link href="/projects/compsigh">compsigh</Link>, my computer science club</p>,
+      description: <p>A set of avatars I generated with <Link href="https://midjourney.com">Midjourney</Link> for the Fall 2023 leadership cohort of <Link href="/projects/compsigh">compsigh</Link>, the computer science club at the University of San Francisco</p>,
       src: '/assets/compsigh-ai-pfps.png',
       alt: 'A set of AI-generated avatars for the leadership team of compsigh, a computer science club at the University of San Francisco'
     },
     {
       title: 'compsigh icons',
-      description: <p>A set of vector icons I generated with <Link href="https://recraft.ai">Recraft</Link> for <Link href="/projects/compsigh">compsigh</Link>, my computer science club</p>,
+      description: <p>A set of vector icons I generated with <Link href="https://recraft.ai">Recraft</Link> for <Link href="/projects/compsigh">compsigh</Link>, the computer science club at the University of San Francisco</p>,
       src: '/assets/compsigh-icons.png',
       alt: 'A set of AI-generated vector icons for compsigh, a computer science club at the University of San Francisco'
     },
     {
       title: 'U Can UI',
-      description: <p>A distilled version of a workshop I ran for <Link href="/projects/compsigh">compsigh</Link>, my computer science club, on why engineers should design, and how to start</p>,
+      description: <p>A distilled version of a workshop I ran for <Link href="/projects/compsigh">compsigh</Link>, the computer science club at the University of San Francisco, on why engineers should design, and how to start</p>,
       src: '/assets/u-can-ui.png',
       alt: 'A thumbnail for U Can UI, a workshop on why engineers should design, and how to start',
       link: 'https://www.youtube.com/watch?v=fLlz6CMZDoo',
@@ -151,7 +151,7 @@ export default function Workshop() {
   return (
     <>
       <h1>Workshop</h1>
-      <Comment type="block">Everything from design experiments to side projects</Comment>
+      <Comment type={`block`}>Everything from design experiments to side projects</Comment>
       <Spacer size={48} />
       {cards.map((card, index) => (
         <div key={index}>

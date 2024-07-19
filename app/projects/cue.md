@@ -57,7 +57,7 @@ The vibes were great:
 
 <GalleryCard
   title="compsigh teams at Dons Hack 2023"
-  description={<p>Even though we were all competing, we knew a win for any team from <Link href="/projects/compsigh">my computer science club compsigh</Link> was a win for all of us. So, we'd work together in one room and would help each other out.</p>}
+  description={<p>Even though we were all competing, we knew a win for any team from <Link href="/projects/compsigh">compsigh</Link>, our computer science club, was a win for all of us. So, we'd work together in one room and would help each other out.</p>}
   src="/assets/cue-donshack-compsigh-teams.JPG"
 />
 
