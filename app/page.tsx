@@ -28,9 +28,9 @@ export default function Home() {
       />
       <h2>Now</h2>
       <ul>
-        <li>Taking Josh Comeau&apos;s <Link href={`https://css-for-js.dev/`}>CSS for JS Devs</Link> course</li>
-        <li><s>Reading <em>The Practice</em> by Seth Godin</s><Comment type="inline">Great read! Writing a note on it</Comment></li>
-        <li>Planning Fall for <Link href="/projects/compsigh">compsigh</Link>, my CS club at the University of San Francisco</li>
+        <li>Reading <em>Get Together</em> by People &amp; Company</li>
+        <li>Studying Josh Comeau&apos;s <Link href={`https://css-for-js.dev`}>CSS for JS Devs</Link> course</li>
+        <li>Building a web platform for <Link href={`/projects/compsigh`}>compsigh</Link>, the computer science club at USFCA</li>
       </ul>
       <h2>Connect</h2>
       <ul>
