@@ -14,9 +14,7 @@ published: true
 
 - Fix mobile code styles
 - Add tag filters to Workshop page
-- Atomic notes for ideas in [20 from 20](/notes/20-from-20)
-- Note on Site `v1.2` with challenge and workaround
-- Increase the quality of low-res image placeholders
+- Replace Markdown `a` with `Link`
 - Accessibility audit: relative vs. absolute units for margin/padding/etc.
 - Tweak `GalleryCard` spacing so as to not have to use `Spacer` everywhere
 
