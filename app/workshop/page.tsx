@@ -30,7 +30,7 @@ export default function Workshop() {
     },
     {
       title: 'compsigh landing page',
-      description: <p>Work in progress on a new landing page for <Link href="/projects/compsigh">compsigh</Link>, my computer science club, as part of our Fall 2024 rebrand</p>,
+      description: <p>Work in progress on a new web platform for <Link href="/projects/compsigh">compsigh</Link>, the computer science club at the University of San Francisco</p>,
       video: true,
       src: '/assets/compsigh-landing-page.mp4',
       link: 'https://compsigh.club',
