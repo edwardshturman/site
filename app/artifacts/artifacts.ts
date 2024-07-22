@@ -88,6 +88,10 @@ export const artifacts: Artifact[] = [
     tags: ['post', 'life']
   },
   {
+    text: 'Get Together by People & Company',
+    tags: ['book', 'community']
+  },
+  {
     text: 'Steal Like an Artist by Austin Kleon',
     tags: ['book', 'creative-work']
   },
