@@ -9,7 +9,7 @@ og_image: "/og/cue.png"
 
 Cue is a minimalist active recall study app focused on helping students ask the right questions. Transform your notes into actionable study cards for easy pasting back into Google Docs or Notion, or export to Anki.
 
-<GalleryCard
+<Media
   src="/og/cue.png"
   alt="Cue wordmark banner"
 />
@@ -47,32 +47,30 @@ I had about three months' worth of web dev experience at this point, and had to 
 
 Around this time, I was also getting into UI design, so I really wanted to push myself and have it stand out from the crowd.
 
-<GalleryCard
+<Media
   title="Cue icon set"
-  description={<p>I may or may not have spent 50% of our hackathon time in Figma. :p</p>}
+  description="I may or may not have spent 50% of our hackathon time in Figma. :p"
   src="/assets/cue-icons.png"
 />
 
 The vibes were great:
 
-<GalleryCard
+<Media
   title="compsigh teams at Dons Hack 2023"
-  description={<p>Even though we were all competing, we knew a win for any team from <Link href="/projects/compsigh">compsigh</Link>, our computer science club, was a win for all of us. So, we'd work together in one room and would help each other out.</p>}
+  description={<>Even though we were all competing, we knew a win for any team from <Link href="/projects/compsigh">compsigh</Link>, our computer science club, was a win for all of us. So, we'd work together in one room and would help each other out.</>}
   src="/assets/cue-donshack-compsigh-teams.JPG"
 />
 
-<Spacer size={32} />
-
-<GalleryCard
+<Media
   title="Saturday night desk setup"
-  description={<p>It was time to lock in.</p>}
+  description="It was time to lock in."
   src="/assets/cue-donshack-latenight.JPG"
   alt="My desk setup on Saturday night. Pictured is my dual-monitor setup (code on one, API docs and live preview on the other) and a cup of tea."
 />
 
 Oh, and we won, too. :)
 
-<GalleryCard
+<Media
   src="/assets/cue-donshack-certificate.JPG"
   alt="A certificate congratulating me for winning Best App at Dons Hack 2023."
 />
@@ -83,7 +81,7 @@ So, what does Cue actually do?
 
 Its primary function is to take your study notes, and return the most relevant questions to quiz yourself on.
 
-<GalleryCard
+<Media
   title="Cue beta demo from May 2023, not long after the hackathon"
   video={true}
   src="/assets/cue-may2023-beta-demo.mp4"
@@ -93,19 +91,20 @@ I'm happy to say we continued working on Cue after Dons Hack, and shipped some p
 
 ### Invite system
 
-<GalleryCard
+<Media
   title="In-app invites"
-  description={<p>From day one, we made the app open to all USF students for free, but we wanted an invite system for our friends &amp; family elsewhere. Here we hooked up Typeform to an API that would generate an invite code like <code>gaius-julius-caesar</code> (I was really into that European history class).</p>}
+  description={<>From day one, we made the app open to all USF students for free, but we wanted an invite system for our friends &amp; family elsewhere. Here we hooked up Typeform to an API that would generate an invite code like <code>gaius-julius-caesar</code> (I was really into that European history class).</>}
   video={true}
   src="/assets/cue-invite-demo.mp4"
 />
 
-<Spacer size={32} />
-
 <Grid columns={2} columnSizeDistribution={["1fr", "3fr"]}>
-  <GalleryCard
+  <Media
     video={true}
     src="/assets/cue-invite-cards.mp4"
+    style={{
+      marginTop: 'unset'
+    }}
   />
   <div>
     <p>We really liked the idea of invites, and we went all out, because why not?</p>
@@ -119,7 +118,7 @@ I'm happy to say we continued working on Cue after Dons Hack, and shipped some p
 
 I [posted about Cue on X](https://x.com/edwardshturman/status/1662181707955486722) and we got a decent amount of students signing up for the beta. In August 2023, we sent out the invites.
 
-<GalleryCard
+<Media
   title="Waitlist invite email"
   video={true}
   src="/assets/cue-waitlist-email.mp4"

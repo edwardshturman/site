@@ -93,7 +93,7 @@ export default function RootLayout({
         />
         <Breadcrumbs />
         <main>{children}</main>
-        <Spacer size={`20vh`} />
+        <Spacer size="20vh" />
         <Analytics />
       </body>
     </html>

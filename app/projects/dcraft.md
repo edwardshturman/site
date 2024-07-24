@@ -11,14 +11,10 @@ To those unfamiliar — certainly to the parents of players — d.craft may seem
 
 Here's the story of how we brought d.craft to life — a virtual recreation of the Design Tech High School campus in Minecraft.
 
-<Spacer size={16} />
-
-<GalleryCard
+<Media
   src="/og/dcraft.png"
   alt="A screenshot of d.craft, facing the Design Tech High School front entrance"
 />
-
-<Spacer size={16} />
 
 <TableOfContents
   entries={[
@@ -48,9 +44,7 @@ From May 2019, my incredibly talented friend <Mention name="Joss" avatar="/avata
 
 d.craft started out as an inside joke of a project: we'd leave school and "come right back", virtually. But in the first week of the May–June 2019 Intersession, we held interviews with students and staff, and quickly realized this could be something bigger.
 
-<Spacer size={16} />
-
-<GalleryCard
+<Media
   title="The team goes over considerations for building a safe online community with a d.tech staff member"
   src="/assets/dcraft-whiteboard-julie.JPG"
 />
@@ -61,14 +55,10 @@ There were a few things on our minds:
 - Making sure *only* d.tech community members could access the server
 - Safety vs. self-expression: where do we draw the line on interactions?
 
-<Spacer size={16} />
-
-<GalleryCard
+<Media
   src="/assets/dcraft-whiteboard.JPG"
   alt="The whiteboard at the end of one of our interviews with d.tech staff, discussing the considerations mentioned above"
 />
-
-<Spacer size={16} />
 
 Laptops in hand, half the team set out walking around the school to build it to-scale, while the other half of us devised implementations for the community. This latter task would take us quite some time and iteration to get right.
 
@@ -78,16 +68,14 @@ We knew we wouldn't be able to do a full launch just yet, so our goal for these 
 
 Thanks to <Mention name="Jordan" avatar="/avatars/jordan.jpeg" link="https://linkedin.com/in/jordan-cen" />, <Mention name="Rohan" avatar="/avatars/rohan.jpeg" link="https://linkedin.com/in/therohankumar" />, <Mention name="Ian" avatar="/avatars/ian.jpg" link="https://ian-kwuan.super.site" />, <Mention name="Aidan C." avatar="/avatars/aidan-c.jpeg" link="https://linkedin.com/in/aidan-n-chen" />, Darius, John, and Luke, we got it done.
 
-<GalleryCard
+<Media
   src="/assets/dcraft-may-june-2019-screenshot.jpeg"
   alt="A screenshot of d.craft, facing the school entrance, from June 2019"
   title="d.craft June 2019 trailer"
-  description={<p>My apologies in advance for the jittering — this is before I knew how to screen record properly</p>}
+  description="My apologies in advance for the jittering — this is before I knew how to screen record properly"
   link="https://youtu.be/fZks2CTUXDw"
   cta="Watch on YouTube"
 />
-
-<Spacer size={16} />
 
 In the months that followed, the team worked on:
 
@@ -95,24 +83,20 @@ In the months that followed, the team worked on:
 - Storyboarding and building custom minigames
 - Preparing for the school-wide launch
 
-<Spacer size={16} />
-
 <Grid columns={3}>
-  <GalleryCard
+  <Media
     src="/assets/dcraft-oracle-parkway.png"
     alt="A screenshot of Oracle Parkway on d.craft"
   />
-  <GalleryCard
+  <Media
     src="/assets/dcraft-bedwars.png"
     alt="A screenshot of a custom-made Bedwars map on d.craft"
   />
-  <GalleryCard
+  <Media
     src="/assets/dcraft-factions-spawn.png"
     alt="A screenshot of a custom-made Factions map on d.craft"
   />
 </Grid>
-
-<Spacer size={16} />
 
 ## Launch
 
@@ -120,15 +104,13 @@ The timing is almost poetic: we launched d.craft exactly a week before our schoo
 
 We presented d.craft at our weekly community meeting. I will never forget the awe, cheer, and d.tech pride from everyone in the room. I'm pretty sure I teared up after the standing ovation. :)
 
-<GalleryCard
+<Media
   src="/assets/dcraft-march-2020-screenshot.png"
   alt="A screenshot from March 2020 taken on d.craft of the school from above"
   title="d.craft March 2020 trailer"
   link="https://youtu.be/cG9HXfy7Gq8"
   cta="Watch on YouTube"
 />
-
-<Spacer size={16} />
 
 Props to Joss, Rohan, <Mention name="Ryan" avatar="/avatars/ryan.jpeg" link="https://linkedin.com/in/ryan-t-ting" />, Elan, David, Logan Y., and Carson for getting us there.
 
@@ -142,24 +124,20 @@ We storyboarded, programmed (using Minecraft's "datapacks" language), and built 
 - A capture-the-flag tournament on a post-apocalyptic map
 - A scavenger hunt for relics from the Hangar
 
-<Spacer size={16} />
-
 <Grid columns={3}>
-  <GalleryCard
+  <Media
     video={true}
     src="/assets/dcraft-grad-event-1.mp4"
   />
-  <GalleryCard
+  <Media
     video={true}
     src="/assets/dcraft-grad-event-2.mp4"
   />
-  <GalleryCard
+  <Media
     video={true}
     src="/assets/dcraft-grad-event-3.mp4"
   />
 </Grid>
-
-<Spacer size={16} />
 
 We asked staff to write speeches, and streamed [the event on YouTube](https://youtube.com/live/6h_YXoyp6d0).
 
@@ -173,24 +151,20 @@ Unfortunately, we were no longer able to host Intersession cohorts, due to a cha
 
 We continued to maintain the server in our free time, and even held some one-off events, like our Winter celebration.
 
-<Spacer size={16} />
-
 <Grid columns={3}>
-  <GalleryCard
+  <Media
     src="/assets/dcraft-winter-exterior.png"
     alt="A screenshot of the Winter map (exterior) on d.craft"
   />
-  <GalleryCard
+  <Media
     src="/assets/dcraft-winter-interior.png"
     alt="A screenshot of the Winter map (interior) on d.craft"
   />
-  <GalleryCard
+  <Media
     src="/assets/dcraft-winter-dragon.png"
     alt="A screenshot of the Winter map (dragon) on d.craft"
   />
 </Grid>
-
-<Spacer size={16} />
 
 ## Sunset
 
@@ -208,9 +182,7 @@ Running d.craft taught me a lot about leading a team, branding & marketing, and 
 
 There is a world in which d.craft lives on. And, when that happens, I'll be there to support it. Until then, it's me and the team, hitting *Return to Main Menu.*
 
-<Spacer size={16} />
-
-<GalleryCard
+<Media
   src="/assets/dcraft-team.png"
   alt="A screenshot of the d.craft team in-game"
 />

@@ -16,7 +16,12 @@ published: true
 - Add tag filters to Workshop page
 - Replace Markdown `a` with `Link`
 - Accessibility audit: relative vs. absolute units for margin/padding/etc.
-- Tweak `GalleryCard` spacing so as to not have to use `Spacer` everywhere
+
+## 1.2.1: Better `Media`
+
+<Comment type="block">2024-07-23</Comment>
+
+- Tweaked `Media` styles and markup for accessibility
 
 ## 1.2.0: Video
 
@@ -26,7 +31,7 @@ published: true
 - Optimized image load times
 - Replaced large gifs with videos
 - Resolved layout shift for images
-- Added support for video in `GalleryCard`
+- Added support for video in `Media`
 - Added an Easter egg for users on Windows :)
 
 ## 1.1.1: Numbers
@@ -64,7 +69,7 @@ published: true
 <Comment type="block">2024-05-01 – 2024-05-06</Comment>
 
 - Added 404 page
-- `GalleryCard` images are now clickable if they link to something
+- `Media` images are now clickable if they link to something
 
 ## 0.5.0: Workshop
 
@@ -72,8 +77,8 @@ published: true
 
 - Added [Workshop page](/workshop)
 - Added `Grid` component
+- Added `Media` component
 - Added `Mention` component
-- Added `GalleryCard` component
 - Added Latest section on home page
 
 ## 0.4.0: Projects

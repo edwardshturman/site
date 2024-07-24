@@ -21,11 +21,11 @@ So, as it turns out, when you use macOS Night Shift 24/7, you forget it's on whe
 <Spacer size={16} />
 
 <Grid columns={2}>
-  <GalleryCard
+  <Media
     src="/assets/before-color-tweak.png"
     alt="A screenshot of the site before I tweaked the colors"
   />
-  <GalleryCard
+  <Media
     src="/assets/after-color-tweak.png"
     alt="A screenshot of the site after I tweaked the colors"
   />

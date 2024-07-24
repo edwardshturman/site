@@ -14,7 +14,7 @@ If you're using VS Code, you've probably played around with well-designed apps l
 
 I'll walk you through taking your VS Code from a fresh install to this:
 
-<GalleryCard
+<Media
   src="/assets/vs-code.png"
   alt="My VS Code setup"
 />

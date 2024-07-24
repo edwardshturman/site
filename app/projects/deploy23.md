@@ -17,7 +17,7 @@ The first hackathon hosted by [compsigh](/projects/compsigh) — the computer sc
   ]}
 />
 
-<GalleryCard
+<Media
   src="/assets/deploy-intro.gif"
 />
 
@@ -33,7 +33,7 @@ Despite the fact compsigh is one of the more chill clubs at the University of Sa
 
 For a hackathon with a cyberpunk vibe, I felt it'd be appropriate to make an event trailer using AI. In collaboration with our friends at Game Design Club (shoutout to Andrew, Jake, Dorian, Lauren, and Lillian), we wrote up some lore, and crafted a storyboard.
 
-<GalleryCard
+<Media
   src="/assets/deploy-storyboard.jpg"
   alt="A picture of the DEPLOY/23 trailer storyboard, drawn out on a whiteboard"
 />
@@ -61,21 +61,17 @@ If we're going to up the quality, Devpost and Google Forms won't cut it. I set o
 
 Here's the result, written in React & Next.js, auth via NextAuth, forms via Tally, and logistics via Notion API:
 
-<GalleryCard
+<Media
   video={true}
   src="/assets/deploy-platform.mp4"
 />
 
-<Spacer size={10} />
-
-<GalleryCard
+<Media
   src="/assets/deploy-platform-console.png"
   alt="A screenshot of the DEPLOY/23 Console, where participants can register, form their teams, and submit their projects"
 />
 
-<Spacer size={10} />
-
-<GalleryCard
+<Media
   src="/assets/deploy-platform-submission.png"
   alt="A screenshot of the DEPLOY/23 project submission form"
 />
@@ -84,7 +80,7 @@ You can [read the technical breakdown](https://github.com/compsigh/deploy) on ou
 
 Shoutout to <Mention name="Jet" avatar="/avatars/jet.jpeg" link="https://jetpham.com" />, Quinn, Calvin, and Ani for helping organize this event and keep things running throughout the weekend. All in all, it was exhilerating putting it on, and I look forward to DEPLOY/24.
 
-<GalleryCard
+<Media
   src="/assets/deploy-presenters.jpeg"
   alt="A picture of the DEPLOY/23 presenters on stage"
 />

@@ -4,22 +4,20 @@ import fs from 'node:fs/promises'
 import { getPlaiceholder } from 'plaiceholder'
 import Image, { type ImageProps } from 'next/image'
 
-import { Spacer } from '@/components/Spacer'
+import styles from './Media.module.css'
 
-import styles from './GalleryCard.module.css'
-
-export interface GalleryCardProps extends Omit<ImageProps, 'alt'> {
+export interface MediaProps extends Omit<ImageProps, 'alt'> {
   title?: string
-  description?: React.ReactElement
+  description?: React.ReactElement | string
   link?: Route
   cta?: string
   alt?: string
   video?: boolean
 }
 
-export async function GalleryCard(
+export async function Media(
   { title, description, link, cta, alt, video, ...props }:
-  GalleryCardProps
+  MediaProps
 ) {
   async function processImage(src: string) {
     const file = await fs.readFile(src)
@@ -63,21 +61,24 @@ export async function GalleryCard(
     </>
   )
 
+  function LinkWrapper({ children }: { children: React.ReactNode }) {
+    return <>{link ? <Link href={link}>{children}</Link> : children}</>
+  }
+
   return (
     <>
-      <div className={styles.card}>
+      <div
+        id={styles["media-container"]}
+        style={props.style}
+      >
         <figure>
-          {link ? <Link href={link}>{ImageWrapper}</Link> : ImageWrapper}
-          {link ? <Link href={link}>{VideoWrapper}</Link> : VideoWrapper}
-          {title && <figcaption>{title}</figcaption>}
-          {description && <div>{description}</div>}
-          {
-            link &&
-              <>
-                <Spacer size={10} />
-                <Link href={link}>{cta}</Link>
-              </>
-            }
+          <LinkWrapper>
+            {ImageWrapper}
+            {VideoWrapper}
+            {title && <figcaption>{title}</figcaption>}
+          </LinkWrapper>
+            {description && <div id={styles.description}>{description}</div>}
+            {cta && <p id={styles.cta}><LinkWrapper>{cta}</LinkWrapper></p>}
         </figure>
       </div>
     </>

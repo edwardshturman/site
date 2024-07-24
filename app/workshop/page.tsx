@@ -4,8 +4,7 @@ import type { Metadata } from 'next'
 import { Spacer } from '@/components/Spacer'
 import { Comment } from '@/components/Comment'
 import { Mention } from '@/components/Mention'
-import { GalleryCard } from '@/components/GalleryCard'
-import type { GalleryCardProps } from '@/components/GalleryCard'
+import { Media, type MediaProps } from '@/components/Media'
 
 export const metadata: Metadata = {
   title: 'Workshop',
@@ -22,7 +21,7 @@ export const metadata: Metadata = {
 }
 
 export default function Workshop() {
-  const cards: GalleryCardProps[] = [
+  const entries: MediaProps[] = [
     {
       title: 'Difference blend mode cursor',
       video: true,
@@ -30,7 +29,7 @@ export default function Workshop() {
     },
     {
       title: 'compsigh landing page',
-      description: <p>Work in progress on a new web platform for <Link href="/projects/compsigh">compsigh</Link>, the computer science club at the University of San Francisco</p>,
+      description: <>Work in progress on a new web platform for <Link href="/projects/compsigh">compsigh</Link>, the computer science club at the University of San Francisco</>,
       video: true,
       src: '/assets/compsigh-landing-page.mp4',
       link: 'https://compsigh.club',
@@ -38,7 +37,7 @@ export default function Workshop() {
     },
     {
       title: 'Intention',
-      description: <p>A proof-of-concept app I made for one of my classes to promote Deep Work: One thing at a time. Most important thing first. Start now.</p>,
+      description: "A proof-of-concept app I made for one of my classes to promote Deep Work: One thing at a time. Most important thing first. Start now.",
       src: '/assets/intention.gif',
       alt: 'A gif of Intention, a proof-of-concept app I made for one of my classes to promote Deep Work: One thing at a time. Most important thing first. Start now.',
       link: 'https://intention.edward.so',
@@ -46,12 +45,12 @@ export default function Workshop() {
     },
     {
       title: 'compsigh flyer',
-      description: <p>A flyer for <Link href="/projects/compsigh">compsigh</Link>, the computer science club at the University of San Francisco. We handed these out at our university&apos;s annual Spring event for incoming freshmen.</p>,
+      description: <>A flyer for <Link href="/projects/compsigh">compsigh</Link>, the computer science club at the University of San Francisco. We handed these out at our university&apos;s annual Spring event for incoming freshmen.</>,
       src: '/assets/compsigh-flyer.png'
     },
     {
       title: 'compsigh cascade',
-      description: <p>A platform I design-engineered with <Mention name="Gursh" avatar="/avatars/gursh.png" link="https://gursh.dev" /> to host a coding riddle competition for <Link href="/projects/compsigh">compsigh</Link>, the computer science club at the University of San Francisco. Fit with auth via NextAuth, event flags via Vercel Edge Config, and teams + invites + leaderboard via Vercel Postgres.</p>,
+      description: <>A platform I design-engineered with <Mention name="Gursh" avatar="/avatars/gursh.png" link="https://gursh.dev" /> to host a coding riddle competition for <Link href="/projects/compsigh">compsigh</Link>, the computer science club at the University of San Francisco. Fit with auth via NextAuth, event flags via Vercel Edge Config, and teams + invites + leaderboard via Vercel Postgres.</>,
       src: '/assets/cascade-ui.gif',
       alt: 'A gif of the compsigh cascade UI',
       link: 'https://github.com/compsigh/cascade',
@@ -59,20 +58,20 @@ export default function Workshop() {
     },
     {
       title: 'Repost',
-      description: <p>Mockups of a PWA I made with friends at Dons Hack 2024, an annual hackathon hosted at the University of San Francisco by Association of Computing Machinery × Women in Tech</p>,
+      description: 'Mockups of a PWA I made with friends at Dons Hack 2024, an annual hackathon hosted at the University of San Francisco by Association of Computing Machinery × Women in Tech',
       src: '/assets/repost-mockups.png',
       alt: 'Mockups of a PWA I made with friends at Dons Hack 2024, an annual hackathon hosted at the University of San Francisco by Association of Computing Machinery × Women in Tech'
     },
     {
       title: '2033',
-      description: <p>A set of 4K AI-generated wallpapers from <Link href="/projects/deploy23">DEPLOY/23</Link>, a hackathon hosted by <Link href="/projects/compsigh">compsigh</Link>, the computer science club at the University of San Francisco</p>,
+      description: <>A set of 4K AI-generated wallpapers from <Link href="/projects/deploy23">DEPLOY/23</Link>, a hackathon hosted by <Link href="/projects/compsigh">compsigh</Link>, the computer science club at the University of San Francisco</>,
       src: '/assets/2033.png',
       link: 'https://goodies.edward.so/l/2033',
       cta: 'Grab them on Gumroad'
     },
     {
       title: 'Hive logo',
-      description: <p>A logo for the <Link href="https://www.usfca.edu/arts-sciences/research/facilities-labs/innovation-hive">Innovation Hive</Link> maker space at the University of San Francisco</p>,
+      description: <>A logo for the <Link href="https://www.usfca.edu/arts-sciences/research/facilities-labs/innovation-hive">Innovation Hive</Link> maker space at the University of San Francisco</>,
       src: '/assets/hive.png',
       alt: 'A logo for the Innovation Hive maker space at the University of San Francisco'
     },
@@ -80,7 +79,7 @@ export default function Workshop() {
       title: 'GitHub Contrib Emojis',
       description:
         <>
-          <p>A set of 10 high-quality icons modeled after the GitHub contribution chart you can upload to your Slack workspace or Discord server as emojis!</p>
+          <>A set of 10 high-quality icons modeled after the GitHub contribution chart you can upload to your Slack workspace or Discord server as emojis!</>
           <ul style={{color: 'var(--color-light-gray)'}}>
             <li>Light mode &amp; dark mode ready</li>
             <li>Padding built in, so they&apos;ll look great alongside each other</li>
@@ -94,19 +93,19 @@ export default function Workshop() {
     },
     {
       title: 'compsigh leadership avatars',
-      description: <p>A set of avatars I generated with <Link href="https://midjourney.com">Midjourney</Link> for the Fall 2023 leadership cohort of <Link href="/projects/compsigh">compsigh</Link>, the computer science club at the University of San Francisco</p>,
+      description: <>A set of avatars I generated with <Link href="https://midjourney.com">Midjourney</Link> for the Fall 2023 leadership cohort of <Link href="/projects/compsigh">compsigh</Link>, the computer science club at the University of San Francisco</>,
       src: '/assets/compsigh-ai-pfps.png',
       alt: 'A set of AI-generated avatars for the leadership team of compsigh, a computer science club at the University of San Francisco'
     },
     {
       title: 'compsigh icons',
-      description: <p>A set of vector icons I generated with <Link href="https://recraft.ai">Recraft</Link> for <Link href="/projects/compsigh">compsigh</Link>, the computer science club at the University of San Francisco</p>,
+      description: <>A set of vector icons I generated with <Link href="https://recraft.ai">Recraft</Link> for <Link href="/projects/compsigh">compsigh</Link>, the computer science club at the University of San Francisco</>,
       src: '/assets/compsigh-icons.png',
       alt: 'A set of AI-generated vector icons for compsigh, a computer science club at the University of San Francisco'
     },
     {
       title: 'U Can UI',
-      description: <p>A distilled version of a workshop I ran for <Link href="/projects/compsigh">compsigh</Link>, the computer science club at the University of San Francisco, on why engineers should design, and how to start</p>,
+      description: <>A distilled version of a workshop I ran for <Link href="/projects/compsigh">compsigh</Link>, the computer science club at the University of San Francisco, on why engineers should design, and how to start</>,
       src: '/assets/u-can-ui.png',
       alt: 'A thumbnail for U Can UI, a workshop on why engineers should design, and how to start',
       link: 'https://www.youtube.com/watch?v=fLlz6CMZDoo',
@@ -114,7 +113,7 @@ export default function Workshop() {
     },
     {
       title: 'Realm Thread Queue',
-      description: <p>Thread Queue for Realm, a Discord bot I&apos;m building. Lets you pluck individual messages from a channel into a thread. Great for separating multiple conversations going on in the same channel.</p>,
+      description: "Thread Queue for Realm, a Discord bot I'm building. Lets you pluck individual messages from a channel into a thread. Great for separating multiple conversations going on in the same channel.",
       video: true,
       src: '/assets/realm-thread-queue-demo.mp4',
       link: 'https://github.com/compsigh/realm',
@@ -122,25 +121,25 @@ export default function Workshop() {
     },
     {
       title: 'Nature Morte',
-      description: <p>Generated with <Link href="https://midjourney.com">Midjourney</Link></p>,
+      description: <>Generated with <Link href="https://midjourney.com">Midjourney</Link></>,
       src: '/assets/nature-morte.png',
       alt: 'An AI-generated image of a skull in the middle of a spread of fruits, wine bottles, and other objects befitting a still life painting'
     },
     {
       title: 'Новий Світ — New World',
-      description: <p>Fictitious fashion collection exploring traditional Ukrainian vyshyvanka, modernized. Generated with <Link href="https://midjourney.com">Midjourney</Link>.</p>,
+      description: <>Fictitious fashion collection exploring traditional Ukrainian vyshyvanka, modernized. Generated with <Link href="https://midjourney.com">Midjourney</Link>.</>,
       src: '/assets/new-world.png',
       alt: 'A carousel of AI-generated fashion designs inspired by traditional Ukrainian vyshyvanka'
     },
     {
       title: 'Trainyard',
-      description: <p>Generated with <Link href="https://midjourney.com">Midjourney</Link></p>,
+      description: <>Generated with <Link href="https://midjourney.com">Midjourney</Link></>,
       src: '/assets/trainyard.png',
       alt: 'An AI-generated image of an abandoned trainyard, dimly lit in the misty night'
     },
     {
       title: 'Arc Boosts',
-      description: <p>Style popular websites based on your <Link href="https://arc.net/gift/6a6a1565">Arc</Link> theme</p>,
+      description: <>Style popular websites based on your <Link href="https://arc.net/gift/6a6a1565">Arc</Link> theme</>,
       src: '/assets/Arc-boosts.png',
       alt: 'A banner for Arc Boosts, showcasing two screenshots of GitHub on different Arc themes, styled with the GitHub Boost I wrote',
       link: 'https://github.com/edwardshturman/arc-boosts',
@@ -151,12 +150,12 @@ export default function Workshop() {
   return (
     <>
       <h1>Workshop</h1>
-      <Comment type={`block`}>Everything from design experiments to side projects</Comment>
-      <Spacer size={48} />
-      {cards.map((card, index) => (
+      <Comment type="block">Everything from design experiments to side projects</Comment>
+      <Spacer size={16} />
+      {entries.map((entry, index) => (
         <div key={index}>
-          <GalleryCard {...card} />
-          <Spacer size={48} />
+          <Media {...entry} />
+          <Spacer size={16} />
         </div>
       ))}
     </>

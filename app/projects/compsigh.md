@@ -60,61 +60,55 @@ There are two things that capture the essence of compsigh:
 - Discussions on current events in tech ("technically speaking"); and
 - [Our flagship annual hackathon](/projects/deploy23) during the Fall semester ("DEPLOY").
 
-<Spacer size={32} />
-
-<GalleryCard
+<Media
   title="compsigh night"
-  description={<p>Our weekly Friday night social. Members play board/card games, hack on projects together, or just chill and do homework.</p>}
+  description="Our weekly Friday night social. Members play board/card games, hack on projects together, or just chill and do homework."
   src="/assets/compsigh-night.jpeg"
+  style={{
+    marginBottom: 'unset'
+  }}
 />
-
-<Spacer size={32} />
 
 <Grid columns={2}>
   <div>
-    <GalleryCard
+    <Media
       title="touch grass: escape room"
       src="/assets/compsigh-escape-room.jpeg"
     />
-    <Spacer size={16} />
-    <GalleryCard
+    <Media
       title="touch grass: bowling"
       src="/assets/compsigh-bowling.jpeg"
     />
-    <Spacer size={16} />
-    <GalleryCard
+    <Media
       title="Impromptu study session"
       src="/assets/compsigh-impromptu-study-sesh.jpg"
     />
   </div>
   <div>
-    <GalleryCard
+    <Media
       title="study night"
       src="/assets/compsigh-study-night.JPG"
     />
-    <Spacer size={16} />
-    <GalleryCard
+    <Media
       title="compsigh night decorations"
-      description={<p>Members will bring things like these design books for the ambiance and making the space their own.</p>}
+      description="Members will bring things like these design books for the ambiance and making the space their own."
       src="/assets/compsigh-event-trinkets.jpeg"
     />
-    <Spacer size={16} />
-    <GalleryCard
+    <Media
       title="Food made by members for compsigh night"
       src="/assets/compsigh-night-food.jpeg"
     />
   </div>
 </Grid>
 
-<Spacer size={16} />
-
-<GalleryCard
+<Media
   title="A team of members locking in for compsigh cascade, a one-night coding riddle competition"
-  description={<p>Check out how it was built in the <a href="/workshop">Workshop</a>!</p>}
+  description={<>Check out how it was built in the <Link href="/workshop">Workshop</Link>!</>}
   src="/assets/compsigh-cascade.JPG"
+  style={{
+    marginTop: 'unset'
+  }}
 />
-
-<Spacer size={16} />
 
 *Much love to the leadership team that helps put these on: <Mention name="Jet" avatar="/avatars/jet.jpeg" link="https://jetpham.com" />, <Mention name="Gursh" avatar="/avatars/gursh.png" link="https://gursh.dev" />, Quinn, Ani, and Andrew.*
 

@@ -14,12 +14,12 @@ import rehypePrettyCode, { type Options } from 'rehype-pretty-code'
 
 import { Tag } from '@/components/Tag'
 import { Grid } from '@/components/Grid'
+import { Media } from '@/components/Media'
 import { Spacer } from '@/components/Spacer'
 import { Comment } from '@/components/Comment'
 import { Mention } from '@/components/Mention'
 import { TagGroup } from '@/components/TagGroup'
 import { Playground } from '@/components/Playground'
-import { GalleryCard } from '@/components/GalleryCard'
 import { TableOfContents } from '@/components/TableOfContents'
 
 async function readPage(slug: string[]) {
@@ -41,7 +41,7 @@ async function readPage(slug: string[]) {
 
     const { content, frontmatter } = await compileMDX<Frontmatter>({
       source: page,
-      components: { Comment, GalleryCard, Grid, Link, Mention, Playground, Spacer, TableOfContents, Tag, TagGroup },
+      components: { Comment, Grid, Link, Media, Mention, Playground, Spacer, TableOfContents, Tag, TagGroup },
       options: {
         parseFrontmatter: true,
         mdxOptions: {
