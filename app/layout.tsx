@@ -85,6 +85,7 @@ export default function RootLayout({
     >
       <body>
         <Image
+          priority
           unoptimized
           src="/avatars/edward.png"
           alt="A bitmapped image of Edward Shturman"

@@ -33,7 +33,7 @@ export async function Media(
       { !video &&
         <Image
           unoptimized={isGif}
-          alt={alt || title || ''}
+          alt={alt || ''}
           placeholder={`${isGif ? 'empty' : 'blur'}`}
           blurDataURL={imageData?.base64}
           sizes='(max-width: 700px) 100vw - 80px, 650px'

@@ -22,7 +22,7 @@ export function Mention(
           <Image
             id={styles.avatar}
             src={avatar}
-            alt={name}
+            alt=""
             width={20}
             height={20}
           />
