@@ -49,7 +49,7 @@ async function readPage(slug: string[]) {
           rehypePlugins: [
             [rehypePrettyCode as any, rehypePrettyCodeOptions],
             rehypeSlug,
-            rehypeKatex as any,
+            rehypeKatex as any
           ]
         }
       }
