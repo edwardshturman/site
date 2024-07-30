@@ -6,7 +6,7 @@ nav#table-of-contents {
 }
 
 nav#table-of-contents > ul > li {
-  margin-left: 1rem;
+  margin: 0.25em 0 0.25em 1rem;
 }
 
 nav#table-of-contents > ul > li::before {

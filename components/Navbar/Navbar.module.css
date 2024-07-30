@@ -5,7 +5,7 @@ nav#navbar {
 }
 
 nav#navbar > ul > li {
-  margin-left: 1rem;
+  margin: 0.25em 0 0.25em 1rem;
 }
 
 nav#navbar > ul > li::before {
