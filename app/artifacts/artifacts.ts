@@ -101,6 +101,11 @@ export const artifacts: Artifact[] = [
     tags: ['podcast', 'business']
   },
   {
+    text: 'Designing Fluid Interfaces by Apple',
+    link: 'https://developer.apple.com/videos/play/wwdc2018/803',
+    tags: ['talk', 'design']
+  },
+  {
     text: 'Galactic Empire by Matthew Stanciu',
     link: 'https://blog.purduehackers.com/posts/galactic-empire',
     tags: ['post', 'community']
