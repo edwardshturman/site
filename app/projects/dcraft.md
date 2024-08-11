@@ -125,18 +125,9 @@ We storyboarded, programmed (using Minecraft's "datapacks" language), and built 
 - A scavenger hunt for relics from the Hangar
 
 <Grid columns={3}>
-  <Media
-    video={true}
-    src="/assets/dcraft-grad-event-1.mp4"
-  />
-  <Media
-    video={true}
-    src="/assets/dcraft-grad-event-2.mp4"
-  />
-  <Media
-    video={true}
-    src="/assets/dcraft-grad-event-3.mp4"
-  />
+  <Media src="/assets/dcraft-grad-event-1.mp4" />
+  <Media src="/assets/dcraft-grad-event-2.mp4" />
+  <Media src="/assets/dcraft-grad-event-3.mp4" />
 </Grid>
 
 We asked staff to write speeches, and streamed [the event on YouTube](https://youtube.com/live/6h_YXoyp6d0).

@@ -24,13 +24,11 @@ export default function Workshop() {
   const entries: MediaProps[] = [
     {
       title: 'Difference blend mode cursor',
-      video: true,
       src: '/assets/difference-blend-mode-cursor.mp4'
     },
     {
       title: 'compsigh landing page',
       description: <>Work in progress on a new web platform for <Link href="/projects/compsigh">compsigh</Link>, the computer science club at the University of San Francisco</>,
-      video: true,
       src: '/assets/compsigh-landing-page.mp4',
       link: 'https://compsigh.club',
       cta: 'View live demo'
@@ -114,7 +112,6 @@ export default function Workshop() {
     {
       title: 'Realm Thread Queue',
       description: "Thread Queue for Realm, a Discord bot I'm building. Lets you pluck individual messages from a channel into a thread. Great for separating multiple conversations going on in the same channel.",
-      video: true,
       src: '/assets/realm-thread-queue-demo.mp4',
       link: 'https://github.com/compsigh/realm',
       cta: 'View source'

@@ -22,7 +22,6 @@ export default function Home() {
             Work in progress on a new web platform for <Link href="/projects/compsigh">compsigh</Link>, the computer science club at the University of San Francisco
           </>
         }
-        video={true}
         src="/assets/compsigh-landing-page.mp4"
         link="https://compsigh.club"
         cta="View live demo"

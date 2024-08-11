@@ -61,10 +61,7 @@ If we're going to up the quality, Devpost and Google Forms won't cut it. I set o
 
 Here's the result, written in React & Next.js, auth via NextAuth, forms via Tally, and logistics via Notion API:
 
-<Media
-  video={true}
-  src="/assets/deploy-platform.mp4"
-/>
+<Media src="/assets/deploy-platform.mp4" />
 
 <Media
   src="/assets/deploy-platform-console.png"

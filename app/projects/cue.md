@@ -83,7 +83,6 @@ Its primary function is to take your study notes, and return the most relevant q
 
 <Media
   title="Cue beta demo from May 2023, not long after the hackathon"
-  video={true}
   src="/assets/cue-may2023-beta-demo.mp4"
 />
 
@@ -94,13 +93,11 @@ I'm happy to say we continued working on Cue after Dons Hack, and shipped some p
 <Media
   title="In-app invites"
   description={<>From day one, we made the app open to all USF students for free, but we wanted an invite system for our friends &amp; family elsewhere. Here we hooked up Typeform to an API that would generate an invite code like <code>gaius-julius-caesar</code> (I was really into that European history class).</>}
-  video={true}
   src="/assets/cue-invite-demo.mp4"
 />
 
 <Grid columns={2} columnSizeDistribution={["1fr", "3fr"]}>
   <Media
-    video={true}
     src="/assets/cue-invite-cards.mp4"
     style={{
       marginTop: 'unset'
@@ -120,7 +117,6 @@ I [posted about Cue on X](https://x.com/edwardshturman/status/166218170795548672
 
 <Media
   title="Waitlist invite email"
-  video={true}
   src="/assets/cue-waitlist-email.mp4"
 />
 
