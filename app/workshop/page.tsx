@@ -23,6 +23,20 @@ export const metadata: Metadata = {
 export default function Workshop() {
   const entries: MediaProps[] = [
     {
+      title: 'compsigh project page layout',
+      description: <>Work in progress on a new web platform for <Link href="/projects/compsigh">compsigh</Link>, the computer science club at the University of San Francisco. Members open a PR with just a Markdown file and can share their work anywhere. Decorations — inside jokes, soundbites, Discord server emotes — are strewn across the margins to make the page feel more personal.</>,
+      src: '/assets/compsigh-project-page-layout.mp4',
+      link: 'https://compsigh.club/community/viper',
+      cta: 'View live demo'
+    },
+    {
+      title: 'compsigh Events page',
+      description: <>Work in progress on a new web platform for <Link href="/projects/compsigh">compsigh</Link>, the computer science club at the University of San Francisco</>,
+      src: '/assets/compsigh-events-page.mp4',
+      link: 'https://compsigh.club/events',
+      cta: 'View live demo'
+    },
+    {
       title: 'Difference blend mode cursor',
       src: '/assets/difference-blend-mode-cursor.mp4'
     },

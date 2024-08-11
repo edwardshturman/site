@@ -16,21 +16,20 @@ export default function Home() {
       <h2>Latest</h2>
       <Media
         priority
-        title="compsigh landing page"
+        title="compsigh Events page"
         description={
           <>
             Work in progress on a new web platform for <Link href="/projects/compsigh">compsigh</Link>, the computer science club at the University of San Francisco
           </>
         }
-        src="/assets/compsigh-landing-page.mp4"
-        link="https://compsigh.club"
+        src="/assets/compsigh-events-page.mp4"
+        link="https://compsigh.club/events"
         cta="View live demo"
       />
       <h2>Now</h2>
       <ul>
         <li>Building the compsigh web platform</li>
-        <li>Reading <em>Get Together</em> by People &amp; Company</li>
-        <li>Studying Josh Comeau&apos;s <Link href="https://css-for-js.dev">CSS for JS Devs</Link> course</li>
+        <li>Planning Fall semester events for compsigh</li>
       </ul>
       <h2>Connect</h2>
       <ul>
