@@ -28,8 +28,9 @@ export default function Home() {
       />
       <h2>Now</h2>
       <ul>
-        <li>Building the compsigh web platform</li>
-        <li>Planning Fall semester events for compsigh</li>
+        <li>Reading <em>Build</em> by Tony Fadell</li>
+        <li>Resting after a challenging semester</li>
+        <li>Documenting <Link href="/projects/compsigh">compsigh</Link> culture for the next club leadership team</li>
       </ul>
       <h2>Connect</h2>
       <ul>
