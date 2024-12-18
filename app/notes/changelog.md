@@ -16,6 +16,7 @@ published: true
 - Add tag filters to Workshop page
 - Replace Markdown `a` with `Link`
 - Accessibility audit: relative vs. absolute units for margin/padding/etc.
+- [Checkboxes](https://moderncss.dev/pure-css-custom-checkbox-style)
 
 ## 1.2.1: Better `Media`
 
