@@ -24,6 +24,14 @@ export default function Projects() {
       <h1>Projects</h1>
       <Spacer size={16} />
       <Media
+        title="compsigh web platform"
+        description="Building a home for compsigh — the computer science club at the University of San Francisco — unifying our events calendar, showcasing club member projects, and documenting the club's culture"
+        src="/assets/compsigh-web-platform-trailer-min.mp4"
+        link="https://compsigh.club/community/web-platform"
+        cta="Read the announcement on the web platform"
+      />
+      <Spacer size={16} />
+      <Media
         title="My personal website"
         description="Crafting & curating my new identity on the Web"
         src="/og/root.png"
