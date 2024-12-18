@@ -11,6 +11,8 @@ I had previously wondered whether this endeavor was worthy of sharing a shelf wi
 
 After some time building, I am of the opinion that crafting & curating one's identity on the Web is one of the most important creative endeavors.
 
+*Updated June 2024.*
+
 ## Thought process
 
 I built my first personal website in 2020. Since then, I've used everything from [Notion](https://notion.so) to indie website builders like [mmm](https://mmm.page) to host different versions of my online identity. These are great, but I couldn't quite capture the vibe — none felt like *me*.

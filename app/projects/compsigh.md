@@ -9,6 +9,8 @@ og_image: "/og/compsigh.png"
 
 "Meet cool people, build cool things." Here's the story of compsigh, the computer science club I founded at the University of San Francisco.
 
+*Updated May 2024.*
+
 <TableOfContents
   entries={[
     "The default path",
