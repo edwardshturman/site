@@ -23,6 +23,21 @@ export const metadata: Metadata = {
 export default function Workshop() {
   const entries: MediaProps[] = [
     {
+      title: 'Expense tracker mockup',
+      description: <>
+        <ul>
+          <li>Do you use an expense tracker? Why/not?</li>
+          <li>What do/don&apos;t you like about it?</li>
+          <li>What would you love from one?</li>
+        </ul>
+        <span>Would you use one that was on the web and open-source?</span>
+      </>,
+      src: '/assets/expense-tracker-mockup.png',
+      alt: 'A mockup of an expense tracker web app',
+      link: 'https://x.com/edwardshturman/status/1871397612404060441',
+      cta: 'Let me know on Twitter'
+    },
+    {
       title: 'compsigh project page layout',
       description: <>Work in progress on a new web platform for <Link href="/projects/compsigh">compsigh</Link>, the computer science club at the University of San Francisco. Members open a PR with just a Markdown file and can share their work anywhere. Decorations — inside jokes, soundbites, Discord server emotes — are strewn across the margins to make the page feel more personal.</>,
       src: '/assets/compsigh-project-page-layout.mp4',
