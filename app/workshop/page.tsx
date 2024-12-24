@@ -38,6 +38,11 @@ export default function Workshop() {
       cta: 'Let me know on Twitter'
     },
     {
+      title: 'Search engine written in Go',
+      description: 'A search engine built using Information Retrieval techniques for my software development class',
+      src: '/assets/272-project02.mp4'
+    },
+    {
       title: 'compsigh project page layout',
       description: <>Work in progress on a new web platform for <Link href="/projects/compsigh">compsigh</Link>, the computer science club at the University of San Francisco. Members open a PR with just a Markdown file and can share their work anywhere. Decorations — inside jokes, soundbites, Discord server emotes — are strewn across the margins to make the page feel more personal.</>,
       src: '/assets/compsigh-project-page-layout.mp4',
