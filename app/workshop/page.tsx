@@ -23,6 +23,11 @@ export const metadata: Metadata = {
 export default function Workshop() {
   const entries: MediaProps[] = [
     {
+      title: 'framework index',
+      description: <>Leadership documentation homepage for <Link href="/projects/compsigh">compsigh</Link>, the computer science club at the University of San Francisco</>,
+      src: '/assets/framework-index.mp4'
+    },
+    {
       title: 'Expense tracker mockup',
       description: <>
         <ul>
