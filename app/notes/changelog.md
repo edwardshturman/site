@@ -8,15 +8,15 @@ published: true
 
 <Comment type="block">The changelog for this site</Comment>
 
-<Comment type="block">Generally highlights features or interesting architectural challenges over minor stylistic changes or notes published</Comment>
+<Comment type="block">Highlights features & interesting architectural challenges more so than content published</Comment>
 
 ## To do
 
+- [Checkboxes](https://moderncss.dev/pure-css-custom-checkbox-style)
 - Fix mobile code styles
 - Add tag filters to Workshop page
 - Replace Markdown `a` with `Link`
 - Accessibility audit: relative vs. absolute units for margin/padding/etc.
-- [Checkboxes](https://moderncss.dev/pure-css-custom-checkbox-style)
 
 ## 1.2.1: Better `Media`
 
