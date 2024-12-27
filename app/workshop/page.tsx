@@ -43,6 +43,12 @@ export default function Workshop() {
       cta: 'Let me know on Twitter'
     },
     {
+      title: 'DEPLOY/24 branding & promo material',
+      description: <>Graphics for the <Link href="https://instagram.com/p/DBaOcC6vdSb">Instagram post from DEPLOY/24</Link>, a hackathon hosted by <Link href="/projects/compsigh">compsigh</Link>, the computer science club at the University of San Francisco</>,
+      src: '/assets/deploy24-banner.jpeg',
+      alt: 'A banner for DEPLOY/24, a hackathon hosted by compsigh, the computer science club at the University of San Francisco'
+    },
+    {
       title: 'Search engine written in Go',
       description: 'A search engine built using Information Retrieval techniques for my software development class',
       src: '/assets/272-project02.mp4'
