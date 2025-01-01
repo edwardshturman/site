@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import { Suspense } from 'react'
 import { usePathname, useSearchParams } from 'next/navigation'
 
 import styles from './Tag.module.css'
@@ -9,7 +10,7 @@ export interface TagProps extends React.HTMLAttributes<HTMLSpanElement> {
   text: string
 }
 
-export function Tag({ text, ...props }: TagProps) {
+function TagContent({ text, ...props }: TagProps) {
   const pathname = usePathname()
   const searchParams = useSearchParams()
   const tagsParam = searchParams.get('tags') || ''
@@ -29,5 +30,13 @@ export function Tag({ text, ...props }: TagProps) {
         {text}
       </Link>
     </span>
+  )
+}
+
+export function Tag({ text, ...props }: TagProps) {
+  return (
+    <Suspense>
+      <TagContent text={text} {...props} />
+    </Suspense>
   )
 }

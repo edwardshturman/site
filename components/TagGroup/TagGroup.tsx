@@ -1,14 +1,6 @@
-'use client'
-
-import { useSearchParams } from 'next/navigation'
-
 import { Tag, type TagProps } from '@/components/Tag'
 
 export function TagGroup({ tags }: { tags: TagProps[] }) {
-  const searchParams = useSearchParams()
-  const tagsParam = searchParams.get('tags') || ''
-  const selectedTags = tagsParam.split(',').filter(Boolean)
-
   return (
     <div style={{
       display: 'flex',

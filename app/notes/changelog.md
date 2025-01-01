@@ -18,6 +18,12 @@ published: true
 - Replace Markdown `a` with `Link`
 - Accessibility audit: relative vs. absolute units for margin/padding/etc.
 
+## 1.2.2: Static
+
+<Comment type="block">2025-01-01</Comment>
+
+- Fixed consumption of the `Tag` component on the Notes and Artifacts pages such that their rendering strategy can be static
+
 ## 1.2.1: Better `Media`
 
 <Comment type="block">2024-07-23</Comment>
