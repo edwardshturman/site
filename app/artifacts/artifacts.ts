@@ -101,6 +101,11 @@ export const artifacts: Artifact[] = [
     tags: ['podcast', 'business']
   },
   {
+    text: 'Designing Depth by Rauno Freiberg',
+    link: 'https://rauno.me/craft/depth',
+    tags: ['post', 'design']
+  },
+  {
     text: 'Designing Fluid Interfaces by Apple',
     link: 'https://developer.apple.com/videos/play/wwdc2018/803',
     tags: ['talk', 'design']
@@ -129,6 +134,11 @@ export const artifacts: Artifact[] = [
     text: 'Andy Matuschak on academ-ish writing',
     link: 'https://twitter.com/andy_matuschak/status/1764523623191318834',
     tags: ['tweet', 'writing']
+  },
+  {
+    text: 'Contrasting Aesthetics by Rauno Freiberg',
+    link: 'https://rauno.me/craft/contrasting-aesthetics',
+    tags: ['post', 'design']
   },
   {
     text: 'How to Learn Stuff Quickly by Josh Comeau',
@@ -183,6 +193,11 @@ export const artifacts: Artifact[] = [
     text: 'Why This Is The Perfect Time To Start A Startup by YC',
     link: 'https://youtube.com/watch?v=0TNTlMZFTWw',
     tags: ['talk', 'business']
+  },
+  {
+    text: 'Invisible Details of Interaction Design by Rauno Freiberg',
+    link: 'https://rauno.me/craft/interaction-design',
+    tags: ['post', 'design']
   },
   {
     text: 'Quality software deserves your hard-earned cash by Steph Ango',
