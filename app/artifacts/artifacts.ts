@@ -54,6 +54,11 @@ export const artifacts: Artifact[] = [
     tags: ['post', 'business']
   },
   {
+    text: 'File over app by Steph Ango',
+    link: 'https://stephango.com/file-over-app',
+    tags: ['post', 'life', 'creative-work', 'writing']
+  },
+  {
     text: 'Cliff Weitzman on Deep Dive',
     link: 'https://youtube.com/watch?v=yfALZJcurZw',
     tags: ['podcast', 'productivity', 'life']
@@ -114,6 +119,11 @@ export const artifacts: Artifact[] = [
     text: 'Galactic Empire by Matthew Stanciu',
     link: 'https://blog.purduehackers.com/posts/galactic-empire',
     tags: ['post', 'community']
+  },
+  {
+    text: '100% user-supported by Steph Ango',
+    link: 'https://stephango.com/vcware',
+    tags: ['post', 'business']
   },
   {
     text: "Things That Don't Work by Dynomight",
