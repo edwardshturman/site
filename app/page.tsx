@@ -40,9 +40,6 @@ export default function Home() {
         <li>
           <Link href="https://github.com/edwardshturman">GitHub</Link>
         </li>
-        <li>
-          <Link href="https://read.cv/edwardshturman">read.cv</Link>
-        </li>
       </ul>
     </>
   )
