@@ -9,3 +9,17 @@ a.link {
 a.link:hover {
   text-decoration: underline;
 }
+
+/* UnreadIndicator */
+a.link:hover div {
+  animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

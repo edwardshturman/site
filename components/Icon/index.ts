@@ -1,4 +1,5 @@
 export {
   ExternalLinkIcon,
-  NoteIcon
+  NoteIcon,
+  UnreadIndicator
 } from './Icon'

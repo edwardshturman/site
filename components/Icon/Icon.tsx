@@ -1,3 +1,5 @@
+import styles from './Icon.module.css'
+
 export function ExternalLinkIcon(props: JSX.IntrinsicElements['svg']) {
   return (
     <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -12,5 +14,17 @@ export function NoteIcon(props: JSX.IntrinsicElements['svg']) {
     <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
       <path d="M8.75 14H13.25M8.75 10H15.25M4.75 20.25H19.25C19.8023 20.25 20.25 19.8023 20.25 19.25V4.75C20.25 4.19772 19.8023 3.75 19.25 3.75H4.75C4.19772 3.75 3.75 4.19772 3.75 4.75V19.25C3.75 19.8023 4.19772 20.25 4.75 20.25Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
     </svg>
+  )
+}
+
+export function UnreadIndicator(props: JSX.IntrinsicElements['div']) {
+  return (
+    <div
+      className={styles["unread-indicator"]}
+      {...props}
+      style={{
+        ...props.style
+      }}
+    />
   )
 }

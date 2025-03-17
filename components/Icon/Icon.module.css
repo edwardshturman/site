@@ -1,0 +1,10 @@
+div.unread-indicator {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: var(--color-compsigh);
+  background-clip: content-box;
+  padding: 1px;
+  border: 1px dashed var(--color-compsigh);
+  border-radius: 50%;
+}

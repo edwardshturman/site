@@ -18,6 +18,12 @@ published: true
 - Replace Markdown `a` with `Link`
 - Accessibility audit: relative vs. absolute units for margin/padding/etc.
 
+## 1.3.0: Unread indicators
+
+<Comment type="block">2025-03-16</Comment>
+
+- Notes now display an indicator if you haven't read them yet
+
 ## 1.2.2: Static
 
 <Comment type="block">2025-01-01</Comment>
