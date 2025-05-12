@@ -1,7 +1,3 @@
 a.link {
   color: unset;
 }
-
-a.link:hover {
-  text-decoration: underline;
-}

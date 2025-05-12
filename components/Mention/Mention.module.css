@@ -5,7 +5,12 @@ span.container {
 }
 
 span.container:hover {
-  background-color: var(--color-light-gray-20);
+  background-color: var(--color-accent-20);
+}
+
+span.container:active {
+  background-color: var(--color-accent);
+  color: var(--color-background);
 }
 
 span.container img#avatar {

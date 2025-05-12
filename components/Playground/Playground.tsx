@@ -12,7 +12,7 @@ export function Playground(
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
-          border: '1px dashed var(--color-compsigh-60)',
+          border: '1px dashed var(--color-accent-60)',
           borderRadius: '6px'
         }}
       >

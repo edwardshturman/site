@@ -2,7 +2,8 @@
   --font-sans: var(--font-ia-writer-quattro), sans-serif;
   --font-mono: var(--font-ia-writer-mono), "Courier Prime", "Courier New", ui-monospace, monospace;
 
-  --color-white:         hsla(038deg, 100%, 090%, 1.0);
+  --color-cream:         hsla(038deg, 100%, 090%, 1.0);
+  --color-off-white:     hsla(038deg, 100%, 096%, 1.0);
   --color-black:         hsla(038deg, 010%, 002%, 1.0);
   --color-dark-gray:     hsla(038deg, 010%, 040%, 1.0);
   --color-dark-gray-20:  hsla(038deg, 010%, 040%, 0.2);
@@ -14,8 +15,25 @@
   --color-diff-add:      hsla(120deg, 100%, 025%, 0.2);
   --color-diff-remove:   hsla(360deg, 100%, 050%, 0.2);
 
-  color: var(--color-white);
-  background-color: var(--color-black);
+  --color-background:             var(--color-off-white);
+  --color-foreground:             var(--color-black);
+  --color-text-subtle:            var(--color-dark-gray);
+  --color-text-subtle-decorative: var(--color-light-gray);
+  --color-accent:                 var(--color-black);
+  --color-accent-20:              var(--color-light-gray-20);
+  --color-accent-60:              var(--color-dark-gray);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background:             var(--color-black);
+    --color-foreground:             var(--color-cream);
+    --color-text-subtle:            var(--color-light-gray);
+    --color-text-subtle-decorative: var(--color-dark-gray);
+    --color-accent:                 var(--color-compsigh);
+    --color-accent-20:              var(--color-compsigh-20);
+    --color-accent-60:              var(--color-compsigh-60);
+  }
 }
 
 * {
@@ -30,6 +48,8 @@ body {
   line-height: 180%;
   font-size: 1rem;
   font-family: var(--font-sans);
+  color: var(--color-foreground);
+  background-color: var(--color-background);
 }
 
 @media (max-width: 700px) {
@@ -49,8 +69,12 @@ h6 {
 }
 
 a {
-  color: var(--color-compsigh);
-  text-decoration: none;
+  color: var(--color-accent);
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 20%;
+  text-decoration-color: inherit;
 }
 
 p,
@@ -65,7 +89,7 @@ li {
 
 li::before,
 li::marker {
-  color: var(--color-dark-gray);
+  color: var(--color-text-subtle-decorative);
 }
 
 ul > li {
@@ -122,7 +146,7 @@ pre > code[data-line-numbers] > [data-line]::before {
 }
 
 pre > code[data-line-numbers] > [data-line]:hover::before {
-  color: var(--color-light-gray);
+  color: var(--color-text-subtle);
 }
 
 pre
@@ -138,7 +162,7 @@ pre
 }
 
 span[data-highlighted-line] {
-  background-color: var(--color-compsigh-20);
+  background-color: var(--color-accent-20);
 }
 
 span[data-highlighted-line-id="add"] {
