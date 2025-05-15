@@ -5,6 +5,10 @@ a.link {
   letter-spacing: 0;
 }
 
+a.link:hover {
+  color: var(--color-background);
+}
+
 /* UnreadIndicator */
 a.link:hover div {
   animation: rotate 3s linear infinite;

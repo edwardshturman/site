@@ -1,3 +1,7 @@
 a.link {
-  color: unset;
+  color: var(--color-foreground);
+}
+
+a.link:hover {
+  color: var(--color-background);
 }

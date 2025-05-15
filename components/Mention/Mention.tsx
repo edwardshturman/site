@@ -17,7 +17,10 @@ export function Mention(
 ) {
   return (
     <>
-      <Link href={link}>
+      <Link
+        className={styles.link}
+        href={link}
+      >
         <span className={styles.container}>
           <Image
             id={styles.avatar}

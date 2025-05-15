@@ -77,6 +77,12 @@ a {
   text-decoration-color: inherit;
 }
 
+a:hover {
+  background-color: var(--color-accent);
+  color: var(--color-background);
+  text-decoration: none;
+}
+
 p,
 ul,
 ol {
