@@ -15,6 +15,11 @@ div#media-container figure > a {
   text-decoration-color: var(--color-foreground);
 }
 
+div#media-container figure > a:hover > figcaption {
+  background-color: var(--color-accent);
+  color: var(--color-background);
+}
+
 div#media-container figure figcaption {
   margin-top: 1.5rem;
   color: var(--color-foreground);
