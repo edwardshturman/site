@@ -93,6 +93,11 @@ export const artifacts: Artifact[] = [
     tags: ['podcast', 'business']
   },
   {
+    text: 'User education by Charlie Deets',
+    link: 'https://charliedeets.com/writings/usereducation.html',
+    tags: ['post', 'design']
+  },
+  {
     text: 'Choose optimism by Steph Ango',
     link: 'https://stephango.com/optimism',
     tags: ['post', 'life']
@@ -134,6 +139,11 @@ export const artifacts: Artifact[] = [
     text: '100% user-supported by Steph Ango',
     link: 'https://stephango.com/vcware',
     tags: ['post', 'business']
+  },
+  {
+    text: "I don't like anything by Charlie Deets",
+    link: 'https://charliedeets.com/writings/like.html',
+    tags: ['post', 'design']
   },
   {
     text: "Things That Don't Work by Dynomight",
@@ -228,5 +238,10 @@ export const artifacts: Artifact[] = [
     text: 'Quality software deserves your hard-earned cash by Steph Ango',
     link: 'https://stephango.com/quality-software',
     tags: ['post', 'life']
+  },
+  {
+    text: 'Sailing Against the Current of Frictionless AI by Willem Van Lancker',
+    tags: ['ai', 'post', 'creative-work'],
+    link: 'https://every.to/thesis/sailing-against-the-current-of-frictionless-ai'
   }
 ]
