@@ -24,6 +24,11 @@ export const artifacts: Artifact[] = [
     tags: ['book', 'creative-work']
   },
   {
+    text: 'Sanding UI by Jim Nielsen',
+    link: 'https://blog.jim-nielsen.com/2024/sanding-ui',
+    tags: ['post', 'design']
+  },
+  {
     text: 'Cal Newport on Deep Dive',
     link: 'https://youtube.com/watch?v=uB8fCHGh_is',
     tags: ['podcast', 'life', 'productivity', 'business']
@@ -106,6 +111,11 @@ export const artifacts: Artifact[] = [
     tags: ['podcast', 'business']
   },
   {
+    text: 'Developing Taste by Emil Kowalski',
+    link: 'https://emilkowal.ski/ui/developing-taste',
+    tags: ['post', 'design', 'creative-work']
+  },
+  {
     text: 'Designing Depth by Rauno Freiberg',
     link: 'https://rauno.me/craft/depth',
     tags: ['post', 'design']
@@ -169,6 +179,11 @@ export const artifacts: Artifact[] = [
     text: "Jordan Peterson's guide to writing an essay",
     link: 'https://essay.app/guide',
     tags: ['post', 'writing']
+  },
+  {
+    text: 'Guillermo Rauch on the Dagmawi Babi podcast',
+    link: 'https://www.youtube.com/watch?v=aKNUJxioIRU',
+    tags: ['podcast', 'business', 'creative-work']
   },
   {
     text: 'College Clubs Are Awesome by Matthew Stanciu',
