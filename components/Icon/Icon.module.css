@@ -2,9 +2,9 @@ div.unread-indicator {
   display: inline-block;
   width: 12px;
   height: 12px;
-  background-color: var(--color-compsigh);
+  background-color: var(--color-accent);
   background-clip: content-box;
   padding: 1px;
-  border: 1px dashed var(--color-compsigh);
+  border: 1px dashed var(--color-accent);
   border-radius: 50%;
 }

@@ -1,6 +1,6 @@
 .comment {
   font-size: 0.875rem;
-  color: var(--color-light-gray);
+  color: var(--color-text-subtle);
   text-transform: uppercase;
   letter-spacing: 1px;
 }

@@ -1,0 +1,9 @@
+img.pfp {
+  filter: invert(1);
+}
+
+@media (prefers-color-scheme: dark) {
+  img.pfp {
+    filter: none;
+  }
+}
