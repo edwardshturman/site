@@ -42,6 +42,11 @@ export default function Workshop() {
       link: 'https://blink.rahoi.com'
     },
     {
+      title: 'Share Your Work(shop)',
+      description: <>A workshop I led for <Link href="/projects/compsigh">compsigh</Link>, the computer science club at the University of San Francisco, about why working on projects and sharing them online is so important as a CS major. Designed this graphic too.</>,
+      src: '/assets/share-your-workshop-banner.jpeg'
+    },
+    {
       title: 'framework index',
       description: <>Leadership documentation homepage for <Link href="/projects/compsigh">compsigh</Link>, the computer science club at the University of San Francisco</>,
       src: '/assets/framework-index.mp4'
