@@ -23,6 +23,21 @@ export const metadata: Metadata = {
 export default function Workshop() {
   const entries: MediaProps[] = [
     {
+      title: 'BLOOM',
+      description: (
+        <>
+          The Spring 2025 hackathon from <Link href="https://compsigh.club">compsigh</Link>, the social computer science club at the University of San Francisco. I coordinated logistics around judging, sponsorships, etc. as well as led branding &amp; design-engineering for the platform. Full write-up coming soon™
+          <ul>
+            <li><Link href="https://www.figma.com/design/aEMV4laiF3RSIgap6rEm9N/BLOOM?node-id=0-1&t=2lGPt6Du42EmiRor-1">Check out the Figma file</Link></li>
+            <li><Link href="https://www.cosmos.so/edwardshturman/bloom">Explore the design moodboard on Cosmos</Link></li>
+          </ul>
+        </>
+      ),
+      src: '/assets/bloom-platform.png',
+      cta: 'Play the BLOOM platform',
+      link: 'https://bloom.build'
+    },
+    {
       title: 'Blink',
       description: (
         <>
