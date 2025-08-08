@@ -23,6 +23,10 @@ export const metadata: Metadata = {
 export default function Workshop() {
   const entries: MediaProps[] = [
     {
+      title: 'Dark mode view transition',
+      src: '/assets/dark-mode-view-transition.mp4'
+    },
+    {
       title: 'BLOOM',
       description: (
         <>
