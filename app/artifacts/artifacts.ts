@@ -24,6 +24,11 @@ export const artifacts: Artifact[] = [
     tags: ['book', 'creative-work']
   },
   {
+    text: 'Sanding UI by Jim Nielsen',
+    link: 'https://blog.jim-nielsen.com/2024/sanding-ui',
+    tags: ['post', 'design']
+  },
+  {
     text: 'Cal Newport on Deep Dive',
     link: 'https://youtube.com/watch?v=uB8fCHGh_is',
     tags: ['podcast', 'life', 'productivity', 'business']
@@ -88,6 +93,11 @@ export const artifacts: Artifact[] = [
     tags: ['podcast', 'business']
   },
   {
+    text: 'User education by Charlie Deets',
+    link: 'https://charliedeets.com/writings/usereducation.html',
+    tags: ['post', 'design']
+  },
+  {
     text: 'Choose optimism by Steph Ango',
     link: 'https://stephango.com/optimism',
     tags: ['post', 'life']
@@ -104,6 +114,11 @@ export const artifacts: Artifact[] = [
     text: "Bryan Chesky on Lenny's Podcast",
     link: 'https://youtube.com/watch?v=4ef0juAMqoE',
     tags: ['podcast', 'business']
+  },
+  {
+    text: 'Developing Taste by Emil Kowalski',
+    link: 'https://emilkowal.ski/ui/developing-taste',
+    tags: ['post', 'design', 'creative-work']
   },
   {
     text: 'Designing Depth by Rauno Freiberg',
@@ -124,6 +139,11 @@ export const artifacts: Artifact[] = [
     text: '100% user-supported by Steph Ango',
     link: 'https://stephango.com/vcware',
     tags: ['post', 'business']
+  },
+  {
+    text: "I don't like anything by Charlie Deets",
+    link: 'https://charliedeets.com/writings/like.html',
+    tags: ['post', 'design']
   },
   {
     text: "Things That Don't Work by Dynomight",
@@ -171,6 +191,11 @@ export const artifacts: Artifact[] = [
     tags: ['post', 'writing']
   },
   {
+    text: 'Guillermo Rauch on the Dagmawi Babi podcast',
+    link: 'https://www.youtube.com/watch?v=aKNUJxioIRU',
+    tags: ['podcast', 'business', 'creative-work']
+  },
+  {
     text: 'College Clubs Are Awesome by Matthew Stanciu',
     link: 'https://blog.purduehackers.com/posts/college-clubs-are-awesome',
     tags: ['post', 'community']
@@ -213,5 +238,10 @@ export const artifacts: Artifact[] = [
     text: 'Quality software deserves your hard-earned cash by Steph Ango',
     link: 'https://stephango.com/quality-software',
     tags: ['post', 'life']
+  },
+  {
+    text: 'Sailing Against the Current of Frictionless AI by Willem Van Lancker',
+    tags: ['ai', 'post', 'creative-work'],
+    link: 'https://every.to/thesis/sailing-against-the-current-of-frictionless-ai'
   }
 ]

@@ -23,6 +23,49 @@ export const metadata: Metadata = {
 export default function Workshop() {
   const entries: MediaProps[] = [
     {
+      title: 'Dark mode view transition',
+      src: '/assets/dark-mode-view-transition.mp4'
+    },
+    {
+      title: 'BLOOM',
+      description: (
+        <>
+          The Spring 2025 hackathon from <Link href="https://compsigh.club">compsigh</Link>, the social computer science club at the University of San Francisco. I coordinated logistics around judging, sponsorships, etc. as well as led branding &amp; design-engineering for the platform. Full write-up coming soon™
+          <ul>
+            <li><Link href="https://www.figma.com/design/aEMV4laiF3RSIgap6rEm9N/BLOOM?node-id=0-1&t=2lGPt6Du42EmiRor-1">Check out the Figma file</Link></li>
+            <li><Link href="https://www.cosmos.so/edwardshturman/bloom">Explore the design moodboard on Cosmos</Link></li>
+          </ul>
+        </>
+      ),
+      src: '/assets/bloom-platform.png',
+      cta: 'Play the BLOOM platform',
+      link: 'https://bloom.build'
+    },
+    {
+      title: 'Blink',
+      description: (
+        <>
+          A tower defense game about systems design, built with my teammates
+          <Mention name="Cal" avatar="/avatars/cal.jpeg" link="https://calum-crawford.com" />, {' '}
+          <Mention name="Dave" avatar="/avatars/dave.jpeg" link="https://davidshubov.com" />, and {' '}
+          <Mention name="Karl" avatar="/avatars/karl.jpeg" link="https://www.linkedin.com/in/karl-hu-josefsson-95998a300" /> for our senior team project at the University of San Francisco. I led art direction and designed assets.
+          <ul>
+            <li><Link href="https://www.figma.com/design/j62xk19LxQn3NrzG78MJZK/Blink?node-id=0-1&t=6FsJO0wW2nMZD0hl-1">Check out the Figma file</Link></li>
+            <li><Link href="https://www.cosmos.so/edwardshturman/blink">Explore the design moodboard on Cosmos</Link></li>
+            <li><Link href="https://open.spotify.com/playlist/78XdW3O54FP6O0aMyYgZSE?si=992911895b8e431b">Listen to the sound moodboard on Spotify</Link></li>
+          </ul>
+        </>
+      ),
+      src: '/assets/blink-demo.mp4',
+      cta: 'Play the game',
+      link: 'https://blink.rahoi.com'
+    },
+    {
+      title: 'Share Your Work(shop)',
+      description: <>A workshop I led for <Link href="/projects/compsigh">compsigh</Link>, the computer science club at the University of San Francisco, about why working on projects and sharing them online is so important as a CS major. Designed this graphic too.</>,
+      src: '/assets/share-your-workshop-banner.jpeg'
+    },
+    {
       title: 'framework index',
       description: <>Leadership documentation homepage for <Link href="/projects/compsigh">compsigh</Link>, the computer science club at the University of San Francisco</>,
       src: '/assets/framework-index.mp4'
