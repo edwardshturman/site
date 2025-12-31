@@ -1,3 +1,4 @@
+/* prettier-ignore */
 :root {
   --font-sans: var(--font-ia-writer-quattro), sans-serif;
   --font-mono: var(--font-ia-writer-mono), "Courier Prime", "Courier New", ui-monospace, monospace;
@@ -24,6 +25,7 @@
   --color-accent-60:              var(--color-dark-gray);
 }
 
+/* prettier-ignore */
 @media (prefers-color-scheme: dark) {
   :root {
     --color-background:             var(--color-black);
