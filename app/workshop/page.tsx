@@ -166,7 +166,7 @@ export default function Workshop() {
       description:
         <>
           <>A set of 10 high-quality icons modeled after the GitHub contribution chart you can upload to your Slack workspace or Discord server as emojis!</>
-          <ul style={{color: 'var(--color-light-gray)'}}>
+          <ul style={{color: 'var(--color-text-subtle)'}}>
             <li>Light mode &amp; dark mode ready</li>
             <li>Padding built in, so they&apos;ll look great alongside each other</li>
             <li>Recreated using GitHub Light Default / GitHub Dark Default themes</li>

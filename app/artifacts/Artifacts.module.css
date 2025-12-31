@@ -1,7 +1,7 @@
 a.link {
-  color: unset;
+  color: var(--color-foreground);
 }
 
 a.link:hover {
-  text-decoration: underline;
+  color: var(--color-background);
 }

@@ -1,9 +1,9 @@
-import Image from 'next/image'
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import { Analytics } from '@vercel/analytics/react'
 
 import { Spacer } from '@/components/Spacer'
+import { BigAvatar } from '@/components/BigAvatar'
 import { Breadcrumbs } from '@/components/Breadcrumbs'
 
 import './globals.css'
@@ -84,14 +84,7 @@ export default function RootLayout({
       className={`${iAWriterQuattro.variable} ${iAWriterMono.variable}`}
     >
       <body>
-        <Image
-          priority
-          unoptimized
-          src="/avatars/edward.png"
-          alt="A bitmapped image of Edward Shturman"
-          width={200}
-          height={200}
-        />
+        <BigAvatar />
         <Breadcrumbs />
         <main>{children}</main>
         <Spacer size="20vh" />

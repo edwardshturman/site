@@ -1,6 +1,6 @@
 .comment {
   font-size: 0.875rem;
-  color: var(--color-light-gray);
+  color: var(--color-text-subtle);
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -10,17 +10,17 @@ span.inline-comment {
 }
 
 span.inline-comment::before {
-  content: '// ';
+  content: "// ";
   font-size: 0.9em;
   vertical-align: top;
 }
 
 p.block-comment::before {
-  content: '\002F* ';
+  content: "\002F* ";
 }
 
 p.block-comment::after {
-  content: ' *\002F';
+  content: " *\002F";
 }
 
 @media (max-width: 700px) {
