@@ -11,6 +11,7 @@
   --color-light-gray:    hsla(038deg, 020%, 060%, 1.0);
   --color-light-gray-20: hsla(038deg, 020%, 060%, 0.2);
   --color-compsigh:      hsla(038deg, 100%, 050%, 1.0);
+  --color-compsigh-dark: hsla(038deg, 100%, 046%, 1.0);
   --color-compsigh-20:   hsla(038deg, 100%, 050%, 0.2);
   --color-compsigh-60:   hsla(038deg, 100%, 050%, 0.6);
   --color-diff-add:      hsla(120deg, 100%, 025%, 0.2);
@@ -20,7 +21,7 @@
   --color-foreground:             var(--color-black);
   --color-text-subtle:            var(--color-dark-gray);
   --color-text-subtle-decorative: var(--color-light-gray);
-  --color-accent:                 var(--color-black);
+  --color-accent:                 var(--color-compsigh-dark);
   --color-accent-20:              var(--color-light-gray-20);
   --color-accent-60:              var(--color-dark-gray);
 }
