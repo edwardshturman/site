@@ -71,11 +71,10 @@ async function readPage(slug: string[]) {
   }
 }
 
-export async function generateMetadata({
-  params
-}: {
-  params: { slug: string[] }
+export async function generateMetadata(props: {
+  params: Promise<{ slug: string[] }>
 }) {
+  const params = await props.params
   const { frontmatter } = await readPage(params.slug)
   const metadata: Metadata = {
     title: frontmatter.title,
@@ -133,7 +132,10 @@ export async function generateStaticParams() {
   return slugs
 }
 
-export default async function Page({ params }: { params: { slug: string[] } }) {
+export default async function Page(props: {
+  params: Promise<{ slug: string[] }>
+}) {
+  const params = await props.params
   const { content, frontmatter } = await readPage(params.slug)
 
   return (
