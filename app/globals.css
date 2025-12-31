@@ -25,6 +25,10 @@
   --color-accent-60:              var(--color-dark-gray);
 }
 
+::selection {
+  background: var(--color-accent-20);
+}
+
 /* prettier-ignore */
 @media (prefers-color-scheme: dark) {
   :root {
