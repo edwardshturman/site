@@ -10,7 +10,7 @@ a.tag {
 }
 
 a.tag::before {
-  content: '#';
+  content: "#";
   margin-right: 4px;
 }
 
@@ -25,6 +25,6 @@ a.tag.selected {
 }
 
 a.tag.selected::before {
-  content: '×';
+  content: "×";
   margin-right: 4px;
 }
