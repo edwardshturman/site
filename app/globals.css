@@ -3,9 +3,11 @@
   --font-sans: var(--font-ia-writer-quattro), sans-serif;
   --font-mono: var(--font-ia-writer-mono), "Courier Prime", "Courier New", ui-monospace, monospace;
 
-  --color-cream:         hsla(038deg, 100%, 090%, 1.0);
-  --color-off-white:     hsla(038deg, 100%, 098%, 1.0);
-  --color-black:         hsla(038deg, 010%, 002%, 1.0);
+  --color-white:         hsla(210deg, 100%, 100%, 1.0);
+  --color-black:         hsla(210deg, 010%, 002%, 1.0);
+  --color-gray:          hsla(210deg, 010%, 050%, 1.0);
+  --color-accent:        hsla(210deg, 100%, 050%, 1.0);
+
   --color-dark-gray:     hsla(038deg, 010%, 040%, 1.0);
   --color-dark-gray-20:  hsla(038deg, 010%, 040%, 0.2);
   --color-light-gray:    hsla(038deg, 020%, 060%, 1.0);
@@ -18,30 +20,16 @@
   --color-diff-add:      hsla(120deg, 100%, 025%, 0.2);
   --color-diff-remove:   hsla(360deg, 100%, 050%, 0.2);
 
-  --color-background:             var(--color-off-white);
+  --color-background:             var(--color-white);
   --color-foreground:             var(--color-black);
-  --color-text-subtle:            var(--color-dark-gray);
-  --color-text-subtle-decorative: var(--color-light-gray);
-  --color-accent:                 var(--color-compsigh-dark);
+  --color-text-subtle:            var(--color-gray);
+  --color-text-subtle-decorative: var(--color-gray);
   --color-accent-20:              var(--color-compsigh-10);
   --color-accent-60:              var(--color-dark-gray);
 }
 
 ::selection {
   background: var(--color-compsigh-20);
-}
-
-/* prettier-ignore */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-background:             var(--color-black);
-    --color-foreground:             var(--color-cream);
-    --color-text-subtle:            var(--color-light-gray);
-    --color-text-subtle-decorative: var(--color-dark-gray);
-    --color-accent:                 var(--color-compsigh);
-    --color-accent-20:              var(--color-compsigh-20);
-    --color-accent-60:              var(--color-compsigh-60);
-  }
 }
 
 * {
