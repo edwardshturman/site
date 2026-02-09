@@ -8,15 +8,7 @@ export const metadata: Metadata = {
   description:
     "Larger endeavors that have changed my life & work in some meaningful way",
   openGraph: {
-    siteName: "Edward Shturman's personal website",
-    images: [
-      {
-        url: "api/og?title=Projects",
-        width: 1200,
-        height: 630,
-        alt: ""
-      }
-    ]
+    siteName: "Edward Shturman's personal website"
   }
 }
 
