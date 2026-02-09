@@ -1,9 +1,8 @@
 import type { Metadata } from "next"
 import localFont from "next/font/local"
 import { Analytics } from "@vercel/analytics/react"
-
-import { Spacer } from "@/components/Spacer"
 import { Breadcrumbs } from "@/components/Breadcrumbs"
+import { PageLayoutWrapper } from "./PageLayoutWrapper"
 
 import "./globals.css"
 
@@ -84,19 +83,10 @@ export default function RootLayout({
       className={`${iAWriterQuattro.variable} ${iAWriterMono.variable}`}
     >
       <body>
-        <Breadcrumbs />
-        <div
-          style={{
-            display: "flex",
-            width: "100vw",
-            height: "100vh",
-            alignItems: "center",
-            justifyContent: "center"
-          }}
-        >
-          <div style={{ maxWidth: 650 }}>{children}</div>
-        </div>
-        <Spacer size="20vh" />
+        <PageLayoutWrapper>
+          <Breadcrumbs />
+          {children}
+        </PageLayoutWrapper>
         <Analytics />
       </body>
     </html>
