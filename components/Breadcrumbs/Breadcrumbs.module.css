@@ -23,7 +23,7 @@ nav#breadcrumbs ol li:last-child {
 nav#breadcrumbs ol li::after {
   content: "/";
   margin-left: 8px;
-  color: var(--color-dark-gray);
+  color: var(--color-gray);
 }
 
 nav#breadcrumbs.windows ol li::after {

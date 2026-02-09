@@ -1,0 +1,34 @@
+div.me {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+span.hi {
+  color: var(--color-gray);
+}
+
+h1.name {
+  margin: 0;
+}
+
+img.pfp {
+  position: absolute;
+  margin-left: -112px;
+  user-select: none;
+  pointer-events: none;
+}
+
+@media (max-width: 900px) {
+  div.me {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  img.pfp {
+    position: unset;
+    margin-left: unset;
+  }
+}

@@ -1,1 +1,0 @@
-export { BigAvatar } from "./BigAvatar"

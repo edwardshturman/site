@@ -1,26 +1,20 @@
-import Link from 'next/link'
-import type { Metadata } from 'next'
-
-import { Media } from '@/components/Media'
-import { Spacer } from '@/components/Spacer'
+import Link from "next/link"
+import type { Metadata } from "next"
+import { Media } from "@/components/Media"
+import { Spacer } from "@/components/Spacer"
 
 export const metadata: Metadata = {
-  title: 'Projects',
-  description: "Larger endeavors that have changed my life & work in some meaningful way",
+  title: "Projects",
+  description:
+    "Larger endeavors that have changed my life & work in some meaningful way",
   openGraph: {
-    siteName: "Edward Shturman's personal website",
-    images: [{
-      url: 'api/og?title=Projects',
-      width: 1200,
-      height: 630,
-      alt: ''
-    }]
+    siteName: "Edward Shturman's personal website"
   }
 }
 
 export default function Projects() {
   return (
-    <>
+    <main>
       <h1>Projects</h1>
       <Spacer size={16} />
       <Media
@@ -52,7 +46,12 @@ export default function Projects() {
         title="DEPLOY/23"
         description={
           <>
-            The first hackathon hosted by <Link href="/projects/compsigh">compsigh</Link> — the computer science club at the University of San Francisco — and our biggest event of the Fall 2023 semester. An entirely student-bootstrapped, three-day event, bringing together the best minds in CS, design, and engineering to hack on a project for a weekend.
+            The first hackathon hosted by{" "}
+            <Link href="/projects/compsigh">compsigh</Link> — the computer
+            science club at the University of San Francisco — and our biggest
+            event of the Fall 2023 semester. An entirely student-bootstrapped,
+            three-day event, bringing together the best minds in CS, design, and
+            engineering to hack on a project for a weekend.
           </>
         }
         src="/og/deploy23.png"
@@ -78,6 +77,6 @@ export default function Projects() {
         link="/projects/dcraft"
         cta="View project"
       />
-    </>
+    </main>
   )
 }
