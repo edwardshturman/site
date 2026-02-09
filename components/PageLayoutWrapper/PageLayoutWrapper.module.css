@@ -1,0 +1,9 @@
+div.inner-wrapper {
+  max-width: 650px;
+}
+
+@media (max-width: 900px) {
+  div.inner-wrapper {
+    margin: 0 40px;
+  }
+}

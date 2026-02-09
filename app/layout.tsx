@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import localFont from "next/font/local"
 import { Analytics } from "@vercel/analytics/react"
 import { Breadcrumbs } from "@/components/Breadcrumbs"
-import { PageLayoutWrapper } from "./PageLayoutWrapper"
+import { PageLayoutWrapper } from "@/components/PageLayoutWrapper"
 
 import "./globals.css"
 

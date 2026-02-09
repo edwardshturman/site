@@ -19,3 +19,16 @@ img.pfp {
   user-select: none;
   pointer-events: none;
 }
+
+@media (max-width: 900px) {
+  div.me {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  img.pfp {
+    position: unset;
+    margin-left: unset;
+  }
+}

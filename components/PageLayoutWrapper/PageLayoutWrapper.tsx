@@ -3,6 +3,8 @@
 import { Spacer } from "@/components/Spacer"
 import { usePathname } from "next/navigation"
 
+import styles from "./PageLayoutWrapper.module.css"
+
 export function PageLayoutWrapper({ children }: { children: React.ReactNode }) {
   const path = usePathname()
 
@@ -17,7 +19,7 @@ export function PageLayoutWrapper({ children }: { children: React.ReactNode }) {
         justifyContent: path === "/" ? "center" : undefined
       }}
     >
-      <div style={{ maxWidth: 650 }}>
+      <div className={styles["inner-wrapper"]}>
         {children}
         {path !== "/" && <Spacer size="20vh" />}
       </div>
