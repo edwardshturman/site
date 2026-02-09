@@ -20,6 +20,10 @@ img.pfp {
   pointer-events: none;
 }
 
+div.bio > p.mobile {
+  display: none;
+}
+
 @media (max-width: 900px) {
   div.me {
     flex-direction: row-reverse;
@@ -30,5 +34,15 @@ img.pfp {
   img.pfp {
     position: unset;
     margin-left: unset;
+  }
+}
+
+@media (max-width: 450px) {
+  div.bio > p:first-child {
+    display: none;
+  }
+
+  div.bio > p.mobile {
+    display: block;
   }
 }
