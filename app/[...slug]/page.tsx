@@ -55,6 +55,7 @@ async function readPage(slug: string[]) {
       },
       options: {
         parseFrontmatter: true,
+        blockJS: false,
         mdxOptions: {
           remarkPlugins: [remarkMath],
           rehypePlugins: [
