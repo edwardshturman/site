@@ -19,9 +19,6 @@ export function Navbar() {
       <nav id={styles.navbar} className={`${isWindows ? styles.windows : ""}`}>
         <ul>
           {/*<li>
-            <Link href={"/notes"}>Notes</Link>
-          </li>*/}
-          {/*<li>
             <Link href={"/people"}>People</Link>
           </li>*/}
           {/*<li>
@@ -32,6 +29,9 @@ export function Navbar() {
           </li>
           <li>
             <Link href={"/workshop"}>Workshop</Link>
+          </li>
+          <li>
+            <Link href={"/notes"}>Notes</Link>
           </li>
           {/*<li>
             <Link href={"/artifacts"}>Artifacts</Link>
