@@ -98,7 +98,7 @@ code {
 :not(pre) > code {
   box-shadow: 0 0 0 1px var(--color-text-subtle-decorative);
   padding: 0.1em 0.4em;
-  border-radius: 0.2em;
+  border-radius: 6px;
 }
 
 pre {
