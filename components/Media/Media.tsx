@@ -65,16 +65,18 @@ export async function Media({
 
   return (
     <>
-      <div id={styles["media-container"]} style={props.style}>
+      <div className={styles["media-container"]} style={props.style}>
         <figure>
           <LinkWrapper>
             {ImageWrapper}
             {VideoWrapper}
             {title && <figcaption>{title}</figcaption>}
           </LinkWrapper>
-          {description && <div id={styles.description}>{description}</div>}
+          {description && (
+            <div className={styles.description}>{description}</div>
+          )}
           {cta && (
-            <p id={styles.cta}>
+            <p className={styles.cta}>
               <LinkWrapper>{cta}</LinkWrapper>
             </p>
           )}

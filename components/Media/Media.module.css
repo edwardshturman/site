@@ -1,40 +1,35 @@
-div#media-container {
+div.media-container {
   margin-top: 32px;
   margin-bottom: 32px;
 }
 
-div#media-container figure img,
-div#media-container figure video {
+div.media-container figure img,
+div.media-container figure video {
   width: 100%;
   height: auto;
   vertical-align: middle;
   border-radius: 6px;
 }
 
-div#media-container figure a:has(> img, > video) {
+div.media-container figure a:has(> img, > video) {
   padding: 0;
 }
 
-div#media-container figure figcaption {
+div.media-container figure figcaption {
   margin-top: 24px;
-  padding: 0 6px;
 }
 
-div#media-container figure:has(> a) figcaption {
+div.media-container figure:has(> a) figcaption {
   background-color: var(--color-accent-10);
+  padding: 0 6px;
   border-radius: 6px;
 }
 
-div#media-container figure:has(> a) figcaption:hover {
+div.media-container figure:has(> a) figcaption:hover {
   background-color: var(--color-accent-20);
 }
 
-div#media-container figure div#description {
+div.media-container figure div.description {
   color: var(--color-text-subtle);
-  margin: 12px 0;
-}
-
-div#media-container figure p#cta {
-  margin: 0;
-  margin-top: 12px;
+  margin: 16px 0;
 }
