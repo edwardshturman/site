@@ -1,6 +1,7 @@
 a.tag {
   display: inline-block;
   padding: 0 8px;
+  background-color: unset;
   border: 1px dashed var(--color-accent);
   color: var(--color-accent);
   text-transform: uppercase;
@@ -15,7 +16,7 @@ a.tag::before {
 }
 
 a.tag:hover {
-  background-color: var(--color-accent-20);
+  background-color: var(--color-accent-10);
 }
 
 a.tag.selected {
