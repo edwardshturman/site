@@ -15,7 +15,7 @@ export function Playground({
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          border: "1px dashed var(--color-accent-60)",
+          border: "1px dashed var(--color-accent)",
           borderRadius: "6px"
         }}
       >
