@@ -1,15 +1,18 @@
 "use client"
 
 import Link from "next/link"
-import { useEffect, useState } from "react"
+import { useSyncExternalStore } from "react"
 
 import styles from "./Navbar.module.css"
 
+const emptySubscribe = () => () => {}
+
 export function Navbar() {
-  const [isWindows, setIsWindows] = useState(false)
-  useEffect(() => {
-    setIsWindows(navigator.userAgent.includes("Win"))
-  }, [])
+  const isWindows = useSyncExternalStore(
+    emptySubscribe,
+    () => navigator.userAgent.includes("Win"),
+    () => false
+  )
 
   return (
     <>
