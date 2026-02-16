@@ -20,12 +20,12 @@ div#media-container figure figcaption {
   padding: 0 6px;
 }
 
-div#media-container figure:has(a) figcaption {
+div#media-container figure:has(> a) figcaption {
   background-color: var(--color-accent-10);
   border-radius: 6px;
 }
 
-div#media-container figure:has(a) figcaption:hover {
+div#media-container figure:has(> a) figcaption:hover {
   background-color: var(--color-accent-20);
 }
 
