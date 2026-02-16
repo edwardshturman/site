@@ -59,25 +59,29 @@ export async function Media({
     </>
   )
 
-  function LinkWrapper({ children }: { children: React.ReactNode }) {
-    return <>{link ? <Link href={link}>{children}</Link> : children}</>
-  }
-
   return (
     <>
       <div className={styles["media-container"]} style={props.style}>
         <figure>
-          <LinkWrapper>
-            {ImageWrapper}
-            {VideoWrapper}
-            {title && <figcaption>{title}</figcaption>}
-          </LinkWrapper>
+          {link ? (
+            <Link href={link}>
+              {ImageWrapper}
+              {VideoWrapper}
+              {title && <figcaption>{title}</figcaption>}
+            </Link>
+          ) : (
+            <>
+              {ImageWrapper}
+              {VideoWrapper}
+              {title && <figcaption>{title}</figcaption>}
+            </>
+          )}
           {description && (
             <div className={styles.description}>{description}</div>
           )}
           {cta && (
             <p className={styles.cta}>
-              <LinkWrapper>{cta}</LinkWrapper>
+              {link ? <Link href={link}>{cta}</Link> : cta}
             </p>
           )}
         </figure>
