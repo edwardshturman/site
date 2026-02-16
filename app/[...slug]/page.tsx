@@ -29,6 +29,7 @@ async function readPage(slug: string[]) {
 
     const vercelTheme = await import("./vercel-theme.json")
     const rehypePrettyCodeOptions: Options = {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       theme: vercelTheme as any
     }
 
@@ -59,15 +60,17 @@ async function readPage(slug: string[]) {
         mdxOptions: {
           remarkPlugins: [remarkMath],
           rehypePlugins: [
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             [rehypePrettyCode as any, rehypePrettyCodeOptions],
             rehypeSlug,
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             rehypeKatex as any
           ]
         }
       }
     })
     return { content, frontmatter }
-  } catch (error) {
+  } catch {
     notFound()
   }
 }
