@@ -15,7 +15,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
+    "pretty": "prettier . --check",
     "lint": "eslint .",
+    "prebuild": "pnpm run lint",
     "build": "next build --turbopack",
     "start": "next start"
   },
