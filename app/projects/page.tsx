@@ -1,5 +1,8 @@
+"use cache"
+
 import Link from "next/link"
 import type { Metadata } from "next"
+import { cacheLife } from "next/cache"
 import { Media } from "@/components/Media"
 import { Spacer } from "@/components/Spacer"
 
@@ -12,7 +15,8 @@ export const metadata: Metadata = {
   }
 }
 
-export default function Projects() {
+export default async function Projects() {
+  cacheLife("max")
   return (
     <main>
       <h1>Projects</h1>
