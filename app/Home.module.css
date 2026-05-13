@@ -1,8 +1,17 @@
+main.page {
+  position: relative;
+}
+
 div.me {
   position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+div.text {
+  position: relative;
+  flex: 1;
 }
 
 span.hi {
@@ -11,6 +20,14 @@ span.hi {
 
 h1.name {
   margin: 0;
+}
+
+div.nameRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
 }
 
 img.pfp {
@@ -34,6 +51,17 @@ div.bio > p.mobile {
   img.pfp {
     position: unset;
     margin-left: unset;
+  }
+
+  div.me,
+  div.text {
+    position: static;
+  }
+
+  div.pickerSlot {
+    position: absolute;
+    right: 0;
+    bottom: 0;
   }
 }
 

@@ -1,8 +1,16 @@
 import type { Metadata } from "next"
+import { cookies } from "next/headers"
 import localFont from "next/font/local"
+import type { CSSProperties } from "react"
 import { Analytics } from "@vercel/analytics/react"
 import { Breadcrumbs } from "@/components/Breadcrumbs"
+import { ThemeProvider } from "@/components/ThemeProvider"
 import { PageLayoutWrapper } from "@/components/PageLayoutWrapper"
+import {
+  ACCENT_STORAGE_KEY,
+  DEFAULT_SEASON,
+  seasonByLabel
+} from "@/lib/seasons"
 
 import "./globals.css"
 
@@ -72,21 +80,29 @@ export const metadata: Metadata = {
   }
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const cookieStore = await cookies()
+  const stored = cookieStore.get(ACCENT_STORAGE_KEY)?.value
+  const season = seasonByLabel(stored) ?? DEFAULT_SEASON
+  const hueStyle = { "--hue": season.hue } as CSSProperties
+
   return (
     <html
       lang="en"
       className={`${iAWriterQuattro.variable} ${iAWriterMono.variable}`}
+      style={hueStyle}
     >
       <body>
-        <PageLayoutWrapper>
-          <Breadcrumbs />
-          {children}
-        </PageLayoutWrapper>
+        <ThemeProvider initial={season}>
+          <PageLayoutWrapper>
+            <Breadcrumbs />
+            {children}
+          </PageLayoutWrapper>
+        </ThemeProvider>
         <Analytics />
       </body>
     </html>

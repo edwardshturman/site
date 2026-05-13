@@ -1,0 +1,166 @@
+div.picker {
+  position: relative;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+button.dot {
+  display: block;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: var(--color-accent);
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+button.dot:hover,
+button.dot:focus-visible {
+  transform: scale(1.1);
+  outline: none;
+}
+
+div.previous,
+div.later {
+  position: absolute;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    opacity 0.15s ease,
+    transform 0.15s ease;
+}
+
+div.previous {
+  bottom: calc(100% + 6px);
+  transform: translateY(4px);
+}
+
+div.later {
+  top: calc(100% + 6px);
+  transform: translateY(-4px);
+}
+
+div.previous::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 6px;
+}
+
+div.later::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  height: 6px;
+}
+
+div.picker:hover div.previous,
+div.picker:focus-within div.previous,
+div.picker:hover div.later,
+div.picker:focus-within div.later {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+div.picker.dismissed:hover div.previous,
+div.picker.dismissed:focus-within div.previous {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(4px);
+}
+
+div.picker.dismissed:hover div.later,
+div.picker.dismissed:focus-within div.later {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-4px);
+}
+
+div.picker.dismissed:hover span.activeLabel,
+div.picker.dismissed:focus-within span.activeLabel {
+  opacity: 0;
+}
+
+button.option {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.875rem;
+  line-height: 1;
+  color: var(--color-gray);
+  white-space: nowrap;
+  text-align: left;
+}
+
+button.option:hover,
+button.option:focus-visible {
+  color: var(--color-foreground);
+  outline: none;
+}
+
+span.swatch {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+span.activeLabel {
+  position: absolute;
+  top: 0;
+  left: calc(100% + 10px);
+  height: 16px;
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  font-size: 0.875rem;
+  line-height: 1;
+  color: var(--color-gray);
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+
+div.picker:hover span.activeLabel,
+div.picker:focus-within span.activeLabel {
+  opacity: 1;
+}
+
+@media (max-width: 900px) {
+  div.previous,
+  div.later {
+    left: auto;
+    right: 0;
+  }
+
+  button.option {
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+
+  span.activeLabel {
+    left: auto;
+    right: calc(100% + 10px);
+  }
+}
