@@ -4,8 +4,12 @@ import { Analytics } from "@vercel/analytics/react"
 import { Breadcrumbs } from "@/components/Breadcrumbs"
 import { ThemeProvider } from "@/components/ThemeProvider"
 import { PageLayoutWrapper } from "@/components/PageLayoutWrapper"
+import { ACCENT_STORAGE_KEY, SEASONS } from "@/lib/seasons"
 
 import "./globals.css"
+
+const seasonHueMap = Object.fromEntries(SEASONS.map((s) => [s.label, s.hue]))
+const initHueScript = `try{var s=localStorage.getItem(${JSON.stringify(ACCENT_STORAGE_KEY)});var m=${JSON.stringify(seasonHueMap)};var h=m[s];if(h!=null)document.documentElement.style.setProperty('--hue',String(h));}catch(e){}`
 
 const iAWriterQuattro = localFont({
   src: [
@@ -82,7 +86,11 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${iAWriterQuattro.variable} ${iAWriterMono.variable}`}
+      suppressHydrationWarning
     >
+      <head>
+        <script>{initHueScript}</script>
+      </head>
       <body>
         <ThemeProvider>
           <PageLayoutWrapper>
