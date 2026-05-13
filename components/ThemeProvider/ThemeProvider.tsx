@@ -26,10 +26,10 @@ export function ThemeProvider({
 }) {
   const [season, setSeasonState] = useState<Season>(initial)
 
-  function setSeason(next: Season) {
-    setSeasonState(next)
-    document.documentElement.style.setProperty("--hue", String(next.hue))
-    writeCookie(next.label)
+  function setSeason(season: Season) {
+    setSeasonState(season)
+    document.documentElement.style.setProperty("--hue", String(season.hue))
+    writeCookie(season.label)
   }
 
   return (
