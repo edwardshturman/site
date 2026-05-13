@@ -1,8 +1,5 @@
-"use cache"
-
 import Link from "next/link"
 import type { Metadata } from "next"
-import { cacheLife } from "next/cache"
 
 import { Spacer } from "@/components/Spacer"
 import { Comment } from "@/components/Comment"
@@ -17,8 +14,7 @@ export const metadata: Metadata = {
   }
 }
 
-export default async function Workshop() {
-  cacheLife("max")
+export default function Workshop() {
   const entries: MediaProps[] = [
     {
       title: "Dark mode view transition",

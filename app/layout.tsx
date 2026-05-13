@@ -1,17 +1,9 @@
-import { Suspense } from "react"
 import type { Metadata } from "next"
-import { cookies } from "next/headers"
 import localFont from "next/font/local"
 import { Analytics } from "@vercel/analytics/react"
 import { Breadcrumbs } from "@/components/Breadcrumbs"
 import { ThemeProvider } from "@/components/ThemeProvider"
 import { PageLayoutWrapper } from "@/components/PageLayoutWrapper"
-import {
-  ACCENT_STORAGE_KEY,
-  DEFAULT_SEASON,
-  seasonByLabel,
-  type Season
-} from "@/lib/seasons"
 
 import "./globals.css"
 
@@ -81,31 +73,6 @@ export const metadata: Metadata = {
   }
 }
 
-function ThemedShell({
-  season,
-  children
-}: {
-  season: Season
-  children: React.ReactNode
-}) {
-  return (
-    <ThemeProvider initial={season}>
-      <style>{`:root { --hue: ${season.hue}; }`}</style>
-      <PageLayoutWrapper>
-        <Breadcrumbs />
-        {children}
-      </PageLayoutWrapper>
-    </ThemeProvider>
-  )
-}
-
-async function CookieThemedShell({ children }: { children: React.ReactNode }) {
-  const cookieStore = await cookies()
-  const stored = cookieStore.get(ACCENT_STORAGE_KEY)?.value
-  const season = seasonByLabel(stored) ?? DEFAULT_SEASON
-  return <ThemedShell season={season}>{children}</ThemedShell>
-}
-
 export default function RootLayout({
   children
 }: Readonly<{
@@ -117,13 +84,12 @@ export default function RootLayout({
       className={`${iAWriterQuattro.variable} ${iAWriterMono.variable}`}
     >
       <body>
-        <Suspense
-          fallback={
-            <ThemedShell season={DEFAULT_SEASON}>{children}</ThemedShell>
-          }
-        >
-          <CookieThemedShell>{children}</CookieThemedShell>
-        </Suspense>
+        <ThemeProvider>
+          <PageLayoutWrapper>
+            <Breadcrumbs />
+            {children}
+          </PageLayoutWrapper>
+        </ThemeProvider>
         <Analytics />
       </body>
     </html>

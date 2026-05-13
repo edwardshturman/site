@@ -1,11 +1,8 @@
-"use cache"
-
 import path from "node:path"
 import Link from "next/link"
 import { Suspense } from "react"
 import fs from "node:fs/promises"
 import { type Metadata } from "next"
-import { cacheLife } from "next/cache"
 import { notFound } from "next/navigation"
 import { compileMDX } from "next-mdx-remote/rsc"
 
@@ -104,6 +101,7 @@ export async function generateMetadata(props: {
   return metadata
 }
 
+export const dynamicParams = false
 export async function generateStaticParams() {
   async function getMdSlugs(folder: string) {
     const entries = await fs.readdir(folder, { withFileTypes: true })
@@ -132,7 +130,6 @@ export async function generateStaticParams() {
 export default async function Page(props: {
   params: Promise<{ slug: string[] }>
 }) {
-  cacheLife("max")
   const params = await props.params
   const { content, frontmatter } = await readPage(params.slug)
 
