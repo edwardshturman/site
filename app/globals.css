@@ -3,12 +3,14 @@
   --font-sans: var(--font-ia-writer-quattro), sans-serif;
   --font-mono: var(--font-ia-writer-mono), "Courier Prime", "Courier New", ui-monospace, monospace;
 
-  --color-white:         hsla(210deg, 100%, 100%, 1.0);
-  --color-black:         hsla(210deg, 100%, 004%, 1.0);
-  --color-gray:          hsla(210deg, 010%, 050%, 1.0);
-  --color-accent:        hsla(210deg, 100%, 050%, 1.0);
-  --color-accent-10:     hsla(210deg, 100%, 050%, 0.1);
-  --color-accent-20:     hsla(210deg, 100%, 050%, 0.2);
+  --hue: 30;
+
+  --color-white:         hsla(var(--hue), 100%, 100%, 1.0);
+  --color-black:         hsla(var(--hue), 100%, 004%, 1.0);
+  --color-gray:          hsla(var(--hue), 010%, 050%, 1.0);
+  --color-accent:        hsla(var(--hue), 100%, 050%, 1.0);
+  --color-accent-10:     hsla(var(--hue), 100%, 050%, 0.1);
+  --color-accent-20:     hsla(var(--hue), 100%, 050%, 0.2);
   --color-diff-add:      hsla(120deg, 100%, 025%, 0.2);
   --color-diff-remove:   hsla(360deg, 100%, 050%, 0.2);
 

@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { Spacer } from "@/components/Spacer"
 import { Navbar } from "@/components/Navbar"
+import { ColorPicker } from "@/components/ColorPicker"
 
 import styles from "./Home.module.css"
 
@@ -20,7 +21,12 @@ export default function Home() {
           />
           <div className={styles.text}>
             <span className={styles.hi}>Hi! I&apos;m</span>
-            <h1 className={styles.name}>Edward Shturman</h1>
+            <div className={styles.nameRow}>
+              <h1 className={styles.name}>Edward Shturman</h1>
+              <div className={styles.pickerSlot}>
+                <ColorPicker />
+              </div>
+            </div>
           </div>
         </div>
         <div className={styles.bio}>
