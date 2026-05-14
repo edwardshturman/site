@@ -1,4 +1,8 @@
 /* UnreadIndicator */
+a.link {
+  position: relative;
+}
+
 a.link:hover div {
   animation: rotate 3s linear infinite;
 }

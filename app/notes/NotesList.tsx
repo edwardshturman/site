@@ -16,7 +16,8 @@ function UnreadIndicatorContainer() {
     <div
       style={{
         position: "absolute",
-        marginLeft: "-23px"
+        top: 0,
+        left: "-23px"
       }}
     >
       <UnreadIndicator />
