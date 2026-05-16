@@ -21,6 +21,14 @@
   --color-accent-60:              var(--color-dark-gray);
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-white: hsla(var(--hue), 100%, 096%, 1);
+    --color-background: var(--color-black);
+    --color-foreground: var(--color-white);
+  }
+}
+
 ::selection {
   background: var(--color-accent-20);
 }
