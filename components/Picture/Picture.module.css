@@ -2,11 +2,13 @@ div.picture {
   --reveal-duration: 300ms;
   --block-fade: 0s;
   --shimmer-cycle: 3s;
-  --shimmer-intensity: 0.3;
+  --shimmer-intensity: 0.4;
 
   display: inline-block;
   position: relative;
   isolation: isolate;
+  /* Fixes Safari not respecting mix-blend-mode with border-radius */
+  mask-image: linear-gradient(#000, #000);
   cursor: pointer;
   transition: transform 200ms ease;
 }
@@ -57,7 +59,7 @@ div.glow {
   top: calc(var(--row) / var(--rows) * 100%);
   width: calc(100% / var(--cols));
   height: calc(100% / var(--rows));
-  background: white;
+  background: var(--color-accent);
   mix-blend-mode: plus-lighter;
   opacity: 0;
   animation: glow var(--shimmer-cycle) ease-in-out infinite;
