@@ -45,6 +45,9 @@ importers:
         specifier: 3.20.0
         version: 3.20.0
     devDependencies:
+      '@thi.ng/imago':
+        specifier: 1.6.12
+        version: 1.6.12
       '@types/node':
         specifier: 25.0.3
         version: 25.0.3
@@ -467,6 +470,90 @@ packages:
 
   '@swc/helpers@0.5.15':
     resolution: {integrity: sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g==}
+
+  '@thi.ng/api@8.12.22':
+    resolution: {integrity: sha512-aXlzuPhtVDaMuqhCNWhZtDWJeL8xLKvysmAfI4437gqpNosOwIBXZO+9Lt8cjfAfjwRCfzix8fX0he2A9hIUbg==}
+    engines: {node: '>=18'}
+
+  '@thi.ng/base-n@2.7.67':
+    resolution: {integrity: sha512-h7JPa5qrUR3fsijzFckYLJed6bdAE5Zae821XRf4NCs2Sb5RG+Cg1ydlGNKaRafaPjnYMdwoERZoHAkJa3qTAw==}
+    engines: {node: '>=18'}
+
+  '@thi.ng/blurhash@1.0.44':
+    resolution: {integrity: sha512-fwGF7UiAz4P1Q/MzomxxfURFYbrQtt5/MI9ONQF9M6Y66iMszqSoVyWHpVu9WGKHWVxJgjibtgpzdVfWc3zbbA==}
+    engines: {node: '>=18'}
+
+  '@thi.ng/canvas@1.1.14':
+    resolution: {integrity: sha512-blj1qdTrQBfFRXYj+ejr5MoL59oOuT5oRvlnnv9Jd9oDEaBbkHTDx47nUxbaTKUNrdrlSm3PvpP9ZVR0VhyF4g==}
+    engines: {node: '>=18'}
+
+  '@thi.ng/checks@3.9.2':
+    resolution: {integrity: sha512-ATpkaLUlwGNM4e5iez8D3fHD+a62CpznETKjsgPVS/ODSbV+pW3hbrIWv6paTwGJH+RRvtctGpc0HZXtSiprqg==}
+    engines: {node: '>=18'}
+
+  '@thi.ng/date@2.8.6':
+    resolution: {integrity: sha512-asy2J4k3ityEm5xNTa2+we7H2yu/mYvywXX1iFyP3SN37RMoGtrDNYdY6wXvH0+k5oMxMHose+9pHvCzqfAVbg==}
+    engines: {node: '>=18'}
+
+  '@thi.ng/defmulti@3.0.99':
+    resolution: {integrity: sha512-+t3ietvw8cwQtNRB4ZuRkVBvSh0xss5kYTjvtNRVugTrX8VTV8AV0qHu5D/3tUR72U5XHN5MyYM/B5V8aAVD2g==}
+    engines: {node: '>=18'}
+
+  '@thi.ng/errors@2.6.11':
+    resolution: {integrity: sha512-l5eXCzZuHKyz2Lcf/i0JfgQeZ1kL6rTQ2oHfivNG5GxBqRrLfDT1ZJyj3DZx37gm6tGUDIOTSg4kF3ZXhqjxyA==}
+    engines: {node: '>=18'}
+
+  '@thi.ng/file-io@2.2.34':
+    resolution: {integrity: sha512-xC3l59jiDhJ03Q27xmlGVyzKuM3FdsIInakMoHA3VJYVUBqpiIyXZADJclZWjZ8Q4HK7BGuF9GGLlDRRk4W5Tw==}
+    engines: {node: '>=18'}
+
+  '@thi.ng/hex@2.4.14':
+    resolution: {integrity: sha512-tlJOFpz8VTjZi+ABf+vnkyu/eM1QJyjp75SWCWN2PoLEooOvU/CV8SAclYcEhL7CRFH3lL9YJGlD5z5fCWB2YQ==}
+    engines: {node: '>=18'}
+
+  '@thi.ng/imago@1.6.12':
+    resolution: {integrity: sha512-oAFyowSAhxVILvP+CHi7Mzb0a3Ww3G7JZtGgpMRA1+x6MKkN/NI4lZj72VQQXmYtCowMG0onkIlEZKaDqGjvDQ==}
+    engines: {node: '>=18'}
+
+  '@thi.ng/logger@3.3.5':
+    resolution: {integrity: sha512-I1lqnTx78JMa9eWYGqkoaoYqH5BaW6415eHJD0ibvKTuNXpdUz9yjcScLMN0iL+oe9zVw3oeKuI4cdj68js8sg==}
+    engines: {node: '>=18'}
+
+  '@thi.ng/math@5.15.11':
+    resolution: {integrity: sha512-Hg5zq1Q/E+X1zXRldvFEFofTt8I7dPuksrMLbPeNy30co8LQ5JzKwkVY42WzpAHpraF86+kZFcYvqW+M21B9Ww==}
+    engines: {node: '>=18'}
+
+  '@thi.ng/memoize@4.0.46':
+    resolution: {integrity: sha512-I9VDplDMOWf6lVtwkSRUSp2g5kKjeyYdb9dh+xuR0LabFtw9vH+9sc06yAakUBIDdUvVtZcbaH6AEyfldKqDXg==}
+    engines: {node: '>=18'}
+
+  '@thi.ng/object-utils@1.3.14':
+    resolution: {integrity: sha512-ykfSFgaPnVM2ij9e7t1yLP+5JGzeUuHu+ZShsdyuTfnYI0WqLdOHEw72xEb+F/WMW4wDMq/VKaGs0+5LAbO7hA==}
+    engines: {node: '>=18'}
+
+  '@thi.ng/pixel-dither@1.1.199':
+    resolution: {integrity: sha512-/KNlSMu55CrdMUmjoBLLSG4XpBNWLnVZJ4aNKTF20g5kNhBGXEQV3eQOy1KHBvyGCkt0e5NYwx8daZUDstAZ7g==}
+    engines: {node: '>=18'}
+
+  '@thi.ng/pixel@7.5.31':
+    resolution: {integrity: sha512-kpb8cte9fsh2f2oqfWqloeKc+F5EnkEHLoO0Q5CM7pbsMl4wNtGerGEEfci+vuFFS9L4rlFhSZwGayhi1FwTLQ==}
+    engines: {node: '>=18'}
+
+  '@thi.ng/porter-duff@2.1.134':
+    resolution: {integrity: sha512-ujzwYt0pA4DAc0/kWK/9U2kRolmrKgECUx7O/vG+QwE1KDtXw0p0YNFlV6rB9QezavWUff+eXhn9Bf1MSFyoDQ==}
+    engines: {node: '>=18'}
+
+  '@thi.ng/prefixes@2.3.72':
+    resolution: {integrity: sha512-fseuvinRmEZkQZnYysaP2BXbTnEjx6EdkNDUKgrorBd2aLbmE3+kgFvYAs+NxjalYFTZoEyQG4ipEAA2sbGITg==}
+    engines: {node: '>=18'}
+
+  '@thi.ng/random@4.1.48':
+    resolution: {integrity: sha512-9ABhSwQfFMLHLBT9FRvFi3lrdeYkupX9+ZWXQ0hwwj0/KphP2wxIMT6goGCF+yfkAB+1DylcQWbtZ79RGKpfWg==}
+    engines: {node: '>=18'}
+
+  '@thi.ng/strings@3.12.4':
+    resolution: {integrity: sha512-FKhZbLK4fMlIgOE0XyMHd1l+n26LFPC5E96xuSdC11hEQXejubLo268uyDaNOGzVnpPxvdvcvyJ0BE8DS+iYEg==}
+    engines: {node: '>=18'}
 
   '@tybys/wasm-util@0.10.1':
     resolution: {integrity: sha512-9tTaPJLSiejZKx+Bmog4uSubteqTvFrVrURwkmHixBo0G4seD0zUxp98E1DzUBJxLQ3NPwXrGKDiVjwx/DpPsg==}
@@ -2694,6 +2781,110 @@ snapshots:
   '@swc/helpers@0.5.15':
     dependencies:
       tslib: 2.8.1
+
+  '@thi.ng/api@8.12.22': {}
+
+  '@thi.ng/base-n@2.7.67': {}
+
+  '@thi.ng/blurhash@1.0.44':
+    dependencies:
+      '@thi.ng/api': 8.12.22
+      '@thi.ng/base-n': 2.7.67
+      '@thi.ng/canvas': 1.1.14
+      '@thi.ng/errors': 2.6.11
+      '@thi.ng/math': 5.15.11
+
+  '@thi.ng/canvas@1.1.14': {}
+
+  '@thi.ng/checks@3.9.2': {}
+
+  '@thi.ng/date@2.8.6':
+    dependencies:
+      '@thi.ng/api': 8.12.22
+      '@thi.ng/checks': 3.9.2
+      '@thi.ng/strings': 3.12.4
+
+  '@thi.ng/defmulti@3.0.99':
+    dependencies:
+      '@thi.ng/api': 8.12.22
+      '@thi.ng/errors': 2.6.11
+      '@thi.ng/logger': 3.3.5
+
+  '@thi.ng/errors@2.6.11': {}
+
+  '@thi.ng/file-io@2.2.34':
+    dependencies:
+      '@thi.ng/api': 8.12.22
+      '@thi.ng/checks': 3.9.2
+      '@thi.ng/hex': 2.4.14
+      '@thi.ng/logger': 3.3.5
+      '@thi.ng/random': 4.1.48
+
+  '@thi.ng/hex@2.4.14': {}
+
+  '@thi.ng/imago@1.6.12':
+    dependencies:
+      '@thi.ng/api': 8.12.22
+      '@thi.ng/blurhash': 1.0.44
+      '@thi.ng/checks': 3.9.2
+      '@thi.ng/date': 2.8.6
+      '@thi.ng/defmulti': 3.0.99
+      '@thi.ng/errors': 2.6.11
+      '@thi.ng/file-io': 2.2.34
+      '@thi.ng/logger': 3.3.5
+      '@thi.ng/object-utils': 1.3.14
+      '@thi.ng/pixel': 7.5.31
+      '@thi.ng/pixel-dither': 1.1.199
+      '@thi.ng/prefixes': 2.3.72
+      sharp: 0.34.5
+
+  '@thi.ng/logger@3.3.5': {}
+
+  '@thi.ng/math@5.15.11':
+    dependencies:
+      '@thi.ng/api': 8.12.22
+
+  '@thi.ng/memoize@4.0.46':
+    dependencies:
+      '@thi.ng/api': 8.12.22
+
+  '@thi.ng/object-utils@1.3.14':
+    dependencies:
+      '@thi.ng/api': 8.12.22
+      '@thi.ng/checks': 3.9.2
+
+  '@thi.ng/pixel-dither@1.1.199':
+    dependencies:
+      '@thi.ng/checks': 3.9.2
+      '@thi.ng/math': 5.15.11
+      '@thi.ng/pixel': 7.5.31
+
+  '@thi.ng/pixel@7.5.31':
+    dependencies:
+      '@thi.ng/api': 8.12.22
+      '@thi.ng/canvas': 1.1.14
+      '@thi.ng/checks': 3.9.2
+      '@thi.ng/errors': 2.6.11
+      '@thi.ng/math': 5.15.11
+      '@thi.ng/porter-duff': 2.1.134
+
+  '@thi.ng/porter-duff@2.1.134':
+    dependencies:
+      '@thi.ng/api': 8.12.22
+
+  '@thi.ng/prefixes@2.3.72': {}
+
+  '@thi.ng/random@4.1.48':
+    dependencies:
+      '@thi.ng/api': 8.12.22
+      '@thi.ng/errors': 2.6.11
+
+  '@thi.ng/strings@3.12.4':
+    dependencies:
+      '@thi.ng/api': 8.12.22
+      '@thi.ng/errors': 2.6.11
+      '@thi.ng/hex': 2.4.14
+      '@thi.ng/memoize': 4.0.46
 
   '@tybys/wasm-util@0.10.1':
     dependencies:

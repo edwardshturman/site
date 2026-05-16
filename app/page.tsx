@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { Spacer } from "@/components/Spacer"
 import { Navbar } from "@/components/Navbar"
+import { Picture } from "@/components/Picture"
 import { ColorPicker } from "@/components/ColorPicker"
 
 import styles from "./Home.module.css"
@@ -10,15 +11,16 @@ export default function Home() {
     <>
       <main className={styles.page}>
         <div className={styles.me}>
-          <Image
-            priority
-            unoptimized
-            src="/avatars/edward.png"
-            alt="My Notion avatar!"
-            width={100}
-            height={100}
-            className={styles.pfp}
-          />
+          <Picture hover="/avatars/edward.jpeg" className={styles.pfp}>
+            <Image
+              priority
+              unoptimized
+              src="/avatars/edward-pixelated.png"
+              alt="A picture of me"
+              width={70}
+              height={70}
+            />
+          </Picture>
           <div className={styles.text}>
             <span className={styles.hi}>Hi! I&apos;m</span>
             <div className={styles.nameRow}>
