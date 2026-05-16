@@ -30,11 +30,14 @@ div.nameRow {
   gap: 16px;
 }
 
-img.pfp {
+div.pfp {
   position: absolute;
   margin-left: -112px;
+  width: 70px;
+  height: 70px;
+  border-radius: 25%;
+  overflow: hidden;
   user-select: none;
-  pointer-events: none;
 }
 
 div.bio > p.mobile {
@@ -48,7 +51,7 @@ div.bio > p.mobile {
     gap: 16px;
   }
 
-  img.pfp {
+  div.pfp {
     position: unset;
     margin-left: unset;
   }
