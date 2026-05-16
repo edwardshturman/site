@@ -67,18 +67,35 @@ export function Picture({
           <feComposite in="blended" in2="SourceAlpha" operator="in" />
         </filter>
       </svg>
-      <div className={styles.image}>
+      <div
+        className={styles.image}
+        style={
+          {
+            "--cols": cols,
+            "--rows": rows,
+            "--total": cols * rows
+          } as React.CSSProperties
+        }
+      >
         {children}
+        <div className={styles.shimmer} aria-hidden="true">
+          {blocks.map(({ col, row, order }) => (
+            <div
+              key={`s-${col}-${row}`}
+              className={styles.glow}
+              style={
+                {
+                  "--col": col,
+                  "--row": row,
+                  "--order": order
+                } as React.CSSProperties
+              }
+            />
+          ))}
+        </div>
         <div
           className={styles.hover}
-          style={
-            {
-              "--cols": cols,
-              "--rows": rows,
-              "--total": cols * rows,
-              "--hover-src": `url(${hover})`
-            } as React.CSSProperties
-          }
+          style={{ "--hover-src": `url(${hover})` } as React.CSSProperties}
         >
           {blocks.map(({ col, row, order }) => (
             <div

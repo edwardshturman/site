@@ -1,11 +1,18 @@
 div.picture {
-  --reveal-duration: 200ms;
+  --reveal-duration: 300ms;
   --block-fade: 0s;
+  --shimmer-cycle: 3s;
+  --shimmer-intensity: 0.3;
 
   display: inline-block;
   position: relative;
   isolation: isolate;
   cursor: pointer;
+  transition: transform 200ms ease;
+}
+
+div.picture:hover:not(.revealed) {
+  transform: scale(1.05);
 }
 
 div.picture.revealed {
@@ -37,10 +44,43 @@ svg.filter :global(feFlood) {
   flood-color: var(--color-accent);
 }
 
+div.shimmer,
 div.hover {
   position: absolute;
   inset: 0;
   pointer-events: none;
+}
+
+div.glow {
+  position: absolute;
+  left: calc(var(--col) / var(--cols) * 100%);
+  top: calc(var(--row) / var(--rows) * 100%);
+  width: calc(100% / var(--cols));
+  height: calc(100% / var(--rows));
+  background: white;
+  mix-blend-mode: plus-lighter;
+  opacity: 0;
+  animation: glow var(--shimmer-cycle) ease-in-out infinite;
+  animation-delay: calc(
+    var(--order) / var(--total) * var(--shimmer-cycle) * -1
+  );
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  6% {
+    opacity: var(--shimmer-intensity);
+  }
+  12% {
+    opacity: 0;
+  }
+}
+
+div.picture.revealed div.shimmer {
+  display: none;
 }
 
 div.block {
