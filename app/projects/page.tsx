@@ -18,6 +18,14 @@ export default function Projects() {
       <h1>Projects</h1>
       <Spacer size={16} />
       <Media
+        title="Building Notion's Number Chart"
+        description="My Spring 2026 intern project at Notion"
+        src="/og/number-chart.png"
+        link="/projects/number-chart"
+        cta="View project"
+      />
+      <Spacer size={16} />
+      <Media
         title="compsigh web platform"
         description="Building a home for compsigh — the computer science club at the University of San Francisco — unifying our events calendar, showcasing club member projects, and documenting the club's culture"
         src="/assets/compsigh-web-platform-trailer-min.mp4"
