@@ -1,17 +1,17 @@
 ---
-title: "Building Notion's Number Chart"
-description: "My Spring 2026 intern project at Notion"
+title: "Building Number Chart at Notion"
+description: "Recapping my Spring 2026 engineering internship on the Primitive Foundations team at Notion, working on blocks, database views, and general polish across the app"
 published: true
 og_image: "/og/number-chart.png"
 ---
 
-# Building Number Chart
+# Building Number Chart at Notion
 
-_...and other fun features at Notion, during my Spring 2026 internship!_
+<Comment type="block">Recapping my Spring 2026 engineering internship on the Primitive Foundations team at Notion, working on blocks, database views, and general polish across the app</Comment>
 
 In early March, [Notion launched Dashboard view](https://x.com/notionhq/status/2031098248941940790), along with **Number Chart**, a single value aggregating over any database property, such as monthly revenue or new customers onboarded.
 
-Features include filtering aggregated data, conditional styling — such as <span style={{color: "green"}}>green-colored text</span> when a certain threshold is met — configurable height, and first-class support within Dashboard view.
+Features include filtering aggregated data, conditional styling — such as <span style={{color: "green"}}>coloring the value green</span> when a certain threshold is met — and first-class support within Dashboard view.
 
 Here's how I built it, and what I learned!
 
@@ -26,6 +26,8 @@ entries={[
 "What & why Dashboard view",
 "Features & challenges",
 "Scenes from launch",
+"Side quests",
+"Lessons learned",
 "Shoutouts"
 ]}
 />
@@ -122,6 +124,11 @@ In just two weeks after launch, **users created over 100,000 Number Charts!**
 
 ## Shoutouts
 
-(a bit about Primitives)
+<Media
+  src="/assets/primitives.jpeg"
+  alt="Primitive Foundations team pic"
+/>
+
+<Comment type="inline">a bit about the Primitive Foundations team — what & why)</Comment>
 
 I want to thank my manager <Mention name="Stephen" avatar="/avatars/wustep.jpg" link="https://x.com/wustep" />, mentor & eng <Mention name="Jacob" avatar="/avatars/jwenger.jpg" link="https://x.com/_jwngr" />, PM <Mention name="Sam" avatar="/avatars/samc.jpg" link="https://x.com/sbcatania" />, designers <Mention name="Kathy" avatar="/avatars/kathy.jpg" link="https://x.com/pifafu" /> & <Mention name="Em" avatar="/avatars/em.jpg" link="https://linkedin.com/in/emilytxiao" />, and engs <Mention name="James" avatar="/avatars/james.jpg" link="https://linkedin.com/in/jamesbwills" /> & <Mention name="Gabe" avatar="/avatars/gabe.jpg" link="https://gabebenjamin.com" />

@@ -18,8 +18,8 @@ export default function Projects() {
       <h1>Projects</h1>
       <Spacer size={16} />
       <Media
-        title="Building Notion's Number Chart"
-        description="My Spring 2026 intern project at Notion"
+        title="Building Number Chart at Notion"
+        description="Recapping my Spring 2026 engineering internship on the Primitive Foundations team at Notion, working on blocks, database views, and general polish across the app"
         src="/og/number-chart.png"
         link="/projects/number-chart"
         cta="View project"
