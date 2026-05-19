@@ -26,7 +26,8 @@ Here's how I built it, and what I learned!
 entries={[
 "Why Number Chart",
 "What & why Dashboard view",
-"Technical challenges"
+"Features & challenges",
+"Scenes from launch"
 ]}
 />
 
@@ -52,7 +53,7 @@ Fast forward to 2026, an ongoing project sets the stage: **Dashboard view**.
 
 Dashboard view enables users to compose high-signal overviews of their data on a single surface, using standard Notion database views.
 
-While this was already possible by stacking database views into columns, this approach was clunky to set up, broke on smaller screen sizes, and was far from performant.
+Users had already been cobbling together dashboards by stacking database views into columns. But this approach is clunky to set up, breaks on smaller screen sizes, and is far from performant.
 
 Dashboard view provides an elegant, minimal set of widgets for viewing your most important information at a glance. It also felt like the perfect harness for Number Chart!
 
@@ -63,8 +64,51 @@ Dashboard view provides an elegant, minimal set of widgets for viewing your most
 
 <Comment type="block"><Mention name="Stephen" avatar="/avatars/wustep.jpg" link="https://x.com/wustep" /> wrote up a great [breakdown of the technical decisions](https://x.com/wustep/status/2032479265300852817) behind Dashboard view: introducing a new interaction mode, grid vs. columns vs. rows, and more. Highly recommend for further reading!</Comment>
 
-## Technical challenges
+## Features & challenges
 
 ### Supporting non-Number properties
 
+Notion users are very creative. We've seen setups that make us scratch our heads, and marvel in awe at the same time. We wanted to support as many workflows as possible, without introducing entropy or gotchas, such as Number Chart being supported only for Number properties.
+
+_What does it mean to aggregate over a Date property? How should conversions from another chart type to a Number Chart work?_ Answering product questions like these and accounting for edge cases was important.
+
+<Media
+  src="/assets/number-chart-ambs.jpg"
+  description="I had a lot of fun interfacing with Notion Ambassadors to iterate with their feedback on Dashboard view. They were very excited about Number Chart :)"
+/>
+
 ### Conditional styling
+
+In matching conditional styling patterns across existing Notion surfaces, such as Table view rows, I added support for conditionally coloring the value of a Number Chart. For example:
+
+- If `this month's revenue ≥ $25,000`: color it green;
+- `$20,000 ≤ $24,999`: yellow;
+- Otherwise: red.
+
+<Media
+  src="/assets/number-chart-conditional-coloring.mp4"
+  alt="Number Chart conditional styling"
+/>
+
+## Scenes from launch
+
+Launch weeks are awesome. The late nights leading up to the big day, putting out teasers, and spending a little more time on Twitter than usual.
+
+<Media
+  src="/assets/number-chart-launch-week-grind.jpg"
+  alt="Stephen and I up at 8pm, and some screenshots of tweets teasing the launch"
+/>
+
+It felt great to see Dashboard view & Number Chart so well received!
+
+<Media
+  src="/assets/dashboard-view-number-chart-reception.jpg"
+  alt="Tweets of Dashboard view & Number Chart launch, plus internal Slack hype"
+/>
+
+In just two weeks after launch, **users created over 100,000 Number Charts**!
+
+<Media
+  src="/assets/number-chart-usage.jpg"
+  alt="Number Chart usage stats"
+/>
