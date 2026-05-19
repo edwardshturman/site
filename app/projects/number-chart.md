@@ -9,8 +9,6 @@ og_image: "/og/number-chart.png"
 
 _...and other fun features at Notion, during my Spring 2026 internship!_
 
-(snippet about joining Primitives)
-
 In early March, [Notion launched Dashboard view](https://x.com/notionhq/status/2031098248941940790), along with **Number Chart**, a single value aggregating over any database property, such as monthly revenue or new customers onboarded.
 
 Features include filtering aggregated data, conditional styling — such as <span style={{color: "green"}}>green-colored text</span> when a certain threshold is met — configurable height, and first-class support within Dashboard view.
@@ -27,7 +25,8 @@ entries={[
 "Why Number Chart",
 "What & why Dashboard view",
 "Features & challenges",
-"Scenes from launch"
+"Scenes from launch",
+"Shoutouts"
 ]}
 />
 
@@ -106,9 +105,23 @@ It felt great to see Dashboard view & Number Chart so well received!
   alt="Tweets of Dashboard view & Number Chart launch, plus internal Slack hype"
 />
 
-In just two weeks after launch, **users created over 100,000 Number Charts**!
+In just two weeks after launch, **users created over 100,000 Number Charts!**
 
 <Media
   src="/assets/number-chart-usage.jpg"
   alt="Number Chart usage stats"
 />
+
+## Side quests
+
+## Lessons learned
+
+### "Why not today?"
+
+### Alignment
+
+## Shoutouts
+
+(a bit about Primitives)
+
+I want to thank my manager <Mention name="Stephen" avatar="/avatars/wustep.jpg" link="https://x.com/wustep" />, mentor & eng <Mention name="Jacob" avatar="/avatars/jwenger.jpg" link="https://x.com/_jwngr" />, PM <Mention name="Sam" avatar="/avatars/samc.jpg" link="https://x.com/sbcatania" />, designers <Mention name="Kathy" avatar="/avatars/kathy.jpg" link="https://x.com/pifafu" /> & <Mention name="Em" avatar="/avatars/em.jpg" link="https://linkedin.com/in/emilytxiao" />, and engs <Mention name="James" avatar="/avatars/james.jpg" link="https://linkedin.com/in/jamesbwills" /> & <Mention name="Gabe" avatar="/avatars/gabe.jpg" link="https://gabebenjamin.com" />
