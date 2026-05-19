@@ -116,6 +116,24 @@ In just two weeks after launch, **users created over 100,000 Number Charts!**
 
 ## Side quests
 
+I feel strongly about _polish_. Sweating the little things™ makes Notion — _any app_ — feel more robust & consistent across all surfaces.
+
+Notion is a high-trust, high-autonomy, high-agency team. If you see something broken, you are empowered to fix it (or find the next best person to do so).
+
+Examples of polish I landed:
+
+<Media
+src="/assets/notion-date-mentions.jpg"
+title="Date mentions inheriting text color"
+description={<>Previously, unlike page or person mentions, date mentions like <code>@Today</code> would not inherit a block's text color. Fixed!</>}
+/>
+
+<Media
+src="/assets/notion-template-duplicate-every.jpg"
+title="Clearer copy for database template pages"
+description={<>Previously, the flyout menu to set the interval at which a database template page would be duplicated was called <code>Repeat</code>. I worked with our UX writer <Mention name="Jeslyn" avatar="/avatars/jeslyn.jpg" link="https://linkedin.com/in/jeslynkim" /> to better convey the intent: <code>Duplicate every...</code>. These kinds of fixes may seem minor, but end up helping people!</>}
+/>
+
 ## Lessons learned
 
 ### "Why not today?"
