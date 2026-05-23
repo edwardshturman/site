@@ -18,7 +18,6 @@
   --color-foreground:             var(--color-black);
   --color-text-subtle:            var(--color-gray);
   --color-text-subtle-decorative: var(--color-gray);
-  --color-accent-60:              var(--color-dark-gray);
 }
 
 @media (prefers-color-scheme: dark) {
