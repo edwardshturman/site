@@ -1,19 +1,19 @@
 ---
 title: "Building Number Chart at Notion"
-description: "Recapping my Spring 2026 engineering internship on the Primitive Foundations team at Notion, working on blocks, database views, and general polish across the app"
+description: "Recapping my Spring 2026 engineering internship at Notion, working on blocks, database views, and polish across the app"
 published: true
 og_image: "/og/number-chart.png"
 ---
 
 # Building Number Chart at Notion
 
-<Comment type="block">Recapping my Spring 2026 engineering internship on the Primitive Foundations team at Notion, working on blocks, database views, and general polish across the app</Comment>
+<Comment type="block">Recapping my Spring 2026 engineering internship at Notion, working on blocks, database views, and polish across the app</Comment>
 
-In early March, [Notion launched Dashboard view](https://x.com/notionhq/status/2031098248941940790), along with **Number Chart**: a single value aggregating over any database property, such as monthly revenue or new customers onboarded.
+In early March, [Notion launched Dashboard view](https://x.com/notionhq/status/2031098248941940790), along with **Number Chart**: a single value aggregating over any database property, such as _Monthly revenue_ or _Customers onboarded_.
 
-Features include filtering aggregated data, conditional styling — such as <span style={{color: "green"}}>coloring the value green</span> when a certain threshold is met — and first-class support within Dashboard view.
+Features include filtering aggregated data, conditional styling — such as <span style={{color: "green"}}>coloring the value green</span> when a threshold is met — and first-class support within Dashboard view.
 
-Here's how I built it, and what I learned!
+Here's how I built it, and what I learned on the Primitive Foundations team at Notion!
 
 <Media
   src="/og/number-chart.png"
@@ -56,7 +56,7 @@ Dashboard view enables users to compose high-signal overviews of their data on a
 
 Users had already been cobbling together dashboards by stacking database views into columns. But this approach is clunky to set up, breaks on smaller screen sizes, and is far from performant.
 
-Dashboard view provides an elegant, minimal set of widgets for viewing your most important information at a glance. It also felt like the perfect harness for Number Chart!
+Dashboard view provides an elegant, minimal set of widgets for viewing your most important information at a glance. It also feels like the perfect harness for Number Chart!
 
 <Media
   src="/assets/number-chart-dashboard-view-slide.jpg"
@@ -69,7 +69,7 @@ Dashboard view provides an elegant, minimal set of widgets for viewing your most
 
 ### Supporting non-Number properties
 
-Notion users are very creative. We've seen setups that make us scratch our heads, and marvel in awe at the same time. We wanted to support as many workflows as possible, without introducing entropy or gotchas, such as Number Chart being supported only for Number properties.
+Notion users are very creative. We've seen setups that make us scratch our heads, and marvel in awe at the same time. We wanted to support as many workflows as possible, without introducing entropy or gotchas, such as support only for Number properties.
 
 _What does it mean to aggregate over a Date property? How should conversions from another chart type to a Number Chart work?_ Answering product questions like these and accounting for edge cases was important.
 
@@ -138,20 +138,23 @@ description={<>Previously, the flyout menu to set the interval at which a databa
 
 ### "Why not today?"
 
-In my first week, I read out my goals for the next few days to Stephen. For a number of them, he said, _"Why not today?"_ Through the rest of the week (and many others), I landed way more PRs than I thought I could with this in mind. I figured, why should I be _reading_ onboarding docs on "shipping my first feature" when I could be shipping my second? :)
+Early into week one, I read out my goals for the next few days to Stephen. For a number of them, he said, _"Why not today?"_ There's a decent body of work — Parkinson's Law, et al. — that suggests people are capable of accomplishing much more than they think in _x_ amount of time. There were several weeks at Notion where I landed way more PRs than I had set out to.
 
 ### Alignment
 
-On another project at Notion, I had to write a spec involving the Collections Experience, Mobile, Editor, and Search teams. The first thing I learned about this: alignment is hard. Getting five teams to agree on the implementation details of a complex project is a _task_, but is both necessary and worth it:
+After Number Chart, I got to lead a different project, involving the Collections (databases), Mobile, Editor, and Search teams. The first thing I learned about this: alignment is hard. Getting five teams to agree on the implementation details of a complex project is a _task_, but is both necessary and worth it:
 
 - You've front-loaded a set of decisions ahead of time, that would otherwise take several back-and-forth Slacks; and
 - You have a written record of alignment on those decisions.
 
 ### Agency
 
-Agency is an increasingly important characteristic of people & teams that want to operate at the pace Notion does. There are many ways to develop this skill (because it _is_ a skill!), and I recommend [Cate Hall's Every article](https://every.to/p/how-to-be-more-agentic) for more on this.
+Agency is an increasingly important characteristic of people & teams that want to operate at the pace Notion does. There are many ways to develop this skill (because it _is_ a skill!), and I recommend [Cate Hall's piece](https://every.to/p/how-to-be-more-agentic) for more on this.
 
-My teammates encouraged me to make moments where I feel blocked as actionable as possible. For example, maintaining tighter feedback loops. If there are multiple ideas at play, being able to compare their tradeoffs is good, but even better than enumerating these is a proposal & prototype.
+My teammates encouraged me to make moments where I feel blocked as actionable as possible. For example, maintaining tighter feedback loops. If there are multiple ideas at play, enumerating their tradeoffs is good, but even better than asking for opinions is a recommendation with a prototype.
+
+> Could've been a preview deployment. <br />
+> — [rauchg](https://x.com/rauchg/status/1810755983695827045)
 
 ## Shoutouts
 
