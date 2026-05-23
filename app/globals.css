@@ -102,6 +102,23 @@ ul ul > li {
   margin-left: 1em;
 }
 
+blockquote {
+  color: var(--color-text-subtle);
+  position: relative;
+  margin: 1em 0;
+}
+
+blockquote::before {
+  position: absolute;
+  content: "";
+  left: -20px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  opacity: 0.6;
+  background-color: var(--color-text-subtle-decorative);
+}
+
 code {
   font-family: var(--font-mono);
   counter-reset: line;
