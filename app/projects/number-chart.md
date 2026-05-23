@@ -9,7 +9,7 @@ og_image: "/og/number-chart.png"
 
 <Comment type="block">Recapping my Spring 2026 engineering internship on the Primitive Foundations team at Notion, working on blocks, database views, and general polish across the app</Comment>
 
-In early March, [Notion launched Dashboard view](https://x.com/notionhq/status/2031098248941940790), along with **Number Chart**, a single value aggregating over any database property, such as monthly revenue or new customers onboarded.
+In early March, [Notion launched Dashboard view](https://x.com/notionhq/status/2031098248941940790), along with **Number Chart**: a single value aggregating over any database property, such as monthly revenue or new customers onboarded.
 
 Features include filtering aggregated data, conditional styling — such as <span style={{color: "green"}}>coloring the value green</span> when a certain threshold is met — and first-class support within Dashboard view.
 
@@ -34,14 +34,14 @@ entries={[
 
 ## Why Number Chart
 
-[Notion launched Charts in June 2024](https://x.com/NotionHQ/status/1823434434630336665). Users quickly voiced their support for everyone's favorite type of chart: a big, beautiful number.
+[Notion launched Charts in June 2024.](https://x.com/NotionHQ/status/1823434434630336665) Users quickly voiced their support for everyone's favorite type of chart: a big, beautiful number.
 
 <Media
   src="/assets/users-asking-for-number-chart.png"
   alt="Users asking for Number Chart on X"
 />
 
-From chatter within the community, to UX research, the sentiment was clear: _The People wanted Number Chart_. It was deemed the highest priority fast-follow after the Charts launch.
+From chatter within the community, to UX research, the sentiment was clear: _The People wanted Number Chart_. It was deemed the highest priority feature post-Charts launch.
 
 Fast forward to 2026, an ongoing project sets the stage: **Dashboard view**.
 
@@ -75,12 +75,12 @@ _What does it mean to aggregate over a Date property? How should conversions fro
 
 <Media
   src="/assets/number-chart-ambs.jpg"
-  description="I had a lot of fun interfacing with Notion Ambassadors to iterate with their feedback on Dashboard view. They were very excited about Number Chart :)"
+  description="I had a lot of fun iterating with Notion Ambassadors from their feedback on Dashboard view. They were very excited about Number Chart :)"
 />
 
 ### Conditional styling
 
-In matching conditional styling patterns across existing Notion surfaces, such as Table view rows, I added support for conditionally coloring the value of a Number Chart. For example:
+In matching conditional styling patterns across existing Notion surfaces, such as Table view rows, I added support for dynamically coloring the value of a Number Chart. For example:
 
 - If `this month's revenue ≥ $25,000`: color it green;
 - `$20,000 ≤ $24,999`: yellow;
@@ -147,6 +147,6 @@ description={<>Previously, the flyout menu to set the interval at which a databa
   alt="Primitive Foundations team pic"
 />
 
-<Comment type="inline">a bit about the Primitive Foundations team — what & why)</Comment>
+<Comment type="inline">a bit about the Primitive Foundations team — what & why</Comment>
 
 I want to thank my manager <Mention name="Stephen" avatar="/avatars/wustep.jpg" link="https://x.com/wustep" />, mentor & eng <Mention name="Jacob" avatar="/avatars/jwenger.jpg" link="https://x.com/_jwngr" />, PM <Mention name="Sam" avatar="/avatars/samc.jpg" link="https://x.com/sbcatania" />, designers <Mention name="Kathy" avatar="/avatars/kathy.jpg" link="https://x.com/pifafu" /> & <Mention name="Em" avatar="/avatars/em.jpg" link="https://linkedin.com/in/emilytxiao" />, and engs <Mention name="James" avatar="/avatars/james.jpg" link="https://linkedin.com/in/jamesbwills" /> & <Mention name="Gabe" avatar="/avatars/gabe.jpg" link="https://gabebenjamin.com" />
