@@ -138,7 +138,20 @@ description={<>Previously, the flyout menu to set the interval at which a databa
 
 ### "Why not today?"
 
+In my first week, I read out my goals for the next few days to Stephen. For a number of them, he said, _"Why not today?"_ Through the rest of the week (and many others), I landed way more PRs than I thought I could with this in mind. I figured, why should I be _reading_ onboarding docs on "shipping my first feature" when I could be shipping my second? :)
+
 ### Alignment
+
+On another project at Notion, I had to write a spec involving the Collections Experience, Mobile, Editor, and Search teams. The first thing I learned about this: alignment is hard. Getting five teams to agree on the implementation details of a complex project is a _task_, but is both necessary and worth it:
+
+- You've front-loaded a set of decisions ahead of time, that would otherwise take several back-and-forth Slacks; and
+- You have a written record of alignment on those decisions.
+
+### Agency
+
+Agency is an increasingly important characteristic of people & teams that want to operate at the pace Notion does. There are many ways to develop this skill (because it _is_ a skill!), and I recommend [Cate Hall's Every article](https://every.to/p/how-to-be-more-agentic) for more on this.
+
+My teammates encouraged me to make moments where I feel blocked as actionable as possible. For example, maintaining tighter feedback loops. If there are multiple ideas at play, being able to compare their tradeoffs is good, but even better than enumerating these is a proposal & prototype.
 
 ## Shoutouts
 
