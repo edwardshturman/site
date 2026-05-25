@@ -13,6 +13,11 @@ div.media-container figure video {
 
 div.media-container figure a:has(> img, > video) {
   padding: 0;
+  background-color: transparent;
+}
+
+div.media-container figure a:has(> img, > video):hover {
+  background-color: transparent;
 }
 
 div.media-container figure figcaption {
