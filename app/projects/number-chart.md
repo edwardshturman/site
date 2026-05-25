@@ -13,7 +13,9 @@ In early March, [Notion launched Dashboard view](https://x.com/notionhq/status/2
 
 Features include filtering aggregated data, conditional styling — such as <span style={{color: "green"}}>coloring the value green</span> when a threshold is met — and first-class support within Dashboard view.
 
-Here's how I built it, and what I learned on the Primitive Foundations team at Notion!
+**Over 100,000 Number Charts** were created by **over 68,000 users** in the first two weeks folllowing launch!
+
+Here's how I built Number Chart, and what I learned on the Primitive Foundations team at Notion.
 
 <Media
   src="/og/number-chart.png"
@@ -23,11 +25,11 @@ Here's how I built it, and what I learned on the Primitive Foundations team at N
 <TableOfContents
 entries={[
 "Why Number Chart",
-"What & why Dashboard view",
-"Features & challenges",
+"Why Dashboard view",
+"Features & considerations",
 "Scenes from launch",
 "Side quests",
-"Lessons learned",
+"Takeaways",
 "Shoutouts"
 ]}
 />
@@ -50,7 +52,7 @@ Fast forward to 2026, an ongoing project sets the stage: **Dashboard view**.
   alt="Dashboard view"
 />
 
-## What & why Dashboard view
+## Why Dashboard view
 
 Dashboard view enables users to compose high-signal overviews of their data on a single surface, using standard Notion database views.
 
@@ -65,18 +67,13 @@ Dashboard view provides an elegant, minimal set of widgets for viewing your most
 
 <Comment type="block"><Mention name="Stephen" avatar="/avatars/wustep.jpg" link="https://x.com/wustep" /> wrote up a great [breakdown of the technical decisions](https://x.com/wustep/status/2032479265300852817) behind Dashboard view: introducing a new interaction mode, grid vs. columns vs. rows, and more. Highly recommend for further reading!</Comment>
 
-## Features & challenges
+## Features & considerations
 
 ### Supporting non-Number properties
 
 Notion users are very creative. We've seen setups that make us scratch our heads, and marvel in awe at the same time. We wanted to support as many workflows as possible, without introducing entropy or gotchas, such as support only for Number properties.
 
 _What does it mean to aggregate over a Date property? How should conversions from another chart type to a Number Chart work?_ Answering product questions like these and accounting for edge cases was important.
-
-<Media
-  src="/assets/number-chart-ambs.jpg"
-  description="I had a lot of fun iterating with Notion Ambassadors from their feedback on Dashboard view. They were very excited about Number Chart :)"
-/>
 
 ### Conditional styling
 
@@ -100,18 +97,18 @@ Launch weeks are awesome. The late nights leading up to the big day, putting out
   alt="Stephen and I up at 8pm, and some screenshots of tweets teasing the launch"
 />
 
-It felt great to see Dashboard view & Number Chart so well received!
+Through building out Number Chart & Dashboard view, I kept our [Notion Ambassadors](https://notion.notion.site/notion-ambassador-program) up to date. I had a lot of fun iterating with their feedback! They were excited about Number Chart & made some great launch content :)
+
+<Media
+  src="/assets/number-chart-ambs.jpg"
+  alt="Notion Ambassadors hyped about Number Chart"
+/>
+
+[And we shipped!](https://x.com/notionhq/status/2031411939667259770) It felt great to see both Dashboard view & Number Chart so well received by many teams & the community on socials.
 
 <Media
   src="/assets/dashboard-view-number-chart-reception.jpg"
   alt="Tweets of Dashboard view & Number Chart launch, plus internal Slack hype"
-/>
-
-In just two weeks after launch, **users created over 100,000 Number Charts!**
-
-<Media
-  src="/assets/number-chart-usage.jpg"
-  alt="Number Chart usage stats"
 />
 
 ## Side quests
@@ -134,18 +131,18 @@ title="Clearer copy for database template pages"
 description={<>Previously, the flyout menu to set the interval at which a database template page would be duplicated was called <code>Repeat</code>. I worked with our UX writer <Mention name="Jeslyn" avatar="/avatars/jeslyn.jpg" link="https://linkedin.com/in/jeslynkim" /> to better convey the intent: <code>Duplicate every...</code>. These kinds of fixes may seem minor, but end up helping people!</>}
 />
 
-## Lessons learned
+## Takeaways
 
 ### "Why not today?"
 
-Early into week one, I read out my goals for the next few days to Stephen. For a number of them, he said, _"Why not today?"_ There's a decent body of work — Parkinson's Law, et al. — that suggests people are capable of accomplishing much more than they think in _x_ amount of time. There were several weeks at Notion where I landed way more PRs than I had set out to.
+Early into week one, I read out my goals for the next few days to Stephen. For a number of them, he said, _"Why not today?"_ There's a decent body of work — Parkinson's Law, etc. — that suggests people are capable of accomplishing much more than they think in _x_ amount of time. There were several weeks at Notion where I landed way more PRs than I had set out to.
 
 ### Alignment
 
 After Number Chart, I got to lead a different project, involving the Collections (databases), Mobile, Editor, and Search teams. The first thing I learned about this: alignment is hard. Getting five teams to agree on the implementation details of a complex project is a _task_, but is both necessary and worth it:
 
-- You've front-loaded a set of decisions ahead of time, that would otherwise take several back-and-forth Slacks; and
-- You have a written record of alignment on those decisions.
+- You've front-loaded a set of decisions ahead of time, via a tech spec or similar doc, that would otherwise take several back-and-forth Slacks; and
+- You have a written record of alignment on those decisions, reducing frivolous changes.
 
 ### Agency
 
@@ -160,7 +157,7 @@ My teammates encouraged me to make moments where I feel blocked as actionable as
 
 Primitive Foundations is the dream team — a small, versatile group of people who deeply care about craft & building a beautiful tool for thought.
 
-I want to thank my fellow Primitives, and teammates around the org: my manager <Mention name="Stephen" avatar="/avatars/wustep.jpg" link="https://x.com/wustep" />, mentor & eng <Mention name="Jacob" avatar="/avatars/jwenger.jpg" link="https://x.com/_jwngr" />, PM <Mention name="Sam" avatar="/avatars/samc.jpg" link="https://x.com/sbcatania" />, designers <Mention name="Kathy" avatar="/avatars/kathy.jpg" link="https://x.com/pifafu" />, <Mention name="Ken" avatar="/avatars/ken.jpeg" link="https://kenchen.design" />, and <Mention name="Em" avatar="/avatars/em.jpg" link="https://linkedin.com/in/emilytxiao" />, and engs <Mention name="James" avatar="/avatars/james.jpg" link="https://linkedin.com/in/jamesbwills" /> & <Mention name="Gabe" avatar="/avatars/gabe.jpg" link="https://gabebenjamin.com" />.
+I want to thank my teammates, and Notinos around the org: my manager <Mention name="Stephen" avatar="/avatars/wustep.jpg" link="https://x.com/wustep" />, mentor & eng <Mention name="Jacob" avatar="/avatars/jwenger.jpg" link="https://x.com/_jwngr" />, PM <Mention name="Sam" avatar="/avatars/samc.jpg" link="https://x.com/sbcatania" />, designers <Mention name="Kathy" avatar="/avatars/kathy.jpg" link="https://x.com/pifafu" />, <Mention name="Ken" avatar="/avatars/ken.jpeg" link="https://kenchen.design" />, and <Mention name="Em" avatar="/avatars/em.jpg" link="https://linkedin.com/in/emilytxiao" />, and engs <Mention name="James" avatar="/avatars/james.jpg" link="https://linkedin.com/in/jamesbwills" /> & <Mention name="Gabe" avatar="/avatars/gabe.jpg" link="https://gabebenjamin.com" />.
 
 <Media
   src="/assets/primitives.jpeg"
