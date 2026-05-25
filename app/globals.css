@@ -18,7 +18,6 @@
   --color-foreground:             var(--color-black);
   --color-text-subtle:            var(--color-gray);
   --color-text-subtle-decorative: var(--color-gray);
-  --color-accent-60:              var(--color-dark-gray);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -101,6 +100,23 @@ ul ul {
 
 ul ul > li {
   margin-left: 1em;
+}
+
+blockquote {
+  color: var(--color-text-subtle);
+  position: relative;
+  margin: 1em 0;
+}
+
+blockquote::before {
+  position: absolute;
+  content: "";
+  left: -20px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  opacity: 0.6;
+  background-color: var(--color-text-subtle-decorative);
 }
 
 code {
