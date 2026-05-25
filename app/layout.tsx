@@ -71,10 +71,7 @@ export const metadata: Metadata = {
   metadataBase,
   title: "Edward Shturman",
   description:
-    "Web developer, interface designer, and community builder based in San Francisco",
-  openGraph: {
-    images: "/og/root.png"
-  }
+    "Web developer, interface designer, and community builder based in San Francisco"
 }
 
 export default function RootLayout({

@@ -14,6 +14,14 @@ export const DEFAULT_SEASON = SEASONS.reduce((acc, s) =>
   s.order > acc.order ? s : acc
 )
 
+export function seasonColors(hue: number) {
+  return {
+    white: `hsl(${hue}, 100%, 100%)`, // --color-white
+    black: `hsl(${hue}, 100%, 4%)`, // --color-black
+    gray: `hsl(${hue}, 10%, 50%)` // --color-gray
+  }
+}
+
 export const ACCENT_STORAGE_KEY = "accent-season"
 
 export function seasonByLabel(label: string | null | undefined) {

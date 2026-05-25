@@ -88,15 +88,17 @@ export async function generateMetadata(props: {
     }
   }
 
-  if (frontmatter.og_image)
-    metadata.openGraph!.images = [
-      {
-        url: frontmatter.og_image,
-        width: 1200,
-        height: 630,
-        alt: ""
-      }
-    ]
+  const ogImage =
+    frontmatter.og_image ??
+    `/api/og?title=${encodeURIComponent(frontmatter.title)}&description=${encodeURIComponent(frontmatter.description)}`
+  metadata.openGraph!.images = [
+    {
+      url: ogImage,
+      width: 1200,
+      height: 630,
+      alt: frontmatter.title
+    }
+  ]
 
   return metadata
 }
