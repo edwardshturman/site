@@ -20,7 +20,7 @@ export default function Projects() {
       <Media
         title="Building Number Chart at Notion"
         description="Recapping my Spring 2026 engineering internship at Notion, working on blocks, database views, and polish across the app"
-        src="/og/number-chart.png"
+        src="/assets/number-chart-hero.png"
         link="/projects/number-chart"
         cta="View project"
       />

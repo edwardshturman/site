@@ -18,7 +18,7 @@ Features include filtering aggregated data, conditional styling — such as <spa
 Here's how I built Number Chart, and what I learned on the Primitive Foundations team at Notion.
 
 <Media
-  src="/og/number-chart.png"
+  src="/assets/number-chart-hero.png"
   alt="Number Chart"
 />
 
