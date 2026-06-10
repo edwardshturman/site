@@ -46,7 +46,7 @@ export default function Workshop() {
       ),
       src: "/assets/bloom-platform.png",
       cta: "Play the BLOOM platform",
-      link: "https://bloom.build"
+      link: "https://bloom.compsigh.club"
     },
     {
       title: "Blink",
