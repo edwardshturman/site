@@ -41,9 +41,8 @@ export default function Home() {
             based in San Francisco
           </p>
           <p>
-            I&apos;m an engineering intern on the Primitive Foundations team at
-            Notion, working on blocks, database views, and general polish across
-            the app
+            I&apos;m a marketing engineer at Descript, working on the content
+            platform &amp; design system
           </p>
           <p>
             I study at the University of San Francisco, where I founded
