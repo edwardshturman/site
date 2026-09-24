@@ -14,6 +14,11 @@ export const DEFAULT_SEASON = SEASONS.reduce((acc, s) =>
   s.order > acc.order ? s : acc
 )
 
+// The accent is pinned while the ColorPicker is unmounted; set this to
+// DEFAULT_SEASON to go back to following the latest season.
+export const FORCED_SEASON =
+  SEASONS.find((s) => s.label === "Spring 2026") ?? DEFAULT_SEASON
+
 export function seasonColors(hue: number) {
   return {
     white: `hsl(${hue}, 100%, 100%)`, // --color-white

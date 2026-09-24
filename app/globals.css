@@ -3,7 +3,7 @@
   --font-sans: var(--font-ia-writer-quattro), sans-serif;
   --font-mono: var(--font-ia-writer-mono), "Courier Prime", "Courier New", ui-monospace, monospace;
 
-  --hue: 30;
+  --hue: 210;
 
   --color-white:         hsla(var(--hue), 100%, 100%, 1.0);
   --color-black:         hsla(var(--hue), 100%, 004%, 1.0);

@@ -9,9 +9,8 @@ import {
 
 import {
   ACCENT_STORAGE_KEY,
-  DEFAULT_SEASON,
+  FORCED_SEASON,
   SEASONS,
-  seasonByLabel,
   type Season
 } from "@/lib/seasons"
 
@@ -46,8 +45,11 @@ function getServerSnapshot(): string | null {
 }
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const stored = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot)
-  const season = seasonByLabel(stored) ?? DEFAULT_SEASON
+  // Still subscribed so a restored picker re-renders on write. The accent is
+  // pinned for now; to make the stored season win again, use
+  // `seasonByLabel(useSyncExternalStore(...)) ?? DEFAULT_SEASON` here.
+  useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot)
+  const season = FORCED_SEASON
 
   useEffect(() => {
     document.documentElement.style.setProperty("--hue", String(season.hue))
