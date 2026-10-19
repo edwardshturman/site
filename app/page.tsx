@@ -38,12 +38,11 @@ export default function Home() {
           </p>
           <p>
             I&apos;m a marketing engineer at Descript, working on the content
-            platform &amp; design system
+            platform
           </p>
           <p>
-            I study at the University of San Francisco, where I founded
-            compsigh, the social computer science club for meeting cool people
-            &amp;&amp; building cool things
+            Previously at Notion, where we shipped Dashboard View &amp; Number
+            Chart, and Vercel, on templates &amp; integrations
           </p>
         </div>
         <Spacer size={4} />
