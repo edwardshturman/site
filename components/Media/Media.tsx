@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { type Route } from "next"
 import fs from "node:fs/promises"
+import { LazyVideo } from "./LazyVideo"
 import { getPlaiceholder } from "plaiceholder"
 import Image, { type ImageProps } from "next/image"
 
@@ -49,15 +50,7 @@ export async function Media({
     </>
   )
 
-  const VideoWrapper = (
-    <>
-      {video && (
-        <video autoPlay loop muted playsInline>
-          <source src={props.src as string} type="video/mp4" />
-        </video>
-      )}
-    </>
-  )
+  const VideoWrapper = <>{video && <LazyVideo src={props.src as string} />}</>
 
   return (
     <>
