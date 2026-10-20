@@ -29,6 +29,7 @@ function TagContent({ text, ...props }: TagProps) {
       <Link
         href={destination}
         scroll={false}
+        prefetch={false}
         className={`${styles.tag} ${selected ? styles.selected : ""}`}
       >
         {text}
