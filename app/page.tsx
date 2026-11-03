@@ -37,10 +37,6 @@ export default function Home() {
             based in San Francisco
           </p>
           <p>
-            I&apos;m a marketing engineer at Descript, working on the content
-            platform
-          </p>
-          <p>
             Previously at Notion, where we shipped Dashboard View &amp; Number
             Chart, and Vercel, on templates &amp; integrations
           </p>
