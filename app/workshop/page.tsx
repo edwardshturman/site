@@ -4,7 +4,7 @@ import type { Metadata } from "next"
 import { Spacer } from "@/components/Spacer"
 import { Comment } from "@/components/Comment"
 import { Mention } from "@/components/Mention"
-import { Playground } from "@/components/Playground"
+import { PlaygroundV2 } from "@/components/Playground/v2"
 import { MuniBullets } from "@/components/MuniBullet"
 import { Media, type MediaProps } from "@/components/Media"
 
@@ -21,7 +21,7 @@ export default function Workshop() {
     {
       title: "Muni Metro bullets",
       children: (
-        <Playground editable={false}>
+        <PlaygroundV2 editable={false}>
           <div
             style={
               {
@@ -32,7 +32,7 @@ export default function Workshop() {
           >
             <MuniBullets />
           </div>
-        </Playground>
+        </PlaygroundV2>
       )
     },
     {
