@@ -4,6 +4,8 @@ import type { Metadata } from "next"
 import { Spacer } from "@/components/Spacer"
 import { Comment } from "@/components/Comment"
 import { Mention } from "@/components/Mention"
+import { Playground } from "@/components/Playground"
+import { MuniBullets } from "@/components/MuniBullet"
 import { Media, type MediaProps } from "@/components/Media"
 
 export const metadata: Metadata = {
@@ -16,6 +18,25 @@ export const metadata: Metadata = {
 
 export default function Workshop() {
   const entries: MediaProps[] = [
+    {
+      title: "Muni Metro bullets",
+      description:
+        "LED bullets for San Francisco's Muni Metro lines, styled after the signs on the trains. Each one flickers at random like a half-broken neon sign. Hover for a shimmer, click to switch one off.",
+      children: (
+        <Playground editable={false}>
+          <div
+            style={
+              {
+                padding: "56px 24px",
+                "--bullet-size": "48px"
+              } as React.CSSProperties
+            }
+          >
+            <MuniBullets />
+          </div>
+        </Playground>
+      )
+    },
     {
       title: "Dark mode view transition",
       src: "/assets/dark-mode-view-transition.mp4"
