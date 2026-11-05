@@ -19,9 +19,11 @@ export const metadata: Metadata = {
 export default function Workshop() {
   const entries: MediaProps[] = [
     {
-      title: "Muni Metro bullets",
       children: (
-        <PlaygroundV2 editable={false}>
+        <PlaygroundV2
+          label="Muni bullets"
+          hints={[{ input: "Click", action: "Switch off/on" }]}
+        >
           <div
             style={
               {
