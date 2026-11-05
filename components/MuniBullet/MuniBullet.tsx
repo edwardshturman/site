@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
+import { mix } from "@/lib/hash"
 import styles from "./MuniBullet.module.css"
 
 const GRID = 16
@@ -99,18 +100,6 @@ const GLYPHS: Record<MuniLine, string[]> = {
     "...##...",
     "...##..."
   ]
-}
-
-// 32-bit integer finalizer (murmur3 fmix32): a cheap, deterministic scramble
-// that keeps server and client renders in sync
-function mix(n: number): number {
-  n |= 0
-  n ^= n >>> 16
-  n = Math.imul(n, 0x85ebca6b)
-  n ^= n >>> 13
-  n = Math.imul(n, 0xc2b2ae35)
-  n ^= n >>> 16
-  return n
 }
 
 // Each LED is a zero-length subpath; a square stroke cap turns it into a pixel
