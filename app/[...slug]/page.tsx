@@ -19,7 +19,7 @@ import { Spacer } from "@/components/Spacer"
 import { Comment } from "@/components/Comment"
 import { Mention } from "@/components/Mention"
 import { TagGroup } from "@/components/TagGroup"
-import { Playground } from "@/components/Playground"
+import { Playground } from "@/components/Playground/v1"
 import { TableOfContents } from "@/components/TableOfContents"
 
 async function readPage(slug: string[]) {
