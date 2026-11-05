@@ -19,7 +19,8 @@ import { Spacer } from "@/components/Spacer"
 import { Comment } from "@/components/Comment"
 import { Mention } from "@/components/Mention"
 import { TagGroup } from "@/components/TagGroup"
-import { Playground } from "@/components/Playground"
+import { Playground } from "@/components/Playground/v1"
+import { PlaygroundV2 } from "@/components/Playground/v2"
 import { TableOfContents } from "@/components/TableOfContents"
 
 async function readPage(slug: string[]) {
@@ -49,6 +50,7 @@ async function readPage(slug: string[]) {
         Media,
         Mention,
         Playground,
+        PlaygroundV2,
         Spacer,
         TableOfContents,
         Tag,
