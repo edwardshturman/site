@@ -20,8 +20,6 @@ export default function Workshop() {
   const entries: MediaProps[] = [
     {
       title: "Muni Metro bullets",
-      description:
-        "LED bullets for San Francisco's Muni Metro lines, styled after the signs on the trains. Each one flickers at random like a half-broken neon sign. Hover for a shimmer, click to switch one off.",
       children: (
         <Playground editable={false}>
           <div
