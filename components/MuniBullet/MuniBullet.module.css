@@ -1,0 +1,126 @@
+/* Columns are full-size when there's room and shrink when there isn't, and
+   shrink-to-fit parents (like a centered column) still size around them */
+div.bullets {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(0, var(--bullet-size, 32px));
+  gap: calc(var(--bullet-size, 32px) / 4);
+}
+
+button.bullet {
+  position: relative;
+  display: block;
+  width: 100%;
+  align-self: start;
+  aspect-ratio: 1;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button.bullet:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+button.bullet > svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+button.bullet path {
+  fill: none;
+  stroke-width: 0.8;
+  stroke-linecap: square;
+}
+
+svg.lit {
+  --shimmer-color: color-mix(in oklab, var(--line-color), #fff 55%);
+  filter: drop-shadow(0 0 1.5px var(--line-color))
+    drop-shadow(0 0 4px color-mix(in srgb, var(--line-color) 45%, transparent));
+}
+
+button.off > svg.lit {
+  opacity: 0;
+}
+
+/* Hover shimmer, after the avatar's: each LED flashes once per cycle */
+g.shimmer > path {
+  display: none;
+  visibility: hidden;
+  stroke: var(--shimmer-color);
+  opacity: 0;
+  animation: shimmer var(--shimmer-cycle, 2s) ease-in-out infinite;
+  animation-delay: calc(var(--phase) * var(--shimmer-cycle, 2s) * -1);
+  /* Groups pop in (and back out) one at a time across the spawn window.
+     visibility does the staggering; display: none while idle stops the
+     animations entirely, and allow-discrete holds it until the group's turn. */
+  transition-property: visibility, display;
+  transition-duration: 0s;
+  transition-behavior: allow-discrete;
+  transition-delay: calc(var(--spawn) * var(--shimmer-spawn, 200ms));
+}
+
+@keyframes shimmer {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  14% {
+    opacity: var(--shimmer-intensity, 0.7);
+  }
+  32% {
+    opacity: 0;
+  }
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  button.bullet:hover g.shimmer > path {
+    display: inline;
+    visibility: visible;
+
+    /* Coming out of display: none, start hidden so visibility can stagger */
+    @starting-style {
+      visibility: hidden;
+    }
+  }
+}
+
+/* Unlit LEDs: translucent, hue-tinted grays so they sit on the page background */
+svg.unlit {
+  --shimmer-color: hsla(var(--hue), 12%, 30%, 1);
+}
+
+path.unlitDisc {
+  stroke: hsla(var(--hue), 10%, 40%, 0.6);
+}
+
+path.unlitLetter {
+  stroke: hsla(var(--hue), 10%, 50%, 0.16);
+}
+
+@media (prefers-color-scheme: dark) {
+  svg.unlit {
+    --shimmer-color: hsla(var(--hue), 15%, 75%, 1);
+  }
+
+  path.unlitDisc {
+    stroke: hsla(var(--hue), 10%, 50%, 0.26);
+  }
+
+  path.unlitLetter {
+    stroke: hsla(var(--hue), 15%, 85%, 0.55);
+  }
+}
+
+@media (max-width: 450px) {
+  div.bullets {
+    gap: calc(var(--bullet-size, 32px) * 3 / 16);
+  }
+}

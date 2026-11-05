@@ -7,7 +7,10 @@ import Image, { type ImageProps } from "next/image"
 
 import styles from "./Media.module.css"
 
-export interface MediaProps extends Omit<ImageProps, "alt"> {
+export interface MediaProps extends Omit<ImageProps, "alt" | "src"> {
+  // An image or video path, or pass children to show something live instead
+  src?: ImageProps["src"]
+  children?: React.ReactNode
   title?: string
   description?: React.ReactElement | string
   link?: Route
@@ -21,6 +24,8 @@ export async function Media({
   link,
   cta,
   alt,
+  src,
+  children,
   ...props
 }: MediaProps) {
   async function processImage(src: string) {
@@ -29,13 +34,13 @@ export async function Media({
     return { base64, metadata }
   }
   let imageData
-  const video = props.src.toString().endsWith(".mp4")
-  if (!video) imageData = await processImage(`public${props.src}`)
-  const isGif = props.src.toString().endsWith(".gif")
+  const video = src?.toString().endsWith(".mp4") ?? false
+  if (src && !video) imageData = await processImage(`public${src}`)
+  const isGif = src?.toString().endsWith(".gif") ?? false
 
   const ImageWrapper = (
     <>
-      {!video && (
+      {src && !video && (
         <Image
           unoptimized={isGif}
           alt={alt || ""}
@@ -45,12 +50,13 @@ export async function Media({
           width={imageData?.metadata.width}
           height={imageData?.metadata.height}
           {...props}
+          src={src}
         />
       )}
     </>
   )
 
-  const VideoWrapper = <>{video && <LazyVideo src={props.src as string} />}</>
+  const VideoWrapper = <>{video && <LazyVideo src={src as string} />}</>
 
   return (
     <>
@@ -58,12 +64,14 @@ export async function Media({
         <figure>
           {link ? (
             <Link href={link}>
+              {children}
               {ImageWrapper}
               {VideoWrapper}
               {title && <figcaption>{title}</figcaption>}
             </Link>
           ) : (
             <>
+              {children}
               {ImageWrapper}
               {VideoWrapper}
               {title && <figcaption>{title}</figcaption>}
