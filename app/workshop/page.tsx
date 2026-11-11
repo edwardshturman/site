@@ -38,6 +38,18 @@ export default function Workshop() {
       )
     },
     {
+      title: "Twinkling avatar",
+      description:
+        "A pixelated picture of me that twinkles in the site's accent color",
+      src: "/assets/twinkling-avatar.mp4"
+    },
+    {
+      title: "Season color picker",
+      description:
+        "An accent color picker for my site, based on some seasons from my life",
+      src: "/assets/season-color-picker.mp4"
+    },
+    {
       title: "Dark mode view transition",
       src: "/assets/dark-mode-view-transition.mp4"
     },
@@ -155,6 +167,18 @@ export default function Workshop() {
       alt: "A mockup of an expense tracker web app",
       link: "https://x.com/edwardshturman/status/1871397612404060441",
       cta: "Let me know on Twitter"
+    },
+    {
+      title: "Works-in-progress marquee",
+      description: (
+        <>
+          A marquee on the community page for{" "}
+          <Link href="/projects/compsigh">compsigh</Link>, the computer science
+          club at the University of San Francisco. It shows what members are
+          working on, which they can add to using our Discord bot.
+        </>
+      ),
+      src: "/assets/works-in-progress-marquee.mp4"
     },
     {
       title: "DEPLOY/24 branding & promo material",
