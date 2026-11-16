@@ -29,12 +29,12 @@ export default function Home() {
         </div>
         <div className={styles.bio}>
           <p>
-            I&apos;m a web developer, interface designer, <br /> and community
-            builder based in San Francisco
+            I&apos;m a product engineer, interface designer, <br /> and
+            community builder based in San Francisco
           </p>
           <p className={styles.mobile}>
-            I&apos;m a web developer, interface designer, and community builder
-            based in San Francisco
+            I&apos;m a product engineer, interface designer, and community
+            builder based in San Francisco
           </p>
           <p>
             Previously at Notion, where we shipped Dashboard View &amp; Number
