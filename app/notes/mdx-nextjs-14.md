@@ -48,7 +48,7 @@ If the `@next/mdx` tradeoffs don't bother you, [`gray-matter`](https://github.co
 
 ### `next-mdx-remote`
 
-This is it. [`next-mdx-remote`](https://github.com/hashicorp/next-mdx-remote) allows you to write full-fat Markdown — you don't even need to use an `.mdx` extension — and just *use* your components, no import required. That does mean you have to package all of them for every page. But, since I use just a few small ones I wrote for convenience — in almost all of my pages anyway — this isn't a concern for me personally.
+This is it. [`next-mdx-remote`](https://github.com/hashicorp/next-mdx-remote) allows you to write full-fat Markdown — you don't even need to use an `.mdx` extension — and just _use_ your components, no import required. That does mean you have to package all of them for every page. But, since I use just a few small ones I wrote for convenience — in almost all of my pages anyway — this isn't a concern for me personally.
 
 ## Setup
 
@@ -94,9 +94,10 @@ function getMdSlugs(folder: string, paths: string[] = []) {
 
 <Spacer size={32} />
 
+{/* prettier-ignore */}
 <Comment type="block">An aside on <code>generateStaticParams()</code></Comment>
 
-You might be wondering why we're returning an array of *objects*. That's because to [statically generate a catch-all dynamic segment](https://nextjs.org/docs/app/api-reference/functions/generate-static-params#catch-all-dynamic-segment):
+You might be wondering why we're returning an array of _objects_. That's because to [statically generate a catch-all dynamic segment](https://nextjs.org/docs/app/api-reference/functions/generate-static-params#catch-all-dynamic-segment):
 
 - Next.js expects an array of objects,
 - Where the value of each key is an array,

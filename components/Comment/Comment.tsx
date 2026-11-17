@@ -1,17 +1,17 @@
-import styles from './Comment.module.css'
+import styles from "./Comment.module.css"
 
 export function Comment({
   type,
   children
 }: {
-  type: 'block' | 'inline'
+  type: "block" | "inline"
   children: React.ReactNode
 }) {
   return (
     <>
       {/* I refuse to have my ternaries bastardized */}
-      {/* @prettier-ignore */}
       {
+        // prettier-ignore
         type === 'block'
           ? <p className={`${styles.comment} ${styles['block-comment']}`}>{children}</p>
           : <span className={`${styles.comment} ${styles['inline-comment']}`}>{children}</span>

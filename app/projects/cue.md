@@ -9,7 +9,7 @@ og_image: "/og/cue.png"
 
 Cue is a minimalist active recall study app focused on helping students ask the right questions. Transform your notes into actionable study cards for easy pasting back into Google Docs or Notion, or export to Anki.
 
-*Updated May 2024.*
+_Updated May 2024._
 
 <Media
   src="/og/cue.png"

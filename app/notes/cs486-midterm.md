@@ -6,7 +6,7 @@ published: false
 
 # Deploying a Next.js + Hono + MySQL application on AWS
 
-*An attempt at delight in Dev Ops*
+_An attempt at delight in Dev Ops_
 
 <TableOfContents
   entries={[
@@ -52,13 +52,14 @@ I'm a big proponent of Markdown, and generally think this works well for us, but
 - Updates to events require a new deployment, since everything is statically generated.
 - **Building APIs around club events require reading Markdown files**, introducing unnecessary latency.
 
-*Wouldn't it be great if events were stored in & fetched from a database?*
+_Wouldn't it be great if events were stored in & fetched from a database?_
 
+{/* prettier-ignore */}
 <Comment type="block">The answer to this question depends on who you ask. For the sake of this midterm, don't ask me :)</Comment>
 
 ## Setup
 
-As someone who's been spoiled by stellar developer experience — TypeScript, Next.js, Vercel, etc. — I desperately wanted a nice stack for this project. *Why should Dev Ops have to sacrifice DX?*
+As someone who's been spoiled by stellar developer experience — TypeScript, Next.js, Vercel, etc. — I desperately wanted a nice stack for this project. _Why should Dev Ops have to sacrifice DX?_
 
 <Media
   unoptimized

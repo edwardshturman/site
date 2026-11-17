@@ -8,6 +8,7 @@ published: true
 
 <Comment type="block">The changelog for this site</Comment>
 
+{/* prettier-ignore */}
 <Comment type="block">Highlights features & interesting architectural challenges more so than content published</Comment>
 
 ## To do

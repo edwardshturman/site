@@ -1,4 +1,10 @@
 {
   "semi": false,
-  "trailingComma": "none"
+  "trailingComma": "none",
+  "overrides": [
+    {
+      "files": "app/**/*.md",
+      "options": { "parser": "mdx", "embeddedLanguageFormatting": "off" }
+    }
+  ]
 }

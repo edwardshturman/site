@@ -11,13 +11,13 @@ I had previously wondered whether this endeavor was worthy of sharing a shelf wi
 
 After some time building, I am of the opinion that crafting & curating one's identity on the Web is one of the most important creative endeavors.
 
-*Updated June 2024.*
+_Updated June 2024._
 
 ## Thought process
 
-I built my first personal website in 2020. Since then, I've used everything from [Notion](https://notion.so) to indie website builders like [mmm](https://mmm.page) to host different versions of my online identity. These are great, but I couldn't quite capture the vibe — none felt like *me*.
+I built my first personal website in 2020. Since then, I've used everything from [Notion](https://notion.so) to indie website builders like [mmm](https://mmm.page) to host different versions of my online identity. These are great, but I couldn't quite capture the vibe — none felt like _me_.
 
-This eventually became frustrating. *I put so much love & craft into the brands, stories, and experiences I create. Why am I not extending the same to myself?*
+This eventually became frustrating. _I put so much love & craft into the brands, stories, and experiences I create. Why am I not extending the same to myself?_
 
 ### Things I did not want to build
 
@@ -31,7 +31,7 @@ This eventually became frustrating. *I put so much love & craft into the brands,
 - A place that feels just as human as it does technical
 - A place where I can show my work as a story, not in isolation
 
-In short, I'm building *a home* for my identity, not a display case.
+In short, I'm building _a home_ for my identity, not a display case.
 
 ## Technical & aesthetic breakdown
 

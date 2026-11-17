@@ -7,6 +7,7 @@ og_image: "/og/number-chart.png"
 
 # Building Number Chart at Notion
 
+{/* prettier-ignore */}
 <Comment type="block">Recapping my Spring 2026 engineering internship at Notion, working on blocks, database views, and polish across the app</Comment>
 
 In early March, [Notion launched Dashboard view](https://x.com/notionhq/status/2031098248941940790), along with **Number Chart**: a single value aggregating over any database property, such as _Monthly revenue_ or _Customers onboarded_.
@@ -65,6 +66,7 @@ Dashboard view provides an elegant, minimal set of widgets for viewing your most
   alt="Number Chart in a Dashboard view"
 />
 
+{/* prettier-ignore */}
 <Comment type="block"><Mention name="Stephen" avatar="/avatars/wustep.jpg" link="https://x.com/wustep" /> wrote up a great [breakdown of the technical decisions](https://x.com/wustep/status/2032479265300852817) behind Dashboard view: introducing a new interaction mode, grid vs. columns vs. rows, and more. Highly recommend for further reading!</Comment>
 
 ## Features & considerations

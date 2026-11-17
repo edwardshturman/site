@@ -16,7 +16,7 @@ In my experience,
 
 If these things were easy, everyone would be doing them.
 
-For me at least, the *struggle* of the task is part of the reward of seeing it through. *It's hard, but I'm doing it anyway.*
+For me at least, the _struggle_ of the task is part of the reward of seeing it through. _It's hard, but I'm doing it anyway._
 
 Telling someone "it's easy" is doing them a disservice: it devalues the work they put in, and makes them feel like shit if/when they encounter obstacles.
 
