@@ -9,6 +9,16 @@ const nextConfig: NextConfig = {
     // Lets React's <ViewTransition> animate route changes, e.g. in Workshop
     viewTransition: true
   },
+  async redirects() {
+    return [
+      // Temporary while Decimal lives in Workshop
+      {
+        source: "/projects/decimal",
+        destination: "/workshop/decimal",
+        permanent: false
+      }
+    ]
+  },
   // Cache assets for a week
   async headers() {
     return ["/assets/:path*", "/avatars/:path*"].map((source) => ({
