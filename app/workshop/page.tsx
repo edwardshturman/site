@@ -38,6 +38,20 @@ export default function Workshop() {
       )
     },
     {
+      title: "Expense tracker: debug drawer",
+      description: (
+        <>
+          A dev drawer for debugging, built for my expense tracker with{" "}
+          <Link href="https://vaul.emilkowal.ski">Vaul</Link>
+        </>
+      ),
+      src: "/assets/expense-tracker-debug-drawer.mp4"
+    },
+    {
+      title: "Expense tracker: renaming transactions",
+      src: "/assets/expense-tracker-renaming-transactions.mp4"
+    },
+    {
       title: "Twinkling avatar",
       description:
         "A pixelated picture of me that twinkles in the site's accent color",
@@ -48,6 +62,11 @@ export default function Workshop() {
       description:
         "An accent color picker for my site, based on some seasons from my life",
       src: "/assets/season-color-picker.mp4"
+    },
+    {
+      title: "Expense tracker: Inbox",
+      description: "Where all new transactions go for review",
+      src: "/assets/expense-tracker-progressive-blur.mp4"
     },
     {
       title: "Dark mode view transition",
