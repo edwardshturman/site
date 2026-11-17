@@ -65,7 +65,7 @@ export default function Workshop() {
     },
     {
       title: "Expense tracker: Inbox",
-      description: "Where all new transactions go",
+      description: "Where all new transactions go for review",
       src: "/assets/expense-tracker-progressive-blur.mp4"
     },
     {
