@@ -1,5 +1,6 @@
 import { Media } from "@/components/Media"
 
+import { EntryTitle } from "./EntryTitle"
 import { entries, projects } from "./entries"
 import { WorkshopFeed } from "./WorkshopFeed"
 import { TimelineButton } from "./TimelineButton"
@@ -18,12 +19,22 @@ export default function WorkshopLayout({
     <>
       {children}
       <WorkshopFeed
-        items={entries.map(({ project, ...entry }, index) => ({
+        items={entries.map(({ project, timelineTitle, ...entry }, index) => ({
           id: String(index),
           project,
           media: (
             <Media
               {...entry}
+              title={
+                timelineTitle ? (
+                  <EntryTitle
+                    title={entry.title}
+                    timelineTitle={timelineTitle}
+                  />
+                ) : (
+                  entry.title
+                )
+              }
               titleAccessory={
                 project && (
                   <TimelineButton

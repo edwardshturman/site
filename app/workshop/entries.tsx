@@ -19,7 +19,11 @@ export function isProjectSlug(slug: string): slug is ProjectSlug {
   return Object.hasOwn(projects, slug)
 }
 
-export type WorkshopEntry = MediaProps & { project?: ProjectSlug }
+export type WorkshopEntry = MediaProps & {
+  project?: ProjectSlug
+  // A shorter title for the project's timeline, where the project is implied
+  timelineTitle?: string
+}
 
 // Newest first
 export const entries: WorkshopEntry[] = [
@@ -44,6 +48,7 @@ export const entries: WorkshopEntry[] = [
   },
   {
     title: "Decimal debug drawer",
+    timelineTitle: "Debug drawer",
     project: "decimal",
     description: (
       <>
@@ -55,6 +60,7 @@ export const entries: WorkshopEntry[] = [
   },
   {
     title: "Decimal renaming transactions",
+    timelineTitle: "Renaming transactions",
     project: "decimal",
     src: "/assets/expense-tracker-renaming-transactions.mp4"
   },
@@ -72,6 +78,7 @@ export const entries: WorkshopEntry[] = [
   },
   {
     title: "Decimal Inbox",
+    timelineTitle: "Inbox",
     project: "decimal",
     description: "Where all new transactions go for review",
     src: "/assets/expense-tracker-progressive-blur.mp4"
@@ -179,6 +186,7 @@ export const entries: WorkshopEntry[] = [
   },
   {
     title: "Expense tracker mockup",
+    timelineTitle: "First mockup",
     project: "decimal",
     description: (
       <>

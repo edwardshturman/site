@@ -7,11 +7,11 @@ import Image, { type ImageProps } from "next/image"
 
 import styles from "./Media.module.css"
 
-export interface MediaProps extends Omit<ImageProps, "alt" | "src"> {
+export interface MediaProps extends Omit<ImageProps, "alt" | "src" | "title"> {
   // An image or video path, or pass children to show something live instead
   src?: ImageProps["src"]
   children?: React.ReactNode
-  title?: string
+  title?: React.ReactNode
   // Shown beside the title, e.g. a button to see more like this
   titleAccessory?: React.ReactNode
   description?: React.ReactElement | string
