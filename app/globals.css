@@ -180,3 +180,11 @@ span[data-highlighted-line-id="add"] {
 span[data-highlighted-line-id="remove"] {
   background-color: var(--color-diff-remove);
 }
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+}

@@ -21,17 +21,19 @@ div.media-container figure a:has(> img, > video):hover {
 }
 
 div.media-container figure figcaption {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   margin-top: 24px;
 }
 
-div.media-container figure:has(> a) figcaption {
-  background-color: var(--color-accent-10);
+div.media-container figure figcaption > a {
   padding: 0 6px;
-  border-radius: 6px;
 }
 
-div.media-container figure:has(> a) figcaption:hover {
-  background-color: var(--color-accent-20);
+/* Without an accessory, a linked title spans the full width */
+div.media-container figure figcaption > a:only-child {
+  flex: 1;
 }
 
 div.media-container figure div.description {
