@@ -1,0 +1,53 @@
+/*
+ * Navigating between Workshop and a project's timeline, staged so nothing
+ * overlaps mid-flight:
+ *   1. The old header and entries leaving the feed fade out
+ *   2. Entries in both feeds glide to their new spots, above everything else
+ *   3. The new header, then any entries joining the feed, fade in behind them
+ * Anything else that changed (e.g. the breadcrumbs) crossfades with the page
+ * Global (not a CSS module) so the view-transition classes keep their names
+ */
+
+/* 1. Out */
+:root:active-view-transition-type(workshop)::view-transition-old(root),
+::view-transition-old(.workshop-header-exit),
+::view-transition-old(.workshop-exit) {
+  animation: 150ms ease-out both workshop-fade-out;
+}
+
+/* 2. Moving: the snapshot from before swaps quickly for the live element, so a
+   video's frames don't ghost over each other for the whole glide */
+::view-transition-group(.workshop-move) {
+  z-index: 1;
+  animation-duration: 450ms;
+  animation-timing-function: cubic-bezier(0.2, 0, 0, 1);
+}
+
+::view-transition-old(.workshop-move) {
+  animation: 100ms ease-out both workshop-fade-out;
+}
+
+::view-transition-new(.workshop-move) {
+  animation: none;
+}
+
+/* 3. In, once the moving entries have mostly cleared */
+::view-transition-new(.workshop-header-enter) {
+  animation: 250ms ease-out 100ms both workshop-fade-in;
+}
+
+::view-transition-new(.workshop-enter) {
+  animation: 250ms ease-out 200ms both workshop-fade-in;
+}
+
+@keyframes workshop-fade-out {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes workshop-fade-in {
+  from {
+    opacity: 0;
+  }
+}

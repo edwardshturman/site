@@ -1,0 +1,40 @@
+/* A small icon button, e.g. beside an entry's title */
+a.icon-button {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border-radius: 6px;
+  background-color: unset;
+  color: var(--color-text-subtle);
+  transition:
+    color 150ms ease,
+    background-color 150ms ease;
+}
+
+a.icon-button:hover,
+a.icon-button[data-popup-open] {
+  color: var(--color-accent);
+  background-color: var(--color-accent-10);
+}
+
+a.icon-button:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* The back button hangs in the left margin, like list bullets, so the heading
+   stays aligned with the text below it */
+div.heading {
+  position: relative;
+}
+
+a.icon-button.back {
+  position: absolute;
+  top: 50%;
+  right: calc(100% + 16px);
+  transform: translateY(-50%);
+}

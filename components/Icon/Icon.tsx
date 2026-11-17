@@ -49,6 +49,48 @@ export function NoteIcon(props: JSX.IntrinsicElements["svg"]) {
   )
 }
 
+export function BackIcon(props: JSX.IntrinsicElements["svg"]) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+    >
+      <path
+        d="M10.25 5.75L3.75 12L10.25 18.25M4.75 12H20.25"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  )
+}
+
+// A stack of cards: more where this came from
+export function SeeMoreIcon(props: JSX.IntrinsicElements["svg"]) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+    >
+      <path
+        d="M7.75 3.75H16.25M5.75 6.75H18.25M4.75 20.25H19.25C19.8023 20.25 20.25 19.8023 20.25 19.25V10.75C20.25 10.1977 19.8023 9.75 19.25 9.75H4.75C4.19772 9.75 3.75 10.1977 3.75 10.75V19.25C3.75 19.8023 4.19772 20.25 4.75 20.25Z"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+    </svg>
+  )
+}
+
 export function UnreadIndicator(props: JSX.IntrinsicElements["div"]) {
   return (
     <div

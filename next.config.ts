@@ -5,6 +5,10 @@ const nextConfig: NextConfig = {
   pageExtensions: ["js", "jsx", "ts", "tsx"],
   reactStrictMode: true,
   transpilePackages: ["next-mdx-remote", "shiki"],
+  experimental: {
+    // Lets React's <ViewTransition> animate route changes, e.g. in Workshop
+    viewTransition: true
+  },
   // Cache assets for a week
   async headers() {
     return ["/assets/:path*", "/avatars/:path*"].map((source) => ({
