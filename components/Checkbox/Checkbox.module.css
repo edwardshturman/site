@@ -1,5 +1,5 @@
 input[type="checkbox"].checkbox {
-  margin: 0 .2em .25em -1.4em;
+  margin: 0 0.2em 0.25em -1.4em;
   vertical-align: middle;
   color: hsla(41deg, 98%, 59%, 0.9);
   border-radius: 50px;
@@ -8,5 +8,5 @@ input[type="checkbox"].checkbox {
 }
 
 li.task-list-item::marker {
-  color: hsla(41deg, 98%, 59%, 0.0);
+  color: hsla(41deg, 98%, 59%, 0);
 }

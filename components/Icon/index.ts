@@ -4,4 +4,4 @@ export {
   NoteIcon,
   SeeMoreIcon,
   UnreadIndicator
-} from './Icon'
+} from "./Icon"

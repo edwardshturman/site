@@ -52,7 +52,7 @@ d.craft started out as an inside joke of a project: we'd leave school and "come 
 There were a few things on our minds:
 
 - Being able to identify players as students, and know who's who
-- Making sure *only* d.tech community members could access the server
+- Making sure _only_ d.tech community members could access the server
 - Safety vs. self-expression: where do we draw the line on interactions?
 
 <Media
@@ -171,7 +171,7 @@ Running d.craft taught me a lot about leading a team, branding & marketing, and 
 
 <Spacer size={16} />
 
-There is a world in which d.craft lives on. And, when that happens, I'll be there to support it. Until then, it's me and the team, hitting *Return to Main Menu.*
+There is a world in which d.craft lives on. And, when that happens, I'll be there to support it. Until then, it's me and the team, hitting _Return to Main Menu._
 
 <Media
   src="/assets/dcraft-team.png"

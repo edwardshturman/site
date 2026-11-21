@@ -9,7 +9,7 @@ og_image: "/og/compsigh.png"
 
 "Meet cool people, build cool things." Here's the story of compsigh, the computer science club I founded at the University of San Francisco.
 
-*Updated May 2024.*
+_Updated May 2024._
 
 <TableOfContents
   entries={[
@@ -35,7 +35,7 @@ This is doable, but I have a couple gripes with the default path.
 
 Firstly, software engineering requires an insane level of dedication & craft. Assuming you don't actually care, you could brute-force your way through it, but that is — in my opinion — a miserable way to live.
 
-Secondly, while it may have been true five years ago that a job in big tech meant greater job security, it's almost certainly no longer the case. *It's not "riskier" to go and do your own thing anymore.*
+Secondly, while it may have been true five years ago that a job in big tech meant greater job security, it's almost certainly no longer the case. _It's not "riskier" to go and do your own thing anymore._
 
 Of course, there's nothing wrong with working for a big tech company, even if financial gain is what you're after. The problem is when you don't have any real interest in your field, which, sadly, is the case for a nontrivial amount of students on the default path.
 
@@ -43,7 +43,7 @@ I wanted to take an alternate path. One in which I take ownership as a problem s
 
 ## The alternate path
 
-Computer science is the fastest-growing major at the University of San Francisco. It was to my surprise, then, that when I joined USF in 2021, *there was no general CS club on campus*. Despite the friendly, small department where you can get to know some really great people — not least of which our professors — there was no culture around learning & building together, or doing anything social.
+Computer science is the fastest-growing major at the University of San Francisco. It was to my surprise, then, that when I joined USF in 2021, _there was no general CS club on campus_. Despite the friendly, small department where you can get to know some really great people — not least of which our professors — there was no culture around learning & building together, or doing anything social.
 
 As Matthew Stanciu of Purdue Hackers — an organization I deeply admire — poignantly notes in his essay, [Galactic Empire](https://blog.purduehackers.com/posts/galactic-empire), the majority of collegiate computer science orgs are structured for the default path.
 
@@ -112,7 +112,7 @@ There are two things that capture the essence of compsigh:
   }}
 />
 
-*Much love to the leadership team that helps put these on: <Mention name="Jet" avatar="/avatars/jet.jpeg" link="https://jetpham.com" />, <Mention name="Gursh" avatar="/avatars/gursh.png" link="https://gursh.dev" />, Quinn, Ani, and Andrew.*
+_Much love to the leadership team that helps put these on: <Mention name="Jet" avatar="/avatars/jet.jpeg" link="https://jetpham.com" />, <Mention name="Gursh" avatar="/avatars/gursh.png" link="https://gursh.dev" />, Quinn, Ani, and Andrew._
 
 <Spacer size={32} />
 

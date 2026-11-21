@@ -43,7 +43,7 @@ We drew inspiration from games, aesthetics, and stories we'd all grown up with. 
 - [VALORANT Protocol 781-A trailer](https://youtube.com/watch?v=h6i8lM3egvI)
 - [Revenant from Apex Legends](https://youtube.com/watch?v=75szF5i41Bw)
 - Orwellian dystopia stories
-- [Ghost in the Shell](https://en.wikipedia.org/wiki/Ghost_in_the_Shell_(1995_film))
+- [Ghost in the Shell](<https://en.wikipedia.org/wiki/Ghost_in_the_Shell_(1995_film)>)
 - [Winter Soldier](https://youtube.com/watch?v=2bWWBjKEiZA)
 - [Watch Dogs 2](https://ubisoft.com/en-us/game/watch-dogs/watch-dogs-2)
 - Cybernetics

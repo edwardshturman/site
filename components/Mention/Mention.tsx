@@ -1,26 +1,20 @@
-import Link from 'next/link'
-import Image from 'next/image'
+import Link from "next/link"
+import Image from "next/image"
 
-import styles from './Mention.module.css'
+import styles from "./Mention.module.css"
 
-export function Mention(
-{
+export function Mention({
   name,
   avatar,
   link
-}:
-{
-  name: string,
-  avatar: string,
+}: {
+  name: string
+  avatar: string
   link: string
-}
-) {
+}) {
   return (
     <>
-      <Link
-        className={styles.link}
-        href={link}
-      >
+      <Link className={styles.link} href={link}>
         <span className={styles.container}>
           <Image
             id={styles.avatar}
@@ -29,9 +23,7 @@ export function Mention(
             width={20}
             height={20}
           />
-          <span className={styles.name}>
-            {name}
-          </span>
+          <span className={styles.name}>{name}</span>
         </span>
       </Link>
     </>

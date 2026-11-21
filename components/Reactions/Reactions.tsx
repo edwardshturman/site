@@ -1,6 +1,6 @@
-import Image from 'next/image'
+import Image from "next/image"
 
-import styles from './Reactions.module.css'
+import styles from "./Reactions.module.css"
 
 export function Reactions() {
   return (
