@@ -1,4 +1,5 @@
 import { Media } from "@/components/Media"
+import { slugify } from "@/lib/slugify"
 
 import { EntryTitle } from "./EntryTitle"
 import { entries, projects } from "./entries"
@@ -24,6 +25,13 @@ export default function WorkshopLayout({
           project,
           media: (
             <Media
+              linkable
+              // From the full title, so a link works on the timeline too
+              id={
+                typeof entry.title === "string"
+                  ? slugify(entry.title)
+                  : undefined
+              }
               {...entry}
               title={
                 timelineTitle ? (

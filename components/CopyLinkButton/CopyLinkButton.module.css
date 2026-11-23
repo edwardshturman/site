@@ -1,0 +1,40 @@
+/* Matches Workshop's icon buttons, but sized in ems so it scales with the text
+   it sits next to */
+button.copy-link {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75em;
+  height: 1.75em;
+  font-size: inherit;
+  color: var(--color-text-subtle);
+  background: none;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition:
+    color 150ms ease,
+    background-color 150ms ease;
+}
+
+button.copy-link svg {
+  width: 1.125em;
+  height: 1.125em;
+}
+
+button.copy-link:hover,
+button.copy-link[data-popup-open],
+button.copy-link[data-copied="true"] {
+  color: var(--color-accent);
+  background-color: var(--color-accent-10);
+}
+
+button.copy-link:active {
+  background-color: var(--color-accent-20);
+}
+
+button.copy-link:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}

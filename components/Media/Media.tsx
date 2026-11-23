@@ -2,6 +2,8 @@ import Link from "next/link"
 import { type Route } from "next"
 import fs from "node:fs/promises"
 import { LazyVideo } from "./LazyVideo"
+import { slugify } from "@/lib/slugify"
+import { CopyLinkButton } from "@/components/CopyLinkButton"
 import { getPlaiceholder } from "plaiceholder"
 import Image, { type ImageProps } from "next/image"
 
@@ -18,6 +20,11 @@ export interface MediaProps extends Omit<ImageProps, "alt" | "src" | "title"> {
   link?: Route
   cta?: string
   alt?: string
+  // Shows a button beside the title that copies a link straight to this entry
+  linkable?: boolean
+  // The ID that link points to. Defaults to one derived from the title, so
+  // only needed when the title isn't plain text
+  id?: string
 }
 
 export async function Media({
@@ -27,6 +34,8 @@ export async function Media({
   link,
   cta,
   alt,
+  linkable = false,
+  id,
   src,
   children,
   ...props
@@ -40,6 +49,11 @@ export async function Media({
   const video = src?.toString().endsWith(".mp4") ?? false
   if (src && !video) imageData = await processImage(`public${src}`)
   const isGif = src?.toString().endsWith(".gif") ?? false
+
+  const plainTitle = typeof title === "string" ? title : undefined
+  const anchor = linkable
+    ? (id ?? (plainTitle && slugify(plainTitle)))
+    : undefined
 
   const ImageWrapper = (
     <>
@@ -63,7 +77,11 @@ export async function Media({
 
   return (
     <>
-      <div className={styles["media-container"]} style={props.style}>
+      <div
+        className={styles["media-container"]}
+        style={props.style}
+        id={anchor}
+      >
         <figure>
           {link ? (
             // The CTA links too, so keep this one out of the tab order
@@ -83,6 +101,7 @@ export async function Media({
             <figcaption>
               <span className={styles.title}>{title}</span>
               {titleAccessory}
+              {anchor && <CopyLinkButton id={anchor} title={plainTitle} />}
             </figcaption>
           )}
           {description && (

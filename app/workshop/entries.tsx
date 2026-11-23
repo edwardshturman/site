@@ -31,6 +31,7 @@ export const entries: WorkshopEntry[] = [
     children: (
       <PlaygroundV2
         label="Muni bullets"
+        linkable
         hints={[{ input: "Click", action: "Switch off/on" }]}
       >
         <div

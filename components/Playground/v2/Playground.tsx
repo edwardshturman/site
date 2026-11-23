@@ -1,6 +1,9 @@
 "use client"
 
 import { useState } from "react"
+import { slugify } from "@/lib/slugify"
+import { CopyLinkButton } from "@/components/CopyLinkButton"
+
 import styles from "./Playground.module.css"
 
 type Hint = { input: string; action: string }
@@ -17,6 +20,9 @@ export type PlaygroundProps = {
    * off for demos with nothing to reset, or that keep state outside the box
    * (like tags, which live in the URL). */
   resettable?: boolean
+  /** Gives the playground an ID derived from its label, and a button at the
+   * right of the label's bar that copies a link straight to it */
+  linkable?: boolean
 }
 
 // A spec sheet: registration marks around a pixel dot grid, with a status LED
@@ -25,18 +31,21 @@ export function Playground({
   editable = false,
   label = "Playground",
   hints = [],
-  resettable = false
+  resettable = false,
+  linkable = false
 }: PlaygroundProps) {
   // Changing the key remounts the demo, putting its state back to the start
   const [key, setKey] = useState(0)
+  const id = linkable ? slugify(label) : undefined
 
   return (
-    <figure className={styles.playground}>
+    <figure className={styles.playground} id={id}>
       <header className={styles.bar}>
         <span className={styles.label}>
           <i className={styles.led} aria-hidden="true" />
           {label}
         </span>
+        {id && <CopyLinkButton id={id} title={label} />}
       </header>
       <div className={styles.stage}>
         <span className={`${styles.mark} ${styles.tl}`} aria-hidden="true" />

@@ -26,6 +26,15 @@ figure.playground {
   gap: 10px;
 }
 
+/* Keeps the copy link button from making the bar taller */
+.bar > button {
+  margin: -0.2em 0;
+}
+
+figure.playground[id] {
+  scroll-margin-top: 16px;
+}
+
 /* A status LED: it's live */
 i.led {
   width: 6px;

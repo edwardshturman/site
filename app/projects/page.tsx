@@ -18,6 +18,7 @@ export default function Projects() {
       <h1>Projects</h1>
       <Spacer size={16} />
       <Media
+        linkable
         title="Building Number Chart at Notion"
         description="Recapping my Spring 2026 engineering internship at Notion, working on blocks, database views, and polish across the app"
         src="/assets/number-chart-hero.png"
@@ -26,6 +27,7 @@ export default function Projects() {
       />
       <Spacer size={16} />
       <Media
+        linkable
         title="compsigh web platform"
         description="Building a home for compsigh — the computer science club at the University of San Francisco — unifying our events calendar, showcasing club member projects, and documenting the club's culture"
         src="/assets/compsigh-web-platform-trailer-min.mp4"
@@ -34,6 +36,7 @@ export default function Projects() {
       />
       <Spacer size={16} />
       <Media
+        linkable
         title="My personal website"
         description="Crafting & curating my new identity on the Web"
         src="/og/root.png"
@@ -42,6 +45,7 @@ export default function Projects() {
       />
       <Spacer size={16} />
       <Media
+        linkable
         title="compsigh"
         description="The computer science club I founded at the University of San Francisco for meeting cool people & building cool things"
         src="/og/compsigh.png"
@@ -51,6 +55,7 @@ export default function Projects() {
       />
       <Spacer size={16} />
       <Media
+        linkable
         title="DEPLOY/23"
         description={
           <>
@@ -69,6 +74,7 @@ export default function Projects() {
       />
       <Spacer size={16} />
       <Media
+        linkable
         title="Cue"
         description="A minimalist active recall study app focused on helping students ask the right questions. Transform your notes into actionable study cards for easy pasting back into Google Docs or Notion, or export to Anki."
         src="/og/cue.png"
@@ -78,6 +84,7 @@ export default function Projects() {
       />
       <Spacer size={16} />
       <Media
+        linkable
         title="d.craft"
         description="A virtual recreation of the Design Tech High School campus in Minecraft, bringing students together in distanced times"
         src="/og/dcraft.png"
