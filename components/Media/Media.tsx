@@ -81,7 +81,7 @@ export async function Media({
           )}
           {title && (
             <figcaption>
-              <span>{title}</span>
+              <span className={styles.title}>{title}</span>
               {titleAccessory}
             </figcaption>
           )}
