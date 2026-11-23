@@ -36,7 +36,7 @@ export function WorkshopHeader({
                 label="Back to Workshop"
                 className={styles.back}
               >
-                <BackIcon aria-hidden width={18} height={18} />
+                <BackIcon aria-hidden />
               </IconLink>
             )}
             <h1>{title}</h1>

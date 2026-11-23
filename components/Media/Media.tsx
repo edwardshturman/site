@@ -66,8 +66,8 @@ export async function Media({
       <div className={styles["media-container"]} style={props.style}>
         <figure>
           {link ? (
-            // The caption links too, so keep this one out of the tab order
-            <Link href={link} tabIndex={title ? -1 : undefined}>
+            // The CTA links too, so keep this one out of the tab order
+            <Link href={link} tabIndex={cta ? -1 : undefined}>
               {children}
               {ImageWrapper}
               {VideoWrapper}
@@ -81,7 +81,7 @@ export async function Media({
           )}
           {title && (
             <figcaption>
-              {link ? <Link href={link}>{title}</Link> : <span>{title}</span>}
+              <span>{title}</span>
               {titleAccessory}
             </figcaption>
           )}
