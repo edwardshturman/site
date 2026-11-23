@@ -26,6 +26,13 @@ a.icon-button:focus-visible {
   outline-offset: 2px;
 }
 
+/* Sized here, since the icons set their own width and height over any passed
+   in as props */
+svg.timeline-icon {
+  width: 20px;
+  height: 20px;
+}
+
 /* The back button hangs in the left margin, like list bullets, so the heading
    stays aligned with the text below it */
 div.heading {
