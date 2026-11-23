@@ -33,6 +33,11 @@ div.media-container figure figcaption > .title {
   min-width: 0;
 }
 
+/* Leaves some breathing room above an entry that was linked to */
+div.media-container[id] {
+  scroll-margin-top: 16px;
+}
+
 div.media-container figure div.description {
   color: var(--color-text-subtle);
   margin: 16px 0;
